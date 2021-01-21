@@ -8,6 +8,7 @@ import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
 
 const NOTE_WIDTH = 576;
+const popupStyles = `w-150 px-4 pb-2 bg-gray-200 rounded-md shadow-xl border border-gray-400`;
 
 const BrainNote = ({ note }) => {
   const [width] = useWindowWidth();
@@ -17,13 +18,13 @@ const BrainNote = ({ note }) => {
     const RefLink = width < 768 ? Link : LinkToStacked;
     references = note.inboundReferenceNotes.map((reference) => (
       <RefLink
-        className="no-underline hover:text-gray-700"
+        className="no-underline hover:text-gray-500"
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
         key={reference.slug}
       >
-        <div className="py-2">
-          <h5 className="">{reference.title}</h5>
-          <p className="text-sm m-0">{reference.childMdx.excerpt}</p>
+        <div className="p-2 ml-2 mb-2 text-gray-600 transform hover:text-gray-700 hover:bg-gray-400 hover:translate-x-1 hover:bg-opacity-50 rounded-md transition duration-500">
+          <h4 className="text-sm">📄&nbsp; {reference.title}</h4>
+          <p className="text-sm m-0 mb-0 text-gray-600">{reference.childMdx.excerpt}</p>
         </div>
       </RefLink>
     ));
@@ -31,9 +32,9 @@ const BrainNote = ({ note }) => {
     if (references.length > 0) {
       referenceBlock = (
         <>
-          <h3>Referred in</h3>
-          <div className="mb-4">{references}</div>
-          <hr className="mx-auto w-32" />
+          <h3 className="mt-1 mb-2 font-normal text-gray-600">Referred in:</h3>
+          <div className="mb-4 border-l-2 border-gray-400 hover:border-gray-500 transition duration-500">{references}</div>
+          <hr className="mx-auto w-320 border-gray-400" />
         </>
       );
     }
@@ -47,10 +48,20 @@ const BrainNote = ({ note }) => {
         popups[ln.slug] = (
           <div
             id={ln.slug}
-            className="w-64 p-4 bg-gray-100 rounded-lg shadow-lg border border-blue-200"
+            className={popupStyles}
           >
-            <h5 className="mb-2">{ln.title}</h5>
-            <p className="text-sm">{ln.childMdx.excerpt}</p>
+            <div className="flex flex-wrap gap-x-2 content-start">
+              <h3 className="mb-2">{ln.title}</h3>
+              <LinkToStacked
+                className="no-underline"
+                to={ln.slug === 'about' ? `about` : `/${ln.slug}`}
+              >
+                <h3>»</h3>
+              </LinkToStacked>
+            </div>
+            <p className="mb-2 text-sm">
+              {ln.childMdx.excerpt}
+            </p>
           </div>
         );
       });
@@ -62,17 +73,16 @@ const BrainNote = ({ note }) => {
 
   return (
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
-      <div className="flex-1">
+      <div className="flex-1 mb-4">
         <h1 className="my-4">{note.title}</h1>
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
-      <div className="refs-box bg-indigo-100 text-gray-600 rounded-lg mb-4 p-4">
+      <div className="refs-box bg-gray-200 bg-opacity-50 text-gray-600 rounded-lg p-4 pt-2">
         {referenceBlock}
-        <p className="text-sm m-0">
-          If you think this note resonated, be it positive or negative, send me a{' '}
-          <a href="https://twitter.com/messages/compose?recipient_id=532906019">direct message</a>{' '}
-          on Twitter or an <a href="mailto:bsaaravind+notes@gmail.com">email</a> and we can talk.
-          Also ping if you'd like to know the updates on this note.
+        <p className="text-sm m-0 text-gray-600">
+          How're you finding these notes? If you'd like to discuss or share an idea, do get in touch. Send me a{' '}
+          <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a>{' '}
+          on Twitter or an <a href="mailto:marti.samuel1@gmail.com">email</a>.
         </p>
       </div>
     </MDXProvider>

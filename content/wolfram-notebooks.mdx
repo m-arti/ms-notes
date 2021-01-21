@@ -1,0 +1,141 @@
+---
+title: Wolfram Notebooks (Draft)
+tags: ['code', 'notebooks']
+---
+
+<NoteTag color="red">code</NoteTag>
+<NoteTag color="gray">notebooks</NoteTag>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css"
+  integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG"
+  crossOrigin="anonymous"
+/>
+
+## Coding
+---
+
+Think of a Wolfram Notebook, firstly, simply as a tool for writing and executing code.
+Now, how does one write code? You would normally type it, and often copy and paste it.
+
+You type something in, you get something out — `9 * 8` gives `72`. Depending on the _environment_ you're coding in, you may receive prompts whenever a result is returned or an error is raised, and nudges if the environment has a suggestion for you, this could be an annotation to a printed result, or a heads-up to prevent you from making an error.
+
+We encode or program computations following specific rules, and each programming language has its own. You'll probably would write $\colorbox{#fff} {\color{#000}9 × 8}$ if doing so on a piece of paper. But with most languages, you need the asterisk. And that's one of simplest differences between how one might _think_ on paper, as compared to in an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment).
+
+But is writing, enumerating, listing, sketching — and all those other things we use the paper medium for — the same as thinking? Not quite, they are expressions of thoughts. <span class="highlight">(I'm inclined to think it is, though I don't know, and I will be finding out soon.)</span>
+
+Another way of looking at the Wolfram Notebook, is as an _intelligent_, digital version of the good old notebook. It intelligent, in that, it is _"able to vary its state or action in response to varying situations and past experience."_ ([See definition](https://www.lexico.com/definition/intelligent).)  And this sets it apart from most other programming languages. I will explain why I think so, starting with $\colorbox{#fff} {\color{#000}9 × 8}$.
+
+<iframe src="https://www.wolframcloud.com/obj/mar/Published/wolfram-notebooks-9-8.nb?_embed=iframe" width="545" height="200" border="false"></iframe>
+
+When you type `9` and `8` separeted with a space, it's automatically converted to a `×`. It only does this for numbers, though it still multiplies things that are separated by a whitespace. [Free-form](https://reference.wolfram.com/language/workflow/EnterFreeFormInput.html) input creates room for improvisation, thereby extending one's imagination. This is how it works: you type in anything — anything at all — and it tries to make sense of it, and give a response. It doesn't always conjure up the expected interpretation. In fact, it sometimes fails to interpret what would seem really obvious to a child. However, it encourages creativity, especially in children. And it amuses them. I will tell you more about that later.
+
+Here are other ways to input code or more generally, _expressions_, in a Wolfram Notebook:
+
+<iframe src="https://www.wolframcloud.com/obj/mar/Published/wolfram-notebooks-inputs.nb?_embed=iframe" border="false" width="545" height="800"></iframe>
+
+## Writing
+---
+
+From the notebook above, it is immediately clear that inputs can be versatile, interpretable and systematic. Notebooks also serve [as documents](http://reference.wolfram.com/language/tutorial/NotebooksAsDocuments.html), and they can be used for formal writing. For example, this is a monograph-styled notebook template.
+
+<iframe src="https://www.wolframcloud.com/obj/mar/Published/wolfram-notebooks-monograph.nb?_embed=iframe" border="false" width="545" height="500"></iframe>
+
+But is all this the same as writing? Well, yes, in the digital sense — just like one would use a Word or Markdown document to write. But not in the traditional sense — pencil on paper. Digital and analogue forms of wiritng both have their advantages and limitations, though they are increasingly becoming dissimilar in act. Think Apple Pencil. Certainly, it is of immense creative benefit. But what influence, if any, does this dynamic form of writing have on the way think?
+
+## Drawing
+---
+
+How about drawing? I prefer the analogue form of drawing, but which is better is a matter of opinion. One artist might say that drawing with a stylus on a glass pane doesn't feel as _natural_ or as _dynamic_, as compared to using a pencil on paper. Another might appreciate its fluidity and the ease of correcting mistakes. Nonetheless, both the iPad and the drawing paper provide a medium for boundless artistic expression.
+
+The Wolfram Notebook allows you to draw on a graphics object called [`Canvas`](https://reference.wolfram.com/language/ref/Canvas.html). Clicking the canvas displays a variety of drawing tools. You can draw lines, arrows, polygons and so on. It allows you to draw freehand too. You can add preset shapes, and text and equation boxes onto the canvas. There are options for editing and styling each object to your liking.
+
+<iframe src="https://www.wolframcloud.com/obj/mar/Published/wolfram-notebooks-canvas.nb?_embed=iframe" border="false" width="545" height="500"></iframe>
+
+You can select graphical elements from a canvas and compute other things with them. In the notebook above, I picked the red triangle and added a hatch filling to it. I then the replaced the hatch pattern with the _"hello"_ I'd drawn.
+
+## Seeing and hearing
+---
+
+Amongst programming languages, the Wolfram Language has some of the most advanced [plotting and visualisation](https://reference.wolfram.com/language/guide/DataVisualization.html) fuctionalities, and the Wolfram Notebook takes full advantage of this. It enables one to _see_ things with great insight and clarity. By "things", I mean data, mathematical functions, pictures and videos, colours, cities and countries, the human anatomy, and many more. Abstract concepts are easier to navigate and understand inside of a Wolfram Notebook because they can be made visible, and interactive. You can play an animated image (GIF) or a video inside a notebook.
+
+Let's consider a simple but practical example. Fọláṣadé resides in Lagos, Nigeria. That bustling city! It's Friday, the fifth of June, and she's out with a friend, let's say they're at a park. She's lying on the grass, gazing at the vast blue sky. Lagos is very warm for most of the year and that day was a tad sultry. She spots a plane heading eastwards and follows it until it vanishes into a big cloud. Folsshade then begins to wonder, about the planets, stars and constellations.
+
+Let's step back into the notebook for a moment. One can [visualise the sky](https://resources.wolframcloud.com/FunctionRepository/resources/SkyChart) and see where celestial objects are whether it's night or day time. Maybe, like Fọláṣadé, you are curious to know where the planets are in relation to one another. Using [inbuilt functions](https://reference.wolfram.com/language/guide/AstronomicalComputationAndData.html) and [external ones](https://resources.wolframcloud.com/FunctionRepository/) created by a growing community of Wolfram Language users, you can also see the [solar system](https://resources.wolframcloud.com/FunctionRepository/resources/SolarSystemPlot3D) and even the [Milky Way galaxy](https://resources.wolframcloud.com/FunctionRepository/resources/MilkyWayPlot3D). People use notebooks to keep track of events such as eclipses or travel back learn a bit of history about manned space missions.
+
+Now, back to Lagos. You can see below what the Lagos sky [looked like](https://www.wolframalpha.com/input/?i=sky+chart+of+Lagos+on+5+June+2020+at+midday) at midday on that day. (Can you spot Sirius?) The sun was up and nearly aligned with Venus, Mercury and Mars (at the right edge; barely visible in the image). Although Ṣadé most probably could not see the planets that afternoon. Besides, the glare of the sun is best avoided.
+
+What could the park have sounded like? We could imagine that it was lively and people were having a good time. The first audio simulates what the park might have sounded like — indistinct chatter of residents and tourists, the flapping wings of pigeons, leaves rustling against themselves, the laughter of children and perhaps distant music, or the fading roar of an airplane. That airplane. Using actual weather data of Lagos on that very day, we could model the [attenuated sound](https://reference.wolfram.com/language/ref/AirSoundAttenuation.html) that could have been audible to someone stading, say, 10 meters away from the source of the first audio. This is a practical example of how one could _see_ and _hear_ more of the world around them in a Wolfram Notebook.
+
+<iframe src="https://www.wolframcloud.com/obj/mar/Published/wolfram-notebooks-seeing-hearing.nb?_embed=iframe" border="false" width="545" height="800"></iframe>
+
+Of course, visualisations and computationally modelled sounds are no substitutes for — and are incomparable to — the rawness of reality. But for a young and inquisivite girl or boy, these are invaluable tools for gaining deeper insight into the world around her or him. And what a fun way to do it. To be able to see and hear and speak and ask and touch and drag and drop and slide... and chat and share the fun with others.
+
+## Exploring, ideating and imagining
+---
+
+The unique coding, writing and drawing capabilities of the Woflram Notebook — combined with it's audiovisual interactivity and receptivity to input of human and machine _expressions_ — makes it apt for exploring ideas. The variety of ideas that one could explore in a notebook is so vast, that the notebook becomes a sort of encyclopaedia. Apart from making software, Woflram Research are also into the business of [curating information](https://www.wolfram.com/knowledgebase/) and making it computable. Thus far, the areas of knowledge they've covered range from food and nutrition, to [[art]] and design, to weather and meteorology.
+
+Being able to compute things on a whim with so much meaningful up to date data about the world, gives fluidity to the process of creating and exploring ideas in a Wolfram Notebook. As you've seen in previous examples, you can retrieve appropriately quantified data on your surroundings, with some degree of precision as regards space and time. With [Entities](https://reference.wolfram.com/language/guide/EntityTypes.html), the world and everyday life becomes even more computationally explorable.
+
+So what, if so many things can be computed (with)? Why should you care, and how useful is any of this, really? I'll give you three reasons:
+
+1. Because you can solve real-life problems in ways that make the path from problem to solution less abstract and clearer. For first, you have near real-time data readily available. Whether the nature of the data is transient (as in [weather](https://reference.wolfram.com/language/guide/WeatherData.html) and [financial](https://reference.wolfram.com/language/guide/FinancialAndEconomicData.html) data), long-lasting (as in [socioeconomic and demographic](https://reference.wolfram.com/language/guide/SocioeconomicAndDemographicData.html) data), or immutable (as in [mathematical](https://reference.wolfram.com/language/guide/MathematicalData.html), [chemistry and physics](https://reference.wolfram.com/language/guide/PhysicsAndChemistryDataAndComputation.html) data). But it doesn't end with the data, you can use it in meaningful ways too.
+
+2. Apart from problem-solving, we are sometimes simply curious to figure out interesting facts and relations about the world. Whether its a [book](https://reference.wolfram.com/language/ref/entity/Book.html) you're reading, or a tender [plant](https://reference.wolfram.com/language/ref/entity/Plant.html) you're looking after, having knowledge about the world at your fingertips accelerates the fulfilment of curiousity and [[learning]].
+
+3. The world and how we interact with it and one another, is increasingly becoming computational.
+
+So, I think you should care, because here is a tool that can facilitate and enhance your modi operandi for exploring, ideating and imagining. You can see examples of exploratory data analyses I have used notebooks for [here](https://blog.martinssamuel.com/eda-i:-the-mcclay-library), [here](https://blog.martinssamuel.com/eda-ii:-belfast-trees) and [here](https://blog.martinssamuel.com/eda-iii:-dimensions-of-the-heart).
+
+While the [predictive interface](https://reference.wolfram.com/language/guide/WolframPredictiveInterface.html) as a whole allows you to write and iterate through code quicker, the [Suggestions Bar](https://reference.wolfram.com/language/howto/UseTheSuggestionsBar.html) encourages asking _"what if"_ questions — it invites you to see what more you can do with — or learn from — a result, be it a number, word, color, entity, date or a more complex object. Try evaluating each of these in the notebook below and see the suggestions that come up: `Pi`, `"Sunset"`, `ColorData["SunsetColors"]`, `Entity["Star", "Sun"]`, `Sunset[]`.
+
+<iframe src="https://sandbox.open.wolframcloud.com/app/view/newNotebook?_view=frameless" width="545" height="400"></iframe>
+
+## Learning and teaching
+---
+
+I have the previlege of [[teaching]] kids and adults programming, using Jupyter Notebooks for Python and the object of interest for Wolfram Language. In my two and half years of doing this, I have realised the extent to which the framework _provided_ for thiking about a an activity or problem — and engaging in it, or attempting to solve it — can influence the way one approaches the problem.
+
+For instance, consider geometry as taught in primary and secondary schools. Textbooks try, but I think a better way of teaching geometry (and many other topics) is by using a computational notebook. Possibly true for other topics, but particularly for learning geometry, the traditional textbook is limited in a number of ways. Firstly, it is able to present and visualise only a single instance of a problem at a time. The issue with this isn't that copious space is needed to show an ample variety of possible scenarios to better the learner's understanding. Rather, the issue is that each explanation, each example, each exercise, is _static_ and therefore, potentially limiting. By this I mean that the static setting puts a ceiling on the knowledge and intuition the student gains from the process of following an example or solving an exercise. By contrast, a dyanamic/interactive setting allows the student to view the scenario from different vantage points. Apart from visualisation and feedback, another benefit to this is that the student begins to ask _"what if...?"_; the Suggestions Bar encourages asking such questions. The second point is more of a personal opinion: it is often uninspiring.
+
+I believe what learners of topics such as geometry (and indeed the subject of mathematics iteself) need, is a medium in which the learner can see how angles, dimensions, shapes, volumes — objects and entire scenarios — morph as they interact with the its constituent elements. Be it by _writing_, _typing_, _drawing_, clicking or draging, immediate feedback of the learner's actions and ideas will greatly enhance learning and the development of the learner's intuition of the underlying principles which those scenarios aim to elucidate. It may also allow the student to learn underlying principles and build intuition quicker.
+
+Let's take a look at a look at one such scenario. In the notebook below we have a 2-dimensional geometric setting ([`GeometricScene`](https://reference.wolfram.com/language/ref/GeometricScene.html)). It contains the following geometric objects and assertions:
+
+1. there are two similar triangles ($\textcolor{#9ca5a6}{\triangle abc}$ and $\textcolor{#f29494}{\triangle bcd}$) enclosed by a $\textcolor{#50b050}{circle}$
+2. $\measuredangle bac = 90 \degree$ and $\measuredangle bcd = 45 \degree$
+3. an $\textcolor{#fd7400}{infinite~line}$ passes through points $\textcolor{#1c69ee}{\bold a}$ and $\textcolor{#1c69ee}{\bold d}$, and another $\textcolor{#6b1fb1}{infinite~line}$ passes through point $\textcolor{#1c69ee}{\bold c}$ and a point $\textcolor{#1c69ee}{\bold e}$ on the $\textcolor{#50b050}{circle}$
+
+The scene is interactive and updates (within the established constraints) as you click and move the points around and points can be pinned to specific positions. I believe this is a more interesting way of presenting a geometry problem to a student. I do not think that the interactivity might be a distraction. Rather, it allows the learner to take a deeper _look_ into the problem. For example, we can ask for geometric conjectures that can be derived from this particular scene, and highlight them. The second scene highlights $\angle bac = \angle cbd = \angle dca = 90 \degree$, but there are many others as you can see in the table.
+
+<iframe src="https://www.wolframcloud.com/obj/mar/Published/wolfram-notebooks-geometric-scene.nb?_embed=iframe" border="false" width="545" height="800"></iframe>
+
+The geometric scene not only helps the learner with insight, but it can also help students learn geometric construction. For example, a teacher can put together a sequence of [steps](https://reference.wolfram.com/language/ref/GeometricStep.html) for students to follow. While this is unlike using a ruler and a pair of compasses, it is still apt for teaching. Besides, the digital medium has its own benefits. For instance, when explaining a theorem such as [Kosnita's Theorem](https://en.wikipedia.org/wiki/Kosnita%27s_theorem), which consists of many geometric objects, the paper medium is not as apt as an interactive one.
+
+<iframe src="https://www.wolframcloud.com/obj/mar/Published/wolfram-notebooks-kosnitas-theorem.nb?_embed=iframe" width="545" height="400"></iframe>
+
+Interactivity is particularly advantageous here. Plus, being able to pin a point and move the diagram around it is also very useful when trying to understand how the theorem works. Compare that to the static diagram sourced from Wikipedia. The diagram is neat, but the learner cannot use it to _see_ how the blue lines remain concurrent as points move about. [Here's](http://www.gogeometry.com/school-college/5/p1473-kosnita-theorem-triangle-circumcenter-concurrent-geogebra-ipad.htm) another excellent interactive example of the theorem.
+
+To further demonstrate the efficacy of Wolfram Notebooks for learning and teaching, I refer you to two sets of resources:
+
+1. [__Wolfram Demonstrations__](https://demonstrations.wolfram.com/): these are interactive interfaces that explain how things work — from maths, to creative arts to everyday life. Whatever you're curious about, there's probably a demonstration on it or related to it. You will find many interesting things on there and you can intreact with demos in a cloud notebook.
+2. [__Notebook Archive__](https://notebookarchive.org/): this is a collection of books, computational essays, courses and many more, all written in Wolfram Notebooks [This video](https://reference.wolfram.com/language/howto/CreateALectureNotebook.html) shows how to create a lecture notebook.
+
+## Shortcomings
+---
+
+- __Accessibility__: the Wolfram Notebook is most accessible [online](https://www.open.wolframcloud.com/env/wpl/GetStarted.nb), though it is (understandably) limited in it's functionality compared to the desktop version. This means that some important capabilities such as canvas and geometric scene are either not ([yet](https://www.wolframcloud.com/obj/jpoeschko/Published/WolframLanguageCloudSupport.nb)) functional, while some others are limited. I hope that notebooks will continue to be accessible long-term, that is, without requiring signing up.
+- __Performance__: even on the desktop, the front often lags when handling more complex tasks. This occurs especially when dealing with graphics objects.
+
+You can read the Cloud release notes [here](https://www.wolframcloud.com/obj/release-notes/), as well as additional implementation notes [here](https://www.wolframcloud.com/obj/jpoeschko/Published/CloudNotebooksImplementationNotes.nb). If you're looking to use the Wolfram Cloud long-term, you may find it useful to refer to these notes from time to time.
+
+## Interesting users / uses
+---
+
+In addition to the resources I've mentioned above, the following are some other interesting uses and users of Wolfram notebooks:
+
+- [Emerald Cloud Labs](https://www.emeraldcloudlab.com/) allows you to create, run, explore and analyse experiments remotely using Wolfram Notebooks. The lab is mostly run by robots.
+
+- [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) uses Mathematica extensively. [Here's](https://www.youtube.com/watch?v=JTz4wkD-mxU) an example. He was awarded a Wolfram Innovator Award in [2018](https://www.wolfram.com/events/technology-conference/innovator-award/2018/nassim-nicholas-taleb/). (Needless to say, other receipients of the award have used Wolfram Notebooks in interesting ways.)

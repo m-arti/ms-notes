@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
+
 import { useStackedPagesProvider, LinkToStacked } from 'react-stacked-pages-hook';
+
 import { Helmet } from 'react-helmet';
 
 import BrainNote from './BrainNote';
@@ -8,6 +10,7 @@ import BrainNote from './BrainNote';
 import '../../style.css';
 
 const NOTE_WIDTH = 576; // w-xl
+const LEFT_PAD = 50;
 
 // A wrapper component to render the content of a page when stacked
 const StackedPageWrapper = ({
@@ -21,19 +24,21 @@ const StackedPageWrapper = ({
 }) => (
   <PageIndexProvider value={i}>
     <div
-      className={`note-container md:max-w-xl px-4 overflow-y-auto bg-white md:sticky flex flex-col flex-shrink-0 ${
-        overlay ? 'shadow-lg' : ''
+      className={`note-container md:max-w-xl px-4 py-4 ${
+        obstructed ? `overflow-y hover:bg-gray-200 transition ease-in-out duration-500` : `overflow-y-auto border-r`
+      } bg-white md:sticky flex flex-col flex-shrink-0 ${
+        overlay ? 'shadow-xl' : 'border-r px-6'
       }`}
-      style={{ left: 40 * i, right: -585, width: NOTE_WIDTH }}
+      style={{ left: LEFT_PAD * i, right: - NOTE_WIDTH + LEFT_PAD, width: NOTE_WIDTH }}
     >
       <div
         className={`md:block hidden transition-opacity duration-100 ${
           obstructed ? `opacity-100` : `opacity-0`
         }`}
       >
-        <div className={`transform rotate-90 origin-left pb-4 absolute z-10`}>
-          <LinkToStacked to={slug} className="no-underline text-gray-900">
-            <p className="m-0 font-bold">{title || slug}</p>
+        <div className={`overflow-visible w-full transform rotate-90 origin-left pb-4 absolute z-10`}>
+          <LinkToStacked to={slug} className="object-center no-underline text-gray-1000">
+            <p className="m-1 h-full w-full font-medium tracking-normal">{title || slug}</p>
           </LinkToStacked>
         </div>
       </div>
@@ -66,23 +71,23 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   });
 
   return (
-    <div className="text-gray-900 flex flex-col min-h-screen h-screen">
+    <div className="text-gray-1000 flex flex-col min-h-screen h-screen">
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          {note.title} - {siteMetadata.title}
+          {siteMetadata.title} — {note.title}
         </title>
       </Helmet>
       <header>
-        <div className="font-bold py-2 border-b px-4">
-          <Link to="/" className="no-underline text-gray-900">
-            {siteMetadata.title}
+        <div className="py-0 pb-4 border-b px-6">
+          <Link to="/" className="no-underline text-gray-1000">
+            <h3 className="font-medium tracking-normal">{siteMetadata.title}</h3>
           </Link>
         </div>
       </header>
 
       <div
-        className="flex-1 flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden"
+        className="flex-0 flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden"
         ref={scrollContainer}
       >
         <div
