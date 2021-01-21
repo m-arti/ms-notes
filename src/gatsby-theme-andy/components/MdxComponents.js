@@ -45,12 +45,11 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
 
 const NoteTag = ({ children, color }) => (
   <div
-    className={`bg-${color}-200 text-${color}-800 py-1 px-2 mb-5 mr-2 text-xs font-bold rounded-md inline-block`}
+    className={`antialiased bg-${color}-200 text-${color}-700 py-1 px-2 mb-5 mr-2 text-xs font-normal rounded-md inline-block`}
   >
     {children}
   </div>
 );
-
 
 // styles for embedded notebooks
 // const nbStyles = `w-full pb-6 align-middle border-t-2 border-gray-300 hover:border-t-2 hover:border-orange-400 transition ease-in-out duration-500`;
