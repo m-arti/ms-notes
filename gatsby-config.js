@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Martins' Notes`,
+    author: `@m-arti`,
     description: `Hello! I'm Martins. I'm a researcher and designer. This is a mélange of my musings.`,
+    homepage: `https://martinssamuel.com`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -9,6 +11,21 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+
+    // gatsby-plugin-manifest
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Martins' Notes`,
+        short_name: `Martins' Notes`,
+        description: `Hello! I'm Martins. I'm a researcher and designer. This is a mélange of my musings.`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `standalone`,
+        icon: `src/assets/favicon.png`,
+      },
+    },
 
     // gatsby-theme-andy
     {
@@ -23,7 +40,7 @@ module.exports = {
     {
     resolve: `gatsby-transformer-remark`,
     options: {
-      plugins: [`gatsby-remark-responsive-iframe`],
+      plugins: [],
     },
   },
 
@@ -35,12 +52,14 @@ module.exports = {
         extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           `gatsby-remark-embedder`,
+          `gatsby-remark-responsive-iframe`,
+          `gatsby-remark-copy-linked-files`,
 
           // gatsby-remark-images
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 10000,
+              maxWidth: 545,
               linkImagesToOriginal: false,
               quality: 80,
               withWebp: true,
@@ -55,6 +74,9 @@ module.exports = {
               rel: 'noreferrer',
             },
           },
+
+          // gatsby-remark-smartypants
+          { resolve: `gatsby-remark-smartypants` },
 
           // gatsby-remark-katex
           {
