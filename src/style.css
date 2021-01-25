@@ -71,7 +71,7 @@ pre>code {
 }
 
 iframe {
-  @apply antialiased mt-6 mb-6 align-middle border-t-2 border-gray-300;
+  @apply antialiased pb-6 mt-4 mb-20 align-middle border-t-2 border-gray-300;
 }
 
 iframe:hover {

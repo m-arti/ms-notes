@@ -52,8 +52,16 @@ module.exports = {
         extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           `gatsby-remark-embedder`,
-          `gatsby-remark-responsive-iframe`,
+          //`gatsby-remark-responsive-iframe`,
           `gatsby-remark-copy-linked-files`,
+
+          // configure gatsby-remark-responsive-iframe
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+              options: {
+                wrapperStyle: `margin-bottom: 1.25rem`,
+              },
+          },
 
           // gatsby-remark-images
           {
