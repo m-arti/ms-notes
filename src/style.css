@@ -50,11 +50,11 @@ hr {
 }
 
 blockquote {
-  @apply antialiased py-0 px-5 mb-6 mt-6 border-l-2 border-blue-700;
+  @apply antialiased py-0 px-4 mb-6 mt-6 border-l border-blue-800;
 }
 
 blockquote p {
-  @apply antialiased m-0 font-serif font-thin text-lg leading-relaxed text-blue-700 align-middle;
+  @apply antialiased m-0 font-serif text-lg text-justify leading-relaxed text-blue-800 align-middle;
 }
 
 code {

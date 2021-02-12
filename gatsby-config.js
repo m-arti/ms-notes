@@ -33,6 +33,8 @@ module.exports = {
       options: {
         hideDoubleBrackets: true,
         mdxOtherwiseConfigured: true,
+        generateRSS: true,
+        rssTitle: `Martins' Notes`,
       },
     },
 
