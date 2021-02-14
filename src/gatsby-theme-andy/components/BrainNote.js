@@ -8,7 +8,7 @@ import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
 
 const NOTE_WIDTH = 576;
-const popupStyles = `w-150 px-4 pb-2 bg-gray-200 rounded-md shadow-xl border border-gray-400`;
+const popupStyles = `w-150 px-4 pb-2 bg-gray-200 rounded-md shadow-xl`;
 
 const BrainNote = ({ note }) => {
   const [width] = useWindowWidth();
@@ -80,7 +80,8 @@ const BrainNote = ({ note }) => {
       <div className="refs-box bg-gray-200 bg-opacity-50 text-gray-600 rounded-lg p-4 pt-2">
         {referenceBlock}
         <p className="text-sm m-0 text-gray-600">
-          How're you finding these notes? If you'd like to discuss or share an idea, do get in touch. Send me a{' '}
+          If you'd like to discuss or share an idea, do get in touch.<br/>
+          Send me a {' '}
           <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a>{' '}
           on Twitter or an <a href="mailto:marti.samuel1@gmail.com">email</a>.
         </p>

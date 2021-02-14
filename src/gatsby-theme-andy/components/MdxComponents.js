@@ -35,7 +35,7 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
       // interactiveDebounce="100"
       // interactiveBorder="30"
       content={
-        <div className="py-1 px-2 bg-white rounded text-sm text-blue-600 shadow-md">{href}</div>
+        <div className="py-1 px-2 bg-white rounded text-sm font-light text-blue-600 shadow-md">{href}</div>
       }
     >
       <a className="" {...restProps} href={href} />
