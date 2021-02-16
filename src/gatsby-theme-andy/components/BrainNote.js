@@ -24,7 +24,7 @@ const BrainNote = ({ note }) => {
       >
         <div className="p-2 ml-2 mb-2 text-gray-600 transform hover:text-gray-700 hover:bg-gray-400 hover:translate-x-1 hover:bg-opacity-50 rounded-md transition duration-500">
           <h4 className="text-sm">📄&nbsp; {reference.title}</h4>
-          <p className="text-sm m-0 mb-0 text-gray-600">{reference.childMdx.excerpt}</p>
+          <p className="text-sm m-0 mb-0 text-gray-600 text-justify">{reference.childMdx.excerpt}</p>
         </div>
       </RefLink>
     ));
@@ -56,10 +56,10 @@ const BrainNote = ({ note }) => {
                 className="no-underline"
                 to={ln.slug === 'about' ? `about` : `/${ln.slug}`}
               >
-                <h3>»</h3>
+                <h3>&nbsp;»</h3>
               </LinkToStacked>
             </div>
-            <p className="mb-2 text-sm">
+            <p className="mb-2 text-sm text-justify">
               {ln.childMdx.excerpt}
             </p>
           </div>

@@ -24,7 +24,7 @@ const StackedPageWrapper = ({
 }) => (
   <PageIndexProvider value={i}>
     <div
-      className={`note-container md:max-w-xl px-4 py-4 ${
+      className={`note-container md:max-w-xl px-6 py-4 ${
         obstructed ? `overflow-y hover:bg-gray-200 transition ease-in-out duration-500` : `overflow-y-auto border-r`
       } bg-white md:sticky flex flex-col flex-shrink-0 ${
         overlay ? 'shadow-xl' : 'border-r px-6'
@@ -36,7 +36,7 @@ const StackedPageWrapper = ({
           obstructed ? `opacity-100` : `opacity-0`
         }`}
       >
-        <div className={`overflow-visible w-full transform rotate-90 origin-left pb-4 absolute z-10`}>
+        <div className={`overflow-visible w-full transform rotate-90 origin-left absolute z-10`}>
           <LinkToStacked to={slug} className="object-center no-underline text-gray-1000">
             <p className="m-1 h-full w-full font-medium tracking-normal">{title || slug}</p>
           </LinkToStacked>
