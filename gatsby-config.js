@@ -3,7 +3,7 @@ module.exports = {
     title: `Martins' Notes`,
     author: `@m-arti`,
     description: `Hello! I'm Martins. I'm a researcher and designer. This is a mélange of my musings.`,
-    homepage: `https://martinssamuel.com`,
+    homepage: `https://notes.martinssamuel.com`,
   },
   plugins: [
     `gatsby-plugin-postcss`,

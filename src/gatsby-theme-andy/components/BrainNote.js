@@ -7,7 +7,8 @@ import { LinkToStacked } from 'react-stacked-pages-hook';
 import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
 
-const NOTE_WIDTH = 576;
+const NOTE_WIDTH = 650; // 576;
+const NOTE_MAX_WIDTH = 800; // 768;
 const popupStyles = `w-150 px-4 pb-2 bg-gray-200 rounded-md shadow-xl`;
 
 const BrainNote = ({ note }) => {
@@ -15,7 +16,7 @@ const BrainNote = ({ note }) => {
   let references = [];
   let referenceBlock;
   if (note.inboundReferenceNotes != null) {
-    const RefLink = width < 768 ? Link : LinkToStacked;
+    const RefLink = width < NOTE_MAX_WIDTH ? Link : LinkToStacked;
     references = note.inboundReferenceNotes.map((reference) => (
       <RefLink
         className="no-underline hover:text-gray-500"
@@ -34,7 +35,7 @@ const BrainNote = ({ note }) => {
         <>
           <h3 className="mt-1 mb-2 font-normal text-gray-600">Referred in:</h3>
           <div className="mb-4 border-l-2 border-gray-400 hover:border-gray-500 transition duration-500">{references}</div>
-          <hr className="mx-auto w-320 border-gray-400" />
+          <hr className="mx-auto border-gray-400" />
         </>
       );
     }
@@ -68,7 +69,7 @@ const BrainNote = ({ note }) => {
   }
 
   const AnchorTagWithPopups = (props) => (
-    <components.a {...props} popups={popups} noPopups={width < 768} />
+    <components.a {...props} popups={popups} noPopups={width < NOTE_MAX_WIDTH} />
   );
 
   return (

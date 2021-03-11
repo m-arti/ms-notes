@@ -1,16 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
 import { useStackedPagesProvider, LinkToStacked } from 'react-stacked-pages-hook';
-
 import { Helmet } from 'react-helmet';
 
 import BrainNote from './BrainNote';
-
 import '../../style.css';
 
-const NOTE_WIDTH = 576; // w-xl
-const LEFT_PAD = 50;
+const NOTE_WIDTH = 650; // 576; // w-xl
+const PAD = 50;
 
 // A wrapper component to render the content of a page when stacked
 const StackedPageWrapper = ({
@@ -24,12 +21,12 @@ const StackedPageWrapper = ({
 }) => (
   <PageIndexProvider value={i}>
     <div
-      className={`note-container md:max-w-xl px-6 py-4 ${
+      className={`note-container md:max-w-2xl px-6 py-4 ${
         obstructed ? `overflow-y hover:bg-gray-200 transition ease-in-out duration-500` : `overflow-y-auto border-r`
       } bg-white md:sticky flex flex-col flex-shrink-0 ${
         overlay ? 'shadow-xl' : 'border-r px-6'
       }`}
-      style={{ left: LEFT_PAD * i, right: - NOTE_WIDTH + LEFT_PAD, width: NOTE_WIDTH }}
+      style={{ left: PAD * i, right: - NOTE_WIDTH + PAD, width: NOTE_WIDTH }}
     >
       <div
         className={`md:block hidden transition-opacity duration-100 ${

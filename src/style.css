@@ -124,7 +124,8 @@ iframe:active {
   max-width: 100vw;
 }
 
-@media (max-width: 768px) {
+/* 768px */
+@media (max-width: 800px) {
   .note-columns-container {
     width: unset !important;
   }
