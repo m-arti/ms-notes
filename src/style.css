@@ -2,6 +2,7 @@
 @tailwind base;
 
 body {
+  @apply antialiased;
   height: 100vh;
 }
 
@@ -10,11 +11,11 @@ img {
 }
 
 h1 {
-  @apply antialiased text-2xl font-semibold mt-8;
+  @apply antialiased text-3xl font-bold mt-8;
 }
 
 h2 {
-  @apply antialiased text-xl font-medium mt-6;
+  @apply antialiased text-2xl font-semibold mt-6;
 }
 
 h3 {
