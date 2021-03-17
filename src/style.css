@@ -51,7 +51,7 @@ hr {
 }
 
 blockquote {
-  @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-gray-600;
+  @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-gray-400;
 }
 
 blockquote p {
