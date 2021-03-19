@@ -59,11 +59,11 @@ blockquote p {
 }
 
 code {
-  @apply antialiased whitespace-pre lining-nums slashed-zero tabular-nums text-sm text-blue-800 bg-blue-200 p-1 py-0 px-1 rounded-sm;
+  @apply antialiased whitespace-pre lining-nums slashed-zero tabular-nums text-sm text-gray-800 bg-gray-200 p-1 py-0 px-1 rounded-sm;
 }
 
 pre {
-  @apply antialiased mb-4 p-2 rounded-md bg-blue-200;
+  @apply antialiased mb-4 p-2 rounded-md bg-gray-200;
   overflow-x: auto;
 }
 
