@@ -2,14 +2,14 @@
 
 (* MetaInformation *)
 (* Author: Martins Samuel *)
-(* Description: Wolfram Notebook stylesheet for notes — https://notes.martinssamuel.com *)
+(* Description: Wolfram Notebook stylesheet for notes \[LongDash] https://notes.martinssamuel.com *)
 (* Homepage: https://notes.martinssamuel.com *)
 
 (* Beginning of Content *)
 Notebook[{
-Cell[StyleData[StyleDefinitions -> "Default.nb"],ExpressionUUID->"28d8b91a-7f04-4df0-8df0-f9d470cb0381"],
+Cell[StyleData[StyleDefinitions -> "Default.nb"]],
 
-Cell[StyleData[All],ExpressionUUID->"92f03d11-1f9d-4eb6-adac-4b7874ae96b4"],
+Cell[StyleData[All]],
 
 Cell[StyleData["Title"],
  FontFamily->"Source Sans Pro",
@@ -20,9 +20,9 @@ Cell[StyleData["Title"],
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
  FontColor->RGBColor[
-  0., 0., 0.],ExpressionUUID->"2a0b9971-8533-446b-b6df-b1a352964697"],
+  0., 0., 0.]],
 
-Cell[StyleData["Subtitle"],ExpressionUUID->"bf9aae01-afe3-4f09-b88d-b2125880cbf2"],
+Cell[StyleData["Subtitle"]],
 
 Cell[StyleData["Section"],
  FontFamily->"Source Sans Pro",
@@ -33,14 +33,14 @@ Cell[StyleData["Section"],
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
  FontColor->RGBColor[
-  0., 0., 0.],ExpressionUUID->"3a74482a-0501-4554-b680-3c90a4b86fcb"],
+  0., 0., 0.]],
 
 Cell[StyleData["Subsection"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  FontColor->RGBColor[
   0.3495994506752117, 0.349584191653315,
-   0.349584191653315],ExpressionUUID->"c0201a86-e108-469e-8799-1f9fd7d6269a"],
+   0.349584191653315]],
 
 Cell[StyleData["Subsubsection"],
  FontFamily->Automatic,
@@ -51,7 +51,7 @@ Cell[StyleData["Subsubsection"],
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"SourceSansPro-LightItalic"},
  FontColor->RGBColor[
-  0., 0., 0.],ExpressionUUID->"1214f89e-5c04-4fcc-a23d-045b8d38f36d"],
+  0., 0., 0.]],
 
 Cell[StyleData["Input"],
  FontFamily->"Source Code Pro",
@@ -60,12 +60,11 @@ Cell[StyleData["Input"],
  FontSlant->"Plain",
  PrivateFontOptions->{
  "FontPostScriptName"->
-  "Automatic"},ExpressionUUID->"4530e1e9-89a4-441c-8ba1-5a686071e130"]
+  "Automatic"}]
 },
 WindowSize->Automatic,
 WindowMargins->{{Automatic, 281}, {22, Automatic}},
 FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
-StyleDefinitions->"PrivateStylesheetFormatting.nb",
-ExpressionUUID->"a5a99a6d-48cb-4dcf-b5f4-d048be739ebf"
+StyleDefinitions->"PrivateStylesheetFormatting.nb"
 ]
 (* End of Content *)
