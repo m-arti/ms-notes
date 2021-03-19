@@ -9,8 +9,11 @@
 Notebook[{
 Cell[StyleData[StyleDefinitions -> "Default.nb"]],
 
-Cell[StyleData[All]],
+(* ALL *)
+Cell[StyleData[All],
+ ShowCellBracket->Automatic],
 
+(* TITLE *)
 Cell[StyleData["Title"],
  FontFamily->"Source Sans Pro",
  FontSize->45,
@@ -22,9 +25,12 @@ Cell[StyleData["Title"],
  FontColor->RGBColor[
   0., 0., 0.]],
 
+(* SUBTITLE *)
 Cell[StyleData["Subtitle"]],
 
+(* SECTION *)
 Cell[StyleData["Section"],
+ ShowGroupOpener -> "Inline",
  FontFamily->"Source Sans Pro",
  FontSize->24,
  FontWeight->"Regular",
@@ -35,14 +41,18 @@ Cell[StyleData["Section"],
  FontColor->RGBColor[
   0., 0., 0.]],
 
+(* SUBSECTION *)
 Cell[StyleData["Subsection"],
+ ShowGroupOpener -> "Inline",
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  FontColor->RGBColor[
   0.3495994506752117, 0.349584191653315,
    0.349584191653315]],
 
+(* SUBSUBSECTION *)
 Cell[StyleData["Subsubsection"],
+ ShowGroupOpener -> "Inline",
  FontFamily->Automatic,
  FontSize->18,
  FontWeight->"Regular",
@@ -53,6 +63,7 @@ Cell[StyleData["Subsubsection"],
  FontColor->RGBColor[
   0., 0., 0.]],
 
+(* INPUT *)
 Cell[StyleData["Input"],
  FontFamily->"Source Code Pro",
  FontSize->13,
@@ -62,6 +73,7 @@ Cell[StyleData["Input"],
  "FontPostScriptName"->
   "Automatic"}]
 },
+
 WindowSize->Automatic,
 WindowMargins->{{Automatic, 281}, {22, Automatic}},
 FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
