@@ -19,49 +19,51 @@ Cell[StyleData["Title"],
  FontSize->45,
  FontWeight->"SemiBold",
  FontSlant->"Plain",
- FontVariations->{"StrikeThrough"->False,
- "Underline"->False},
+ FontVariations->{"StrikeThrough"->False, "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0., 0., 0.]],
+ FontColor->RGBColor[0., 0., 0.]],
 
 (* SUBTITLE *)
 Cell[StyleData["Subtitle"]],
 
 (* SECTION *)
 Cell[StyleData["Section"],
- ShowGroupOpener -> "Inline",
+ ShowGroupOpener->"Inline",
  FontFamily->"Source Sans Pro",
  FontSize->24,
  FontWeight->"Regular",
  FontSlant->"Plain",
- FontVariations->{"StrikeThrough"->False,
- "Underline"->False},
+ FontVariations->{"StrikeThrough"->False, "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0., 0., 0.]],
+ FontColor->RGBColor[0., 0., 0.]],
 
 (* SUBSECTION *)
 Cell[StyleData["Subsection"],
- ShowGroupOpener -> "Inline",
- FontVariations->{"StrikeThrough"->False,
- "Underline"->False},
- FontColor->RGBColor[
-  0.3495994506752117, 0.349584191653315,
-   0.349584191653315]],
+ ShowGroupOpener->"Inline",
+ FontVariations->{"StrikeThrough"->False, "Underline"->False},
+ FontColor->RGBColor[0.3495994506752117, 0.349584191653315, 0.349584191653315]],
 
 (* SUBSUBSECTION *)
 Cell[StyleData["Subsubsection"],
- ShowGroupOpener -> "Inline",
+ ShowGroupOpener->"Inline",
  FontFamily->Automatic,
  FontSize->18,
  FontWeight->"Regular",
  FontSlant->"Italic",
- FontVariations->{"StrikeThrough"->False,
- "Underline"->False},
+ FontVariations->{"StrikeThrough"->False, "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"SourceSansPro-LightItalic"},
- FontColor->RGBColor[
-  0., 0., 0.]],
+ FontColor->RGBColor[0., 0., 0.]],
+
+(* TEXT *)
+Cell[StyleData["Text"],
+ FontFamily->"Source Sans Pro",
+ FontSize->15,
+ FontWeight->"Regular",
+ FontSlant->"Plain",
+ FontVariations->{"StrikeThrough"->False, "Underline"->False},
+ TextJustification->1.,
+ Background->None,
+ PrivateFontOptions->{"FontPostScriptName"->"Automatic"}],
 
 (* INPUT *)
 Cell[StyleData["Input"],
@@ -69,11 +71,9 @@ Cell[StyleData["Input"],
  FontSize->13,
  FontWeight->"Regular",
  FontSlant->"Plain",
- PrivateFontOptions->{
- "FontPostScriptName"->
-  "Automatic"}]
-},
+ PrivateFontOptions->{"FontPostScriptName"->"Automatic"}]
 
+},
 WindowSize->Automatic,
 WindowMargins->{{Automatic, 281}, {22, Automatic}},
 FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
