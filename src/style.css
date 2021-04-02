@@ -94,6 +94,13 @@ iframe:active {
   @apply antialiased;
   position: relative;
   object-fit: cover;
+  width:100vw !important;
+  min-height:200px;
+  left:-30px;
+  max-width:800px;
+  vertical-align:middle;
+  horizontal-align:middle;
+  background-size: cover;
 }
 
 @tailwind components;
