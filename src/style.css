@@ -101,9 +101,9 @@ iframe:active {
   @apply border-t-2 border-orange-400 transition ease-in-out duration-500;
 }
 
-background-image {
+.background-image {
   @apply antialiased;
-  position: absolute;
+  position: relative;
   z-index: 0;
 }
 
