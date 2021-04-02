@@ -93,7 +93,7 @@ iframe:active {
 .background-image {
   @apply antialiased;
   position: relative;
-  z-index: 1000000;
+  object-fit: cover;
 }
 
 @tailwind components;
