@@ -91,13 +91,13 @@ iframe:active {
 }
 
 .background-image {
-  @apply antialiased;
+  @apply antialiased w-full overflow-y-auto max-w-2xl;
   position: relative;
   object-fit: cover;
   width:100vw !important;
   min-height:200px;
-  left:-30px;
-  max-width:800px;
+  left:-40px;
+  /* max-width:768px; */
   vertical-align:middle;
   horizontal-align:middle;
   background-size: cover;
