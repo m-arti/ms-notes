@@ -103,7 +103,7 @@ iframe:active {
 
 background-image {
   @apply antialiased;
-  position: relative;
+  position: absolute;
   z-index: 0;
 }
 
