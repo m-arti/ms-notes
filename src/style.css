@@ -10,8 +10,17 @@ img {
   width: calc(100% - 50px);
 }
 
+header {
+  @apply antialiased;
+  background-color: white;
+  position: relative;
+  z-index: 1000000;
+}
+
 h1 {
   @apply antialiased text-3xl font-bold text-left mt-8;
+  position: relative;
+  z-index: 1000000;
 }
 
 h2 {
@@ -32,6 +41,8 @@ a:hover {
 
 p {
   @apply antialiased font-sans mb-4 text-black text-justify;
+  position: relative;
+  z-index: 1000001;
 }
 
 ul {
@@ -87,6 +98,11 @@ iframe:active {
   @apply border-t-2 border-orange-400 transition ease-in-out duration-500;
 }
 
+background-image {
+  @apply antialiased;
+  position: absolute;
+}
+
 @tailwind components;
 
 /* copied from tippy.js/animations/shift-away.css */
@@ -113,12 +129,19 @@ iframe:active {
 /* purgecss end ignore */
 @tailwind utilities;
 
+.notetag {
+  @apply antialiased;
+  position: relative;
+  z-index: 1000002;
+}
+
 /* .NotebookEmbed {
   @apply antialiased;
 } */
 
 .highlight {
   @apply antialiased bg-yellow-300 p-1 py-0 px-0 rounded-md;
+  position: relative;
 }
 
 .note-container {
