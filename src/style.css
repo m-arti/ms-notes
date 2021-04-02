@@ -101,12 +101,6 @@ iframe:active {
   @apply border-t-2 border-orange-400 transition ease-in-out duration-500;
 }
 
-.background-image {
-  @apply antialiased;
-  position: relative;
-  z-index: 0;
-}
-
 @tailwind components;
 
 /* copied from tippy.js/animations/shift-away.css */
@@ -150,6 +144,12 @@ iframe:active {
 
 .note-container {
   max-width: 100vw;
+}
+
+.background-image {
+  @apply antialiased;
+  position: relative;
+  z-index: 0;
 }
 
 /* 768px */
