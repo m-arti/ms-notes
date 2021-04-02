@@ -104,6 +104,7 @@ iframe:active {
 background-image {
   @apply antialiased;
   position: absolute;
+  z-index: 0;
 }
 
 @tailwind components;
