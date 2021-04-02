@@ -153,6 +153,15 @@ iframe:active {
   max-width: 100vw;
 }
 
+#hero-container {
+  position: relative;
+}
+
+#hero-container img {
+  width: 100%;
+  height: auto;
+}
+
 /* 768px */
 @media (max-width: 800px) {
   .note-columns-container {
