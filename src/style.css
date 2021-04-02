@@ -8,6 +8,9 @@ body {
 
 img {
   width: calc(100% - 50px);
+  outline: none;
+  border: none;
+  border-style: none;
 }
 
 header {
