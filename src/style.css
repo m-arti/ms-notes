@@ -91,13 +91,11 @@ iframe:active {
 }
 
 .background-image {
-  @apply antialiased w-full overflow-y-auto max-w-2xl;
+  @apply antialiased w-full max-w-2xl;
   position: relative;
   object-fit: cover;
-  width:100vw !important;
   min-height:200px;
-  left:-40px;
-  /* max-width:768px; */
+  max-width: 100vw;
   vertical-align:middle;
   horizontal-align:middle;
   background-size: cover;
@@ -152,7 +150,15 @@ iframe:active {
     width: unset !important;
   }
 
+  .background-image {
+    width: unset !important;
+  }
+
   .note-container {
+    width: 100% !important;
+  }
+
+  .background-image {
     width: 100% !important;
   }
 }
