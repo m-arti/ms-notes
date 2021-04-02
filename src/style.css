@@ -4,8 +4,6 @@
 body {
   @apply antialiased;
   height: 100vh;
-  position: relative;
-  z-index: 10;
 }
 
 img {
@@ -17,7 +15,6 @@ img {
 
 header {
   @apply antialiased;
-  background-color: white;
   position: relative;
   z-index: 1000000;
 }
