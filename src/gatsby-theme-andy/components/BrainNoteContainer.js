@@ -37,7 +37,7 @@ const StackedPageWrapper = ({
           obstructed ? `opacity-100` : `opacity-0`
         }`}
       >
-        <div className={`overflow-visible h-auto w-full transform rotate-90 origin-left absolute z-50 grid grid-cols-12 gap-8`}>
+        <div className={`overflow-visible h-auto w-full transform rotate-90 origin-left absolute z-50 grid grid-cols-12 gap-12`}>
 
           <div class="col-span-7">
             <LinkToStacked to={slug} className="no-underline text-gray-1000">
@@ -48,7 +48,7 @@ const StackedPageWrapper = ({
           <div className="w-full text-sm">
             <LinkToStacked to={slug} className=" no-underline">
             <p className={
-              `pt-1 my-0 pl-56 pr-64 tracking-normal text-orange-600
+              `pt-1 my-0 pl-56 pr-64 tracking-normal text-gray-600
               ${i==2 ? `font-normal text-lg` : `font-light`}`
             }>
             {(NUMOFPAGES >= 5 && i==2) ? `⋮` : ``}
