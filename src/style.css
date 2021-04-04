@@ -128,16 +128,12 @@ iframe:active {
 @tailwind utilities;
 
 .highlight {
-  @apply bg-yellow-200 px-1 -mx-1 rounded;
+  @apply antialiased bg-yellow-300 p-1 py-0 px-1 rounded-md;
+  position: relative;
 }
 
 /* .NotebookEmbed {
   @apply antialiased;
-} */
-
-/* .highlight {
-  @apply antialiased bg-yellow-300 p-1 py-0 px-0 rounded-md;
-  position: relative;
 } */
 
 .note-container {

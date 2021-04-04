@@ -8,15 +8,19 @@ import '../../style.css';
 
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
+let NUMOFPAGES = 0;
 
 // A wrapper component to render the content of a page when stacked
 const StackedPageWrapper = ({
   PageIndexProvider,
+  ContextProvider,
+  stackedPages,
   children,
   slug,
   title,
   overlay,
   obstructed,
+  highlighted,
   i,
 }) => (
   <PageIndexProvider value={i}>
@@ -33,10 +37,27 @@ const StackedPageWrapper = ({
           obstructed ? `opacity-100` : `opacity-0`
         }`}
       >
-        <div className={`overflow-visible w-full transform rotate-90 origin-left absolute z-10`}>
-          <LinkToStacked to={slug} className="object-center no-underline text-gray-1000">
-            <p className="m-1 h-full w-full font-medium tracking-normal">{title || slug}</p>
-          </LinkToStacked>
+        <div className={`overflow-visible h-auto w-full transform rotate-90 origin-left absolute z-50 grid grid-cols-12 gap-12`}>
+
+          <div class="col-span-11">
+            <LinkToStacked to={slug} className="no-underline text-gray-1000">
+              <p className="m-1 font-medium tracking-normal">{title || slug}</p>
+            </LinkToStacked>
+          </div>
+
+          <div className="w-full h-full text-sm">
+            <LinkToStacked to={slug} className=" no-underline">
+            <p className={
+              `h-full pt-1 my-0 pl-8 pr-64 tracking-normal text-orange-600
+              ${i==2 ? `font-normal text-lg` : `font-light`} md:pl-8 xl:pl-64`
+            }>
+            {(NUMOFPAGES >= 5 && i==2) ? `⋮` : ``}
+            {(NUMOFPAGES == 5 && i!=2) ? i+1 : ``}
+            {(NUMOFPAGES > 5 && (i < 2 || i >= (NUMOFPAGES-3))) ? i+1 : ``}
+            </p>
+            </LinkToStacked>
+          </div>
+
         </div>
       </div>
       <div
@@ -60,12 +81,15 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
     ContextProvider,
     PageIndexProvider,
     scrollContainer,
+    highlightStackedPage,
   ] = useStackedPagesProvider({
     firstPageSlug: slug,
     location,
     processPageQuery,
     pageWidth: NOTE_WIDTH,
   });
+
+  NUMOFPAGES = stackedPages.length + 1;
 
   return (
     <div className="text-gray-1000 flex flex-col min-h-screen h-screen">
@@ -76,9 +100,9 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         </title>
       </Helmet>
       <header>
-        <div className="py-0 pb-4 border-b px-6">
+        <div className="pb-4 px-6 border-b">
           <Link to="/" className="no-underline text-gray-1000">
-            <h3 className="font-medium tracking-normal">{siteMetadata.title}</h3>
+            <h3 className="tracking-normal">{siteMetadata.title}</h3>
           </Link>
         </div>
       </header>
@@ -100,6 +124,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
               title={note.title}
               overlay={stackedPageStates[slug] && stackedPageStates[slug].overlay}
               obstructed={stackedPageStates[slug] && stackedPageStates[slug].obstructed}
+              highlighted={stackedPageStates[slug] && stackedPageStates[slug].highlighted}
             >
               <BrainNote note={note} />
             </StackedPageWrapper>
@@ -109,11 +134,13 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
               <StackedPageWrapper
                 PageIndexProvider={PageIndexProvider}
                 i={i + 1}
+                NUMOFPAGES = {i}
                 key={page.slug}
                 slug={page.slug}
                 title={page.data.title}
                 overlay={stackedPageStates[page.slug] && stackedPageStates[page.slug].overlay}
                 obstructed={stackedPageStates[page.slug] && stackedPageStates[page.slug].obstructed}
+                highlighted={stackedPageStates[slug] && stackedPageStates[slug].highlighted}
               >
                 <BrainNote note={page.data} />
               </StackedPageWrapper>
