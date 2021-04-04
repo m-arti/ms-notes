@@ -65,7 +65,8 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
 
 const NoteTag = ({ children, color }) => (
   <div
-    className={`notetag antialiased bg-${color}-200 text-${color}-700 py-1 px-2 mb-5 mr-2 text-xs font-normal rounded-md inline-block`}
+    className=
+    {`notetag antialiased bg-${color}-200 text-black py-1 px-2 mb-5 mr-2 text-xs font-normal rounded-md inline-block`}
   >
     {children}
   </div>
