@@ -28,7 +28,7 @@ const StackedPageWrapper = ({
       className={`note-container md:max-w-2xl px-6 py-4 ${
         obstructed ? `overflow-y hover:bg-gray-200 transition ease-in-out duration-500` : `overflow-y-auto border-r`
       } bg-white md:sticky flex flex-col flex-shrink-0 ${
-        overlay ? 'shadow-xl' : 'border-r px-6'
+        overlay ? '' : 'border-r px-6'
       }`}
       style={{ left: PAD * i, right: - NOTE_WIDTH + PAD, width: NOTE_WIDTH }}
     >
