@@ -13,7 +13,7 @@ const DarkModeToggle = () => {
       aria-label={isDark ? "Activate light mode" : "Activate dark mode"}
       title={isDark ? "Activate light mode" : "Activate dark mode"}
     >
-      <input type="checkbox" checked={!isDark} onChange={toggleDarkMode}/>
+      <input type="checkbox" checked={isDark} onChange={toggleDarkMode}/>
       <div/>
     </label>
   );
