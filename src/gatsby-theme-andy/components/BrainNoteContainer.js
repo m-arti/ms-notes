@@ -49,12 +49,12 @@ const StackedPageWrapper = ({
             <LinkToStacked to={slug} className=" no-underline">
             <p className={
               `pt-1 my-0 pl-56 pr-64 tracking-normal text-gray-600
-              ${i==2 ? `font-normal text-lg` : `font-light`}`
+              ${i===2 ? `font-normal text-lg` : `font-light`}`
             }>
-            {(NUMOFPAGES >= 5 && i==2) ? `⋮` : ``}
-            {(NUMOFPAGES == 5 && i!=2) ? i+1 : ``}
+            {(NUMOFPAGES >= 5 && i===2) ? `⋮` : ``}
+            {(NUMOFPAGES === 5 && i!==2) ? i+1 : ``}
             {(NUMOFPAGES > 5 && (i < 2 || i >= (NUMOFPAGES-3))) ? i+1 : ``}
-            {(i >= 5 && ((i+1) % 2 == 0) && i < (NUMOFPAGES-3)) ? i+1 : ``}
+            {(i >= 5 && ((i+1) % 2 === 0) && i < (NUMOFPAGES-3)) ? i+1 : ``}
             </p>
             </LinkToStacked>
           </div>
