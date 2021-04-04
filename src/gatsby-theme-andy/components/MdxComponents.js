@@ -5,22 +5,38 @@ import 'tippy.js/animations/shift-away.css';
 import { LinkToStacked } from 'react-stacked-pages-hook';
 import { Link } from 'gatsby';
 
+import "./dark-mode-toggle.css";
+import useDarkMode from "use-dark-mode";
+import DarkModeToggle from "./dark-mode-toggle";
+const ColourMode = () => {
+  const darkMode = useDarkMode(false);
+  return (darkMode.value);
+};
+
 // import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
 
 // Animation styles are imported in `src/styles.css`
 
 // TODO cmd+click open page in new tab
 
-const innerLinkStyles = `text-blue-600 px-1 -mx-1 rounded hover:bg-indigo-100 focus:bg-indigo-100`;
+const innerLinkStyles = `text-blue-600 px-1 -mx-1 rounded`;
 
 const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   if (!href) href = restProps.to;
   if (!href.match(/^http/))
     return noPopups ? (
-      <Link {...restProps} to={href} className={innerLinkStyles} />
+      <Link {...restProps} to={href} className={
+        `
+        ${ ColourMode() ? 'hover:bg-gray-500 focus:bg-gray-500' : 'hover:bg-indigo-100'} ${innerLinkStyles}
+        `
+      }/>
     ) : (
       <Tippy content={popups[href.replace(/^\//, '')]} placement="right" animation="shift-away" duration="500" arrow={true} interactive={true} hideOnClick={true} inlinePositioning={true} interactiveDebounce="100" plugins={[inlinePositioning]}>
-        <LinkToStacked {...restProps} to={href} className={innerLinkStyles} />
+        <LinkToStacked {...restProps} to={href} className={
+          `
+          ${ ColourMode() ? 'hover:bg-gray-400' : 'hover:bg-indigo-100'} ${innerLinkStyles}
+          `
+        } />
       </Tippy>
     );
   return noPopups || restProps.children === href ? (
@@ -35,7 +51,11 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
       // interactiveDebounce="100"
       // interactiveBorder="30"
       content={
-        <div className="py-1 px-2 bg-white rounded text-sm font-light text-blue-600 shadow-md">{href}</div>
+        <div className={
+          `py-1 px-2 rounded text-sm text-blue-600 shadow-md
+          ${ ColourMode() ? 'bg-gray-800' : 'bg-white'} ${innerLinkStyles}
+          `
+        }>{href}</div>
       }
     >
       <a className="" {...restProps} href={href} />

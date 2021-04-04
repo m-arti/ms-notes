@@ -42,6 +42,7 @@
     "remark-math": "^4.0.0",
     "remark-slug": "^6.0.0",
     "update": "^0.7.4",
+    "use-dark-mode": "^2.3.1",
     "webpack": "^4.46.0",
     "wolfram-notebook-embedder": "^0.2.1"
   },

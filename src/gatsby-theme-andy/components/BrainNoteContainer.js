@@ -5,6 +5,13 @@ import { Helmet } from 'react-helmet';
 
 import BrainNote from './BrainNote';
 import '../../style.css';
+import "./dark-mode-toggle.css";
+import useDarkMode from "use-dark-mode";
+import DarkModeToggle from "./dark-mode-toggle";
+const ColourMode = () => {
+  const darkMode = useDarkMode(false);
+  return (darkMode.value);
+};
 
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
@@ -25,12 +32,26 @@ const StackedPageWrapper = ({
 }) => (
   <PageIndexProvider value={i}>
     <div
-      className={`note-container md:max-w-2xl px-6 py-4 ${
-        obstructed ? `overflow-y hover:bg-gray-200 transition ease-in-out duration-500` : `overflow-y-auto border-r`
-      } bg-white md:sticky flex flex-col flex-shrink-0 ${
-        overlay ? '' : 'border-r px-6'
-      }`}
-      style={{ left: PAD * i, right: - NOTE_WIDTH + PAD, width: NOTE_WIDTH }}
+      className={
+        `
+        note-container md:max-w-2xl px-6 py-4
+        ${obstructed ? `overflow-y hover:bg-gray-200 transition ease-in-out duration-500` : `overflow-y-auto border-r`}
+        ${ ColourMode() ? 'bg-black' : 'bg-white'}
+         md:sticky flex flex-col flex-shrink-0
+        ${overlay ? '' : 'border-r px-6'}
+        ${ ColourMode() ? 'border-gray-800' : ''}
+        `
+      }
+      style={{
+        left: PAD * i,
+        right: - NOTE_WIDTH + PAD,
+        width: NOTE_WIDTH,
+        boxShadow:
+        `
+        ${ ColourMode() && overlay ? '0 80px 15px -3px rgba(103, 128, 159, .3), 0 4px 4px -2px rgba(103, 128, 159, .3)' : ''}
+        ${ !ColourMode() && overlay ? '0 80px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 4px -2px rgba(0, 0, 0, 0.05)' : ''}
+        `
+      }}
     >
       <div
         className={`md:block hidden transition-opacity duration-100 ${
@@ -48,7 +69,7 @@ const StackedPageWrapper = ({
           <div className="w-full text-sm">
             <LinkToStacked to={slug} className=" no-underline">
             <p className={
-              `pt-1 my-0 pl-56 pr-64 tracking-normal text-gray-600
+              `pt-1 my-0 pl-56 pr-24 tracking-normal text-gray-600
               ${i===2 ? `font-normal text-lg` : `font-light`}`
             }>
             {(NUMOFPAGES >= 5 && i===2) ? `⋮` : ``}
@@ -100,11 +121,14 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           {siteMetadata.title} — {note.title}
         </title>
       </Helmet>
-      <header>
-        <div className="pb-4 px-6 border-b">
+      <header className = {`border-b ${ ColourMode() ? 'border-gray-800 bg-gray-800 bg-opacity-50' : ''}`}>
+        <div className="pb-4">
           <Link to="/" className="no-underline text-gray-1000">
             <h3 className="tracking-normal">{siteMetadata.title}</h3>
           </Link>
+        </div>
+        <div className="controls">
+          <DarkModeToggle/>
         </div>
       </header>
 
