@@ -13,23 +13,6 @@ import SEO from "../components/seo"
 const NOTE_MAX_WIDTH = 800; // 768;
 const popupStyles = `w-150 px-4 pb-2 rounded-md shadow-xl`;
 
-
-//check if device is in dark mode
-function checkDarkMode() {
-  if (
-    window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches
-  ) {
-    return true
-  }
-  return false
-}
-if (checkDarkMode()) {
-  document.documentElement.classList.add('mode-dark')
-} else {
-  document.documentElement.classList.remove('mode-dark')
-}
-
 const BrainNote = ({ note }) => {
   const [width] = useWindowWidth();
   let references = [];

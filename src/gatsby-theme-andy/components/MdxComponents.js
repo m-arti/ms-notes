@@ -11,22 +11,6 @@ import { Link } from 'gatsby';
 
 // TODO cmd+click open page in new tab
 
-//check if device is in dark mode
-function checkDarkMode() {
-  if (
-    window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches
-  ) {
-    return true
-  }
-  return false
-}
-if (checkDarkMode()) {
-  document.documentElement.classList.add('mode-dark')
-} else {
-  document.documentElement.classList.remove('mode-dark')
-}
-
 const innerLinkStyles = `text-blue-600 px-1 -mx-1 rounded`;
 
 const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {

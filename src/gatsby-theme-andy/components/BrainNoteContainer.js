@@ -10,22 +10,6 @@ const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
 let NUMOFPAGES = 0;
 
-//check if device is in dark mode
-function checkDarkMode() {
-  if (
-    window.matchMedia &&
-    window.matchMedia('(prefers-color-scheme: dark)').matches
-  ) {
-    return true
-  }
-  return false
-}
-if (checkDarkMode()) {
-  document.documentElement.classList.add('mode-dark')
-} else {
-  document.documentElement.classList.remove('mode-dark')
-}
-
 // A wrapper component to render the content of a page when stacked
 const StackedPageWrapper = ({
   PageIndexProvider,
