@@ -45,7 +45,6 @@ const StackedPageWrapper = ({
         left: PAD * i,
         right: - NOTE_WIDTH + PAD,
         width: NOTE_WIDTH,
-        backgroundColor: `${ isDark ? 'rgba(0, 0, 0, 1)' : 'rgba(255, 255, 255, 1)'}`,
         boxShadow:`${ isDark && overlay ? '0 80px 15px -3px rgba(103, 128, 159, .3), 0 4px 4px -2px rgba(103, 128, 159, .3)' : ''} ${ !isDark && overlay ? '0 80px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 4px -2px rgba(0, 0, 0, 0.05)' : ''}`
       }}
     >

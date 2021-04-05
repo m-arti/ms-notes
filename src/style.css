@@ -39,7 +39,7 @@ body.light-mode{
 }
 body.dark-mode{
   @apply antialiased text-gray-200 bg-black;
-  height: 100vh;
+  background-color: rgba(0, 0, 0, 1) !important;
 }
 
 img {
