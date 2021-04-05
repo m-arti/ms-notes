@@ -12,7 +12,6 @@ const ColourMode = () => {
   const darkMode = useDarkMode(false);
   return (darkMode.value);
 };
-ColourMode = false;
 
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
