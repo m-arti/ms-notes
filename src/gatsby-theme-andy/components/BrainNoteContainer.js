@@ -9,7 +9,7 @@ import '../../style.css';
 import useDarkMode from "use-dark-mode";
 import DarkModeToggle from "./dark-mode-toggle";
 const ColourMode = () => {
-  const darkMode = useDarkMode(false);
+  const darkMode = useDarkMode(true);
   return darkMode.value;
 };
 
