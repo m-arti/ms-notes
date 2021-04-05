@@ -6,6 +6,7 @@ import "./dark-mode-toggle.css";
 
 const DarkModeToggle = () => {
   const { value: isDark, toggle: toggleDarkMode } = useDarkMode(false);
+  isDark = false;
 
   return (
     <label

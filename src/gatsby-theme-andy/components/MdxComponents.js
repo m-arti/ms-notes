@@ -12,6 +12,7 @@ const ColourMode = () => {
   const darkMode = useDarkMode(false);
   return (darkMode.value);
 };
+ColourMode = false;
 
 // import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
 
