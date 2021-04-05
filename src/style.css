@@ -13,7 +13,6 @@ header {
   padding-left: 23px;
   padding-right: 23px;
   transition: background-color 0.3s ease;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,9 +23,8 @@ header.controls {
   display: flex;
 }
 
-header.dark-mode {
-  @apply bg-gray-800 text-black;
-  background-color: rgba(0.255, 0.255, 0.255, .8);
+.dark-mode header{
+  background-color: rgba(5, 5, 5, .8);
 }
 
 body {
@@ -35,7 +33,7 @@ body {
 }
 
 body.dark-mode{
-  @apply antialiased text-gray-200 bg-gray-900;
+  @apply antialiased text-gray-200 bg-black;
   height: 100vh;
 }
 
@@ -50,46 +48,23 @@ h1 {
   @apply antialiased text-3xl font-bold text-left mt-8;
 }
 
-h1.dark-mode{
-  @apply antialiased text-gray-200;
-}
-
 h2 {
   @apply antialiased text-2xl font-medium text-left mt-8 -mb-2;
-}
-
-h2.dark-mode{
-  @apply antialiased text-gray-200;
 }
 
 h3 {
   @apply antialiased font-medium text-left mt-4;
 }
 
-h3.dark-mode{
-  @apply antialiased text-gray-200;
-}
-
 a {
   @apply antialiased underline;
 }
-
 a:hover {
   @apply text-blue-700 no-underline;
 }
 
 p {
   @apply antialiased font-sans mb-4 text-justify;
-}
-
-p.dark-mode{
-  @apply antialiased text-gray-200;
-  text: #fff !important;
-}
-
-p>ul.dark-mode{
-  @apply antialiased text-gray-200;
-  text: #fff !important;
 }
 
 ul {
@@ -103,8 +78,7 @@ ol {
 hr {
   @apply my-4;
 }
-
-hr.dark-mode {
+.dark-mode hr {
   @apply border-gray-800;
 }
 
@@ -115,6 +89,9 @@ hr.dark-mode {
 blockquote {
   @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-gray-400;
 }
+.dark-mode blockquote {
+  @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-gray-800;
+}
 
 blockquote p {
   @apply antialiased m-0 font-serif text-lg text-justify leading-relaxed align-middle italic;
@@ -123,42 +100,49 @@ blockquote p {
 code {
   @apply antialiased whitespace-pre lining-nums slashed-zero tabular-nums text-sm text-gray-800 bg-gray-200 p-1 py-0 px-1 rounded-sm;
 }
-
-code.dark-mode {
-  @apply antialiased text-gray-800 bg-gray-500;
+.dark-mode code {
+  @apply antialiased text-gray-400 bg-gray-900;
 }
 
 pre {
   @apply antialiased mb-4 p-2 rounded-md bg-gray-200;
   overflow-x: auto;
 }
-
-pre.dark-mode {
-  @apply antialiased text-gray-800 bg-gray-500;
+.dark-mode pre {
+  @apply antialiased mb-4 p-2 rounded-md bg-gray-900;
+  overflow-x: auto;
 }
 
 pre>code {
   @apply antialiased p-0 m-0 mb-2 bg-transparent;
 }
 
-pre>code.dark-mode {
-  @apply antialiased text-gray-800 bg-gray-500;
-}
-
 iframe {
   @apply antialiased mt-4 mb-6 pb-6 align-middle border-t-2 border-gray-300;
+}
+.dark-mode iframe {
+  @apply antialiased mt-4 mb-6 pb-6 align-middle border-t-4 border-gray-500;
 }
 
 iframe:hover {
   @apply border-t-2 border-orange-400 transition ease-in-out duration-500;
 }
+.dark-mode iframe:hover {
+  @apply border-t-4 border-blue-400 transition ease-in-out duration-500;
+}
 
 iframe:focus {
   @apply border-t-2 border-orange-400 transition ease-in-out duration-500;
 }
+.dark-mode iframe:focus {
+  @apply border-t-4 border-blue-400 transition ease-in-out duration-500;
+}
 
 iframe:active {
   @apply border-t-2 border-orange-400 transition ease-in-out duration-500;
+}
+.dark-mode iframe:active {
+  @apply border-t-4 border-blue-400 transition ease-in-out duration-500;
 }
 
 .background-image {
@@ -170,6 +154,9 @@ iframe:active {
   vertical-align: middle;
   horizontal-align: middle;
   background-size: cover;
+}
+.dark-mode .background-image {
+  @apply antialiased w-full max-w-2xl opacity-75;
 }
 
 @tailwind components;
@@ -202,6 +189,10 @@ iframe:active {
   @apply antialiased bg-yellow-300 p-1 py-0 px-1 rounded-md;
   position: relative;
 }
+.dark-mode .highlight{
+  @apply antialiased bg-yellow-800 p-1 py-0 px-1 rounded-md;
+  position: relative;
+}
 
 /* .NotebookEmbed {
   @apply antialiased;
@@ -210,10 +201,6 @@ iframe:active {
 .note-container {
   max-width: 100vw;
   padding-top: 80px !important;
-}
-
-.note-columns-container.dark-mode{
-  @apply antialiased text-gray-200 bg-red-500;
 }
 
 /* 768px */

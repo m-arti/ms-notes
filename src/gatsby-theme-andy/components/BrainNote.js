@@ -32,7 +32,7 @@ const BrainNote = ({ note }) => {
       >
         <div className={
           `p-2 ml-2 mb-2 text-gray-600 rounded-md hover:translate-x-1 hover:bg-opacity-50
-          ${ ColourMode() ? 'transform hover:text-white hover:bg-gray-800' : 'transform hover:text-gray-700 hover:bg-gray-400 '} transition duration-500
+          ${ ColourMode() ? 'transform hover:text-gray-200 hover:bg-gray-800' : 'transform hover:text-gray-700 hover:bg-gray-400 '} transition duration-500
           `
         }>
           <h4 className="text-sm font-medium">📄&nbsp; {reference.title}</h4>

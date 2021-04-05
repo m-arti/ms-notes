@@ -5,12 +5,12 @@ import { Helmet } from 'react-helmet';
 
 import BrainNote from './BrainNote';
 import '../../style.css';
-import "./dark-mode-toggle.css";
+// import "./dark-mode-toggle.css";
 import useDarkMode from "use-dark-mode";
 import DarkModeToggle from "./dark-mode-toggle";
 const ColourMode = () => {
   const darkMode = useDarkMode(false);
-  return (darkMode.value);
+  return darkMode.value;
 };
 
 const NOTE_WIDTH = 650; // 576; // w-xl
@@ -35,11 +35,10 @@ const StackedPageWrapper = ({
       className={
         `
         note-container md:max-w-2xl px-6 py-4
-        ${obstructed ? `overflow-y hover:bg-gray-200 transition ease-in-out duration-500` : `overflow-y-auto border-r`}
-        ${ ColourMode() ? 'bg-black' : 'bg-white'}
+        ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r`}
          md:sticky flex flex-col flex-shrink-0
         ${overlay ? '' : 'border-r px-6'}
-        ${ ColourMode() ? 'border-gray-800' : ''}
+        ${ ColourMode() ? 'border-gray-800 bg-black' : 'bg-white'}
         `
       }
       style={{
