@@ -39,7 +39,7 @@ const StackedPageWrapper = ({
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r`}
          md:sticky flex flex-col flex-shrink-0
         ${overlay ? '' : 'border-r px-6 '}
-        ${ isDark ? 'border-gray-800' : ''}`
+        ${ isDark ? 'border-gray-800 bg-black' : 'bg-white'}`
       }
       style={{
         left: PAD * i,
