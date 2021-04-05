@@ -209,15 +209,11 @@ iframe:active {
 
 .note-container {
   max-width: 100vw;
-<<<<<<< HEAD
   padding-top: 80px !important;
 }
 
 .note-columns-container.dark-mode{
   @apply antialiased text-gray-200 bg-red-500;
-=======
-  padding-top: 70px !important;
->>>>>>> parent of b91a677 (adjust header and shadow)
 }
 
 /* 768px */

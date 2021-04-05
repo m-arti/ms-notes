@@ -32,7 +32,6 @@ const StackedPageWrapper = ({
 }) => (
   <PageIndexProvider value={i}>
     <div
-<<<<<<< HEAD
       className={
         `
         note-container md:max-w-2xl px-6 py-4
@@ -53,14 +52,6 @@ const StackedPageWrapper = ({
         ${ !ColourMode() && overlay ? '0 80px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 4px -2px rgba(0, 0, 0, 0.05)' : ''}
         `
       }}
-=======
-      className={`note-container md:max-w-2xl px-6 py-4 ${
-        obstructed ? `overflow-y hover:bg-gray-200 transition ease-in-out duration-500` : `overflow-y-auto border-r`
-      } bg-white md:sticky flex flex-col flex-shrink-0 ${
-        overlay ? 'shadow-xl' : 'border-r px-6'
-      }`}
-      style={{ left: PAD * i, right: - NOTE_WIDTH + PAD, width: NOTE_WIDTH }}
->>>>>>> parent of b91a677 (adjust header and shadow)
     >
       <div
         className={`md:block hidden transition-opacity duration-100 ${
