@@ -7,7 +7,6 @@ import { Link } from 'gatsby';
 
 import "./dark-mode-toggle.css";
 import useDarkMode from "use-dark-mode";
-import DarkModeToggle from "./dark-mode-toggle";
 const ColourMode = () => {
   const darkMode = useDarkMode(false);
   return (darkMode.value);

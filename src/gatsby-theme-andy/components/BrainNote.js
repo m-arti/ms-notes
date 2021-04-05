@@ -8,7 +8,6 @@ import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
 
 import useDarkMode from "use-dark-mode";
-import DarkModeToggle from "./dark-mode-toggle";
 const ColourMode = () => {
   const darkMode = useDarkMode(false);
   return (darkMode.value);
