@@ -5,7 +5,7 @@ import useDarkMode from "use-dark-mode";
 import "./dark-mode-toggle.css";
 
 const DarkModeToggle = () => {
-  const { value: isDark, toggle: toggleDarkMode, enable:enableDarkMode} = useDarkMode(false);
+  const { value: isDark, toggle: toggleDarkMode } = useDarkMode(false);
 
   return (
     <label
@@ -13,7 +13,7 @@ const DarkModeToggle = () => {
       aria-label={isDark ? "Activate light mode" : "Activate dark mode"}
       title={isDark ? "Activate light mode" : "Activate dark mode"}
     >
-      <input type="checkbox" checked={!isDark} onChange={toggleDarkMode} onClick={enableDarkMode}/>
+      <input type="checkbox" checked={isDark} onChange={toggleDarkMode}/>
       <div/>
     </label>
   );
