@@ -104,7 +104,7 @@ const BrainNote = ({ note }) => {
           If you'd like to discuss or share an idea, do get in touch.<br/>
           Send me a {' '}
           <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a>{' '}
-          on Twitter or an <a href="mailto:marti.samuel1@gmail.com">email</a>.
+          on Twitter or an <a href="mailto:marti.samuel1@gmail.com">email</a>. ℳ𝒮
         </p>
       </div>
     </MDXProvider>
