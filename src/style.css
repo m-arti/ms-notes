@@ -31,7 +31,6 @@ body {
   @apply antialiased;
   height: 100vh;
 }
-
 body.dark-mode{
   @apply antialiased text-gray-200 bg-black;
   height: 100vh;
@@ -204,6 +203,10 @@ iframe:active {
 }
 .dark-mode .note-container{
   @apply text-gray-200 bg-black;
+}
+.note-container.dark-mode{
+  @apply antialiased text-gray-200 bg-black;
+  height: 100vh;
 }
 
 /* 768px */
