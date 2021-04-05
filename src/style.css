@@ -187,7 +187,7 @@ iframe:active {
   transform: translateX(-10px);
 }
 
-/* purgecss end ignore */
+/*! purgecss end ignore */
 @tailwind utilities;
 
 .highlight {
@@ -226,5 +226,4 @@ iframe:active {
     width: 100% !important;
   }
 }
-
-/* purgecss end ignore */
+/*! purgecss end ignore */

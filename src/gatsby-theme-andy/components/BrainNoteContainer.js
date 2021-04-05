@@ -5,19 +5,26 @@ import { Helmet } from 'react-helmet';
 
 import BrainNote from './BrainNote';
 import '../../style.css';
-// import "./dark-mode-toggle.css";
-import useDarkMode from "use-dark-mode";
-import { isDark } from "./dark-mode-toggle";
-import DarkModeToggle from "./dark-mode-toggle";
-
-// const ColourMode = () => {
-//   const darkMode = useDarkMode(true);
-//   return darkMode.value;
-// };
 
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
 let NUMOFPAGES = 0;
+
+//check if device is in dark mode
+function checkDarkMode() {
+  if (
+    window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  ) {
+    return true
+  }
+  return false
+}
+if (checkDarkMode()) {
+  document.documentElement.classList.add('mode-dark')
+} else {
+  document.documentElement.classList.remove('mode-dark')
+}
 
 // A wrapper component to render the content of a page when stacked
 const StackedPageWrapper = ({
@@ -37,15 +44,13 @@ const StackedPageWrapper = ({
       className={
         `note-container md:max-w-2xl px-6 py-4 bg-opacity-100
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r`}
-        ${ isDark ? 'border-gray-800 bg-black' : 'bg-white'}
-        md:sticky flex flex-col flex-shrink-0
-        ${overlay ? '' : 'border-r px-6 '}`
+        bg-white dark:border-gray-800 bg-black md:sticky flex flex-col flex-shrink-0
+        ${overlay ? 'shadow-xl' : 'border-r px-6 '}`
       }
       style={{
         left: PAD * i,
         right: - NOTE_WIDTH + PAD,
-        width: NOTE_WIDTH,
-        boxShadow:`${ isDark && overlay ? '0 80px 15px -3px rgba(103, 128, 159, .3), 0 4px 4px -2px rgba(103, 128, 159, .3)' : ''} ${ !isDark && overlay ? '0 80px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 4px -2px rgba(0, 0, 0, 0.05)' : ''}`
+        width: NOTE_WIDTH
       }}
     >
       <div
@@ -116,14 +121,11 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           {siteMetadata.title} — {note.title}
         </title>
       </Helmet>
-      <header className = {`border-b ${ isDark ? 'border-gray-800 bg-gray-800 bg-opacity-50' : ''}`}>
+      <header className ="border-b dark:border-gray-800 bg-gray-800 bg-opacity-50 dark:text-teal-400">
         <div className="pb-4">
           <Link to="/" className="no-underline text-gray-1000">
             <h3 className="tracking-normal">{siteMetadata.title}</h3>
           </Link>
-        </div>
-        <div className="controls">
-          <DarkModeToggle/>
         </div>
       </header>
 

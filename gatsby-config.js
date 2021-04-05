@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Martins' Notes`,
-    author: `@m-arti`,
+    author: `Martins Samuel`,
     description: `Hello! I'm Martins. I'm a researcher and designer. This is a mélange of my musings.`,
     homepage: `https://notes.martinssamuel.com`,
   },
@@ -18,7 +18,7 @@ module.exports = {
       options: {
         name: `Martins' Notes`,
         short_name: `Martins' Notes`,
-        description: `Hello! I'm Martins. I'm a researcher and designer. This is a mélange of my musings.`,
+        description: `Hello! I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,

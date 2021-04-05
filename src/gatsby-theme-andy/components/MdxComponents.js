@@ -5,18 +5,27 @@ import 'tippy.js/animations/shift-away.css';
 import { LinkToStacked } from 'react-stacked-pages-hook';
 import { Link } from 'gatsby';
 
-import "./dark-mode-toggle.css";
-import useDarkMode from "use-dark-mode";
-const ColourMode = () => {
-  const darkMode = useDarkMode(false);
-  return (darkMode.value);
-};
-
 // import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
 
 // Animation styles are imported in `src/styles.css`
 
 // TODO cmd+click open page in new tab
+
+//check if device is in dark mode
+function checkDarkMode() {
+  if (
+    window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  ) {
+    return true
+  }
+  return false
+}
+if (checkDarkMode()) {
+  document.documentElement.classList.add('mode-dark')
+} else {
+  document.documentElement.classList.remove('mode-dark')
+}
 
 const innerLinkStyles = `text-blue-600 px-1 -mx-1 rounded`;
 
@@ -24,18 +33,11 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   if (!href) href = restProps.to;
   if (!href.match(/^http/))
     return noPopups ? (
-      <Link {...restProps} to={href} className={
-        `
-        ${ ColourMode() ? 'hover:bg-gray-500 focus:bg-gray-500' : 'hover:bg-indigo-100'} ${innerLinkStyles}
-        `
+      <Link {...restProps} to={href} className={`${innerLinkStyles} hover:bg-indigo-100 dark:hover:bg-gray-500 focus:bg-gray-500`
       }/>
     ) : (
       <Tippy content={popups[href.replace(/^\//, '')]} placement="right" animation="shift-away" duration="500" arrow={true} interactive={true} hideOnClick={true} inlinePositioning={true} interactiveDebounce="100" plugins={[inlinePositioning]}>
-        <LinkToStacked {...restProps} to={href} className={
-          `
-          ${ ColourMode() ? 'hover:bg-gray-400' : 'hover:bg-indigo-100'} ${innerLinkStyles}
-          `
-        } />
+        <LinkToStacked {...restProps} to={href} className={`${innerLinkStyles} hover:bg-indigo-100 dark: hover:bg-gray-400`} />
       </Tippy>
     );
   return noPopups || restProps.children === href ? (
@@ -50,11 +52,8 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
       // interactiveDebounce="100"
       // interactiveBorder="30"
       content={
-        <div className={
-          `py-1 px-2 rounded text-sm text-blue-600 shadow-md
-          ${ ColourMode() ? 'bg-gray-800' : 'bg-white'} ${innerLinkStyles}
-          `
-        }>{href}</div>
+        <div className={`${innerLinkStyles}
+          py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-white dark:bg-gray-800`}>{href}</div>
       }
     >
       <a className="" {...restProps} href={href} />
