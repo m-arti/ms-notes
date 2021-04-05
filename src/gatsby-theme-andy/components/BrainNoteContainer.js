@@ -9,10 +9,11 @@ import '../../style.css';
 import useDarkMode from "use-dark-mode";
 import { isDark } from "./dark-mode-toggle";
 import DarkModeToggle from "./dark-mode-toggle";
-const ColourMode = () => {
-  const darkMode = useDarkMode(true);
-  return darkMode.value;
-};
+
+// const ColourMode = () => {
+//   const darkMode = useDarkMode(true);
+//   return darkMode.value;
+// };
 
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
@@ -38,14 +39,14 @@ const StackedPageWrapper = ({
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r`}
          md:sticky flex flex-col flex-shrink-0
         ${overlay ? '' : 'border-r px-6 '}
-        ${ ColourMode() ? 'border-gray-800' : ''}`
+        ${ isDark ? 'border-gray-800' : ''}`
       }
       style={{
         left: PAD * i,
         right: - NOTE_WIDTH + PAD,
         width: NOTE_WIDTH,
         backgroundColor: `${ isDark ? 'rgba(0, 0, 0, 1)' : 'rgba(255, 255, 255, 1)'}`,
-        boxShadow:`${ ColourMode() && overlay ? '0 80px 15px -3px rgba(103, 128, 159, .3), 0 4px 4px -2px rgba(103, 128, 159, .3)' : ''} ${ !ColourMode() && overlay ? '0 80px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 4px -2px rgba(0, 0, 0, 0.05)' : ''}`
+        boxShadow:`${ isDark && overlay ? '0 80px 15px -3px rgba(103, 128, 159, .3), 0 4px 4px -2px rgba(103, 128, 159, .3)' : ''} ${ !isDark && overlay ? '0 80px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 4px -2px rgba(0, 0, 0, 0.05)' : ''}`
       }}
     >
       <div
@@ -116,7 +117,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           {siteMetadata.title} — {note.title}
         </title>
       </Helmet>
-      <header className = {`border-b ${ ColourMode() ? 'border-gray-800 bg-gray-800 bg-opacity-50' : ''}`}>
+      <header className = {`border-b ${ isDark ? 'border-gray-800 bg-gray-800 bg-opacity-50' : ''}`}>
         <div className="pb-4">
           <Link to="/" className="no-underline text-gray-1000">
             <h3 className="tracking-normal">{siteMetadata.title}</h3>
