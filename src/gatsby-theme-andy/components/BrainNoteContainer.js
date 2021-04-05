@@ -34,8 +34,8 @@ const StackedPageWrapper = ({
     <div
       className={
         `
-        ${ ColourMode() ? 'border-gray-800 bg-black' : 'bg-white'}
         note-container md:max-w-2xl px-6 py-4
+        ${ ColourMode()===false ? 'border-gray-800 bg-black' : 'bg-white'}
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r`}
          md:sticky flex flex-col flex-shrink-0
         ${overlay ? '' : 'border-r px-6 '}
