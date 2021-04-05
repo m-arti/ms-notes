@@ -31,6 +31,9 @@ body {
   @apply antialiased;
   height: 100vh;
 }
+body.light-mode{
+  @apply antialiased text-black bg-white;
+}
 body.dark-mode{
   @apply antialiased text-gray-200 bg-black;
   height: 100vh;
