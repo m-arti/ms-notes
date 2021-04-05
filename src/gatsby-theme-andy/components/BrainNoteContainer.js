@@ -43,6 +43,7 @@ const StackedPageWrapper = ({
         left: PAD * i,
         right: - NOTE_WIDTH + PAD,
         width: NOTE_WIDTH,
+        prefersColorScheme: 'light',
         backgroundColor: `${ ColourMode() ? 'rgba(0, 0, 0, 1)' : 'rgba(255, 255, 255, 1)'}`,
         boxShadow:
         `
