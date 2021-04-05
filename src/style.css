@@ -194,7 +194,7 @@ iframe:active {
   @apply antialiased bg-yellow-300 p-1 py-0 px-1 rounded-md;
   position: relative;
 }
-.dark-mode .highlight{
+.dark-mode .highlight {
   @apply antialiased bg-yellow-800 p-1 py-0 px-1 rounded-md;
   position: relative;
 }
@@ -207,11 +207,11 @@ iframe:active {
   max-width: 100vw;
   padding-top: 80px !important;
 }
-.light-mode .note-container{
+.light-mode .note-container {
   @apply bg-white;
   background-color: rgba(255, 255, 255, 1) !important;
 }
-.dark-mode .note-container{
+.dark-mode .note-container {
   @apply text-gray-200 bg-black;
   background-color: rgba(0, 0, 0, 1) !important;
 }
