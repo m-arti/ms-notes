@@ -27,7 +27,7 @@ const BrainNote = ({ note }) => {
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
         key={reference.slug}
       >
-        <div className={"p-2 ml-2 mb-2 text-gray-600 rounded-md hover:translate-x-1 hover:bg-opacity-50  hover:text-gray-700 hover:bg-gray-300 dark:hover:bg-gray-700 transform transition duration-500"}>
+        <div className={"p-2 ml-2 mb-2 text-gray-600 rounded-md hover:bg-opacity-50 hover:text-gray-700 hover:bg-gray-300 dark:hover:bg-gray-700 transform transition duration-500"}>
           <h4 className="text-sm font-medium"><span role="img" aria-label="note emoji">📄</span>&nbsp; {reference.title}</h4>
           <p className="text-sm m-0 mb-0 text-gray-600 text-justify">{reference.childMdx.excerpt}</p>
         </div>
@@ -38,7 +38,7 @@ const BrainNote = ({ note }) => {
       referenceBlock = (
         <>
           <h3 className="mt-1 mb-2 font-normal text-gray-600">Referred in:</h3>
-          <div className={"mb-4 border-l-2 border-gray-300 hover:border-gray-500"}>{references}</div>
+          <div className={"mb-4 border-l-2 border-gray-300 hover:border-gray-400"}>{references}</div>
           <hr className="mx-auto pt-2 mt-6 border-gray-300 dark:border-gray-700"/>
         </>
       );
