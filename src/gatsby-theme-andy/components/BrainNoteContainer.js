@@ -32,7 +32,7 @@ const StackedPageWrapper = ({
         `note-container nightwind bg-white md:max-w-2xl px-6 py-4 bg-opacity-100
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r dark:border-gray-800`}
         bg-white text-black dark:text-gray-200 md:sticky flex flex-col flex-shrink-0
-        ${overlay ? 'shadow-xl border-l border-white dark:border-gray-800' : 'border-r border-gray-200 dark:border-gray-800 px-6'}`
+        ${overlay ? 'shadow-xl border-l  dark:border-gray-800' : 'border-r border-gray-200 dark:border-gray-800 px-6'}`
       }
       style={{
         left: PAD * i,
