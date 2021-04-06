@@ -131,7 +131,7 @@ iframe {
 }
 
 .dark .background-image {
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 @tailwind components;

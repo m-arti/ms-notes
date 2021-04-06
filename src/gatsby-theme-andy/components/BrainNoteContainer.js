@@ -101,7 +101,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   NUMOFPAGES = stackedPages.length + 1;
 
   return (
-    <div className="text-gray-1000 flex flex-col min-h-screen h-screen">
+    <div className="nightwind text-black flex flex-col min-h-screen h-screen">
       <Helmet>
         <script
           dangerouslySetInnerHTML={{
@@ -114,7 +114,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           {siteMetadata.title} — {note.title}
         </title>
       </Helmet>
-      <header className ="border-b dark:border-gray-800">
+      <header className ="nightwind border-b dark:border-gray-800">
         <div className="pb-4">
           <Link to="/" className="no-underline text-black">
             <h3 className="tracking-normal">{siteMetadata.title}</h3>
