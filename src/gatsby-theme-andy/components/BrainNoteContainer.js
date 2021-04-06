@@ -8,7 +8,6 @@ import '../../style.css';
 
 import nightwind from "nightwind/helper";
 
-import "./dark-mode-toggle.css";
 import DarkModeToggle from "./dark-mode-toggle";
 // thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
 

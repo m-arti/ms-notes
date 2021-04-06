@@ -163,6 +163,12 @@ iframe:active {
 .highlight {
   @apply antialiased bg-yellow-300 p-1 py-0 px-1 rounded-md;
   position: relative;
+  z-index: inherit;
+  background-color: rgba(252, 211, 77, 1) !important;
+}
+
+.dark .highlight {
+  background-color: rgba(180, 83, 9, .5) !important;
 }
 
 /* .NotebookEmbed {
