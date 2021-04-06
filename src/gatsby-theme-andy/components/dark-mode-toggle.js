@@ -14,7 +14,7 @@ const DarkModeToggle = () => {
       aria-label="Activate light/dark mode"
       title="Activate light/dark mode"
     >
-      <button className="" style={{ minWidth: '50px', opacity:'0.85' }} onClick={() => nightwind.toggle()}>◑</button>
+      <button className="" style={{ minWidth:'50px', opacity:'0.85' }} onClick={() => nightwind.toggle()}>◑</button>
       <div/>
     </label>
   );
