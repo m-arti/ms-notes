@@ -9,8 +9,6 @@ import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
 import SEO from "../components/seo";
 
-// import nightwind from "nightwind/helper";
-
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
 const popupStyles = `w-150 px-4 pb-2 rounded-md shadow-xl`;
@@ -97,18 +95,6 @@ const BrainNote = ({ note }) => {
 };
 
 export default BrainNote;
-
-// export const query = graphql`
-//   query($slug: String!) {
-//     site {
-//       siteMetadata {
-//         title
-//         description
-//         author
-//       }
-//     }
-//   }
-// `
 
 export const query = graphql`
   query {
