@@ -111,7 +111,21 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         />
         <script>
         {`
-          !function(){try {var d=document.documentElement.classList;d.remove('light','dark');var e=localStorage.getItem('nightwind-mode');if(!e)return localStorage.setItem('nightwind-mode','system'),d.add('system');if("system"===e){var t="(prefers-color-scheme: dark)",m=window.matchMedia(t);m.media!==t||m.matches?d.add('dark'):d.add('light')}else d.add(e)}catch(e){}}()
+          !function(){try {
+            var d=document.documentElement.classList;
+            d.remove('light','dark');var e=localStorage.getItem('nightwind-mode');if(!e)return localStorage.setItem('nightwind-mode','system'),d.add('system');if("system"===e){var t="(prefers-color-scheme: dark)",m=window.matchMedia(t);m.media!==t||m.matches?d.add('dark'):d.add('light')}else d.add(e)}catch(e){}}()
+        `}
+        </script>
+        <script>
+        {`
+          if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+          } else {
+            document.documentElement.classList.remove('dark')
+          }
+          localStorage.theme = 'light'
+          localStorage.theme = 'dark'
+          localStorage.removeItem('theme')
         `}
         </script>
         <meta charSet="utf-8" />
