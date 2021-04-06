@@ -103,17 +103,17 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   return (
     <div className="nightwind bg-white text-black flex flex-col min-h-screen h-screen">
       <Helmet>
+        <script>
+        {`
+          !function(){try {var d=document.documentElement.classList;d.remove('light','dark');var e=localStorage.getItem('nightwind-mode');if(!e)return localStorage.setItem('nightwind-mode','system'),d.add('system');if("system"===e){var t="(prefers-color-scheme: dark)",m=window.matchMedia(t);m.media!==t||m.matches?d.add('dark'):d.add('light')}else d.add(e)}catch(e){}}()
+        `}
+        </script>
         <script
           dangerouslySetInnerHTML={{
             __html: `nightwind.init()`,
           }}
           type="text/javascript"
         />
-        <script>
-        {`
-          !function(){try {var d=document.documentElement.classList;d.remove('light','dark');var e=localStorage.getItem('nightwind-mode');if(!e)return localStorage.setItem('nightwind-mode','system'),d.add('system');if("system"===e){var t="(prefers-color-scheme: dark)",m=window.matchMedia(t);m.media!==t||m.matches?d.add('dark'):d.add('light')}else d.add(e)}catch(e){}}()
-        `}
-        </script>
         <meta charSet="utf-8" />
         <title>
           {siteMetadata.title} — {note.title}
