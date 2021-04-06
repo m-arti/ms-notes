@@ -6,8 +6,11 @@ import { Helmet } from 'react-helmet';
 import BrainNote from './BrainNote';
 import '../../style.css';
 
+import nightwind from "nightwind/helper";
+
 import "./dark-mode-toggle.css";
 import DarkModeToggle from "./dark-mode-toggle";
+// thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
 
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
@@ -105,27 +108,31 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
       <Helmet>
         <script
           dangerouslySetInnerHTML={{
-            __html: `nightwind.init()`,
+            __html:` nightwind.init()`,
           }}
           type="text/javascript"
         />
         <script>
         {`
-          !function(){try {
-            var d=document.documentElement.classList;
-            d.remove('light','dark');var e=localStorage.getItem('nightwind-mode');if(!e)return localStorage.setItem('nightwind-mode','system'),d.add('system');if("system"===e){var t="(prefers-color-scheme: dark)",m=window.matchMedia(t);m.media!==t||m.matches?d.add('dark'):d.add('light')}else d.add(e)}catch(e){}}()
-        `}
-        </script>
-        <script>
-        {`
-          if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-          } else {
-            document.documentElement.classList.remove('dark')
+          function checkDarkMode() {
+            return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
           }
-          localStorage.theme = 'light'
-          localStorage.theme = 'dark'
-          localStorage.removeItem('theme')
+
+          function watchDarkMode() {
+            if (!window.matchMedia) return;
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(addDarkModeSelector);
+          }
+
+          function addDarkModeSelector() {
+            if (checkDarkMode()) {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+          }
+
+          addDarkModeSelector();
+          watchDarkMode();
         `}
         </script>
         <meta charSet="utf-8" />

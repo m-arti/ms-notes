@@ -1,30 +1,23 @@
-/* based on @mathieudutour's repo: wolfr.am/UvTRCBke */
-
 import React from "react";
 
 import nightwind from "nightwind/helper";
 
-import "./dark-mode-toggle.css";
-
 const DarkModeToggle = () => {
+
+  function checkDarkMode() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
 
   return (
     <label
-      className="dark-mode-toggle"
+      className="text-2xl"
       aria-label="Activate light/dark mode"
       title="Activate light/dark mode"
     >
-      <input type="checkbox" defaultChecked={false} onClick={() => nightwind.toggle()} />
+      <button className="" style={{ minWidth: '50px', opacity:'0.85' }} onClick={() => nightwind.toggle()}>◑</button>
       <div/>
     </label>
   );
 };
 
 export default DarkModeToggle;
-
-// <label
-//   className="dark-mode-toggle"
-// >
-//   <button className="dark-mode-toggle" onClick={() => nightwind.toggle()}></button>
-//   <div/>
-// </label>
