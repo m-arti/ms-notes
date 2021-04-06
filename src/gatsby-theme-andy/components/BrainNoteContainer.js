@@ -6,6 +6,11 @@ import { Helmet } from 'react-helmet';
 import BrainNote from './BrainNote';
 import '../../style.css';
 
+import nightwind from "nightwind/helper";
+
+import "./dark-mode-toggle.css";
+import DarkModeToggle from "./dark-mode-toggle";
+
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
 let NUMOFPAGES = 0;
@@ -26,10 +31,10 @@ const StackedPageWrapper = ({
   <PageIndexProvider value={i}>
     <div
       className={
-        `note-container md:max-w-2xl px-6 py-4 bg-opacity-100
-        ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r`}
-        bg-white dark:border-gray-800 bg-black md:sticky flex flex-col flex-shrink-0
-        ${overlay ? 'shadow-xl' : 'border-r px-6 '}`
+        `note-container nightwind md:max-w-2xl px-6 py-4 bg-opacity-100
+        ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r dark:border-gray-800`}
+        bg-white text-black dark:text-gray-200 md:sticky flex flex-col flex-shrink-0
+        ${overlay ? 'shadow-xl border-l border-white dark:border-gray-800' : 'border-r border-gray-200 dark:border-gray-800 px-6'}`
       }
       style={{
         left: PAD * i,
@@ -44,7 +49,7 @@ const StackedPageWrapper = ({
       >
         <div className={`overflow-visible h-auto w-full transform rotate-90 origin-left absolute z-50 grid grid-cols-12 gap-12`}>
 
-          <div class="col-span-7">
+          <div className="col-span-7">
             <LinkToStacked to={slug} className="no-underline text-gray-1000">
               <p className="m-1 font-medium tracking-normal">{title || slug}</p>
             </LinkToStacked>
@@ -100,25 +105,34 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   return (
     <div className="text-gray-1000 flex flex-col min-h-screen h-screen">
       <Helmet>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `nightwind.init()`,
+          }}
+          type="text/javascript"
+        />
         <meta charSet="utf-8" />
         <title>
           {siteMetadata.title} — {note.title}
         </title>
       </Helmet>
-      <header className ="border-b dark:border-gray-800 bg-gray-800 bg-opacity-50 dark:text-teal-400">
+      <header className ="border-b dark:border-gray-800">
         <div className="pb-4">
-          <Link to="/" className="no-underline text-gray-1000">
+          <Link to="/" className="no-underline text-black">
             <h3 className="tracking-normal">{siteMetadata.title}</h3>
           </Link>
+        </div>
+        <div className="controls">
+          <DarkModeToggle/>
         </div>
       </header>
 
       <div
-        className="flex-0 flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden"
+        className="nightwind flex-0 flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden"
         ref={scrollContainer}
       >
         <div
-          className="note-columns-container flex flex-grow transition-width duration-100"
+          className="note-columns-container nightwind bg-white flex flex-grow transition-width duration-100"
           style={{ width: NOTE_WIDTH * (stackedPages.length + 1) }}
         >
           <ContextProvider value={{ stackedPages, navigateToStackedPage }}>

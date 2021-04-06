@@ -11,17 +11,17 @@ import { Link } from 'gatsby';
 
 // TODO cmd+click open page in new tab
 
-const innerLinkStyles = `text-blue-600 px-1 -mx-1 rounded`;
+const innerLinkStyles = `text-blue-600 dark:text-blue-300 px-1 -mx-1 rounded dark:hover:bg-blue-900`;
 
 const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   if (!href) href = restProps.to;
   if (!href.match(/^http/))
     return noPopups ? (
-      <Link {...restProps} to={href} className={`${innerLinkStyles} hover:bg-indigo-100 dark:hover:bg-gray-500 focus:bg-gray-500`
+      <Link {...restProps} to={href} className={`${innerLinkStyles} hover:bg-indigo-100`
       }/>
     ) : (
       <Tippy content={popups[href.replace(/^\//, '')]} placement="right" animation="shift-away" duration="500" arrow={true} interactive={true} hideOnClick={true} inlinePositioning={true} interactiveDebounce="100" plugins={[inlinePositioning]}>
-        <LinkToStacked {...restProps} to={href} className={`${innerLinkStyles} hover:bg-indigo-100 dark: hover:bg-gray-400`} />
+        <LinkToStacked {...restProps} to={href} className={`${innerLinkStyles} hover:bg-indigo-100`} />
       </Tippy>
     );
   return noPopups || restProps.children === href ? (
