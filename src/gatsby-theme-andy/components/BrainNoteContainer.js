@@ -32,7 +32,7 @@ const StackedPageWrapper = ({
         `note-container  dark:border-l dark:border-gray-800 bg-white md:max-w-2xl px-6 py-4 bg-opacity-100
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r dark:border-gray-800`}
         bg-white text-black dark:text-gray-200 md:sticky flex flex-col flex-shrink-0
-        ${overlay ? 'shadow-xl border border-gray-200 dark:border-gray-800' : 'border-r border-gray-200 dark:border-gray-800 px-6'}`
+        ${overlay ? 'shadow-xl border-l border-gray-100 dark:border-gray-800' : 'border-r border-gray-200 dark:border-gray-800 px-6'}`
       }
       style={{
         left: PAD * i,
@@ -114,7 +114,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           {siteMetadata.title} — {note.title}
         </title>
       </Helmet>
-      <header className ="nightwind border-b dark:border-gray-800">
+      <header className ="nightwind border-b border-gray-200 dark:border-gray-800">
         <div className="pb-4">
           <Link to="/" className="no-underline text-black">
             <h3 className="tracking-normal">{siteMetadata.title}</h3>
