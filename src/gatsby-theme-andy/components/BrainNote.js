@@ -53,7 +53,7 @@ const BrainNote = ({ note }) => {
         popups[ln.slug] = (
           <div
             id={ln.slug}
-            className={`${popupStyles} bg-gray-200 text-black`}
+            className={`${popupStyles} bg-gray-200 dark:bg-gray-800 text-black`}
           >
             <div className="flex flex-wrap gap-x-2 content-start">
               <h3 className="mb-2">{ln.title}</h3>

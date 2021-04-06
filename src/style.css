@@ -130,6 +130,10 @@ iframe {
   background-size: cover;
 }
 
+.dark .background-image {
+  opacity: 0.75;
+}
+
 @tailwind components;
 
 /* copied from tippy.js/animations/shift-away.css */
