@@ -73,6 +73,7 @@ class NotebookEmbed extends React.Component {
       <div class={nbStyles} style={{width: 545}}>
         <div
           className="NotebookEmbed"
+          id="NotebookEmbed"
           ref={el => this.el = el}
           attributes={attributes => this.attributes = attributes}
         />
