@@ -55,13 +55,14 @@ const NoteTag = ({ children, color }) => (
 );
 
 // styles for embedded notebooks
-const nbStyles = `w-full pb-6 align-middle border-t-2 border-gray-300 hover:border-t-2 hover:border-orange-400 transition ease-in-out duration-500`;
+const nbStyles = `dark:bg-black w-full pb-6 align-middle border-t-2 border-gray-300 hover:border-t-2 hover:border-orange-400 transition ease-in-out duration-500`;
 
 // Embed Wolfram Notebooks in notes (code from: https://wolfr.am/SHFaaKUP)
+
 class NotebookEmbed extends React.Component {
 
   componentDidMount() {
-    this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
+    this.embedding=WolframNotebookEmbedder.embed('https://www.wolframcloud.com/obj/jpoeschko/Public/BasicExample.nb', this.el);
   }
 
   componentWillUnmount() {
@@ -69,16 +70,7 @@ class NotebookEmbed extends React.Component {
   }
 
   render() {
-    return (
-      <div class={nbStyles} style={{width: 545}}>
-        <div
-          className="NotebookEmbed"
-          id="NotebookEmbed"
-          ref={el => this.el = el}
-          attributes={attributes => this.attributes = attributes}
-        />
-      </div>
-    );
+    return <div className="NotebookEmbed" ref={el => this.el = el} />;
   }
 }
 
@@ -87,3 +79,29 @@ export default {
   NoteTag,
   WolframNotebook: NotebookEmbed,
 };
+
+// class NotebookEmbed extends React.Component {
+//
+//   componentDidMount() {
+//     this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
+//   }
+//
+//   componentWillUnmount() {
+//     this.embedding.then(nb => nb.detach());
+//   }
+//
+//   render() {
+//     return (
+//       <div className="NotebookEmbed" ref={el => this.el = el} />
+//     );
+//   }
+// }
+
+// <div class={nbStyles} style={{width: '100%'}}>
+//   <div
+//     className="NotebookEmbed"
+//     id="NotebookEmbed"
+//     ref={el => this.el = el}
+//     attributes={attributes => this.attributes = attributes}
+//   />
+// </div>
