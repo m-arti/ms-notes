@@ -6,7 +6,6 @@ import { LinkToStacked } from 'react-stacked-pages-hook';
 import { Link } from 'gatsby';
 
 import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
-import Loadable from "@loadable/component"
 
 // Animation styles are imported in `src/styles.css`
 
@@ -60,32 +59,30 @@ const nbStyles = `dark:bg-black w-full pb-6 align-middle border-t-2 border-gray-
 
 // Embed Wolfram Notebooks in notes (code from: https://wolfr.am/SHFaaKUP)
 
-// class NotebookEmbed extends React.Component {
-//
-//   async componentDidMount() {
-//
-//     if (typeof window !== 'undefined') {
-//       this.embedding = await WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
-//     }
-//
-//   }
-//
-//   componentWillUnmount() {
-//
-//     if (typeof window !== 'undefined') {
-//       this.embedding.then(nb => nb.detach());
-//     }
-//
-//   }
-//
-//   render() {
-//     return (
-//       <div className="NotebookEmbed" ref={el => this.el = el} />
-//     );
-//   }
-// }
+class NotebookEmbed extends React.Component {
 
-const NotebookEmbed = Loadable(() => import("./WolframNotebook"))
+  async componentDidMount() {
+
+    if (typeof window !== 'undefined') {
+      this.embedding = await WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
+    }
+
+  }
+
+  componentWillUnmount() {
+
+    if (typeof window !== 'undefined') {
+      this.embedding.then(nb => nb.detach());
+    }
+
+  }
+
+  render() {
+    return (
+      <div className="NotebookEmbed" ref={el => this.el = el} />
+    );
+  }
+}
 
 export default {
   a: AnchorTag,
