@@ -5,7 +5,7 @@ import 'tippy.js/animations/shift-away.css';
 import { LinkToStacked } from 'react-stacked-pages-hook';
 import { Link } from 'gatsby';
 
-// import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
+import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
 
 // Animation styles are imported in `src/styles.css`
 
@@ -55,34 +55,34 @@ const NoteTag = ({ children, color }) => (
 );
 
 // styles for embedded notebooks
-// const nbStyles = `w-full pb-6 align-middle border-t-2 border-gray-300 hover:border-t-2 hover:border-orange-400 transition ease-in-out duration-500`;
+const nbStyles = `w-full pb-6 align-middle border-t-2 border-gray-300 hover:border-t-2 hover:border-orange-400 transition ease-in-out duration-500`;
 
 // Embed Wolfram Notebooks in notes (code from: https://wolfr.am/SHFaaKUP)
-// class NotebookEmbed extends React.Component {
-//
-//   componentDidMount() {
-//     this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
-//   }
-//
-//   componentWillUnmount() {
-//     this.embedding.then(nb => nb.detach());
-//   }
-//
-//   render() {
-//     return (
-//       <div class={nbStyles} style={{width: 545}}>
-//         <div
-//           className="NotebookEmbed"
-//           ref={el => this.el = el}
-//           attributes={attributes => this.attributes = attributes}
-//         />
-//       </div>
-//     );
-//   }
-// }
+class NotebookEmbed extends React.Component {
+
+  componentDidMount() {
+    this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
+  }
+
+  componentWillUnmount() {
+    this.embedding.then(nb => nb.detach());
+  }
+
+  render() {
+    return (
+      <div class={nbStyles} style={{width: 545}}>
+        <div
+          className="NotebookEmbed"
+          ref={el => this.el = el}
+          attributes={attributes => this.attributes = attributes}
+        />
+      </div>
+    );
+  }
+}
 
 export default {
   a: AnchorTag,
   NoteTag,
-  // WolframNotebook: NotebookEmbed,
+  WolframNotebook: NotebookEmbed,
 };
