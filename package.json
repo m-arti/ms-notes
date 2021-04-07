@@ -12,6 +12,7 @@
   "author": "Martins Samuel (https://martinssamuel.com)",
   "license": "MIT",
   "dependencies": {
+    "@loadable/component": "^5.14.1",
     "@tippyjs/react": "^4.0.2",
     "@types/npm": "^2.0.31",
     "gatsby": "^2.20.36",
