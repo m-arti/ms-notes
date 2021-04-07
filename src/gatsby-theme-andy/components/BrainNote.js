@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from "gatsby";
 import { Link } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
@@ -92,5 +93,17 @@ const BrainNote = ({ note }) => {
     </MDXProvider>
   );
 };
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+        author
+      }
+    }
+  }
+`
 
 export default BrainNote;
