@@ -132,6 +132,8 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           watchDarkMode();
         `}
         </script>
+        <script crossorigin src="https://unpkg.com/wolfram-notebook-embedder@0.1/dist/wolfram-notebook-embedder.min.js">
+        </script>
         <meta charSet="utf-8" />
         <title>
           {siteMetadata.title} — {note.title}
