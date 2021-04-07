@@ -6,8 +6,6 @@ import { Helmet } from 'react-helmet';
 import BrainNote from './BrainNote';
 import '../../style.css';
 
-import nightwind from "nightwind/helper";
-
 import DarkModeToggle from "./dark-mode-toggle";
 // thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
 
@@ -92,7 +90,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
     ContextProvider,
     PageIndexProvider,
     scrollContainer,
-    highlightStackedPage,
+    // highlightStackedPage,
   ] = useStackedPagesProvider({
     firstPageSlug: slug,
     location,
