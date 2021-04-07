@@ -62,11 +62,25 @@ const nbStyles = `dark:bg-black w-full pb-6 align-middle border-t-2 border-gray-
 class NotebookEmbed extends React.Component {
 
   componentDidMount() {
-    this.embedding=WolframNotebookEmbedder.embed('https://www.wolframcloud.com/obj/jpoeschko/Public/BasicExample.nb', this.el);
+
+    if (typeof window !== 'undefined') {
+      this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
+    }
+
   }
-  
+
+  componentWillUnmount() {
+
+    if (typeof window !== 'undefined') {
+      this.embedding.then(nb => nb.detach());
+    }
+
+  }
+
   render() {
-    return <div className="NotebookEmbed" ref={el => this.el = el} />;
+    return (
+      <div className="NotebookEmbed" ref={el => this.el = el} />
+    );
   }
 }
 
