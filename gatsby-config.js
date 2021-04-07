@@ -98,7 +98,7 @@ module.exports = {
             }
           },
         ],
-        remarkPlugins: [require(`remark-slug`), require("remark-math"), require("remark-html-katex")]
+        remarkPlugins: [require(`remark-slug`), require("remark-math"), require("remark-html-katex"), require("wolfram-notebook-embedder")]
       },
     }
   ],
