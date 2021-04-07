@@ -61,10 +61,10 @@ const nbStyles = `dark:bg-black w-full pb-6 align-middle border-t-2 border-gray-
 
 class NotebookEmbed extends React.Component {
 
-  componentDidMount() {
+  async componentDidMount() {
 
     if (typeof window !== 'undefined') {
-      this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
+      this.embedding = await WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
     }
 
   }

@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-remove-fingerprints`,
 
     // gatsby-plugin-manifest
     {
