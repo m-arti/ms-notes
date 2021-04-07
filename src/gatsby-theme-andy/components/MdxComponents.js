@@ -64,11 +64,7 @@ class NotebookEmbed extends React.Component {
   componentDidMount() {
     this.embedding=WolframNotebookEmbedder.embed('https://www.wolframcloud.com/obj/jpoeschko/Public/BasicExample.nb', this.el);
   }
-
-  componentWillUnmount() {
-    this.embedding.then(nb => nb.detach());
-  }
-
+  
   render() {
     return <div className="NotebookEmbed" ref={el => this.el = el} />;
   }
