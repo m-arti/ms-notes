@@ -61,7 +61,12 @@ const nbStyles = `dark:bg-black w-full pb-6 align-middle border-t-2 border-gray-
 
 class WolframNotebook extends React.Component {
 
-  async componentDidMount() {
+  constructor () {
+    super()
+    this.state = {}
+  }
+
+  componentDidMount() {
 
     if (typeof window !== 'undefined' || window === "notebook") {
       this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
