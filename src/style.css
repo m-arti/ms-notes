@@ -134,12 +134,12 @@ iframe:active {
   opacity: 0.8;
 }
 
-
 /* jargon styles */
 /* Add a dashed line under jargon terms */
 .jargon-term {
   text-decoration: underline dotted #228be6
 }
+
 /* Add a question mark behind/above jargon terms */
 .jargon-term::after {
   content: "?";
@@ -150,16 +150,19 @@ iframe:active {
   color: #228be6;
   margin-left: 3px;
 }
+
 /* Hover behavior for the therm itself */
 .jargon-term:hover {
   position: relative;
   text-decoration: none;
   cursor: help;
 }
+
 /* Hide info by default */
 .jargon-term .jargon-info {
   display: none
 }
+
 /* Show info on hover */
 .jargon-term:hover .jargon-info {
   display: block;
@@ -181,6 +184,18 @@ iframe:active {
 .dark .jargon-term:hover .jargon-info {
   background: rgba(17, 24, 39, 1); /* bg-gray-900 */
   border: none;
+}
+
+/* highlight text */
+.highlight {
+  @apply antialiased bg-yellow-300 p-1 py-0 px-1 rounded-md;
+  position: relative;
+  z-index: inherit;
+  background-color: rgba(252, 211, 77, 1) !important;
+}
+
+.dark .highlight {
+  background-color: rgba(180, 83, 9, .5) !important;
 }
 
 @tailwind components;
@@ -206,23 +221,15 @@ iframe:active {
   transform: translateX(-10px);
 }
 
-/*! purgecss end ignore */
-@tailwind utilities;
-
-.highlight {
-  @apply antialiased bg-yellow-300 p-1 py-0 px-1 rounded-md;
-  position: relative;
-  z-index: inherit;
-  background-color: rgba(252, 211, 77, 1) !important;
-}
-
-.dark .highlight {
-  background-color: rgba(180, 83, 9, .5) !important;
-}
-
 /* .NotebookEmbed {
   @apply antialiased;
 } */
+
+
+/* incl. SSR things above this  */
+
+/*! purgecss end ignore */
+@tailwind utilities;
 
 .note-container {
   max-width: 100vw;
