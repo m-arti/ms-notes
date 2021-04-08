@@ -28,6 +28,15 @@ It's possible to create a notebook-centric version of this theme. Pages will ess
 ## How it works
 ---
 
+- __Design / Style__:
+  The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. This site uses [Tailwind CSS](https://tailwindcss.com)—speed, efficiency, simplicity. For 'dark mode', I use a a Tailwind CSS plugin called [Nightwind](https://nightwindcss.com). Nightwind greatly simplifies the handling colours and other settings which differ between light/dark modes.
+
+  To match the style of embedded Wolfram Notebooks to that of notes, I use a [stylesheet](https://github.com/m-arti/ms-notes/blob/master/src/style.wl). The matching isn't quite exact—this site uses the font 'SF Pro', while notebooks use 'Source Sans Pro'. To stylise a notebook, I can  run the following from within that notebook:
+ ```
+ SetOptions[EvaluationNotebook[],
+ StyleDefinitions -> Import["https://wolfr.am/U7U6ZSd2"]]
+ ```
+
 - __Notes__:
   Notes are `.mdx` files. [MDX](https://mdxjs.com) combines the strengths of Markdown and JSX (an extension of Javascript for creating React elements). Here's a brief demo (from within this .mdx file) of how both can be used:
 
@@ -44,20 +53,11 @@ It's possible to create a notebook-centric version of this theme. Pages will ess
     <p>Italic text in JSX. Orange background.</p>
   </div>
 
-- __Math__: MDX makes documents easily customisable. You can render mathematical text and symbols using [${\KaTeX}$](https://katex.org) — `$9 × 8$` becomes $9 × 8$, for example.
-
 - __Definitions / Jargon__: Another thing you might have noticed is that some words with a ***?*** aloft) have an attached definition that pops up when you hover over them, e.g. _tesseract_ and _Hypercubegraph_. This is done using a library called [*gatsby-remark-jargon*](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon).
 
+- __Math__: MDX makes documents easily customisable. You can render mathematical text and symbols using [${\KaTeX}$](https://katex.org) — `$9 × 8$` becomes $9 × 8$, for example.
+
 - __Embedddings__: I embed Wolfram Notebooks and other items from various sites such as Soundcloud and Vimeo using [`iframe`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
-
-- __Design / Style__:
-  The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. This site uses [Tailwind CSS](https://tailwindcss.com)—speed, efficiency, simplicity. For 'dark mode', I use a a Tailwind CSS plugin called [Nightwind](https://nightwindcss.com). Nightwind greatly simplifies the handling colours and other settings which differ between light/dark modes.
-
-  To match the style of embedded Wolfram Notebooks to that of notes, I use a [stylesheet](https://github.com/m-arti/ms-notes/blob/master/src/style.wl). The matching isn't quite exact—this site uses the font SF Pro, while notebooks use Source Sans Pro. To stylise a notebook, I can  run the following from within that notebook:
- ```
- SetOptions[EvaluationNotebook[],
- StyleDefinitions -> Import["https://wolfr.am/U7U6ZSd2"]]
- ```
 
 ## Why this way
 ---
