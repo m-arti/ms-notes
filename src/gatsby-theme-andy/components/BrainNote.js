@@ -9,8 +9,6 @@ import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
 import SEO from "../components/seo";
 
-import NotebookEmbed from './MdxComponents';
-
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
 const popupStyles = `w-150 px-4 pb-2 rounded-md shadow-xl`;
@@ -76,13 +74,8 @@ const BrainNote = ({ note }) => {
     <components.a {...props} popups={popups} noPopups={width < NOTE_MAX_WIDTH} />
   );
 
-  const GlobalScopeComponents = {
-    NotebookEmbed,
-    // etc...
-  }
-
   return (
-    <MDXProvider components={{ ...components, a: AnchorTagWithPopups, ...GlobalScopeComponents }}>
+    <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
       <SEO title={note.title} description={note.excerpt} />
       <div className="flex-1 mb-4">
         <h1 className="my-4">{note.title}</h1>
