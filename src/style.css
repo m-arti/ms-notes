@@ -137,7 +137,9 @@ iframe:active {
 /* jargon styles */
 /* Add a dashed line under jargon terms */
 .jargon-term {
-  text-decoration: underline dotted #228be6
+  text-decoration: underline dotted #228be6;
+  text-underline-thickness: 1.5px;
+  text-underline-offset: 0.2em;
 }
 
 /* Add a question mark behind/above jargon terms */
