@@ -4,8 +4,8 @@ title: Meta Note
 
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css"
-  integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG"
+  href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css"
+  integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5"
   crossOrigin="anonymous"
 />
 
@@ -14,7 +14,7 @@ title: Meta Note
 
 I discovered the idea of the _Digital Garden_ while roaming Maggie Appleton's [site](https://maggieappleton.com/metatour). This was around the end of summer 2020. I had just created my [blog](https://blog.martinssamuel.com/), and was looking for a way to add [Tuftesque](https://edwardtufte.github.io/tufte-css/) sidenotes to posts.
 
-When I encountered the [idea](https://maggieappleton.com/garden-history), I was fascinated by it and knew straightaway that I'd later return to it. Further reading led me to Andy Matuschak's [site](https://andymatuschak.org/), and eventually to Aravind Balla's [notes](https://notes.aravindballa.com/). I'd been thinking of taking computable notes using [[wolfram-notebooks]] (WNs), and Aravind's layout seemed ideal for what I had in mind.
+When I encountered the [idea](https://maggieappleton.com/garden-history), I was fascinated by it and knew straightaway that I'd later return to it. Further reading led me to Andy Matuschak's [site](https://andymatuschak.org/), and eventually to Aravind Balla's [notes](https://notes.aravindballa.com/). I'd been thinking of taking computable notes using [[wolfram-notebooks]], and Aravind's layout seemed ideal for what I had in mind.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="light">
@@ -23,13 +23,13 @@ When I encountered the [idea](https://maggieappleton.com/garden-history), I was 
 
 I like how plain and simple the layout is, and the seamless linking and transitions between notes. I also like that I can do my [[note-taking]] inside a WN and publish it straightaway. Notebooks are versatile and dynamic. A WN can take the form of a formal document or a computational essay. Cells can be hidden automatically and only revealed when hovered over. One can set a background of any colour. Youtube videos, Soundcloud tracks and Bing maps can be embedded.
 
-It's possible to create a notebook-centric version of this theme. Pages will essentially be embedded notebooks. For WNs, docked cells can hold tags and other meta information on each note. The only potential issue I currently see with this is internal links, such as [this](/). There's a more dangerous potential issue—should Wolfram Cloud someday collapse, so shall the entire theme. WNs aren't currently so widely used as to be hosted by third-party organisations.
+It's possible to create a notebook-centric version of this theme. Pages will essentially be embedded notebooks. For Wolfram Notebooks, docked cells can hold tags and other meta information on each note. The only potential issue I currently see with this is internal links, such as [this](/). There's a more dangerous potential issue—should Wolfram Cloud someday collapse, so shall the entire theme. Notebooks aren't currently so widely used as to be hosted by third-party organisations.
 
 ## How it works
 ---
 
 - __Notes__:
-  Notes are `.mdx` [files](https://github.com/m-arti/ms-notes/tree/master/content). [MDX](https://mdxjs.com) combines the strengths of Markdown and JSX (an extension of Javascript for creating React elements). I'll quickly demonstrate (from within this .mdx file) how both can be used.
+  Notes are `.mdx` files. [MDX](https://mdxjs.com) combines the strengths of Markdown and JSX (an extension of Javascript for creating React elements). Here's a brief demo (from within this .mdx file) of how both can be used:
 
   Markdown: `*Italic text in Markdown. Default background.*` gives *Italic text in Markdown. Default background.*
 
@@ -44,13 +44,16 @@ It's possible to create a notebook-centric version of this theme. Pages will ess
     <p>Italic text in JSX. Orange background.</p>
   </div>
 
-  I use [${\KaTeX}$](https://katex.org) to render mathematical text and symbols.
+- __Math__: MDX makes documents easily customisable. You can render mathematical text and symbols using [${\KaTeX}$](https://katex.org) — `$9 × 8$` becomes $9 × 8$, for example.
 
-- __Embedddings__:
-  I embed WNs and other items from various sites such Soundcloud and Vimeo using [`iframe`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
+- __Definitions / Jargon__: Another thing you might have noticed is that some words with a ***?*** aloft) have an attached definition that pops up when you hover over them, e.g. _tesseract_ and _Hypercubegraph_. This is done using a library called [*gatsby-remark-jargon*](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon).
+
+- __Embedddings__: I embed Wolfram Notebooks and other items from various sites such as Soundcloud and Vimeo using [`iframe`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
 
 - __Design / Style__:
-  The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. This site uses [Tailwind CSS](https://tailwindcss.com)—speed, efficiency, simplicity. For 'dark mode', I use a a Tailwind CSS plugin called [Nightwind](https://nightwindcss.com). Nightwind greatly simplifies the handling colours and other settings which differ between light/dark modes. To match the style of embedded WNs to that of notes, I use a [stylesheet](https://github.com/m-arti/ms-notes/blob/master/src/style.wl). To stylise a notebook, I can  run the following from within that notebook:
+  The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. This site uses [Tailwind CSS](https://tailwindcss.com)—speed, efficiency, simplicity. For 'dark mode', I use a a Tailwind CSS plugin called [Nightwind](https://nightwindcss.com). Nightwind greatly simplifies the handling colours and other settings which differ between light/dark modes.
+
+  To match the style of embedded Wolfram Notebooks to that of notes, I use a [stylesheet](https://github.com/m-arti/ms-notes/blob/master/src/style.wl). The matching isn't quite exact—this site uses the font SF Pro, while notebooks use Source Sans Pro. To stylise a notebook, I can  run the following from within that notebook:
  ```
  SetOptions[EvaluationNotebook[],
  StyleDefinitions -> Import["https://wolfr.am/U7U6ZSd2"]]

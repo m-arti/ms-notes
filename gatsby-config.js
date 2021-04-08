@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Martins' Notes`,
     author: `Martins Samuel`,
-    description: `Hello! I'm Martins. I'm a researcher and designer. This is a mélange of my musings.`,
+    description: `Hello! I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
     homepage: `https://notes.martinssamuel.com`,
   },
   plugins: [
@@ -41,11 +41,11 @@ module.exports = {
 
     // gatsby-transformer-remark
     {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [],
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [],
+      },
     },
-  },
 
     // gatsby-plugin-mdx
     {
@@ -55,6 +55,7 @@ module.exports = {
         extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           `gatsby-remark-embedder`,
+
           //`gatsby-remark-responsive-iframe`,
           `gatsby-remark-copy-linked-files`,
 
@@ -98,9 +99,17 @@ module.exports = {
               output: `htmlAndMathml`,
             }
           },
+
+          // gatsby-remark-jargon
+          {
+            resolve: 'gatsby-remark-jargon',
+            options: {
+              jargon: require('./jargon.js')
+            }
+          }
         ],
         remarkPlugins: [require(`remark-slug`), require("remark-math"), require("remark-html-katex")]
       },
-    }
+    },
   ],
 };

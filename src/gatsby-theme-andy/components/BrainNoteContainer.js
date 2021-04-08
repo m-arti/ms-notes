@@ -103,12 +103,14 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   return (
     <div className="nightwind bg-white text-black flex flex-col min-h-screen h-screen">
       <Helmet>
+
         <script
           dangerouslySetInnerHTML={{
             __html:` nightwind.init()`,
           }}
           type="text/javascript"
         />
+
         <script>
         {`
           function checkDarkMode() {
@@ -132,12 +134,18 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           watchDarkMode();
         `}
         </script>
+
         <script crossorigin src="https://unpkg.com/wolfram-notebook-embedder@0.1/dist/wolfram-notebook-embedder.min.js">
         </script>
+
+        <script type="module" src="https://unpkg.com/@navsnpm/katex-expression/dist/katex-expression/katex-expression.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/@navsnpm/katex-expression/dist/katex-expression/katex-expression.js"></script>
+
         <meta charSet="utf-8" />
         <title>
           {siteMetadata.title} — {note.title}
         </title>
+
       </Helmet>
       <header className ="nightwind border-b border-gray-200 dark:border-gray-800">
         <div className="pb-4">
