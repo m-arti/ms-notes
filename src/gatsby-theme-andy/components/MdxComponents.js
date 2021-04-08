@@ -59,7 +59,7 @@ const nbStyles = `dark:bg-black w-full pb-6 align-middle border-t-2 border-gray-
 
 // Embed Wolfram Notebooks in notes (code from: https://wolfr.am/SHFaaKUP)
 
-class NotebookEmbed extends React.Component {
+class WolframNotebook extends React.Component {
 
   async componentDidMount() {
 
@@ -79,7 +79,7 @@ class NotebookEmbed extends React.Component {
 
   render() {
     return (
-      <div className="NotebookEmbed" ref={el => this.el = el} />
+      <div className="WolframNotebook" ref={el => this.el = el} />
     );
   }
 }
@@ -87,7 +87,7 @@ class NotebookEmbed extends React.Component {
 export default {
   a: AnchorTag,
   NoteTag,
-  WolframNotebook: NotebookEmbed,
+  WolframNotebook,
 };
 
 // class NotebookEmbed extends React.Component {
