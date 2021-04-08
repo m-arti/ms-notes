@@ -55,8 +55,9 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
-    "autoprefixer": "^7",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
+    "autoprefixer": "^9",
     "postcss": "^7",
-    "tailwindcss": "^2.0.1-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
