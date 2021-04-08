@@ -62,9 +62,9 @@ module.exports = {
           // configure gatsby-remark-responsive-iframe
           {
             resolve: `gatsby-remark-responsive-iframe`,
-              options: {
-                wrapperStyle: `margin-bottom: 1.25rem`,
-              },
+            options: {
+              wrapperStyle: `margin-bottom: 1.25rem`,
+            },
           },
 
           // gatsby-remark-images
@@ -88,7 +88,9 @@ module.exports = {
           },
 
           // gatsby-remark-smartypants
-          { resolve: `gatsby-remark-smartypants` },
+          {
+            resolve: `gatsby-remark-smartypants`
+          },
 
           // gatsby-remark-katex
           {
