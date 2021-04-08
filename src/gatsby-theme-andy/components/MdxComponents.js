@@ -66,17 +66,17 @@ class WolframNotebook extends React.Component {
     this.state = {}
   }
 
-  componentDidMount() {
+  async componentDidMount() {
 
-    if (typeof window !== 'undefined' || window === "notebook") {
-      this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
+    if (typeof window !== 'undefined') {
+      this.embedding = await WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
     }
 
   }
 
   componentWillUnmount() {
 
-    if (typeof window !== 'undefined' || window === "notebook") {
+    if (typeof window !== 'undefined') {
       this.embedding.then(nb => nb.detach());
     }
 
