@@ -26,3 +26,11 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     })
   }
 }
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: "empty",
+    },
+  })
+}
