@@ -64,7 +64,7 @@ class WolframNotebook extends React.Component {
   async componentDidMount() {
 
     if (typeof window !== 'undefined') {
-      this.embedding = await WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
+      this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
     }
 
   }
@@ -79,7 +79,9 @@ class WolframNotebook extends React.Component {
 
   render() {
     return (
-      <div className="WolframNotebook" ref={el => this.el = el} />
+      <div className={nbStyles} style={{width: '100%'}}>
+        <div className="WolframNotebook" id="WolframNotebook" ref={el => this.el = el} />
+      </div>
     );
   }
 }
@@ -89,29 +91,3 @@ export default {
   NoteTag,
   WolframNotebook,
 };
-
-// class NotebookEmbed extends React.Component {
-//
-//   componentDidMount() {
-//     this.embedding = WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
-//   }
-//
-//   componentWillUnmount() {
-//     this.embedding.then(nb => nb.detach());
-//   }
-//
-//   render() {
-//     return (
-//       <div className="NotebookEmbed" ref={el => this.el = el} />
-//     );
-//   }
-// }
-
-// <div class={nbStyles} style={{width: '100%'}}>
-//   <div
-//     className="NotebookEmbed"
-//     id="NotebookEmbed"
-//     ref={el => this.el = el}
-//     attributes={attributes => this.attributes = attributes}
-//   />
-// </div>
