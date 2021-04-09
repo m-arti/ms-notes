@@ -1,19 +1,63 @@
 import React from 'react';
-
+import { Helmet } from 'react-helmet';
 import '../style.css';
 
 export default () => (
-  <div className="container max-w-2xl px-4 mx-auto text-gray-900 flex flex-col min-h-screen">
-    <h1 className="my-4">Page not found.</h1>
-    <p className="text-lg my-4">Sorry this page does not exist, or may have been lost.</p>
-    <p className="text-lg m-0">
-      Anyways, you can send me a{' '}
-      <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a> on Twitter or an <a href="mailto:marti.samuel1@gmail.com">email</a>, and we can talk.
-    </p>
+  <div className="bg-white">
+
     <br/>
-    <p className="text-lg m-0">
-      Return to {' '}
-    <a href="/">homepage</a>.
-    </p>
+
+    <div className="container max-w-2xl px-4 mx-auto flex flex-col min-h-screen border-t border-black text-black bg-white">
+
+      <Helmet>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:` getImg()`,
+          }}
+          type="text/javascript"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html:` nightwind.init()`,
+          }}
+          type="text/javascript"
+        />
+        <script>
+        {`
+          function checkDarkMode() {
+            return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          }
+
+          function watchDarkMode() {
+            if (!window.matchMedia) return;
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(addDarkModeSelector);
+          }
+
+          function addDarkModeSelector() {
+            if (checkDarkMode()) {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+          }
+
+          addDarkModeSelector();
+          watchDarkMode();
+        `}
+        </script>
+      </Helmet>
+
+      <h1 className="my-4">L O S T &ensp; I N &ensp; S P A C E &ensp; ✈︎</h1>
+
+      <p className="text-lg my-4">Sorry, that page does not exist. It may have been lost.</p>
+
+      <br/>
+
+      <p className="text-lg m-0">
+        {' '} <a href="/">← <span role="img" aria-label="earth emoji">🌍</span> Homepage</a>
+      </p>
+
+    </div>
   </div>
 );
