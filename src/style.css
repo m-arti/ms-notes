@@ -103,7 +103,6 @@ pre {
   overflow-x: auto;
 }
 
-
 .dark pre {
   @apply bg-gray-900;
 }
@@ -115,7 +114,6 @@ pre>code {
 .dark pre>code {
   @apply bg-transparent;
 }
-
 
 iframe {
   @apply antialiased mt-4 mb-6 pb-6 align-middle border-t-2 border-gray-300;
