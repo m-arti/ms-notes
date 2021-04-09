@@ -2,6 +2,8 @@
 title: Meta Note
 ---
 
+import nightwind from "nightwind/helper";
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css"
@@ -23,24 +25,28 @@ When I encountered the [idea](https://maggieappleton.com/garden-history), I was 
 
 I like how plain and simple the layout is, and the seamless linking and transitions between notes. I also like that I can do my [[note-taking]] inside a Wolfram Notebook and publish it straightaway. Notebooks are versatile and dynamic. A Wolfram Notebook can take the form of a formal document or a computational essay. Cells can be hidden automatically and only revealed when hovered over. One can set a background of any colour. Youtube videos, Soundcloud tracks and Bing maps can be embedded. These are just a few things one can do with them on the web.
 
-It's possible to create a notebook-centric version of this theme. Pages will essentially be embedded notebooks (Julia, Jupyter, Wolfram, etc.). For Wolfram Notebooks, docked cells can hold tags and other meta information on each note. One potential issue I see with this is internal links. There's a potentially more serious issue: should Wolfram Cloud—for instance, which hosts Wolfram Notebooks—someday collapse, so shall the entire theme. Wolfram Notebooks aren't currently so widely used as to be hosted by third-party organisations.
+It's possible to create a notebook-centric version of this theme. Pages will essentially be embedded notebooks (Julia, Jupyter, Wolfram, etc.). For Wolfram Notebooks, docked cells can hold tags and other meta information on each note. There's a potentially more serious issue: should Wolfram Cloud—for instance, which hosts Wolfram Notebooks—someday collapse, so shall the entire theme. Wolfram Notebooks aren't currently so widely used as to be hosted by third-party organisations.
 
 ## How it works
 ---
 
-- __Design/Style__:
-  The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. This site uses [Tailwind CSS](https://tailwindcss.com)—speed, efficiency, simplicity. For 'dark mode', I use a a Tailwind CSS plugin called [Nightwind](https://nightwindcss.com). Nightwind greatly simplifies the handling colours and other settings which differ between light/dark modes.
+- **Framework**: This site is built with [Gatsby](https://www.gatsbyjs.com), which claims to be *"the fastest frontend for the modern web."* It's hosted on [Netlify](https://netlify.com).
 
-  To match the style of embedded Wolfram Notebooks to that of notes, I use a [stylesheet](https://github.com/m-arti/ms-notes/blob/master/src/style.wl). The matching isn't quite exact—this site uses the font 'SF Pro', while notebooks use 'Source Sans Pro'. To stylise a notebook, I can  run the following from within that notebook:
+- **Design/Style**:
+  The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. Styling is done with [Tailwind CSS](https://tailwindcss.com)—speed, efficiency, simplicity.
+
+  For *dark mode*, I use a Tailwind plugin called [Nightwind](https://nightwindcss.com). It simplifies the handling of colours that change when switching between light ⇄ dark modes. I give your device setting precedence—changing mode on your device will override that of this site. Click/tap this button to switch: <button className="text-xl" style={{ opacity:'0.85' }} onClick={() => nightwind.toggle()}>◑</button>.
+
+  To match the style of embedded Wolfram Notebooks to that of notes, I use a [stylesheet](https://github.com/m-arti/ms-notes/blob/master/src/style.wl). The matching isn't quite exact—e.g., this site uses the font 'SF Pro', while notebooks use 'Source Sans Pro'. To stylise a notebook, I run the following from within that notebook:
  ```
  SetOptions[EvaluationNotebook[],
  StyleDefinitions -> Import["https://wolfr.am/U7U6ZSd2"]]
  ```
 
-- __Notes__:
-  Notes are `.mdx` files. [MDX](https://mdxjs.com) combines the strengths of Markdown and JSX (an extension of Javascript for creating React elements). Here's a brief demo (from within this .mdx file) of how both can be used:
+- **Notes**:
+  This thing you're currently reading is a *note*. Notes are `.mdx` files. [MDX](https://mdxjs.com) combines the strengths of Markdown and JSX (an extension of Javascript for creating React elements). Here's a brief demo (from within this note) of how both can be used:
 
-  Markdown: `*Italic text in Markdown. Default background.*` gives *Italic text in Markdown. Default background.*
+  Markdown: `*Italic text in Markdown. Default background.*` renders as *Italic text in Markdown. Default background.*
 
   JSX:
   ```
@@ -48,20 +54,33 @@ It's possible to create a notebook-centric version of this theme. Pages will ess
     <p>Italic text in JSX. Orange background.</p>
   </div>
   ```
-  gives
+  renders as:
   <div style={{fontStyle:'italic', backgroundColor:'orange'}}>
     <p>Italic text in JSX. Orange background.</p>
   </div>
 
-- __Definitions/Jargon__: Another thing you might have noticed is that some words with a ***?*** aloft) have an attached definition that pops up when you hover over them, e.g. _tesseract_ and _Hypercubegraph_. This is done using a library called [*gatsby-remark-jargon*](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon).
+- **Definitions/Jargon**: You may have noticed that some words (with a ***?*** aloft) have an attached *definition* that pops up when you hover over them, e.g. _tesseract_ and _Hypercubegraph_. These are created using a Gatsby plugin rather appropriately called [*jargon*](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon).
 
-- __Math__: MDX makes documents easily customisable. You can render mathematical text and symbols using [${\KaTeX}$](https://katex.org) — `$9 × 8$` becomes $9 × 8$, for example.
+- **Math**: MDX makes documents easily customisable. You can render mathematical text and symbols using [${\KaTeX}$](https://katex.org) — `$9 × 8$` becomes $9 × 8$, for example.
 
-- __Embedddings__: I embed Wolfram Notebooks and other items from various sites such as Soundcloud and Vimeo using [`iframe`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
+- **Embedddings**: I embed Wolfram Notebooks and other items from various sites such as Soundcloud and Vimeo using [`iframe`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe).
 
 ## Why this way
 ---
-...
+
+- **Learning**: The goal of this site is to learn from/about the things I write and through the process of doing so. I've certainly learned a lot of Javascript and CSS so far.
+
+- **Curation**: Of notes, ideas, knowledge and other things I find interesting. But also of computational artefacts which evolve over time.
+
+- **Simplicity**:
+  Notes are intended to be short and simple. If a note matures into some lengthy disquisition, it ideally should be moved to my blog. There's quite a number of features here but each one has a purpose. I'd like to think that this is the least simple note you'll come across, as it demos all the features. Embeddings, for instance, are one source of complexity, because the embedded object introduces its own interface, etc. However, within notes, I may need to link **dynamic** information (see example below; yellow $=$ daytime, blue $=$ night-time), or write an equation, or define a term. The added features allow to me express ideas while keeping the notes simple and worthwhile.
+
+  <div style={{width:'320px', height:'410px'}}>
+    <iframe src="https://www.wolframcloud.com/obj/mar/notes-meta-sky?_embed=iframe" width="100%" height="100%"></iframe>
+  </div>
+
+  I may experiment with rules in the future, e.g. a note musn't have more than $x$ links, $y$ definitions and $z$ embeddings, perhaps excluding the meta note.
+
 
 ## Aspirations
 ---
@@ -69,6 +88,7 @@ It's possible to create a notebook-centric version of this theme. Pages will ess
 - [Automate](https://reference.wolfram.com/language/guide/AutomatedReports.html) refreshing of meta notebook.
 - Implement [images](https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image) and Medium-like [zooming](https://github.com/francoischalifour/medium-zoom). Sometimes an image says it all.
 - Make internal links in embedded notebooks open as a stacked page, and not as a new page in same/new browser tab.
+- Create a Wolfram Notebook version of this theme like I described above.
 
 ## Meta notebook
 ---
