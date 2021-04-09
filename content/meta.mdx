@@ -21,14 +21,14 @@ When I encountered the [idea](https://maggieappleton.com/garden-history), I was 
   <p lang="en" dir="ltr">Wolfram notebooks would make such a great computable notes app.</p>&mdash; @m_arti, <a href="https://twitter.com/m_arti/status/1225784947249754126">February 7, 2020</a>
 </blockquote>
 
-I like how plain and simple the layout is, and the seamless linking and transitions between notes. I also like that I can do my [[note-taking]] inside a WN and publish it straightaway. Notebooks are versatile and dynamic. A WN can take the form of a formal document or a computational essay. Cells can be hidden automatically and only revealed when hovered over. One can set a background of any colour. Youtube videos, Soundcloud tracks and Bing maps can be embedded.
+I like how plain and simple the layout is, and the seamless linking and transitions between notes. I also like that I can do my [[note-taking]] inside a Wolfram Notebook and publish it straightaway. Notebooks are versatile and dynamic. A Wolfram Notebook can take the form of a formal document or a computational essay. Cells can be hidden automatically and only revealed when hovered over. One can set a background of any colour. Youtube videos, Soundcloud tracks and Bing maps can be embedded. These are just a few things one can do with them on the web.
 
-It's possible to create a notebook-centric version of this theme. Pages will essentially be embedded notebooks. For Wolfram Notebooks, docked cells can hold tags and other meta information on each note. The only potential issue I currently see with this is internal links, such as [this](/). There's a more dangerous potential issue—should Wolfram Cloud someday collapse, so shall the entire theme. Notebooks aren't currently so widely used as to be hosted by third-party organisations.
+It's possible to create a notebook-centric version of this theme. Pages will essentially be embedded notebooks (Julia, Jupyter, Wolfram, etc.). For Wolfram Notebooks, docked cells can hold tags and other meta information on each note. One potential issue I see with this is internal links. There's a potentially more serious issue: should Wolfram Cloud—for instance, which hosts Wolfram Notebooks—someday collapse, so shall the entire theme. Wolfram Notebooks aren't currently so widely used as to be hosted by third-party organisations.
 
 ## How it works
 ---
 
-- __Design / Style__:
+- __Design/Style__:
   The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. This site uses [Tailwind CSS](https://tailwindcss.com)—speed, efficiency, simplicity. For 'dark mode', I use a a Tailwind CSS plugin called [Nightwind](https://nightwindcss.com). Nightwind greatly simplifies the handling colours and other settings which differ between light/dark modes.
 
   To match the style of embedded Wolfram Notebooks to that of notes, I use a [stylesheet](https://github.com/m-arti/ms-notes/blob/master/src/style.wl). The matching isn't quite exact—this site uses the font 'SF Pro', while notebooks use 'Source Sans Pro'. To stylise a notebook, I can  run the following from within that notebook:
@@ -53,7 +53,7 @@ It's possible to create a notebook-centric version of this theme. Pages will ess
     <p>Italic text in JSX. Orange background.</p>
   </div>
 
-- __Definitions / Jargon__: Another thing you might have noticed is that some words with a ***?*** aloft) have an attached definition that pops up when you hover over them, e.g. _tesseract_ and _Hypercubegraph_. This is done using a library called [*gatsby-remark-jargon*](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon).
+- __Definitions/Jargon__: Another thing you might have noticed is that some words with a ***?*** aloft) have an attached definition that pops up when you hover over them, e.g. _tesseract_ and _Hypercubegraph_. This is done using a library called [*gatsby-remark-jargon*](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon).
 
 - __Math__: MDX makes documents easily customisable. You can render mathematical text and symbols using [${\KaTeX}$](https://katex.org) — `$9 × 8$` becomes $9 × 8$, for example.
 

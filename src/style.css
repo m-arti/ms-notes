@@ -83,7 +83,7 @@ hr {
 }
 
 blockquote {
-  @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-gray-400;
+  @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-gray-300;
 }
 
 blockquote p {
@@ -94,14 +94,28 @@ code {
   @apply antialiased whitespace-pre lining-nums slashed-zero tabular-nums text-sm text-gray-800 bg-gray-200 p-1 py-0 px-1 rounded-sm;
 }
 
+.dark code {
+  @apply bg-gray-700;
+}
+
 pre {
   @apply antialiased mb-4 p-2 rounded-md bg-gray-200;
   overflow-x: auto;
 }
 
+
+.dark pre {
+  @apply bg-gray-900;
+}
+
 pre>code {
   @apply antialiased p-0 m-0 mb-2 bg-transparent;
 }
+
+.dark pre>code {
+  @apply bg-transparent;
+}
+
 
 iframe {
   @apply antialiased mt-4 mb-6 pb-6 align-middle border-t-2 border-gray-300;
@@ -176,7 +190,7 @@ iframe:active {
   border: none;
   padding: 1rem;
   border-radius: 0.375rem; /* rounded-md */
-  font-size: 90%;
+  font-size: 80%;
   min-width: 250px;
   max-width: 450px;
   z-index: 1;
@@ -226,7 +240,6 @@ iframe:active {
 /* .NotebookEmbed {
   @apply antialiased;
 } */
-
 
 /* incl. SSR things above this  */
 
