@@ -147,7 +147,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         </title>
 
       </Helmet>
-      <header className ="nightwind border-b border-gray-200 dark:border-gray-800">
+      <header className ="nightwind border-b border-white border-opacity-0 dark:border-gray-800">
         <div className="pb-4">
           <Link to="/" className="no-underline text-black">
             <h3 className="tracking-normal">{siteMetadata.title}</h3>
