@@ -33,9 +33,9 @@ It's possible to create a notebook-centric version of this theme. Pages will ess
 - **Framework**: This site is built with [Gatsby](https://www.gatsbyjs.com), which claims to be *"the fastest frontend for the modern web."* It's hosted on [Netlify](https://netlify.com).
 
 - **Design/Style**:
-  The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. Styling is done with [Tailwind CSS](https://tailwindcss.com)—speed, efficiency, simplicity.
+  The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. Styling is done with [Tailwind CSS](https://tailwindcss.com)—speed and simplicity.
 
-  For *dark mode*, I use a Tailwind plugin called [Nightwind](https://nightwindcss.com). It simplifies the handling of colours that change when switching between light ⇄ dark modes. I give your device setting precedence—changing mode on your device will override that of this site. Click/tap this button to switch: <button className="text-xl" style={{ opacity:'0.85' }} onClick={() => nightwind.toggle()}>◑</button>.
+  For *dark mode*, I use a Tailwind plugin called [Nightwind](https://nightwindcss.com). It simplifies the handling of colours that change when switching between light ⇄ dark modes. I give your device's dark mode setting precedence—changing it on your device will override that of this site. Click/tap this button to toggle: <span><button className="text-2xl align-middle" onClick={() => nightwind.toggle()}>◑</button></span>.
 
   To match the style of embedded Wolfram Notebooks to that of notes, I use a [stylesheet](https://github.com/m-arti/ms-notes/blob/master/src/style.wl). The matching isn't quite exact—e.g., this site uses the font 'SF Pro', while notebooks use 'Source Sans Pro'. To stylise a notebook, I run the following from within that notebook:
  ```
@@ -46,17 +46,28 @@ It's possible to create a notebook-centric version of this theme. Pages will ess
 - **Notes**:
   This thing you're currently reading is a *note*. Notes are `.mdx` files. [MDX](https://mdxjs.com) combines the strengths of Markdown and JSX (an extension of Javascript for creating React elements). Here's a brief demo (from within this note) of how both can be used:
 
-  Markdown: `*Italic text in Markdown. Default background.*` renders as *Italic text in Markdown. Default background.*
+  — Markdown:<br/>
+  `*Italic text in Markdown. Default background.*`<br/>
+  *Italic text in Markdown. Default background.*
 
-  JSX:
+  — JSX:
   ```
   <div style={{fontStyle:'italic', backgroundColor:'orange'}}>
     <p>Italic text in JSX. Orange background.</p>
   </div>
   ```
-  renders as:
   <div style={{fontStyle:'italic', backgroundColor:'orange'}}>
     <p>Italic text in JSX. Orange background.</p>
+  </div>
+
+  — JSX + Tailwind:
+  ```
+  <div className="italic text-white bg-indigo-500">
+    <p>Italic text in JSX. Indigo background.</p>
+  </div>
+  ```
+  <div className="italic text-white bg-indigo-500">
+    <p>Italic text in JSX. Indigo background.</p>
   </div>
 
 - **Definitions/Jargon**: You may have noticed that some words (with a ***?*** aloft) have an attached *definition* that pops up when you hover over them, e.g. _tesseract_ and _Hypercubegraph_. These are created using a Gatsby plugin rather appropriately called [*jargon*](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon).
