@@ -25,9 +25,9 @@ const BrainNote = ({ note }) => {
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
         key={reference.slug}
       >
-        <div className={"p-2 ml-2 mb-2 text-gray-600 dark:text-gray-500 rounded-md hover:bg-opacity-50 hover:text-gray-700 hover:bg-gray-300 dark:hover:bg-gray-800 transform transition duration-500"}>
+        <div className={"p-2 ml-2 mb-2 text-gray-600 dark:text-gray-500 rounded-md hover:bg-opacity-50 hover:text-gray-800 hover:bg-gray-300 dark:hover:bg-gray-800 transform transition duration-500"}>
           <h4 className="text-sm font-medium"><span role="img" aria-label="note emoji">📄</span>&nbsp; {reference.title}</h4>
-          <p className="text-sm m-0 mb-0 text-gray-600 dark:text-gray-600 text-justify">{reference.childMdx.excerpt}</p>
+          <p className="text-sm m-0 mb-0 text-gray-600 dark:text-gray-500 text-justify">{reference.childMdx.excerpt}</p>
         </div>
       </RefLink>
     ));
@@ -81,7 +81,7 @@ const BrainNote = ({ note }) => {
         <h1 className="my-4">{note.title}</h1>
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
-      <div className="refs-box bg-opacity-50 text-gray-600 rounded-lg p-4 pt-2 bg-gray-100 dark:bg-gray-950">
+      <div className="refs-box bg-opacity-50 text-gray-600 rounded-lg p-4 pt-4 bg-gray-100 dark:bg-gray-950">
         {referenceBlock}
         <p className="text-sm m-0 text-gray-600 dark:text-gray-600">
           If you'd like to discuss or share an idea, do get in touch.<br/>

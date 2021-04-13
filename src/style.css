@@ -57,6 +57,7 @@ h3 {
 a {
   @apply antialiased underline;
 }
+
 a:hover {
   @apply text-blue-700 no-underline;
 }

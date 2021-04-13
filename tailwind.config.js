@@ -7,6 +7,9 @@ module.exports = {
 
   theme: {
     extend: {
+      colors: {
+        'link': '#dd5511',
+      },
       fontFamily: {
         sans: ['SF Pro Display', ...defaultTheme.fontFamily.sans],
         serif: ["Times New Roman", ...defaultTheme.fontFamily.serif],
@@ -18,7 +21,7 @@ module.exports = {
         white: "black",
         black: "white",
       },
-      transitionDuration: "500ms", // default '300ms'
+      transitionDuration: "100ms", // default '300ms'
       transitionClasses: "full", // default ['text, 'bg', 'border']
     },
   },
