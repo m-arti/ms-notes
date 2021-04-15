@@ -15021,6 +15021,11 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-custom-scroller@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-custom-scroller/-/react-custom-scroller-1.0.0.tgz#44828226ab7d21a5a316c1a3aaedca608cd56c1d"
+  integrity sha512-BvarENOfD5EMvI10h2uQ5+vfPioPlNYyIT0GYsJQvtpUsRBfDxG3f8ZeW623fdlwQe3WhdktXg/cszBqOdPLJA==
+
 react-cytoscapejs@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/react-cytoscapejs/-/react-cytoscapejs-1.2.1.tgz"

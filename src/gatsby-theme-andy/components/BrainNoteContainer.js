@@ -9,6 +9,8 @@ import '../../style.css';
 import DarkModeToggle from "./dark-mode-toggle";
 // thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
 
+import Scrollbar from 'react-smooth-scrollbar';
+
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
 let NUMOFPAGES = 0;
@@ -27,6 +29,7 @@ const StackedPageWrapper = ({
   i,
 }) => (
   <PageIndexProvider value={i}>
+  <Scrollbar damping={0.05}>
     <div
       className={
         `note-container dark:border-l dark:border-gray-800 bg-white md:max-w-2xl px-6 py-4 bg-opacity-100
@@ -77,6 +80,7 @@ const StackedPageWrapper = ({
         {children}
       </div>
     </div>
+    </Scrollbar>
   </PageIndexProvider>
 );
 
