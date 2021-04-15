@@ -44,7 +44,6 @@
     "react": "next",
     "react-dom": "next",
     "react-helmet": "^6.1.0",
-    "react-smooth-scrollbar": "^8.0.6",
     "react-stacked-pages-hook": "^0.2.0",
     "remark-html-katex": "^3.0.0",
     "remark-images": "^2.0.0",
