@@ -25,9 +25,9 @@ const BrainNote = ({ note }) => {
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
         key={reference.slug}
       >
-        <div className={"p-2 ml-2 mb-2 text-gray-600 dark:text-gray-500 rounded-md hover:bg-opacity-50 hover:text-gray-800 hover:bg-gray-300 dark:hover:bg-gray-800 transform transition duration-500"}>
+        <div className={"p-2 ml-2 mb-2 text-gray-500 dark:text-gray-500 rounded-md hover:bg-opacity-50 hover:text-gray-800 hover:bg-gray-200 dark:hover:bg-gray-800 transform transition duration-500"}>
           <h4 className="text-sm font-medium"><span role="img" aria-label="note emoji">📄</span>&nbsp; {reference.title}</h4>
-          <p className="text-sm m-0 mb-0 text-gray-600 dark:text-gray-500 text-justify">{reference.childMdx.excerpt}</p>
+          <p className="text-sm m-0 mb-0 text-gray-500 dark:text-gray-500 text-justify">{reference.childMdx.excerpt}</p>
         </div>
       </RefLink>
     ));
@@ -35,9 +35,9 @@ const BrainNote = ({ note }) => {
     if (references.length > 0) {
       referenceBlock = (
         <>
-          <h3 className="mt-1 mb-2 font-normal text-gray-600, dark:text-gray-500">Referred in:</h3>
-          <div className={"mb-4 border-l-2 border-gray-300 hover:border-gray-400"}>{references}</div>
-          <hr className="mx-auto pt-2 mt-6 border-gray-300 dark:border-gray-700"/>
+          <h3 className="mt-1 mb-4 font-normal text-sm text-gray-500, dark:text-gray-500">Referred in:</h3>
+          <div className={"mb-4 border-l-2 border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700"}>{references}</div>
+          <hr className="mx-auto pt-2 mt-6 border-gray-200 dark:border-gray-800"/>
         </>
       );
     }
@@ -83,7 +83,7 @@ const BrainNote = ({ note }) => {
       </div>
       <div className="refs-box bg-opacity-50 text-gray-600 rounded-lg p-4 pt-4 bg-gray-100 dark:bg-gray-950">
         {referenceBlock}
-        <p className="text-sm m-0 text-gray-600 dark:text-gray-600">
+        <p className="text-sm m-0 text-gray-500 dark:text-gray-500">
           If you'd like to discuss or share an idea, do get in touch.<br/>
           Send me a {' '}
           <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a>{' '}
