@@ -12,6 +12,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -70,7 +71,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Hello! I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
 }
 
 SEO.propTypes = {

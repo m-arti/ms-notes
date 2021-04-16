@@ -1,6 +1,39 @@
 /* purgecss start ignore */
 @tailwind base;
 
+/* optional scrollbar using webkit (cannot autohide if used) */
+
+/* * {
+  scrollbar-width: thin;
+  scrollbar-color: #E5E7EB #fff;  (gray-200)
+  scroll-behavior: smooth !important;
+} */
+
+/* .dark * {
+  scrollbar-width: thin;
+  scrollbar-color: #374151 #000; (gray-700, black)
+} */
+
+/* *::-webkit-scrollbar {
+  width: 8px;
+} */
+
+/* *::-webkit-scrollbar-track {
+  background: none;
+} */
+
+/* *::-webkit-scrollbar-thumb {
+  background-color: #E5E7EB; (gray-200)
+  border-radius: 20px;
+  border: 2px solid #fff;
+} */
+
+/* .dark *::-webkit-scrollbar-thumb {
+  background-color: #374151;  (gray-700)
+  border-radius: 20px;
+  border: 2px solid #000;
+} */
+
 header {
   background-color: rgba(255, 255, 255, .9);
   backdrop-filter: blur(7px);

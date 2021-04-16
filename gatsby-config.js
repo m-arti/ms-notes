@@ -4,6 +4,7 @@ module.exports = {
     author: `Martins Samuel`,
     description: `Hello! I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
     homepage: `https://notes.martinssamuel.com`,
+    siteUrl: `https://notes.martinssamuel.com`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -12,6 +13,30 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-remove-fingerprints`,
+
+    // gatsby-plugin-sitemap
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ['/images'],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+          }
+        `,
+      },
+    },
 
     // gatsby-plugin-manifest
     {
