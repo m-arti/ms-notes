@@ -5,9 +5,9 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import { LinkToStacked } from 'react-stacked-pages-hook';
 
-import components from './MdxComponents';
+import components from '../components/MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
-import Seo from "./Seo";
+import Seo from "../components/Seo";
 
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
