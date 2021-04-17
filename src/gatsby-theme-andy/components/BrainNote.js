@@ -76,7 +76,7 @@ const BrainNote = ({ note }) => {
 
   return (
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
-      <Seo title={note.title} description={note.excerpt} />
+      <SEO title={note.title} description={note.excerpt} />
       <div className="flex-1 mb-4">
         <h1 className="my-4">{note.title}</h1>
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
