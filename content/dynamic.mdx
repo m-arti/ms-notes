@@ -1,0 +1,79 @@
+---
+title: Dynamic
+tags: ['exploration', 'programming']
+---
+
+<NoteTag color="gray">exploration</NoteTag>
+<NoteTag color="gray">programming</NoteTag>
+
+import React from "react";
+import { LiveProvider, LiveEditor, LiveEdit, LiveError, LivePreview } from 'react-live';
+import theme from 'prism-react-renderer/themes/nightOwlLight';
+
+This is a collection of different types/sources of *dynamic objects*, i.e., computational artefacts that're interactive and responsive. What distinguishes these from other kinds of embedded objects is that these allow you some degree of freedom, whereas others simply render a playback.
+
+Beyond interaction, they also facilitate creativity—possibilities that're to some extent boundless. However, they're restrained by the bounds this medium, the web browser, which is itself restrained by the medium of the computer.
+
+<div className='pt-4 pb-4 pl-6 pr-6 rounded-lg text-blue-600 bg-blue-50 dark:bg-opacity-50'><details>
+  <summary className='pt-2 pb-2'><b>More on interfaces</b> (Click to open)</summary>
+  <hr className='border-blue-200 dark:border-blue-900'/>
+  <p className='pt-2 pb-2 text-left'>
+  Think, for instance, about how typing and clicking as the dominant modes of input limit how we interact with computers. That is, personal computers. Or, how sound is rarely used on websites, except for music and videos. There're some good reasons for why this is case: speed, focus, ergonomics, and so on. But there're downsides too, and some relate to those same reasons. It's possible that we could think and act faster if we can navigate interfaces in multiple ways, not just with our fingers. Maybe we can focus better and use computers with greater comfort, if don't have everthing squashed into a screen.
+  <br/><br/>
+  These ideas aren't new and have been mulled over by many people, and for a very long time too. The PC has come a long way and it continues to improve. Not only is it getting faster, it's becoming more accessible and allowing us to be more creative. We can be far more creative with PCs. To attain this would require rethinking how we use and interact with them.
+  </p>
+</details>
+</div>
+
+## Wolfram Notebook
+---
+
+I've previously written about [[Wolfram Notebooks]]. This is a blank one. Here are some things to try: `N[Pi,50]`, `Now`, `{Sunrise[],Sunset[]}` `WikipediaData["Computer","SummaryPlaintext"]`, `GeoGraphics[GeoMarker[]]`.
+
+<iframe className='rounded-md bg-gray-50 border border-gray-200 hover:border-gray-200 dark:border-black dark:hover:border-black' src="https://sandbox.open.wolframcloud.com/app/view/newNotebook?_view=frameless" width="100%" height="500px"></iframe>
+
+## React Live
+---
+
+Dynamically updated code/preview using [React Live](https://github.com/FormidableLabs/react-live).
+
+<div>
+  <LiveProvider code={`<p>Hello world!</p>`}>
+    <LiveEditor theme={theme} className="text-md font-bold rounded bg-gray-50 dark:bg-opacity-50 dark:bg-gray-950"/>
+    <LivePreview className="pt-2 text-md overflow-x"/>
+    <LiveError className="m-2 rounded overflow text-xs text-red-500 bg-gray-100 dark:bg-opacity-50 dark:bg-gray-950"/>
+  </LiveProvider>
+</div>
+
+<div>
+  <LiveProvider code={
+    `<div style={{ background: "LightGoldenRodYellow" }}>
+      <h1 className='font-serif p-12' style={{ color: "DarkOliveGreen", textAlign: "center" }}>
+        Hello there! <br/>
+        Edit this text to update it.
+      </h1>
+    </div>`}>
+    <LiveEditor theme={theme} className="text-md font-bold rounded bg-gray-50 dark:bg-opacity-50 dark:bg-gray-950"/>
+    <LivePreview className="pt-2 text-md overflow-x"/>
+    <LiveError className="m-2 rounded overflow text-xs text-red-500 bg-gray-100 dark:bg-opacity-50 dark:bg-gray-950"/>
+  </LiveProvider>
+</div>
+
+## Observable
+---
+
+Phyllotaxis arrangement by [Dunstan Orchard](https://observablehq.com/@observablehq/phyllotaxis-arrangement) on Observable.
+
+<iframe className='rounded-md dark:bg-white' width="100%" height="750" frameborder="0"
+  src="https://observablehq.com/embed/@observablehq/phyllotaxis-arrangement?cells=spiral%2Cviewof+presets%2Cviewof+dots%2Cviewof+dotSize%2Cviewof+dotColor%2Cviewof+transparentDot%2Cviewof+borderWidth%2Cviewof+borderColor%2Cviewof+backgroundColor%2Cviewof+angle%2Cviewof+zoom">
+</iframe>
+
+
+
+
+## OpenStreetMap
+---
+
+A map from [OpenStreetMap](https://www.openstreetmap.org/).
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=21.12%2C21.21%2C41.41%2C41.41&amp;layer=mapnik"></iframe>

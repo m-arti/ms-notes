@@ -45,6 +45,18 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   );
 };
 
+const CollapsedText = ({ children, summary, text }) => (
+  <div className='pt-4 pb-4 pl-6 pr-6 rounded-lg text-blue-600 bg-blue-50 dark:bg-opacity-50'>
+    <details>
+      <summary className='pt-2 pb-2'><b>{summary}</b> (click to open)</summary>
+      <hr className='border-blue-200 dark:border-blue-900'/>
+      <p className='pt-2 pb-2'>
+        {text}
+      </p>
+    </details>
+  </div>
+);
+
 const NoteTag = ({ children, color }) => (
   <div
     className=
@@ -88,6 +100,7 @@ class WolframNotebook extends React.Component {
 
 export default {
   a: AnchorTag,
+  CollapsedText,
   NoteTag,
   WolframNotebook,
 };

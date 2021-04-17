@@ -34,12 +34,15 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
+                return Object.assign({},
+                  edge.node.frontmatter,
+                  {
+                    description: edge.node.excerpt,
+                    url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                    guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                    author: site.siteMetadata.author,
+                    custom_elements: [{ "content:encoded": edge.node.html }],
+                  })
               })
             },
             query: `

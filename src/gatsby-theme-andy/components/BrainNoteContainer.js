@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 import BrainNote from './BrainNote';
 import '../../style.css';
 
-import DarkModeToggle from "./dark-mode-toggle";
+import DarkModeToggle from "./DarkModeToggle";
 // thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
 
 const NOTE_WIDTH = 650; // 576; // w-xl
