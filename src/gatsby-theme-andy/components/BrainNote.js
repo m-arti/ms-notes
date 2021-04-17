@@ -7,7 +7,7 @@ import { LinkToStacked } from 'react-stacked-pages-hook';
 
 import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
-import SEO from "./SEO";
+import Seo from "./Seo";
 
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
@@ -76,7 +76,7 @@ const BrainNote = ({ note }) => {
 
   return (
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
-      <SEO title={note.title} description={note.excerpt} />
+      <Seo title={note.title} description={note.excerpt} />
       <div className="flex-1 mb-4">
         <h1 className="my-4">{note.title}</h1>
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
