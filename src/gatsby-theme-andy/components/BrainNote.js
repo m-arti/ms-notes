@@ -59,11 +59,11 @@ const BrainNote = ({ note }) => {
                 className="no-underline"
                 to={ln.slug === 'about' ? `about` : `/${ln.slug}`}
               >
-                <h3>&nbsp;»</h3>
+                <h3> »</h3>
               </LinkToStacked>
             </div>
-            <p className="mb-2 text-sm text-justify">
-              {ln.childMdx.excerpt}
+            <p className="mb-2 text-sm text-left">
+              {ln.childMdx.excerpt.replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}
             </p>
           </div>
         );

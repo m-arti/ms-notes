@@ -46,11 +46,11 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
 };
 
 const CollapsedText = ({ children, summary, text }) => (
-  <div className='pt-4 pb-4 pl-6 pr-6 rounded-lg text-blue-600 bg-blue-50 dark:bg-opacity-50'>
+  <div className='pt-4 pb-4 pl-6 pr-6 rounded-lg text-blue-800 bg-blue-50 dark:bg-opacity-50'>
     <details>
       <summary className='pt-2 pb-2'><b>{summary}</b> (click to open)</summary>
       <hr className='border-blue-200 dark:border-blue-900'/>
-      <p className='pt-2 pb-2'>
+      <p className='pt-2 pb-2 text-left'>
         {text}
       </p>
     </details>
@@ -60,7 +60,7 @@ const CollapsedText = ({ children, summary, text }) => (
 const NoteTag = ({ children, color }) => (
   <div
     className=
-    {`notetag antialiased bg-${color}-100 text-black py-1 px-2 mb-5 mr-2 text-xs font-normal rounded-md inline-block`}
+    {`notetag antialiased bg-${color}-100 text-black py-1 px-2 mb-5 mr-2 text-xs rounded-md inline-block`}
   >
     {children}
   </div>
