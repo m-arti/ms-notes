@@ -24,24 +24,27 @@ module.exports = {
               siteMetadata {
                 title
                 description
+                author
                 siteUrl
                 site_url: siteUrl
+                homepage
               }
             }
           }
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
+            serialize: ({ query: { site, allSitePage, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
                 return Object.assign({},
                   edge.node.frontmatter,
                   {
                     description: edge.node.excerpt,
-                    url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                    guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
                     author: site.siteMetadata.author,
                     custom_elements: [{ "content:encoded": edge.node.html }],
+
+                    url: site.siteMetadata.siteUrl + '/' + edge.node.parent.slug,
+
                   })
               })
             },
@@ -54,14 +57,21 @@ module.exports = {
                       html
                       frontmatter {
                         title
+                        tags
+                      }
+                      parent {
+                        ... on BrainNote {
+                          slug
+                        }
                       }
                     }
                   }
                 }
+
               }
             `,
             output: "/rss.xml",
-            title: "Martins' Notes' RSS Feed",
+            title: "Martins' Notes — RSS Feed",
           },
         ],
       },
@@ -76,9 +86,15 @@ module.exports = {
           {
             site {
               siteMetadata {
+                title
+                description
+                author
                 siteUrl
+                site_url: siteUrl
+                homepage
               }
             }
+
             allSitePage {
               edges {
                 node {
