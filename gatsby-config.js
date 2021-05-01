@@ -42,9 +42,7 @@ module.exports = {
                     description: edge.node.excerpt,
                     author: site.siteMetadata.author,
                     custom_elements: [{ "content:encoded": edge.node.html }],
-
                     url: site.siteMetadata.siteUrl + '/' + edge.node.parent.slug,
-
                   })
               })
             },
