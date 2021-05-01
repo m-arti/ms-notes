@@ -9802,7 +9802,32 @@ inline-style-parser@0.1.1:
   resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.1.1.tgz#ec8a3b429274e9c0a1f1c4ffa9453a7fef72cea1"
   integrity sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==
 
-inquirer2@^0.1.1, "inquirer2@github:jonschlinkert/inquirer2":
+inquirer2@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/inquirer2/-/inquirer2-0.1.1.tgz#bc5424a814357c41e65e2e957fe536aeea9bf1f6"
+  integrity sha1-vFQkqBQ1fEHmXi6Vf+U2ruqb8fY=
+  dependencies:
+    ansi-escapes "^1.1.1"
+    ansi-regex "^2.0.0"
+    arr-flatten "^1.0.1"
+    arr-pluck "^0.1.0"
+    array-unique "^0.2.1"
+    chalk "^1.1.1"
+    cli-cursor "^1.0.2"
+    cli-width "^1.1.0"
+    extend-shallow "^2.0.1"
+    figures "^1.4.0"
+    is-number "^2.1.0"
+    is-plain-object "^2.0.1"
+    lazy-cache "^1.0.3"
+    lodash.where "^3.1.0"
+    readline2 "^1.0.1"
+    run-async "^0.1.0"
+    rx-lite "^4.0.7"
+    strip-color "^0.1.0"
+    through2 "^2.0.0"
+
+"inquirer2@github:jonschlinkert/inquirer2":
   version "0.1.1"
   resolved "https://codeload.github.com/jonschlinkert/inquirer2/tar.gz/9b4985f5bf7c8590bb79e039de1acab5719ae3fc"
   dependencies:
