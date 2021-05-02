@@ -24,7 +24,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
   const [zoom, setZoom] = useState(1);
 
   const modalSize = {
-    width: Math.min(windowSize.width - 200, 800),
+    width: Math.min(windowSize.width - 100, 800),
     height: Math.min(windowSize.height - 200, 700),
   };
 
@@ -207,7 +207,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
         value.width / modalSize.width
       );
       const svg = d3.select("#d3-container");
-      // zoomHandler.current.scaleTo(svg, ratio);
+      zoomHandler.current.scaleTo(svg, ratio);
 
       zoomHandler.current.translateTo(
         svg,

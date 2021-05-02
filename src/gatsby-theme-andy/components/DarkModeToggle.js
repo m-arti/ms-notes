@@ -10,7 +10,7 @@ const DarkModeToggle = () => {
       title="Activate light/dark mode"
     >
       <button
-        style={{ minWidth:'40px', textAlign: 'center' }}
+        style={{ minWidth:'30px', textAlign: 'right' }}
         onClick={() => nightwind.toggle()}
       >
         ◑

@@ -3,13 +3,13 @@ import React, { useState, lazy, Suspense } from "react";
 const Graph = lazy(() => import("./GraphVisualisation"));
 
 const GraphButton = () => {
-  
+
   const [graphState, setGraphState] = useState("hidden");
 
   return (
     <React.Fragment>
       <button
-        style={{ minWidth:'40px', textAlign: 'center' }}
+        style={{ minWidth:'30px', textAlign: 'right' }}
         title="Show graph of notes"
         aria-label="Show graph of notes"
         className="graph-button text-3xl"
