@@ -259,6 +259,118 @@ iframe:active {
   border: none;
 }
 
+/* graph styles (Copyright (c) 2020 Mathieu Dutour, from wolfr.am/VbLnqzx0) */
+.graph-modal {
+  @apply antialiased;
+  z-index: 99;
+  position: fixed;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: -5px -5px 15px -3px #eee,
+    0 4px 10px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dark .graph-modal {
+  @apply antialiased border border-gray-800;
+  background-color: rgba(2, 3, 8, 0.95);
+  box-shadow: none;
+}
+
+.dark .graph-modal-body text, line {
+  fill: #ccc;
+}
+
+.dark .graph-modal-body circle {
+  fill: #ccc;
+}
+
+.graph-modal-hidden {
+  opacity: 0;
+  z-index: 0;
+}
+
+.graph-overlay {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+}
+
+.dark .graph-overlay {
+  background-color: rgba(0,0,0, 0.75);
+  backdrop-filter: blur(5px);
+}
+
+.graph-modal-close,
+.graph-modal-scale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  background: none;
+  color: #000;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.dark .graph-modal-close {
+  color: #fff;
+}
+
+.dark .graph-modal-scale {
+  color: #fff;
+}
+
+.graph-modal-scale svg {
+  width: 20px;
+  height: 20px;
+}
+
+.graph-modal-close path,
+.graph-modal-scale path {
+  fill: black;
+}
+
+.dark .graph-modal-close path {
+  fill: white;
+}
+.dark .graph-modal-scale path {
+  fill: white;
+}
+
+.graph-modal-scale {
+  right: 30px;
+}
+
+.graph-modal-minimized .graph-modal-scale svg,
+.graph-modal-minimized .graph-modal-close svg {
+  width: 15px;
+  height: 15px;
+}
+
+.graph-modal-minimized .graph-modal-scale {
+  right: 25px;
+}
+
+.graph-modal-body {
+  height: 100%;
+  width: 100%;
+}
+
+.graph-modal-body .node,
+.graph-modal-body .text {
+  cursor: pointer;
+}
+
 /* highlight text */
 .highlight {
   @apply antialiased bg-yellow-300 p-1 py-0 px-1 rounded-md;

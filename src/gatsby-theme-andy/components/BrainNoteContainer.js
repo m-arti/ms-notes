@@ -6,8 +6,9 @@ import { Helmet } from 'react-helmet';
 import BrainNote from './BrainNote';
 import '../../style.css';
 
-import DarkModeToggle from "./DarkModeToggle";
 // thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
+import DarkModeToggle from "./DarkModeToggle";
+import GraphButton from "./GraphButton";
 
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
@@ -143,7 +144,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
 
         <meta charSet="utf-8" />
         <title>
-          {siteMetadata.title} — {note.title}
+          {note.title} | {siteMetadata.title}
         </title>
 
       </Helmet>
@@ -154,6 +155,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           </Link>
         </div>
         <div className="controls">
+          <GraphButton/>
           <DarkModeToggle/>
         </div>
       </header>
