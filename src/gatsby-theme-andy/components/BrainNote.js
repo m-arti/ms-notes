@@ -7,7 +7,7 @@ import { LinkToStacked } from 'react-stacked-pages-hook';
 
 import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
-import SEO from "../components/Seo";
+import SEO from "../components/seo";
 
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
