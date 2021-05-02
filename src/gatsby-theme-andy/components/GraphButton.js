@@ -12,7 +12,7 @@ const GraphButton = () => {
         style={{ minWidth:'30px', textAlign: 'right' }}
         title="Show graph of notes"
         aria-label="Show graph of notes"
-        className="graph-button text-3xl"
+        className="text-3xl"
         onClick={() => setGraphState("maximized")}
       >
         ⊞

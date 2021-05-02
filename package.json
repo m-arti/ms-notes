@@ -17,8 +17,9 @@
     "@tippyjs/react": "^4.0.2",
     "@types/npm": "^2.0.31",
     "d3": "^5.16.0",
-    "gatsby": "^2.20.36",
+    "gatsby": "^3.4.0",
     "gatsby-image": "^2.8.0",
+    "gatsby-plugin-catch-links": "^3.4.0",
     "gatsby-plugin-feed": "^3.3.0",
     "gatsby-plugin-manifest": "^3.4.0",
     "gatsby-plugin-mdx": "^1.2.13",
@@ -28,6 +29,8 @@
     "gatsby-plugin-sharp": "^3.5.0-next.1",
     "gatsby-plugin-sitemap": "^3.3.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
+    "gatsby-react-router-scroll": "3.0.3",
+    "gatsby-remark-autolink-headers": "^4.1.0",
     "gatsby-remark-copy-linked-files": "^2.9.0",
     "gatsby-remark-embedder": "^2.1.1",
     "gatsby-remark-external-links": "^0.0.4",
@@ -36,6 +39,7 @@
     "gatsby-remark-katex": "^3.7.0",
     "gatsby-remark-responsive-iframe": "^2.8.0",
     "gatsby-remark-smartypants": "^2.9.0",
+    "gatsby-remark-table-of-contents": "^1.0.0",
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-theme-andy": "^0.1.4",
     "gatsby-transformer-remark": "^3.2.0",
@@ -68,5 +72,8 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  },
+  "resolutions": {
+    "gatsby-react-router-scroll": "3.0.3"
   }
 }

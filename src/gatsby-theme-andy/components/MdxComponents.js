@@ -25,7 +25,7 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
       </Tippy>
     );
   return noPopups || restProps.children === href ? (
-    <a {...restProps} href={href} />
+    <Link {...restProps} href={href} />
   ) : (
     <Tippy
       placement="top"
@@ -40,7 +40,7 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
           py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-white dark:bg-gray-900`}>{href}</div>
       }
     >
-      <a className="" {...restProps} href={href} />
+      <Link className="" {...restProps} href={href} />
     </Tippy>
   );
 };

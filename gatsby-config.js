@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: `https://notes.martinssamuel.com`,
   },
   plugins: [
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-postcss`,
     `gatsby-image`,
     `gatsby-plugin-react-helmet`,
@@ -147,9 +148,34 @@ module.exports = {
         extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           `gatsby-remark-embedder`,
-
-          //`gatsby-remark-responsive-iframe`,
           `gatsby-remark-copy-linked-files`,
+
+          // gatsby-remark-autolink-headers`
+          {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: "Table of Contents",
+              tight: false,
+              ordered: false,
+              fromHeading: 1,
+              toHeading: 3,
+              className: "table-of-contents"
+            },
+          },
+
+          // gatsby-remark-autolink-headers`
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `0`,
+              icon: false,
+              className: `header-link`,
+              maintainCase: false,
+              removeAccents: true,
+              isIconAfterHeader: true,
+              elements: [`h1`, `h2`, `h3`],
+            },
+          },
 
           // configure gatsby-remark-responsive-iframe
           {
@@ -202,7 +228,7 @@ module.exports = {
             }
           }
         ],
-        remarkPlugins: [require(`remark-slug`), require("remark-math"), require("remark-html-katex")]
+        remarkPlugins: [require(`remark-slug`), require(`remark-math`), require(`remark-html-katex`)]
       },
     },
   ],
