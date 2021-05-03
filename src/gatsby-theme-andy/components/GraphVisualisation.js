@@ -71,7 +71,6 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
       return node
         .on("click", (d) => {
           navigate(d.slug);
-          console.log(d.slug)
           // setGraphState("minimized");
         });
         // .on("mouseenter", (d) => {

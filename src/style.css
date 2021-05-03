@@ -1,6 +1,17 @@
 /* purgecss start ignore */
 @tailwind base;
 
+html {
+  @apply antialiased;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  @apply antialiased;
+  height: 100vh;
+  scroll-behavior: smooth !important;
+}
+
 /* optional scrollbar using webkit (cannot autohide if used) */
 
 /* * {
@@ -61,12 +72,6 @@ header {
 
 header.controls {
   display: flex;
-}
-
-body {
-  @apply antialiased;
-  height: 100vh;
-  scroll-behavior: smooth !important;
 }
 
 img {
@@ -265,14 +270,14 @@ iframe:active {
   z-index: 99;
   position: fixed;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: -5px -5px 15px -3px #eee,
-    0 4px 10px -2px rgba(0, 0, 0, 0.05);
+    0 4px 15px -2px rgba(0, 0, 0, 0.08);
 }
 
 .dark .graph-modal {
   @apply antialiased border border-gray-800;
-  background-color: rgba(2, 3, 8, 0.95);
+  background-color: rgba(2, 3, 6, 0.8);
   box-shadow: none;
 }
 
@@ -301,13 +306,14 @@ iframe:active {
   justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
 }
 
 .dark .graph-overlay {
-  background-color: rgba(0,0,0, 0.75);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0,0,0, 0.8);
 }
 
 .graph-modal-close,
