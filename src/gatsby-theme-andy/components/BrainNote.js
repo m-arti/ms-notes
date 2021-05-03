@@ -54,13 +54,15 @@ const BrainNote = ({ note }) => {
             className={`${popupStyles} bg-gray-100 dark:bg-gray-900 text-black`}
           >
             <div className="flex flex-wrap gap-x-2 content-start">
-              <h3 className="mb-2">{ln.title}</h3>
+              <h3 className="mb-2">
+              {ln.title}
               <LinkToStacked
-                className="no-underline"
+                className="no-underline text-2xl"
                 to={ln.slug === 'about' ? `about` : `/${ln.slug}`}
               >
-                <h3 className="text-2xl mt-2.5"> ◫</h3>
+              &nbsp;◫
               </LinkToStacked>
+              </h3>
             </div>
             <p className="mb-2 text-sm font-normal text-left">
               {ln.childMdx.excerpt.replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}
