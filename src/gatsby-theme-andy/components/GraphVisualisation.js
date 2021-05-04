@@ -6,6 +6,7 @@ import { animated, useSpring } from "react-spring";
 import * as d3 from "d3";
 import { useGraphData } from "./UseGraphData.js";
 import { useWindowSize } from "./UseWindowSize.js";
+import { usePrefersReducedMotion } from "./UsePrefersReducedMotion";
 
 const RADIUS = 3;
 const STROKE = 1;
@@ -18,6 +19,9 @@ const MINIMIZED_GRAPH = {
 };
 
 const GraphVisualisation = ({ setGraphState, graphState }) => {
+
+  const prefersReducedMotion = usePrefersReducedMotion();
+
   const [nodesData, linksData, navigate, highlight] = useGraphData();
   const windowSize = useWindowSize();
   const d3Container = useRef(null);

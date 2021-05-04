@@ -1,23 +1,28 @@
 import React from "react";
-
 import nightwind from "nightwind/helper";
+import useSound from 'use-sound';
+import switchSfx from '../../assets/sounds/switch.mp3';
+// sfx is by SoundJay (wolfr.am/VeLxV630)
 
 const DarkModeToggle = () => {
+
+  const [play] = useSound(switchSfx);
+
   return (
-    <label
-      className="text-2xl"
-      aria-label="Activate light/dark mode"
-      title="Activate light/dark mode"
-    >
       <button
-        style={{ minWidth:'30px', textAlign: 'right' }}
-        onClick={() => nightwind.toggle()}
+        style={{ minWidth:'35px', textAlign: 'center' }}
+        onClick={() => {
+          nightwind.toggle();
+          play();
+        }}
+        className="text-2xl transition duration-500 ease-in-out opacity-80 hover:opacity-100"
+        aria-label="Activate light/dark mode"
+        title="Activate light/dark mode"
       >
         ◑
       </button>
-      <div/>
-    </label>
   );
+
 };
 
 export default DarkModeToggle;
