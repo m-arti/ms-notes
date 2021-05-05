@@ -286,7 +286,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
           title="Close graph"
           aria-label="Close graph"
         >
-          <div className="inline-block align-middle text-center text-xl text-black dark:text-white" style={{ textAlign: 'center', lineHeight:'0px' }}>
+          <div className="inline-block align-middle text-center text-xl text-black dark:text-white" style={{ textAlign: 'center'}}>
             ✕
           </div>
         </button>
