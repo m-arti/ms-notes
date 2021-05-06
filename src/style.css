@@ -175,7 +175,7 @@ details>p {
 }
 
 details>summary {
-  @apply antialiased pt-2 pb-2 text-left font-bold;
+  @apply antialiased pt-2 pb-2 text-left font-normal;
 }
 
 iframe {
