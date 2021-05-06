@@ -159,25 +159,24 @@ pre>code {
 }
 
 details {
-  @apply antialiased pt-4 pb-4 pl-8 pr-8 rounded-lg text-blue-800 bg-blue-50 dark:bg-opacity-50 ;
+  @apply antialiased pt-4 pb-4 pl-8 pr-8 rounded-lg text-blue-600 font-light bg-blue-50 dark:bg-opacity-50 ;
 }
 
 details>blockquote {
-  @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-blue-200;
+  @apply antialiased font-light py-0 px-4 mb-6 mt-6 border-l-2 border-blue-200 dark:border-opacity-50;
 }
 
 details>hr {
-  @apply border-blue-200 dark:border-blue-900;
+  @apply border-blue-200 dark:border-opacity-50;
 }
 
 details>p {
-  @apply antialiased pt-2 pb-2 text-left;
+  @apply antialiased font-light pt-2 pb-2 text-left;
 }
 
 details>summary {
   @apply antialiased pt-2 pb-2 text-left font-bold;
 }
-
 
 iframe {
   @apply antialiased mt-4 mb-6 pb-6 align-middle; /* border-t-2 border-gray-300 */
