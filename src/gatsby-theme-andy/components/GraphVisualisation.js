@@ -303,7 +303,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
         )}
 
         <div className="flex p-4" style={{ justifyContent: 'center'}}>
-          <div className="px-3 py-1.5 text-black text-center text-xs font-light tracking-wider rounded-md bg-gray-100 bg-opacity-50 dark:bg-gray-950">NOTES GRAPH</div>
+          <div className="px-3 text-black text-center text-xs font-light tracking-wider">NOTES GRAPH</div>
         </div>
 
       </animated.div>
