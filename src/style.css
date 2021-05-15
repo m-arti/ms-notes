@@ -365,6 +365,7 @@ iframe {
 
 .graph-modal-body .node,
 .graph-modal-body .text {
+  @apply font-light;
   cursor: pointer;
 }
 

@@ -8,8 +8,8 @@ import { useGraphData } from "./UseGraphData.js";
 import { useWindowSize } from "./UseWindowSize.js";
 import { usePrefersReducedMotion } from "./UsePrefersReducedMotion";
 
-const RADIUS = 3;
-const STROKE = 1;
+const RADIUS = 2;
+const STROKE = 0.8;
 const FONT_SIZE = 12;
 const TICKS = 5000;
 const FONT_BASELINE = 10;
@@ -41,7 +41,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
         d3
           .forceLink(linksData)
           .id((d) => d.id)
-          .distance(20)
+          .distance(50)
       )
       .force(
         "center",
@@ -277,8 +277,9 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
         className={`graph-modal graph-modal-${graphState}`}
         onClick={(ev) => ev.preventDefault()}
       >
+
         <button
-          className="graph-modal-close mr-2 mt-2 px-3 py-2 rounded-md hover:bg-gray-100"
+          className="graph-modal-close mr-2 mt-2 px-3 py-2 rounded-md bg-gray-100 bg-opacity-50 transition duration-500 ease-in-out hover:bg-gray-100"
           type="button"
           onClick={() => {
             setGraphState("hidden");
@@ -286,7 +287,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
           title="Close graph"
           aria-label="Close graph"
         >
-          <div className="inline-block align-middle text-center text-xl text-black dark:text-white" style={{ textAlign: 'center'}}>
+          <div className="inline-block align-middle text-center text-xl text-black font-thin dark:text-white" style={{ textAlign: 'center'}}>
             ✕
           </div>
         </button>
@@ -300,6 +301,11 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
             </g>
           </svg>
         )}
+
+        <div className="flex p-4" style={{ justifyContent: 'center'}}>
+          <div className="px-3 py-1.5 text-black text-center text-xs font-light tracking-wider rounded-md bg-gray-100 bg-opacity-50 dark:bg-gray-950">NOTES GRAPH</div>
+        </div>
+
       </animated.div>
 
     </div>,
