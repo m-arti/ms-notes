@@ -1,4 +1,5 @@
 module.exports = {
+
   siteMetadata: {
     title: `Martins' Notes`,
     author: `Martins Samuel`,
@@ -6,14 +7,28 @@ module.exports = {
     homepage: `https://notes.martinssamuel.com`,
     siteUrl: `https://notes.martinssamuel.com`,
   },
+
+  flags: { PRESERVE_WEBPACK_CACHE: true },
+
   plugins: [
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-postcss`,
-    `gatsby-image`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-remove-fingerprints`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+
+    // gatsby-remark-images
+    {
+      resolve: `gatsby-remark-images`,
+      options: {
+        maxWidth: 100,
+        quality: 100,
+        showCaptions: true,
+        markdownCaptions: true,
+        withWebp: true,
+      },
+    },
 
     // gatsby-plugin-feed
     {
@@ -148,9 +163,33 @@ module.exports = {
         extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           `gatsby-remark-embedder`,
-          `gatsby-remark-copy-linked-files`,
 
-          // gatsby-remark-autolink-headers`
+          // gatsby-remark-copy-linked-files
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              ignoreFileExtensions: [],
+            },
+          },
+
+          // gatsby-remark-relative-images (must come before gatsby-remark-images)
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
+
+          // gatsby-remark-images
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 100,
+              quality: 100,
+              showCaptions: true,
+              markdownCaptions: true,
+              withWebp: true,
+            },
+          },
+
+          // gatsby-remark-table-of-contents`
           {
             resolve: `gatsby-remark-table-of-contents`,
             options: {
@@ -182,17 +221,6 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.25rem`,
-            },
-          },
-
-          // gatsby-remark-images
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 545,
-              linkImagesToOriginal: false,
-              quality: 80,
-              withWebp: true,
             },
           },
 
@@ -232,4 +260,5 @@ module.exports = {
       },
     },
   ],
+
 };
