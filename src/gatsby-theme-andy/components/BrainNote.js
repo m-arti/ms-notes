@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from "gatsby";
+import { useStaticQuery, graphql } from 'gatsby';
 import { Link } from 'gatsby';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
@@ -14,6 +14,8 @@ const NOTE_MAX_WIDTH = 800; // 768;
 const popupStyles = `w-150 px-4 pb-2 rounded-md shadow-xl`;
 
 const BrainNote = ({ note }) => {
+  const data = useStaticQuery(query)
+
   const [width] = useWindowWidth();
   let references = [];
   let referenceBlock;
@@ -27,7 +29,7 @@ const BrainNote = ({ note }) => {
       >
         <div className={"p-2 ml-2 mb-2 text-gray-500 dark:text-gray-500 rounded-md hover:bg-opacity-50 hover:text-gray-800 hover:bg-gray-200 dark:hover:bg-gray-800 transform transition duration-500"}>
           <h4 className="text-sm font-medium"><span role="img" aria-label="note emoji">📄</span>&nbsp; {reference.title}</h4>
-          <p className="text-sm m-0 mb-0 text-gray-500 dark:text-gray-500 text-justify">{reference.childMdx.excerpt}</p>
+          <p className="text-sm m-0 mb-0 text-gray-500 dark:text-gray-500 text-justify">{reference.childMdx.excerpt.replace(' .', '.').replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}</p>
         </div>
       </RefLink>
     ));
@@ -96,9 +98,12 @@ const BrainNote = ({ note }) => {
   );
 };
 
+// Site last updated: {data.site.buildTime}
+
 export const query = graphql`
   query {
     site {
+      buildTime(fromNow: true)
       siteMetadata {
         title
         description

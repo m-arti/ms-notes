@@ -8,7 +8,10 @@ module.exports = {
     siteUrl: `https://notes.martinssamuel.com`,
   },
 
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+  },
 
   plugins: [
     `gatsby-plugin-catch-links`,
@@ -151,7 +154,24 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [],
+        plugins: [
+          // gatsby-remark-relative-images-v2 (must come before gatsby-remark-images)
+          {
+            resolve: `gatsby-remark-relative-images-v2`,
+          },
+
+          // gatsby-remark-images
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 100,
+              quality: 100,
+              showCaptions: true,
+              markdownCaptions: true,
+              withWebp: true,
+            },
+          },
+        ],
       },
     },
 
@@ -169,23 +189,6 @@ module.exports = {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
               ignoreFileExtensions: [],
-            },
-          },
-
-          // gatsby-remark-relative-images (must come before gatsby-remark-images)
-          {
-            resolve: `gatsby-remark-relative-images`,
-          },
-
-          // gatsby-remark-images
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 100,
-              quality: 100,
-              showCaptions: true,
-              markdownCaptions: true,
-              withWebp: true,
             },
           },
 
