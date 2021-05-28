@@ -62,7 +62,7 @@ const BrainNote = ({ note }) => {
                 className="no-underline text-2xl"
                 to={ln.slug === 'about' ? `about` : `/${ln.slug}`}
               >
-              &nbsp;◫
+              &nbsp;&nbsp;&nbsp;◫
               </LinkToStacked>
               </h3>
             </div>
