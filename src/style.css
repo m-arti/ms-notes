@@ -3,13 +3,14 @@
 
 html {
   @apply antialiased;
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
 
 body {
   @apply antialiased;
   height: 100vh;
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
+  text-underline-position: under;
 }
 
 /* optional scrollbar using webkit (cannot autohide if used) */
@@ -94,11 +95,12 @@ h3 {
 }
 
 a {
-  @apply antialiased underline;
+  @apply antialiased underline transition duration-500;
+  text-decoration-thickness: 0.5px !important;
 }
 
 a:hover {
-  @apply text-blue-700 no-underline;
+  @apply text-blue-600 no-underline transition duration-500;
 }
 
 p {

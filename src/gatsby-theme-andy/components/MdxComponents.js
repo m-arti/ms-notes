@@ -11,17 +11,17 @@ import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
 
 // TODO cmd+click open page in new tab
 
-const innerLinkStyles = `text-blue-600 dark:text-blue-300 px-1 -mx-1 rounded dark:hover:bg-blue-900`;
+const innerLinkStyles = `text-blue-600 dark:text-blue-300 px-1 -mx-1 rounded dark:hover:bg-blue-900 hover:bg-opacity-80 dark:hover:bg-opacity-80`;
 
 const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   if (!href) href = restProps.to;
   if (!href.match(/^http/))
     return noPopups ? (
-      <Link {...restProps} to={href} className={`${innerLinkStyles} hover:bg-indigo-100`
+      <Link {...restProps} to={href} className={`${innerLinkStyles} transition duration-500 hover:bg-indigo-100`
       }/>
     ) : (
       <Tippy content={popups[href.replace(/^\//, '')]} placement="right" animation="shift-away" duration="500" arrow={true} interactive={true} hideOnClick={true} inlinePositioning={true} interactiveDebounce="100" plugins={[inlinePositioning]}>
-        <LinkToStacked {...restProps} to={href} className={`${innerLinkStyles} hover:bg-indigo-100`} />
+        <LinkToStacked {...restProps} to={href} className={`${innerLinkStyles} transition duration-500 hover:bg-indigo-100`} />
       </Tippy>
     );
   return noPopups || restProps.children === href ? (
