@@ -9,6 +9,7 @@ import '../../style.css';
 // thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
 import DarkModeToggle from "./DarkModeToggle";
 import GraphButton from "./GraphButton";
+import Timer from "./Timer";
 
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
