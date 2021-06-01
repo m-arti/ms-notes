@@ -35,7 +35,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
   const simulation = useRef(
     d3
       .forceSimulation(nodesData)
-      .force("charge", d3.forceManyBody().strength(-500))
+      .force("charge", d3.forceManyBody().strength(-1000))
       .force(
         "link",
         d3
