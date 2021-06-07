@@ -207,7 +207,7 @@ iframe {
 /* Add a dashed line under jargon terms */
 .jargon-term {
   text-decoration: underline dotted #228be6;
-  text-underline-thickness: 1.5px;
+  text-underline-thickness: 0.5px;
   text-underline-offset: 0.2em;
 }
 
