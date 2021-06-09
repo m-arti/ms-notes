@@ -171,24 +171,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          // gatsby-remark-relative-images-v2 (must come before gatsby-remark-images)
-          {
-            resolve: `gatsby-remark-relative-images-v2`,
-          },
-
-          // gatsby-remark-images
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 100,
-              quality: 100,
-              showCaptions: true,
-              markdownCaptions: true,
-              withWebp: true,
-            },
-          },
-        ],
+        plugins: [],
       },
     },
 
