@@ -7,6 +7,8 @@ import { Link } from 'gatsby';
 
 import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
 
+import Image from "./Image";
+
 // Animation styles are imported in `src/styles.css`
 
 // TODO cmd+click open page in new tab
@@ -57,6 +59,14 @@ const CollapsedText = ({ children, summary, text }) => (
   </div>
 );
 
+const Figcaption = ({ children }) => (
+  <div
+    className= "mt-1 mb-4 text-sm font-light text-center text-gray-500 "
+  >
+    {children}
+  </div>
+);
+
 const NoteTag = ({ children, color }) => (
   <div
     className=
@@ -101,6 +111,8 @@ class WolframNotebook extends React.Component {
 export default {
   a: AnchorTag,
   CollapsedText,
+  figcaption: Figcaption,
+  img: Image,
   NoteTag,
   WolframNotebook,
 };

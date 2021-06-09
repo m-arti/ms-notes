@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 module.exports = {
 
   siteMetadata: {
@@ -18,20 +20,35 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-remove-fingerprints`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
 
-    // gatsby-remark-images
     {
-      resolve: `gatsby-remark-images`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        maxWidth: 100,
-        quality: 100,
-        showCaptions: true,
-        markdownCaptions: true,
-        withWebp: true,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
+
+    // gatsby-plugin-sharp
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `tracedSVG`,
+          quality: 100,
+          backgroundColor: `transparent`,
+          transformOptions: {grayscale: false},
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
+
+    `gatsby-transformer-sharp`,
 
     // gatsby-plugin-feed
     {
