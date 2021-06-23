@@ -41,7 +41,7 @@ class Search extends Component {
           className="search__input tracking-tight bg-transparent pr-2 text-black  border-b border-gray-200 focus:outline-none focus:border-yellow-500 focus:border-transparent"
           type="text"
           onChange={this.search}
-          placeholder={' > Search...'}
+          placeholder={' > Search'}
         />
         <div className="search__list text-sm max-w-md">
           <ResultList/>
@@ -51,18 +51,23 @@ class Search extends Component {
   }
 
   getSearchResults(query) {
+    // language
     var index = window.__FLEXSEARCH__.en.index
     var store = window.__FLEXSEARCH__.en.store
     if (!query || !index) {
       return []
     } else {
       var results = []
+
+      // search indexed fields
       Object.keys(index).forEach(idx => {
         results.push(...index[idx].values.search(query))
       })
 
+      // find unique ids of the nodes
       results = Array.from(new Set(results))
 
+      // return corresponding nodes in store
       var nodes = store
         .filter(node => (results.includes(node.id) ? node : null))
         .map(node => node.node)

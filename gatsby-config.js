@@ -285,16 +285,16 @@ module.exports = {
           },
 
           {
-            name: 'description',
+            name: 'excerpt',
             indexed: true,
-            resolver: 'frontmatter.description',
+            resolver: 'frontmatter.excerpt',
             attributes: {
               encode: 'balance',
-              tokenize: 'strict',
+              tokenize: 'full',
               threshold: 6,
               depth: 3,
             },
-            store: false,
+            store: true,
           },
           {
             name: 'url',
