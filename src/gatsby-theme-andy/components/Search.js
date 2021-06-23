@@ -38,13 +38,13 @@ class Search extends Component {
     return (
       <div className={this.props.classNames}>
         <input
-          className="search__input bg-white pl-2 pr-2 text-black"
+          className="search__input tracking-tight bg-white pr-2 text-black border-b border-gray-200 focus:outline-none focus:border-yellow-500 focus:border-transparent"
           type="text"
           onChange={this.search}
-          placeholder={'> Search...'}
+          placeholder={' > Search...'}
         />
-        <div className="search__list -pl-2 text-sm">
-          <ResultList />
+        <div className="search__list -pl-2 text-sm max-w-md">
+          <ResultList/>
         </div>
       </div>
     )
