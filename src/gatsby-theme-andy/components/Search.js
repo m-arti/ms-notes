@@ -38,7 +38,7 @@ class Search extends Component {
     return (
       <div className={this.props.classNames}>
         <input
-          className="search__input"
+          className="search__input bg-white"
           type="text"
           onChange={this.search}
           placeholder={'> Search...'}
