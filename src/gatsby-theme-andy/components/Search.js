@@ -29,7 +29,7 @@ class Search extends Component {
         this.state.results.length === 0 &&
         this.state.query.length > 0
       ) {
-        return 'Please insert at least 3 characters'
+        return 'Type at least 3 characters'
       } else {
         return ''
       }
@@ -38,12 +38,12 @@ class Search extends Component {
     return (
       <div className={this.props.classNames}>
         <input
-          className="search__input bg-white"
+          className="search__input bg-white pl-2 pr-2 text-black"
           type="text"
           onChange={this.search}
           placeholder={'> Search...'}
         />
-        <div className="search__list">
+        <div className="search__list -pl-2 text-sm">
           <ResultList />
         </div>
       </div>
