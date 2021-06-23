@@ -11,6 +11,8 @@ import DarkModeToggle from "./DarkModeToggle";
 import GraphButton from "./GraphButton";
 import Timer from "./Timer";
 
+import Search from "./Search";
+
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
 let NUMOFPAGES = 0;
@@ -149,21 +151,27 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         </title>
 
       </Helmet>
-      <header className ="nightwind border-b border-white border-opacity-0 dark:border-gray-800">
+      <header className = "nightwind border-b border-white border-opacity-0 dark:border-gray-800">
         <div className="pb-4">
           <Link to="/" className="no-underline text-black">
             <h3 className="tracking-normal">{siteMetadata.title}</h3>
           </Link>
         </div>
-        <div className="controls">
-          <GraphButton/>
-          <DarkModeToggle/>
+
+        <div className = "flex justify-end">
+          <div className="p-2 rounded">
+            <Search/>
+          </div>
+          <div className="controls">
+            <GraphButton/>
+            <DarkModeToggle/>
+          </div>
         </div>
+
       </header>
 
       <div
-        className="nightwind flex-0 flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden"
-        ref={scrollContainer}
+        className= "nightwind flex-0 flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden" ref={scrollContainer}
       >
         <div
           className="note-columns-container nightwind bg-white flex flex-grow transition-width duration-100"
