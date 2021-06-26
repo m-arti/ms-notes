@@ -279,7 +279,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
       >
 
         <button
-          className="graph-modal-close mr-2 mt-2 px-3 py-2 rounded-md bg-gray-100 bg-opacity-50 transition duration-500 ease-in-out hover:bg-gray-100"
+          className="graph-modal-close mr-2 mt-2 px-3 py-2 rounded-md bg-gray-200 bg-opacity-50 transition duration-500 ease-in-out hover:bg-gray-200"
           type="button"
           onClick={() => {
             setGraphState("hidden");
@@ -287,7 +287,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
           title="Close graph"
           aria-label="Close graph"
         >
-          <div className="inline-block align-middle text-center text-xl text-black font-thin dark:text-white" style={{ textAlign: 'center'}}>
+          <div className="inline-block align-middle -mt-3 -mb-2 text-center text-lg text-black font-thin dark:text-white" style={{ textAlign: 'center'}}>
             ✕
           </div>
         </button>
