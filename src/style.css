@@ -87,7 +87,7 @@ h1 {
 }
 
 h2 {
-  @apply antialiased text-2xl font-medium text-left mt-8 -mb-2;
+  @apply antialiased text-xl font-semibold text-left mt-8 mb-2;
 }
 
 h3 {
