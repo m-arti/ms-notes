@@ -120,7 +120,7 @@ hr {
 }
 
 .dark hr {
-  @apply border-gray-700;
+  @apply border-gray-800;
 }
 
 .refs-box a {
