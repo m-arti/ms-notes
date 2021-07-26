@@ -101,7 +101,6 @@ module.exports = {
                     }
                   }
                 }
-
               }
             `,
             output: "/rss.xml",
@@ -267,13 +266,19 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-flexsearch',
       options: {
+        query: `
+        {  
+        }
+        `,
+
         languages: ['en'],
         type: 'MarkdownRemark',
-
         fields: [
+
           {
             name: 'title',
             indexed: true,
+            store: true,
             resolver: 'frontmatter.title',
             attributes: {
               encode: 'balance',
@@ -281,31 +286,43 @@ module.exports = {
               threshold: 6,
               depth: 3,
             },
+          },
+
+          {
+            name: 'tags',
+            indexed: true,
             store: true,
+            resolver: 'frontmatter.tags',
+            attributes: {
+              encode: 'balance',
+              tokenize: 'strict',
+              threshold: 6,
+              depth: 3,
+            },
           },
 
           {
             name: 'excerpt',
             indexed: true,
-            resolver: 'frontmatter.excerpt',
+            store: true,
+            resolver: 'excerpt',
             attributes: {
               encode: 'balance',
               tokenize: 'full',
               threshold: 6,
               depth: 3,
             },
-            store: true,
           },
+
           {
             name: 'url',
             indexed: false,
-            resolver: 'fields.slug',
             store: true,
+            resolver: 'parent.slug'
           },
         ],
       },
     },
-
 
   ],
 

@@ -1,3 +1,135 @@
+// import React, { Component } from 'react'
+//
+// const initialState = {
+//   query: '',
+//   results: [],
+// }
+//
+// class Search extends Component {
+//   state = initialState;
+//
+//   // reset the state when clicking outside the search component
+//   // from https://stackoverflow.com/questions/32553158/detect-click-outside-react-component
+//
+//   reset() {
+//     this.setState(initialState);
+//   }
+//
+//   componentDidMount() {
+//     document.addEventListener("mousedown", this.handleClickOutside);
+//   }
+//
+//   componentWillUnmount() {
+//     document.removeEventListener("mousedown", this.handleClickOutside);
+//   }
+//
+//   node = React.createRef();
+//
+//   handleClickOutside = e => {
+//     if (!this.node.current.contains(e.target)) {
+//       this.reset();
+//     }
+//   };
+//
+//   handleClickInside = () => {
+//     this.reset();
+//   };
+//
+//   render() {
+//     const ResultList = () => {
+//       let results = []
+//       let message = ''
+//
+//       if (this.state.results.length > 0) {
+//         this.state.results.map((page, i) => (
+//               results.push({
+//                 slug: page.url,
+//                 title: page.title,
+//                 external: page.external
+//               })
+//         ))
+//       } else if (this.state.query.length > 2) {
+//         message = 'No results for ' + this.state.query
+//       } else if (
+//         this.state.results.length === 0 &&
+//         this.state.query.length > 0
+//       ) {
+//         message = 'Please insert at least 3 characters'
+//       } else {
+//         message = ''
+//       }
+//       if (results.length > 0) {
+//         return (
+//         <div className="search__results">
+//           {results.map((result) => (
+//               <div className="search__result" key={result}>
+//                 { result.external ? (<h6><a href={result.external}>{result.title}</a></h6>) : (<h6><a href={result.slug}>{result.title}</a></h6>) }
+//               </div>)
+//             )}
+//           </div>
+//           )
+//       } else if (message){
+//         return (<div className="search__results">
+//           <div className="search__result">{ message }</div>
+//         </div>)
+//       } else { return '' }
+//     }
+//
+//
+//
+//     return (
+//       <div ref={this.node} className={'row search ' + this.props.classNames + '__search'}>
+//           <div className={"search__wrapper col-sm-12 col-md-8 col-lg-" + this.props.cols}>
+//             <div className="search__input">
+//                 <input type="text"
+//                 onChange={this.search}
+//                 placeholder={'Search'}
+//                 />
+//                 <i className="fas fa-search"></i>
+//             </div>
+//               <ResultList />
+//           </div>
+//       </div>
+//     )
+//   }
+//
+//
+//
+//   getSearchResults(query) {
+//     var index = window.__FLEXSEARCH__.en.index
+//     var store = window.__FLEXSEARCH__.en.store
+//     if (!query || !index) {
+//       return []
+//     } else {
+//       var results = []
+//       Object.keys(index).forEach(idx => {
+//         results.push(...index[idx].values.search(query))
+//       })
+//
+//       results = Array.from(new Set(results))
+//
+//       var nodes = store
+//         .filter(node => (results.includes(node.id) ? node : null))
+//         .map(node => node.node)
+//
+//       return nodes
+//     }
+//   }
+//
+//   search = event => {
+//     const query = event.target.value
+//     if (this.state.query.length > 2) {
+//       const results = this.getSearchResults(query)
+//       this.setState({ results: results, query: query })
+//     } else {
+//       this.setState({ results: [], query: query })
+//     }
+//   }
+// }
+//
+// export default Search
+
+
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import { useStackedPagesProvider, LinkToStacked } from 'react-stacked-pages-hook';
@@ -15,11 +147,10 @@ class Search extends Component {
         return this.state.results.map((page, i) => (
 
           <div className="item-search" key={i}>
+
             <Link to={page.slug}>
-              <h3>{page.title}</h3>
+              <h3 className='font-bold'>{page.title}</h3>
             </Link>
-            <h4>{page.url}</h4>
-            <h4>{page.excerpt}</h4>
           </div>
 
         ))
@@ -38,7 +169,7 @@ class Search extends Component {
     return (
       <div className={this.props.classNames}>
         <input
-          className="search__input tracking-tight bg-transparent pr-2 text-black text-sm border-b border-gray-200 focus:outline-none focus:border-yellow-500 focus:border-transparent"
+          className="search__input tracking-tight bg-transparent pr-2 text-black text-sm border-b border-gray-200 dark:border-gray-800 focus:outline-none dark:focus:border-yellow-500 focus:border-yellow-500 focus:border-transparent"
           type="text"
           onChange={this.search}
           placeholder={' Search'}
