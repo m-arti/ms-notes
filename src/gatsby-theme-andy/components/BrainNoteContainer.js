@@ -11,7 +11,11 @@ import DarkModeToggle from "./DarkModeToggle";
 import GraphButton from "./GraphButton";
 import Timer from "./Timer";
 
-import Search from "./Search";
+// To add Search
+// import Search from "./Search";
+// <div className="p-2 rounded">
+//   <Search/>
+// </div>
 
 const NOTE_WIDTH = 650; // 576; // w-xl
 const PAD = 50;
@@ -159,9 +163,6 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         </div>
 
         <div className = "flex justify-end">
-          <div className="p-2 rounded">
-            <Search/>
-          </div>
           <div className="controls">
             <GraphButton/>
             <DarkModeToggle/>

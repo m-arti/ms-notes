@@ -14,7 +14,7 @@ const GraphButton = () => {
   return (
     <React.Fragment>
       <button
-        style={{ minWidth:'35px', textAlign: 'center' }}
+        style={{ minWidth:'35px', textAlign: 'center', marginRight:'5px' }}
         title="Show graph of notes"
         aria-label="Show graph of notes"
         className="text-3xl transition duration-500 ease-in-out opacity-80 hover:opacity-100"
