@@ -28,6 +28,20 @@ module.exports = {
       },
     },
 
+    // gatsby-plugin-google-fonts
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Caveat\:400,500,600`,
+          `Herr Von Muellerhoff`,
+          `Mr De Haviland`,
+          `Mrs Saint Delafield`
+        ],
+        display: 'swap'
+      }
+    },
+
     // gatsby-plugin-sharp
     {
       resolve: `gatsby-plugin-sharp`,
@@ -267,7 +281,7 @@ module.exports = {
       resolve: 'gatsby-plugin-flexsearch',
       options: {
         query: `
-        {  
+        {
         }
         `,
 
