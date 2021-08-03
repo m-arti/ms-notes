@@ -172,7 +172,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
       </header>
 
       <div
-        className= "nightwind flex-0 flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden" ref={scrollContainer}
+        className= "nightwind flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden" ref={scrollContainer}
       >
         <div
           className="note-columns-container nightwind bg-white flex flex-grow transition-width duration-100"

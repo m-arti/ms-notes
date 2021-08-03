@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-remove-fingerprints`,
+    `gatsby-plugin-smoothscroll`,
 
     {
       resolve: `gatsby-source-filesystem`,
