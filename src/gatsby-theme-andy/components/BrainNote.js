@@ -36,8 +36,10 @@ const BrainNote = ({ note }) => {
       </RefLink>
     ));
 
+    // get css selector to scroll up to
     const scrollToTarget = `#note-container-${note.slug.replace('/', '')}`;
 
+    // put scroll button before refs / contact text
     if (references.length > 0) {
       referenceBlock = (
         <>
@@ -50,6 +52,16 @@ const BrainNote = ({ note }) => {
           <hr className="mx-auto pt-2 mt-6 border-gray-200 dark:border-gray-800"/>
         </>
       );
+    }
+
+    else {
+      referenceBlock = (
+        <>
+        <div className='mb-4 text-center'>
+          <button className='text-xs tracking-wider text-gray-500 dark:text-gray-500 hover:text-gray-800' onClick={() => scrollTo(scrollToTarget)}>⤴TOP</button>
+        </div>
+        </>
+      )
     }
   }
 
