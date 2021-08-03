@@ -5,6 +5,8 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import { LinkToStacked } from 'react-stacked-pages-hook';
 
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
 import SEO from "../components/seo";
@@ -34,10 +36,16 @@ const BrainNote = ({ note }) => {
       </RefLink>
     ));
 
+    const scrollToTarget = `#note-container-${note.slug.replace('/', '')}`;
+
     if (references.length > 0) {
       referenceBlock = (
         <>
-          <h3 className="mt-1 mb-4 font-normal text-sm text-gray-500, dark:text-gray-500">Referred in:</h3>
+        <div className='mb-4 text-center'>
+          <button className='text-xs tracking-wider text-gray-500 dark:text-gray-500' onClick={() => scrollTo(scrollToTarget)}>⤴TOP</button>
+        </div>
+
+          <h3 className="mt-1 mb-4 font-normal text-sm text-gray-500 dark:text-gray-500">Referred in:</h3>
           <div className={"mb-4 border-l-2 border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700"}>{references}</div>
           <hr className="mx-auto pt-2 mt-6 border-gray-200 dark:border-gray-800"/>
         </>

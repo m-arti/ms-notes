@@ -49,6 +49,7 @@ const StackedPageWrapper = ({
       }}
     >
       <div
+        id = {`note-container-${slug.replace('/', '') }`}
         className={`md:block hidden transition-opacity duration-100 ${
           obstructed ? `opacity-100` : `opacity-0`
         }`}
