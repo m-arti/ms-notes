@@ -102,7 +102,7 @@ const BrainNote = ({ note }) => {
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
       <SEO title={note.title} description={note.excerpt} />
       <div className="flex-1 mb-4">
-        <h1 className="my-4">{note.title}</h1>
+        <h1 className="my-4 max-w-sm">{note.title}</h1>
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
       <div className="refs-box bg-opacity-50 text-gray-600 rounded-lg p-4 pt-4 bg-gray-100 dark:bg-gray-950">

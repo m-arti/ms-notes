@@ -12,7 +12,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['SF Pro Display', ...defaultTheme.fontFamily.sans],
-        serif: ["Times New Roman", ...defaultTheme.fontFamily.serif],
+        serif: ["Georgia", ...defaultTheme.fontFamily.serif],
       },
     },
 

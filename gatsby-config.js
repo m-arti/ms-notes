@@ -34,6 +34,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          `Inter`,
           `Caveat\:400,500,600`,
           `Herr Von Muellerhoff`,
           `Mr De Haviland`,

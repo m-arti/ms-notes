@@ -131,7 +131,7 @@ blockquote {
 }
 
 blockquote p {
-  @apply antialiased m-0 font-serif text-lg text-justify leading-relaxed align-middle italic;
+  @apply antialiased m-0 font-serif text-justify leading-relaxed align-middle;
 }
 
 code {

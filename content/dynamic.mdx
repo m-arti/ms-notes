@@ -22,7 +22,7 @@ Beyond interaction, they also facilitate creativity—possibilities that're to s
     <br/><br/>
     These ideas aren't new and have been mulled over by many people, and for a very long time too. The PC has come a long way and it continues to improve. Not only is it getting faster, it's becoming more accessible and allowing us to be more creative. We can be far more creative with PCs. To attain this would require rethinking how we use and interact with them.
   </p>
-  <blockquote className='font-serif text-lg text-justify leading-relaxed align-middle italic'>
+  <blockquote className='font-serif text-base text-justify leading-relaxed align-middle'>
     Interface matters to me more than anything else, and it always has. I just never realized that. I've spent a lot of time over the years desperately trying to think of a "thing" to change the world. I now know why the search was fruitless — things don't change the world. People change the world by using things. The focus must be on the "using", not the "thing". Now that I'm looking through the right end of the binoculars, I can see a lot more clearly, and there are projects and possibilities that genuinely interest me deeply.
   </blockquote>
   <p class='font-serif text-right pr-4 -mt-4'>— <a href="http://worrydream.com/quotes/?search=bret&author=Bret%20Victor" target="	_blank">Bret Victor</a> (2004)</p>
@@ -39,7 +39,7 @@ I've previously written about [[Wolfram Notebooks]]. This is a blank one. Here a
 Dynamically updated code/preview using [React Live](https://github.com/FormidableLabs/react-live). Edit the code to update the text in real-time.
 
 <div>
-  <LiveProvider code={`<p>Hello world!</p>`}>
+  <LiveProvider code={`<p className='p-2 bg-gray-100'>Hello world!</p>`}>
     <LiveEditor theme={theme} className="text-md font-bold rounded bg-gray-50 dark:bg-opacity-50 dark:bg-gray-950"/>
     <LivePreview className="pt-2 text-md overflow-x"/>
     <LiveError className="m-2 rounded overflow text-xs text-red-500 bg-gray-100 dark:bg-opacity-50 dark:bg-gray-950"/>
@@ -49,10 +49,10 @@ Dynamically updated code/preview using [React Live](https://github.com/Formidabl
 <div>
   <LiveProvider code={
     `<div style={{ background: "LightGoldenRodYellow" }}>
-      <h1 className='font-serif p-12' style={{ color: "DarkOliveGreen", textAlign: "center" }}>
+      <h3 className='p-12 font-serif text-2xl' style={{ color: "DarkOliveGreen", textAlign: "center" }}>
         Hello there! <br/>
         Edit the code to update this text.
-      </h1>
+      </h3>
     </div>`}>
     <LiveEditor theme={theme} className="text-md font-bold rounded bg-gray-50 dark:bg-opacity-50 dark:bg-gray-950"/>
     <LivePreview className="pt-2 text-md overflow-x"/>
