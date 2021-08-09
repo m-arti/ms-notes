@@ -70,7 +70,7 @@ const Figcaption = ({ children }) => (
 const NoteTag = ({ children, color }) => (
   <div
     className=
-    {`notetag antialiased bg-${color}-100 text-black py-1 px-2 mb-5 mr-2 text-xs rounded-md inline-block`}
+    {`notetag antialiased bg-${color}-100 text-black py-1 px-2 mb-10 mr-2 text-xs rounded-md inline-block`}
   >
     {children}
   </div>
