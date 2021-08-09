@@ -61,7 +61,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  box-shadow: 0px -5px 35px #eeeeee;
+  box-shadow: 0px -5px 35px #f1f1f1;
 }
 
 .dark header {
