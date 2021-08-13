@@ -52,6 +52,7 @@
     "gatsby-transformer-remark": "^4.2.0",
     "gatsby-transformer-sharp": "^3.7.0",
     "katex": "^0.12.0",
+    "moment": "^2.29.1",
     "nightwind": "^1.1.11",
     "postcss-flexbugs-fixes": "^4",
     "postcss-preset-env": "^6.7.0",
