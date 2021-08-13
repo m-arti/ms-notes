@@ -16,7 +16,17 @@ const NOTE_MAX_WIDTH = 800; // 768;
 const popupStyles = `w-150 px-4 pb-2 rounded-md shadow-xl`;
 
 const BrainNote = ({ note }) => {
+
+  // graphql query
   const data = useStaticQuery(query)
+
+  // get git update times from graphql query
+  let updateTimes = [];
+  updateTimes = data.allFile.nodes.map(node => (
+    [node.name, node.fields.gitLogLatestDate]
+  ));
+  // map note slugs to update times to form a dict
+  const updateTimesDict = new Map(updateTimes.map(([k, v]) => [k, v]));
 
   const [width] = useWindowWidth();
   let references = [];
@@ -98,11 +108,24 @@ const BrainNote = ({ note }) => {
     <components.a {...props} popups={popups} noPopups={width < NOTE_MAX_WIDTH} />
   );
 
+  // note update time (Δ ⁘ ⊹ ✎)
+  const noteLastUpdated = (updateTimesDict.get(note.slug) || '').replace('a ','1 ');
+
   return (
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
       <SEO title={note.title} description={note.excerpt} />
       <div className="flex-1 mb-4">
         <h1 className="my-4 max-w-sm">{note.title}</h1>
+
+        <span className="text-sm font-serif font-medium align-middle">
+          {noteLastUpdated ? 'Δ' : ''}
+        </span>
+        <span
+          className="text-xs uppercase tracking-wide"
+          title={`Last updated ${noteLastUpdated}`}
+        >
+          &nbsp;{noteLastUpdated}&emsp;&nbsp;
+        </span>
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
       <div className="refs-box bg-opacity-50 text-gray-600 rounded-lg p-4 pt-4 bg-gray-100 dark:bg-gray-950">
@@ -129,6 +152,14 @@ export const query = graphql`
         description
         author
         siteUrl
+      }
+    }
+    allFile (filter: { extension: { eq: "mdx" } }) {
+      nodes {
+        name
+        fields {
+          gitLogLatestDate(fromNow: true)
+        }
       }
     }
   }

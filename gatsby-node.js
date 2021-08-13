@@ -8,6 +8,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       name: `slug`,
       value: slug,
+    });
+
+    const gitLogLatestDate = createFilePath({ node, getNode, basePath: `content` })
+    createNodeField({
+      node,
+      name: `gitAuthorTime`,
+      value: gitAuthorTime,
     })
   }
 }

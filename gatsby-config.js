@@ -21,19 +21,26 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-remove-fingerprints`,
     `gatsby-plugin-smoothscroll`,
-    `gatsby-transformer-gitinfo`,
 
+    // gatsby-source-filesystem
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: path.join(__dirname, `content`),
+      },
+    },
+
+    // gatsby-transformer-gitinfo
+    {
+      resolve: `gatsby-transformer-gitinfo`,
+      options: {
+        include: /\.mdx$/i,
       },
     },
 
