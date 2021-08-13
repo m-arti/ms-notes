@@ -6,7 +6,9 @@ import { MDXProvider } from '@mdx-js/react';
 import { LinkToStacked } from 'react-stacked-pages-hook';
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import moment from 'moment';
+
+// import moment from 'moment';
+import { DateTime } from "luxon";
 
 import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
@@ -110,7 +112,7 @@ const BrainNote = ({ note }) => {
   );
 
   // note update time (Δ ⁘ ⊹ ✎)
-  const noteLastUpdated = updateTimesDict.get(note.slug) ? ( moment(updateTimesDict.get(note.slug)).fromNow() || '' ) : undefined;
+  const noteLastUpdated = updateTimesDict.get(note.slug) ? ( DateTime.fromISO(updateTimesDict.get(note.slug)).toRelative() || '' ) : undefined;
 
   // omit last updated time on 'about' page
   return (
