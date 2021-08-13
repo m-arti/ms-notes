@@ -110,7 +110,7 @@ const BrainNote = ({ note }) => {
   );
 
   // note update time (Δ ⁘ ⊹ ✎)
-  const noteLastUpdated = updateTimesDict.get(note.slug) ? ( moment(updateTimesDict.get(note.slug)).fromNow() || '' ) : undefined;
+  const noteLastUpdated = updateTimesDict.get(note.slug) ? ( updateTimesDict.get(note.slug) || '' ) : undefined;
 
   // omit last updated time on 'about' page
   return (
@@ -156,7 +156,7 @@ export const query = graphql`
       nodes {
         name
         fields {
-          gitLogLatestDate
+          gitLogLatestDate(formatString: "DD.MM.YY")
         }
       }
     }
