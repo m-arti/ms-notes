@@ -118,7 +118,7 @@ const BrainNote = ({ note }) => {
         <h1 className="my-4 max-w-sm">{note.title}</h1>
 
         <span className="text-sm font-serif font-medium align-middle">
-          {noteLastUpdated ? 'Δ' : ''}
+          {noteLastUpdated ? '✎' : ''}
         </span>
         <span
           className="text-xs uppercase tracking-wide"
