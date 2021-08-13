@@ -109,7 +109,7 @@ const BrainNote = ({ note }) => {
   );
 
   // note update time (Δ ⁘ ⊹ ✎)
-  const noteLastUpdated = (updateTimesDict.get(note.slug) || '').replace('a ','1 ');
+  const noteLastUpdated = (updateTimesDict.get(note.slug) || '').replace('a ','1 ').replace('1 month', '1 mo.').replace('months', 'mos.');
 
   // omit last updated time on 'about' page
   return (
