@@ -7,7 +7,6 @@ import { LinkToStacked } from 'react-stacked-pages-hook';
 
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-// import moment from 'moment';
 import { DateTime } from "luxon";
 
 import components from './MdxComponents';
@@ -123,8 +122,8 @@ const BrainNote = ({ note }) => {
 
         {note.slug !== 'about' && <span className="text-sm font-serif font-medium align-middle">{noteLastUpdated ? '✎' : ''}</span>}
 
-        {note.slug !== 'about' && <span className="text-xs uppercase tracking-wide" title={`Last updated ${noteLastUpdated}`}>
-          &nbsp;{noteLastUpdated}&emsp;&nbsp;</span>}
+        {(note.slug !== 'about' && noteLastUpdated !== undefined) && <span className="text-xs uppercase tracking-wide" title={`Last updated ${noteLastUpdated}`}>
+          &nbsp;{noteLastUpdated.replace('minute','min').replace('hour','hr').replace('week','wk').replace('month','mo').replace('year','yr')}&emsp;&nbsp;</span>}
 
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
