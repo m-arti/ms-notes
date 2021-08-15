@@ -9,7 +9,7 @@ import '../../style.css';
 // thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
 import DarkModeToggle from "./DarkModeToggle";
 import GraphButton from "./GraphButton";
-import Timer from "./Timer";
+// import Timer from "./Timer";
 
 // To add Search
 // import Search from "./Search";
@@ -99,7 +99,6 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
     ContextProvider,
     PageIndexProvider,
     scrollContainer,
-    // highlightStackedPage,
   ] = useStackedPagesProvider({
     firstPageSlug: slug,
     location,
