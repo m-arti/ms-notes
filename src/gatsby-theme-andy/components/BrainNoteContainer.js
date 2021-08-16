@@ -37,7 +37,7 @@ const StackedPageWrapper = ({
   <PageIndexProvider value={i}>
     <div
       className={
-        `note-container dark:border-l dark:border-gray-800 bg-white md:max-w-2xl px-6 py-4 bg-opacity-100
+        `note-container border-opacity-50 dark:border-opacity-50 dark:border-l dark:border-gray-800 bg-white md:max-w-2xl px-6 py-4 bg-opacity-100
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r dark:border-gray-800`}
         bg-white text-black dark:text-gray-200 md:sticky flex flex-col flex-shrink-0
         ${overlay ? 'shadow-xl border-l border-gray-100 dark:border-gray-800' : 'border-r border-gray-200 dark:border-gray-800 px-6'}`
