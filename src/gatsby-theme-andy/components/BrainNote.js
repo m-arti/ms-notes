@@ -127,7 +127,7 @@ const BrainNote = ({ note }) => {
 
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
-      <div className="refs-box bg-opacity-50 text-gray-600 rounded-lg p-4 pt-4 bg-gray-100 dark:bg-gray-900">
+      <div className="refs-box bg-opacity-50 text-gray-600 rounded-lg p-4 pt-4 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-50">
         {referenceBlock}
         <p className="text-sm m-0 text-gray-500 dark:text-gray-500">
           If you'd like to discuss or share an idea, do get in touch.<br/>
