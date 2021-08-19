@@ -424,6 +424,14 @@ iframe {
   scroll-behavior: smooth !important;
 }
 
+.note-container-shadow {
+  box-shadow: 0px -5px 35px #f3f3f3;
+}
+
+.dark .note-container-shadow {
+  box-shadow: none;
+}
+
 /* 768px */
 @media (max-width: 800px) {
   .note-columns-container {
