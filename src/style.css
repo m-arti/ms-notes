@@ -50,7 +50,7 @@ header {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   -moz-backdrop-filter: blur(8px);
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 100;
