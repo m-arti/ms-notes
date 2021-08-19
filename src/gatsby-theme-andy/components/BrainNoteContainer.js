@@ -109,7 +109,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   NUMOFPAGES = stackedPages.length + 1;
 
   return (
-    <div className="nightwind bg-white text-black flex flex-col min-h-screen h-screen">
+    <div className="nightwind bg-white text-black flex flex-col min-h-screen h-screen pt-16">
       <Helmet>
 
         <script

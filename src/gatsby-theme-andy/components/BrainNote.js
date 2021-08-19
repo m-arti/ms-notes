@@ -120,9 +120,9 @@ const BrainNote = ({ note }) => {
       <div className="flex-1 mb-4">
         <h1 className="my-4 max-w-sm">{note.title}</h1>
 
-        {note.slug !== 'about' && <span className="text-sm font-serif font-medium align-middle">{noteLastUpdated ? '✎' : ''}</span>}
+        {note.slug !== 'about' && <span className="text-sm font-serif font-medium align-middle text-gray-500">{noteLastUpdated ? '✎' : ''}</span>}
 
-        {(note.slug !== 'about' && noteLastUpdated !== undefined) && <span className="text-xs uppercase tracking-wide" title={`Last updated ${noteLastUpdated}`}>
+        {(note.slug !== 'about' && noteLastUpdated !== undefined) && <span className="text-xs uppercase tracking-wide text-gray-700 dark:text-gray-300" title={`Last updated ${noteLastUpdated}`}>
           &nbsp;{noteLastUpdated.replace('minute','min').replace('hour','hr').replace('week','wk').replace('month','mo').replace('year','yr')}&emsp;&nbsp;</span>}
 
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>

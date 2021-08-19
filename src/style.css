@@ -81,7 +81,7 @@ img {
 }
 
 h1 {
-  @apply antialiased text-3xl font-bold text-left mt-8;
+  @apply antialiased text-3xl font-bold text-left;
 }
 
 h2 {
@@ -415,7 +415,6 @@ iframe {
 
 .note-container {
   max-width: 100vw;
-  padding-top: 80px !important;
   scroll-behavior: smooth !important;
 }
 
