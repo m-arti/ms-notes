@@ -118,7 +118,7 @@ const BrainNote = ({ note }) => {
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
       <SEO title={note.title} description={note.excerpt} />
       <div className="flex-1 mb-4">
-        <h1 className="my-4 max-w-sm">{note.title}</h1>
+        <h1 className="mb-4 max-w-sm">{note.title}</h1>
 
         {note.slug !== 'about' && <span className="text-sm font-serif font-medium align-middle text-gray-500">{noteLastUpdated ? '✎' : ''}</span>}
 
