@@ -73,6 +73,7 @@ header {
 
 header.controls {
   display: flex;
+  align-self: center;
 }
 
 img {

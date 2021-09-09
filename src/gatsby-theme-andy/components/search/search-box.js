@@ -16,8 +16,8 @@ export default connectSearchBox(
       />
       <div
         onclick="document.myform.submit();"
-        className='pb-0.5 font-bold align-middle'
-        style={{ fontSize: '2.2rem', minWidth:'35px',  textAlign: 'center', pointerEvents: 'none', lineHeight: '20px'}}
+        className='pb-0.5 -mb-0.5 font-bold align-middle'
+        style={{ fontSize: '1.75rem', minWidth:'35px',  textAlign: 'center', pointerEvents: 'none', lineHeight: '20px'}}
         aria-label="Search notes"
         title="Search notes"
       >
@@ -26,5 +26,3 @@ export default connectSearchBox(
     </form>
   )
 )
-
-// ⁕
