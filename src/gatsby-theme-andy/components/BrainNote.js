@@ -56,7 +56,7 @@ const BrainNote = ({ note }) => {
       referenceBlock = (
         <>
         <div className='mb-4 text-center'>
-          <button className='text-xs tracking-wider text-gray-500 dark:text-gray-500 hover:text-gray-800' onClick={() => scrollTo(scrollToTarget)} title='Click to scroll to top'>⤴TOP</button>
+          <button className='text-xs tracking-wider text-gray-500 dark:text-gray-500 hover:text-gray-800' onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'>⤴TOP</button>
         </div>
 
           <h3 className="mt-1 mb-4 font-normal text-sm text-gray-500 dark:text-gray-500">Referred in:</h3>
@@ -70,7 +70,7 @@ const BrainNote = ({ note }) => {
       referenceBlock = (
         <>
         <div className='mb-4 text-center'>
-          <button className='text-xs tracking-wider text-gray-500 dark:text-gray-500 hover:text-gray-800' onClick={() => scrollTo(scrollToTarget)} title='Click to scroll to top'>⤴TOP</button>
+          <button className='text-xs tracking-wider text-gray-500 dark:text-gray-500 hover:text-gray-800' onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'>⤴TOP</button>
         </div>
         </>
       )
@@ -93,7 +93,7 @@ const BrainNote = ({ note }) => {
               <LinkToStacked
                 className="no-underline text-2xl"
                 to={ln.slug === 'about' ? `about` : `/${ln.slug}`}
-                title='Click to open note'
+                title='Open note'
               >
               &nbsp;&nbsp;◫
               </LinkToStacked>

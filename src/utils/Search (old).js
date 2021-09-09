@@ -147,10 +147,14 @@ class Search extends Component {
         return this.state.results.map((page, i) => (
 
           <div className="item-search" key={i}>
-
-            <Link to={page.slug}>
+            <p>{page.tags}</p>
+            <Link to={page.url}>
               <h3 className='font-bold'>{page.title}</h3>
             </Link>
+            <p>———</p>
+            <p>{page.excerpt}</p>
+            <p>{page.url}</p>
+
           </div>
 
         ))

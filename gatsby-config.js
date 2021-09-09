@@ -1,4 +1,5 @@
 const path = require(`path`);
+require('dotenv').config();
 
 module.exports = {
 
@@ -22,6 +23,17 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-remove-fingerprints`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-styled-components`,
+
+    // gatsby-plugin-algolia
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        queries: require("./src/utils/algolia-queries")
+      },
+    },
 
     // gatsby-source-filesystem
     {
@@ -176,12 +188,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Martins' Notes`,
-        short_name: `Martins' Notes`,
+        name: `Martins Samuel — Notes`,
+        short_name: `Martins Samuel — Notes`,
         description: `Hello! I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#fff`,
+        theme_color: `#000`,
         display: `standalone`,
         icon: `src/assets/favicon.png`,
       },
@@ -194,7 +206,7 @@ module.exports = {
         hideDoubleBrackets: true,
         mdxOtherwiseConfigured: true,
         generateRSS: true,
-        rssTitle: `Martins' Notes`,
+        rssTitle: `Martins Samuel — Notes`,
       },
     },
 
@@ -298,15 +310,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-flexsearch',
       options: {
-        query: `
-        {
-        }
-        `,
-
+        type: "MarkdownRemark",
         languages: ['en'],
-        type: 'MarkdownRemark',
+        encode: 'icase',
         fields: [
-
           {
             name: 'title',
             indexed: true,
@@ -348,9 +355,9 @@ module.exports = {
 
           {
             name: 'url',
-            indexed: false,
+            indexed: true,
             store: true,
-            resolver: 'parent.slug'
+            resolver: 'fields.slug'
           },
         ],
       },

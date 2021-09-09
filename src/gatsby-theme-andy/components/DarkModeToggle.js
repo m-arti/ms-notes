@@ -10,7 +10,7 @@ const DarkModeToggle = () => {
 
   return (
       <button
-        style={{ minWidth:'35px', textAlign: 'center' }}
+        style={{ minWidth:'35px', textAlign: 'center', marginRight:'5px', lineHeight: '20px' }}
         onClick={() => {
           nightwind.toggle();
           play();

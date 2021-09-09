@@ -371,7 +371,7 @@ iframe {
   cursor: pointer;
 }
 
-/* highlight text */
+/* highlight text in note */
 .highlight {
   @apply antialiased bg-yellow-300 p-1 py-0 px-1 rounded-md;
   position: relative;
@@ -381,6 +381,24 @@ iframe {
 
 .dark .highlight {
   background-color: rgba(252, 211, 77, .5) !important;
+}
+
+/* highlight text in search result (title) */
+.ais-Highlight-highlighted {
+  background-color: rgba(252, 211, 77, 1) !important;
+}
+
+.dark .ais-Highlight-highlighted {
+  background-color: rgba(252, 211, 77, .5) !important;
+}
+
+/* highlight text in search result (note) */
+.ais-Snippet-highlighted {
+  background-color: rgba(252, 211, 77, .5) !important;
+}
+
+.dark .ais-Snippet-highlighted {
+  background-color: rgba(252, 211, 77, .25) !important;
 }
 
 @tailwind components;

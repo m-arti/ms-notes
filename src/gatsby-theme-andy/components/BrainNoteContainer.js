@@ -9,6 +9,8 @@ import '../../style.css';
 // thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
 import DarkModeToggle from "./DarkModeToggle";
 import GraphButton from "./GraphButton";
+import Search from "./search";
+const searchIndices = [{ name: `ms-notes`, title: `ms-notes` }];
 // import Timer from "./Timer";
 
 // To add Search
@@ -157,7 +159,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         </title>
 
       </Helmet>
-      <header className="nightwind border-b border-white border-opacity-0 dark:border-gray-800 -mt-1">
+      <header className="nightwind border-b border-white border-opacity-0 dark:border-gray-800 -mt-1 items-center content-center">
         <div className="pb-3">
           <Link to="/" className="no-underline text-black text-xl">
             <h3 style={{fontFamily:'Caveat', fontWeight: '500'}} className="tracking-normal">{siteMetadata.title}</h3>
@@ -168,6 +170,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           <div className="controls">
             <GraphButton/>
             <DarkModeToggle/>
+            <Search indices={searchIndices}/>
           </div>
         </div>
 
