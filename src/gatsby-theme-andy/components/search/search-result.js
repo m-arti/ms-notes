@@ -42,7 +42,7 @@ const HitsInIndex = ({ index }) => (
 )
 
 const SearchResult = ({ indices, className }) => (
-  <div className= {`${className} mt-8`} >
+  <div className= {className} >
     {indices.map(index => (
       <HitsInIndex index={index} key={index.name}/>
     ))}

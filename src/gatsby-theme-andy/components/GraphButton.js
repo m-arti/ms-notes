@@ -14,16 +14,16 @@ const GraphButton = () => {
   return (
     <React.Fragment>
       <button
-        style={{ minWidth:'35px', textAlign: 'center', marginRight:'5px', lineHeight: '20px' }}
+        style={{ fontSize: '2.1rem', minWidth:'35px', textAlign: 'center', marginRight:'5px', lineHeight: '20px' }}
         title="Show graph of notes"
         aria-label="Show graph of notes"
-        className="text-3xl transition duration-500 ease-in-out opacity-80 hover:opacity-100"
+        className="transition duration-500 ease-in-out opacity-80 hover:opacity-100"
         onClick={() => {
           setGraphState("maximized");
           if (graphState !== "maximized") play();
         }}
       >
-        ⊞
+        ⁘
       </button>
       {typeof window !== "undefined" ? (
         <Suspense fallback={null}>

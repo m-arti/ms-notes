@@ -5,7 +5,7 @@ const Popover = css`
   max-height: 66vh;
   width: 80vw;
   max-width: 30em;
-  margin-top: 1.5em;
+  margin-top: 35px;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
   position: absolute;
@@ -20,7 +20,7 @@ const Popover = css`
   backdropFilter: blur(8px);
 
   .dark & {
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .98);
     box-shadow: none;
     border: 1px solid rgba(31, 41, 55, 1);
   }

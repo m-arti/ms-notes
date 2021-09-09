@@ -168,8 +168,8 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
 
         <div className = "flex justify-end">
           <div className="controls">
-            <GraphButton/>
             <DarkModeToggle/>
+            <GraphButton/>
             <Search indices={searchIndices}/>
           </div>
         </div>

@@ -19,7 +19,7 @@ const DarkModeToggle = () => {
         aria-label="Activate light/dark mode"
         title="Activate light/dark mode"
       >
-        ◑
+        ●
       </button>
   );
 
