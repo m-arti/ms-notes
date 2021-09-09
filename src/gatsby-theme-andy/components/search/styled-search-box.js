@@ -7,6 +7,12 @@ const open = css`
   cursor: text;
   margin-left: -1.6em;
   padding-left: 1.6em;
+  visibility: visible;
+  padding-top: 5px;
+
+  .dark & {
+    color: white;
+  }
 `
 
 const closed = css`
@@ -23,6 +29,7 @@ export default styled(SearchBox)`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  align-self: center;
   max-height: 35px;
 
   .SearchInput {
@@ -35,5 +42,9 @@ export default styled(SearchBox)`
       color: ${({ theme }) => theme.faded};
     }
     ${({ hasFocus }) => (hasFocus ? open : closed)}
+
+    .dark & {
+      color: white;
+    }
   }
 `

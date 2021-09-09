@@ -5,4 +5,5 @@ export default styled.div`
   display: inline-block;
   vertical-align: super;
   align-items: baseline;
+  align-self: center;
 `
