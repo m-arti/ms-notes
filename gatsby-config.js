@@ -45,6 +45,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: path.join(__dirname, `src`, `assets`),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: path.join(__dirname, `content`),
       },
     },
@@ -69,6 +75,16 @@ module.exports = {
           `Mrs Saint Delafield`
         ],
         display: 'swap'
+      }
+    },
+
+    // gatsby-plugin-react-svg
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /\.svg$/i,
+        }
       }
     },
 

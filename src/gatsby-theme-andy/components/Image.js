@@ -16,6 +16,7 @@ const Image = ({ src, ...rest }) => {
       ) {
         edges {
           node {
+            absolutePath
             relativePath
             extension
             publicURL
