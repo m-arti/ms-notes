@@ -2,7 +2,7 @@ import React from "react"
 import { connectSearchBox } from "react-instantsearch-dom"
 import useSound from 'use-sound';
 import beepSfx from '../../../assets/sounds/beep.mp3';
-// sfx is by SoundJay
+// sfx is by SoundJay (wolfr.am/YoXMlov6)
 
 export default connectSearchBox(
   ({ refine, currentRefinement, className, onFocus }) => {

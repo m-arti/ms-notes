@@ -16,11 +16,13 @@ const Popover = css`
   background-color: rgba(255, 255, 255, .98);
   box-shadow: 0px -5px 35px #f3f3f3;
   padding: 1em;
+  padding-left: 2rem;
+  padding-right: 2rem;
   border-radius: 10px;
   backdropFilter: blur(8px);
 
   .dark & {
-    background-color: rgba(0, 0, 0, .98);
+    background-color: rgba(0, 0, 0, .95);
     box-shadow: none;
     border: 1px solid rgba(31, 41, 55, 1);
   }
@@ -38,7 +40,7 @@ export default styled(SearchResult)`
   .Hits {
     ul {
       list-style: none;
-      margin-left: 0;
+      margin-left: -1.5rem;
     }
 
     li.ais-Hits-item {

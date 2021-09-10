@@ -15,7 +15,7 @@ const HitCount = connectStateResults(({ searchResults }) => {
   return hitCount > 0 ? (
     <div className="HitCount">
       <div>
-      <p className='px-3 py-1 rounded-md bg-gray-200 bg-opacity-50 text-black dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``}</p>
+      <p className='px-3 py-1 m-0 rounded-md bg-gray-200 bg-opacity-50 text-black dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``}</p>
       </div>
     </div>
   ) : null
@@ -25,7 +25,7 @@ const PageHit = ({ hit }) => (
   <div>
     <hr className='border-opacity-50'/>
     <Link className='no-underline hover:underline' to={hit.slug}>
-      <h3 className='text-sm text-black'>
+      <h3 className='text-sm text-black no-underline hover:underline'>
         <Highlight attribute="title" hit={hit} tagName="mark"/>
       </h3>
     </Link>
