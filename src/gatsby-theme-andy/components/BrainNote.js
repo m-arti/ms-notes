@@ -13,6 +13,14 @@ import components from './MdxComponents';
 import useWindowWidth from '../../utils/useWindowWidth';
 import SEO from "../components/seo";
 
+import styled from 'styled-components';
+import {ArrowIosUpwardOutline} from '@styled-icons/evaicons-outline/ArrowIosUpwardOutline';
+const ScrollToTopIcon = styled(ArrowIosUpwardOutline)`
+  width: 25px !important;
+`;
+
+const footerItemsStyles = `text-gray-500 dark:text-gray-500 rounded-md hover:bg-opacity-50 hover:text-gray-800 hover:bg-gray-200 dark:hover:bg-gray-800 dark:hover:bg-opacity-50 transform transition duration-500`;
+
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
 const popupStyles = `w-150 px-4 pb-2 rounded-md shadow-xl`;
@@ -41,8 +49,8 @@ const BrainNote = ({ note }) => {
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
         key={reference.slug}
       >
-        <div className={"p-2 ml-2 mb-2 text-gray-500 dark:text-gray-500 rounded-md hover:bg-opacity-50 hover:text-gray-800 hover:bg-gray-200 dark:hover:bg-gray-800 dark:hover:bg-opacity-50 transform transition duration-500"}>
-          <h4 className="text-sm font-medium"><span role="img" aria-label="note emoji">📄</span>&nbsp; {reference.title}</h4>
+        <div className={`p-3 ml-2 mb-2 ${footerItemsStyles}`}>
+          <h4 className="text-sm font-medium"><span role="img" aria-label="note emoji">📄</span>&ensp; {reference.title}</h4>
           <p className="text-sm m-0 mb-0 text-gray-500 dark:text-gray-500 text-justify">{reference.childMdx.excerpt.replace(' .', '.').replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}</p>
         </div>
       </RefLink>
@@ -56,7 +64,7 @@ const BrainNote = ({ note }) => {
       referenceBlock = (
         <>
         <div className='mb-4 text-center'>
-          <button className='text-xs tracking-wider text-gray-500 dark:text-gray-500 hover:text-gray-800' onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'>⤴TOP</button>
+          <button className={`py-0 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
         </div>
 
           <h3 className="mt-1 mb-4 font-normal text-sm text-gray-500 dark:text-gray-500">Referred in:</h3>
@@ -70,7 +78,7 @@ const BrainNote = ({ note }) => {
       referenceBlock = (
         <>
         <div className='mb-4 text-center'>
-          <button className='text-xs tracking-wider text-gray-500 dark:text-gray-500 hover:text-gray-800' onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'>⤴TOP</button>
+          <button className={`-my-2 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
         </div>
         </>
       )
@@ -119,7 +127,7 @@ const BrainNote = ({ note }) => {
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
       <SEO title={note.title} description={note.excerpt} />
       <div className="flex-1 mb-4">
-        <h1 className="mb-4 max-w-sm">{note.title}</h1>
+        <h1 className="mt-3 mb-4 max-w-sm">{note.title}</h1>
 
         {note.slug !== 'about' && <span className="text-sm font-serif font-medium align-middle text-gray-500">{noteLastUpdated ? '✎' : ''}</span>}
 

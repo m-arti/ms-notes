@@ -14,7 +14,9 @@
   "dependencies": {
     "@loadable/component": "^5.14.1",
     "@navsnpm/katex-expression": "^1.0.8",
+    "@styled-icons/evaicons-outline": "^10.34.0",
     "@styled-icons/fa-solid": "^10.34.0",
+    "@styled-icons/octicons": "^10.38.0",
     "@tippyjs/react": "^4.0.2",
     "@types/npm": "^2.0.31",
     "algoliasearch": "^4.10.5",
@@ -80,6 +82,7 @@
     "sharp": "^0.26.2",
     "smooth-scrollbar": "^8.6.1",
     "styled-components": "^5.3.1",
+    "tailwind-styled-components": "^2.0.3",
     "update": "^0.4.2",
     "use-sound": "^3.0.1",
     "webpack": "^4.46.0",
