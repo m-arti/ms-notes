@@ -159,19 +159,17 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         </title>
 
       </Helmet>
-      <header className="nightwind border-b border-white border-opacity-0 dark:border-gray-800 -mt-1 items-center content-center">
-        <div className="pb-3">
+      <header className="nightwind border-b border-white border-opacity-0 dark:border-gray-800 items-center content-center">
+        <div className="pb-4">
           <Link to="/" className="no-underline text-black text-xl">
-            <h3 style={{fontFamily:'Caveat', fontWeight: '500'}} className="tracking-normal">{siteMetadata.title}</h3>
+            <h3 style={{fontFamily:'Caveat', fontWeight: '500'}} className="h-8 max-h-8 tracking-normal">{siteMetadata.title}</h3>
           </Link>
         </div>
 
-        <div className = "flex justify-end">
-          <div className="controls">
-            <DarkModeToggle/>
-            <GraphButton/>
-            <Search indices={searchIndices}/>
-          </div>
+        <div className="flex h-8 space-x-2">
+          <DarkModeToggle/>
+          <GraphButton/>
+          <Search indices={searchIndices}/>
         </div>
 
       </header>

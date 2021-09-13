@@ -71,11 +71,6 @@ header {
   box-shadow: none;
 }
 
-header.controls {
-  display: flex;
-  align-self: center;
-}
-
 img {
   width: calc(100% - 50px);
   outline: none;

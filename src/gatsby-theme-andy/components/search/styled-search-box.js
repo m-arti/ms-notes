@@ -18,11 +18,8 @@ const open = css`
 const closed = css`
   width: 0;
   cursor: pointer;
-  margin-top: -3px;
-  margin-left: -2em;
-  padding-left: 2em;
-  margin-right: -1em;
-  padding-right: 1em;
+  margin-left: -2.3em;
+  padding-left: 2.3em;
 `
 
 export default styled(SearchBox)`
@@ -30,7 +27,6 @@ export default styled(SearchBox)`
   flex-direction: row-reverse;
   align-items: center;
   align-self: center;
-  max-height: 35px;
 
   .SearchInput {
     display: inline-block;
