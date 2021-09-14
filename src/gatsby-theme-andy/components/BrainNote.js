@@ -23,7 +23,7 @@ const footerItemsStyles = `text-gray-500 dark:text-gray-500 rounded-md hover:bg-
 
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
-const popupStyles = `w-150 px-4 pb-2 rounded-md shadow-xl`;
+const popupStyles = `Popups w-150 px-4 pb-2 rounded-md shadow-xl`;
 
 const BrainNote = ({ note }) => {
 
@@ -93,7 +93,7 @@ const BrainNote = ({ note }) => {
         popups[ln.slug] = (
           <div
             id={ln.slug}
-            className={`${popupStyles} bg-gray-100 dark:bg-gray-900 text-black`}
+            className={`${popupStyles} bg-opacity-50 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-50 text-black`}
           >
             <div className="flex flex-wrap gap-x-2 content-start">
               <h3 className="mb-2">
