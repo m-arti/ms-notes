@@ -13,7 +13,7 @@ import Image from "./Image";
 
 // TODO cmd+click open page in new tab
 
-const innerLinkStyles = `text-blue-600 dark:text-blue-300 px-1 -mx-1 rounded dark:hover:bg-blue-900 hover:bg-opacity-80 dark:hover:bg-opacity-80`;
+const innerLinkStyles = `InnerLinks text-blue-600 dark:text-blue-300 px-1 -mx-1 rounded dark:hover:bg-blue-900 hover:bg-opacity-80 dark:hover:bg-opacity-80`;
 
 const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   if (!href) href = restProps.to;
@@ -39,7 +39,7 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
       // interactiveBorder="30"
       content={
         <div className={`${innerLinkStyles}
-          py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-white dark:bg-gray-900`}>{href}</div>
+          py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-white bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50`}>{href}</div>
       }
     >
       <a className="" {...restProps} href={href} />
