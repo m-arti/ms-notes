@@ -10,6 +10,11 @@ body {
   @apply antialiased;
   scroll-behavior: smooth;
   text-underline-position: under;
+  background-color: rgba(252, 251, 249, .8);
+}
+
+.dark body {
+  background-color: black;
 }
 
 /* optional scrollbar using webkit (cannot autohide if used) */
@@ -46,7 +51,7 @@ body {
 } */
 
 header {
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(253, 251, 249, .8); /* ∵ a=.8, header is lighter, ∴ using r+1 */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   -moz-backdrop-filter: blur(20px);
@@ -63,7 +68,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  box-shadow: 0px -5px 35px #f3f3f3;
+  box-shadow: 0px -5px 35px #f5f2ec;
 }
 
 .dark header {
@@ -112,7 +117,7 @@ ol {
 }
 
 hr {
-  @apply my-4;
+  @apply my-4 border-beige;
 }
 
 .dark hr {
@@ -124,7 +129,7 @@ hr {
 }
 
 blockquote {
-  @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-gray-300;
+  @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-beige;
 }
 
 blockquote p {
@@ -132,7 +137,7 @@ blockquote p {
 }
 
 code {
-  @apply antialiased whitespace-pre lining-nums slashed-zero tabular-nums text-sm text-gray-800 bg-gray-200 p-1 py-0 px-1 rounded-sm;
+  @apply antialiased whitespace-pre lining-nums slashed-zero tabular-nums text-sm text-gray-800 bg-beigeDarker p-1 py-0 px-1 rounded-sm;
 }
 
 .dark code {
@@ -140,7 +145,7 @@ code {
 }
 
 pre {
-  @apply antialiased mb-4 p-2 rounded-md bg-gray-200;
+  @apply antialiased mb-4 p-2 rounded-md bg-beige;
   overflow-x: auto;
 }
 
@@ -237,7 +242,7 @@ iframe {
   text-align: left;
   top: 1.5em;
   left: 0;
-  background: rgba(243, 244, 246, .5); /* bg-gray-100 */
+  background: rgba(244, 240, 232, .5); /* bg-gray-100 */
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   -moz-backdrop-filter: blur(25px);
@@ -255,12 +260,6 @@ iframe {
 
 .dark .jargon-term:hover .jargon-info {
   background: rgba(17, 24, 39, .5); /* bg-gray-900 */
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-  -moz-backdrop-filter: blur(25px);
-  -o-filter: blur(25px);
-  -ms-filter: blur(25px);
-  border: none;
 }
 
 /* graph styles (Copyright (c) 2020 Mathieu Dutour, from wolfr.am/VbLnqzx0) */
@@ -269,8 +268,8 @@ iframe {
   z-index: 99;
   position: fixed;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: -5px -5px 15px -3px #eee,
+  background-color: rgba(252, 251, 249, .8);
+  box-shadow: -5px -5px 15px -3px #f5f2ec,
     0 4px 15px -2px rgba(0, 0, 0, 0.08);
 }
 
@@ -305,7 +304,7 @@ iframe {
   justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(252, 251, 249, .8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   -moz-backdrop-filter: blur(10px);
@@ -418,7 +417,7 @@ iframe {
   -ms-filter: blur(25px);
 }
 
-.InnerLinks {
+.Links {
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   -moz-backdrop-filter: blur(25px);
@@ -458,15 +457,20 @@ iframe {
 /*! purgecss end ignore */
 @tailwind utilities;
 
+.note-columns-container {
+  background-color: rgb(252, 251, 249);
+}
+
 .note-container {
   max-width: 100vw;
   padding-top: 80px !important;
   scroll-padding-top: 80px !important;
   scroll-behavior: smooth !important;
+  background-color: rgb(252, 251, 249);
 }
 
 .note-container-shadow {
-  box-shadow: 0px -5px 35px #f3f3f3;
+  box-shadow: 0px -5px 35px #f5f2ec;
 }
 
 .dark .note-container-shadow {
@@ -477,6 +481,7 @@ iframe {
 @media (max-width: 800px) {
   .note-columns-container {
     width: unset !important;
+    background-color: rgb(252, 251, 249);
   }
 
   .note-container {

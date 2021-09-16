@@ -15,7 +15,7 @@ const HitCount = connectStateResults(({ searchResults }) => {
   return hitCount > 0 ? (
     <div className="HitCount">
       <div>
-      <p className='px-3 py-1 m-0 rounded-md bg-gray-200 bg-opacity-50 text-black dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``}</p>
+      <p className='px-3 py-1 m-0 rounded-md bg-beige bg-opacity-50 text-black dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``}</p>
       </div>
     </div>
   ) : null

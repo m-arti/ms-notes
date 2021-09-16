@@ -13,17 +13,17 @@ import Image from "./Image";
 
 // TODO cmd+click open page in new tab
 
-const innerLinkStyles = `InnerLinks text-blue-600 dark:text-blue-300 px-1 -mx-1 rounded dark:hover:bg-blue-900 hover:bg-opacity-80 dark:hover:bg-opacity-80`;
+const linkStyles = `Links text-blue-600 dark:text-blue-300 px-1 -mx-1 rounded dark:hover:bg-blue-900 hover:bg-opacity-80 dark:hover:bg-opacity-80`;
 
 const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   if (!href) href = restProps.to;
   if (!href.match(/^http/))
     return noPopups ? (
-      <Link {...restProps} to={href} className={`${innerLinkStyles} transition duration-500 hover:bg-indigo-100`
+      <Link {...restProps} to={href} className={`${linkStyles} transition duration-500 hover:bg-indigo-100`
       }/>
     ) : (
       <Tippy content={popups[href.replace(/^\//, '')]} placement="right" animation="shift-away" duration="500" arrow={true} interactive={true} hideOnClick={true} inlinePositioning={true} interactiveDebounce="100" plugins={[inlinePositioning]}>
-        <LinkToStacked {...restProps} to={href} className={`${innerLinkStyles} transition duration-500 hover:bg-indigo-100`} />
+        <LinkToStacked {...restProps} to={href} className={`${linkStyles} transition duration-500 hover:bg-indigo-100`} />
       </Tippy>
     );
   return noPopups || restProps.children === href ? (
@@ -38,8 +38,8 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
       // interactiveDebounce="100"
       // interactiveBorder="30"
       content={
-        <div className={`${innerLinkStyles}
-          py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-white bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50`}>{href}</div>
+        <div className={`${linkStyles}
+          py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-beige dark:bg-gray-900`}>{href}</div>
       }
     >
       <a className="" {...restProps} href={href} />
@@ -61,7 +61,7 @@ const CollapsedText = ({ children, summary, text }) => (
 
 const Figcaption = ({ children }) => (
   <div
-    className= "mt-1 mb-4 text-sm font-light text-center text-gray-500 "
+    className= "mt-1 mb-4 text-sm font-light text-center text-gray-700 "
   >
     {children}
   </div>
@@ -70,7 +70,7 @@ const Figcaption = ({ children }) => (
 const NoteTag = ({ children, color }) => (
   <div
     className=
-    {`notetag antialiased bg-${color}-100 dark:bg-opacity-75 text-${color}-700 dark:text-${color}-300 py-1 px-2 mb-10 mr-2 text-xs rounded-md inline-block`}
+    {`notetag py-1 px-2 mb-10 mr-2 text-xs inline-block rounded-md ${color==='beige' ? 'text-gray-700': 'text-'+color+'-700'} bg-${color}${color==='beige' ? '': '-100'} dark:${color==='beige' ? 'text-gray-300': 'text-'+color+'-300'} dark:bg-opacity-75 ${color==='beige' ? 'bg-gray-100': ''}`}
   >
     {children}
   </div>

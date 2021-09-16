@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       colors: {
         'link': '#dd5511',
+        'link2': '#f28500',
+        'beige': '#f4f0e8',
+        'beigeDarker': '#ebe4d7',
       },
       fontFamily: {
         sans: ['SF Pro Display', ...defaultTheme.fontFamily.sans],
@@ -21,7 +24,7 @@ module.exports = {
         white: "black",
         black: "white",
       },
-      transitionDuration: "100ms", // default '300ms'
+      transitionDuration: "500ms", // default '300ms'
       transitionClasses: "full", // default ['text, 'bg', 'border']
     },
   },

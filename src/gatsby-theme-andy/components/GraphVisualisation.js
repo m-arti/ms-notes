@@ -279,7 +279,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
       >
 
         <button
-          className="graph-modal-close mr-2 mt-2 px-3 py-2 rounded-md bg-gray-200 bg-opacity-50 transition duration-500 ease-in-out hover:bg-gray-200"
+          className="graph-modal-close mr-2 mt-2 px-3 py-2 rounded-md bg-beige bg-opacity-50 dark:bg-opacity-50 dark:bg-gray-800 transition duration-500 ease-in-out hover:bg-opacity-100 dark:hover:bg-opacity-100"
           type="button"
           onClick={() => {
             setGraphState("hidden");

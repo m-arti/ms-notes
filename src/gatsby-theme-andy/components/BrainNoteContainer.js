@@ -39,10 +39,10 @@ const StackedPageWrapper = ({
   <PageIndexProvider value={i}>
     <div
       className={
-        `note-container border-opacity-50 dark:border-opacity-50 dark:border-l dark:border-gray-800 bg-white md:max-w-2xl px-6 py-4 bg-opacity-100
+        `note-container border-opacity-50 dark:border-opacity-50 dark:border-l dark:border-gray-800 md:max-w-2xl px-6 py-4 bg-opacity-100
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r dark:border-gray-800`}
         bg-white text-black dark:text-gray-200 md:sticky flex flex-col flex-shrink-0
-        ${overlay ? 'note-container-shadow border-l border-gray-100 dark:border-gray-800' : 'border-r border-gray-200 dark:border-gray-800 px-6'}`
+        ${overlay ? 'note-container-shadow border-l border-beige dark:border-gray-800' : 'border-r border-beige dark:border-gray-800 px-6'}`
       }
       style={{
         left: PAD * i,
@@ -113,7 +113,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   NUMOFPAGES = stackedPages.length + 1;
 
   return (
-    <div className="nightwind bg-white text-black flex flex-col min-h-screen h-screen">
+    <div className="nightwind text-black flex flex-col min-h-screen h-screen">
       <Helmet>
 
         <script

@@ -13,8 +13,8 @@ const Popover = css`
   right: 0;
   top: 100%;
 
-  background-color: rgba(255, 255, 255, .98);
-  box-shadow: 0px -5px 35px #f3f3f3;
+  background-color: rgb(252, 251, 249, .98);
+  box-shadow: 0px -5px 35px #f5f2ec;
   padding: 1em;
   padding-left: 2rem;
   padding-right: 2rem;

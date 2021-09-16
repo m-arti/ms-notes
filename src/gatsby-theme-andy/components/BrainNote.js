@@ -19,7 +19,7 @@ const ScrollToTopIcon = styled(ArrowIosUpwardOutline)`
   width: 25px !important;
 `;
 
-const footerItemsStyles = `text-gray-500 dark:text-gray-500 rounded-md hover:bg-opacity-50 hover:text-gray-800 hover:bg-gray-200 dark:hover:bg-gray-800 dark:hover:bg-opacity-50 transform transition duration-500`;
+const footerItemsStyles = `text-gray-600 dark:text-gray-500 rounded-md hover:text-gray-800 hover:bg-beige dark:hover:bg-gray-800 dark:hover:bg-opacity-50 transform transition duration-500`;
 
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
@@ -45,13 +45,13 @@ const BrainNote = ({ note }) => {
     const RefLink = width < NOTE_MAX_WIDTH ? Link : LinkToStacked;
     references = note.inboundReferenceNotes.map((reference) => (
       <RefLink
-        className="no-underline hover:text-gray-500"
+        className="no-underline"
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
         key={reference.slug}
       >
         <div className={`p-3 ml-2 mb-2 ${footerItemsStyles}`}>
           <h4 className="text-sm font-medium"><span role="img" aria-label="note emoji">📄</span>&ensp; {reference.title}</h4>
-          <p className="text-sm m-0 mb-0 text-gray-500 dark:text-gray-500 text-justify">{reference.childMdx.excerpt.replace(' .', '.').replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}</p>
+          <p className="m-0 mb-0 mt-1 text-sm dark:text-gray-500 text-justify">{reference.childMdx.excerpt.replace(' .', '.').replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}</p>
         </div>
       </RefLink>
     ));
@@ -67,9 +67,9 @@ const BrainNote = ({ note }) => {
           <button className={`py-0 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
         </div>
 
-          <h3 className="mt-1 mb-4 font-normal text-sm text-gray-500 dark:text-gray-500">Referred in:</h3>
-          <div className={"mb-4 border-l-2 border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700"}>{references}</div>
-          <hr className="mx-auto pt-2 mt-6 border-gray-200 dark:border-gray-800"/>
+          <h3 className="mt-1 mb-4 font-normal text-sm text-gray-600 dark:text-gray-500">Referred in:</h3>
+          <div className={"mb-4 border-l-2 border-beige dark:border-gray-800 hover:border-beigeDarker dark:hover:border-gray-700"}>{references}</div>
+          <div className="mt-6 mb-6 border-b rounded border-beigeDarker border dark:border-gray-800"/>
         </>
       );
     }
@@ -93,7 +93,7 @@ const BrainNote = ({ note }) => {
         popups[ln.slug] = (
           <div
             id={ln.slug}
-            className={`${popupStyles} bg-opacity-50 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-50 text-black`}
+            className={`${popupStyles} bg-opacity-50 bg-beige dark:bg-gray-900 dark:bg-opacity-50 text-black`}
           >
             <div className="flex flex-wrap gap-x-2 content-start">
               <h3 className="mb-2">
@@ -107,7 +107,7 @@ const BrainNote = ({ note }) => {
               </LinkToStacked>
               </h3>
             </div>
-            <p className="mb-2 text-sm font-normal text-left">
+            <p className="mb-2 text-sm text-left">
               {ln.childMdx.excerpt.replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}
             </p>
           </div>
@@ -136,9 +136,9 @@ const BrainNote = ({ note }) => {
 
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
-      <div className="refs-box bg-opacity-50 text-gray-600 rounded-lg p-6 pt-4 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-50">
+      <div className="refs-box p-6 pt-4 text-gray-600 rounded-lg bg-beige bg-opacity-30 dark:bg-gray-900 dark:bg-opacity-50">
         {referenceBlock}
-        <p className="text-sm m-0 text-gray-500 dark:text-gray-500">
+        <p className="m-0 text-sm text-gray-600 dark:text-gray-500">
           If you'd like to discuss or share an idea, do get in touch.<br/>
           Send me a {' '}
           <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a>{' '}
