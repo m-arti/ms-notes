@@ -3,11 +3,11 @@ import { Helmet } from 'react-helmet';
 import '../style.css';
 
 export default () => (
-  <div className="bg-white">
+  <div class="bg-white">
 
     <br/>
 
-    <div className="container max-w-2xl px-4 mx-auto flex flex-col min-h-screen border-t border-black text-black bg-white">
+    <div class="container max-w-2xl px-4 mx-auto flex flex-col min-h-screen border-t border-black text-black bg-white">
 
       <Helmet>
         <script
@@ -48,13 +48,13 @@ export default () => (
         </script>
       </Helmet>
 
-      <h1 className="my-4">L O S T &ensp; I N &ensp; S P A C E &ensp; ✈︎</h1>
+      <h1 class="my-4">L O S T &ensp; I N &ensp; S P A C E &ensp; ✈︎</h1>
 
-      <p className="text-lg my-4">Sorry, that page does not exist. It may have been lost.</p>
+      <p class="text-lg my-4">Sorry, that page does not exist. It may have been lost.</p>
 
       <br/>
 
-      <p className="text-lg m-0">
+      <p class="text-lg m-0">
         {' '} <a href="/">← <span role="img" aria-label="earth emoji">🌍</span> Homepage</a>
       </p>
 

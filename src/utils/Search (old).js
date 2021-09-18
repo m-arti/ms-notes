@@ -60,17 +60,17 @@
 //       }
 //       if (results.length > 0) {
 //         return (
-//         <div className="search__results">
+//         <div class="search__results">
 //           {results.map((result) => (
-//               <div className="search__result" key={result}>
+//               <div class="search__result" key={result}>
 //                 { result.external ? (<h6><a href={result.external}>{result.title}</a></h6>) : (<h6><a href={result.slug}>{result.title}</a></h6>) }
 //               </div>)
 //             )}
 //           </div>
 //           )
 //       } else if (message){
-//         return (<div className="search__results">
-//           <div className="search__result">{ message }</div>
+//         return (<div class="search__results">
+//           <div class="search__result">{ message }</div>
 //         </div>)
 //       } else { return '' }
 //     }
@@ -78,14 +78,14 @@
 //
 //
 //     return (
-//       <div ref={this.node} className={'row search ' + this.props.classNames + '__search'}>
-//           <div className={"search__wrapper col-sm-12 col-md-8 col-lg-" + this.props.cols}>
-//             <div className="search__input">
+//       <div ref={this.node} class={'row search ' + this.props.classs + '__search'}>
+//           <div class={"search__wrapper col-sm-12 col-md-8 col-lg-" + this.props.cols}>
+//             <div class="search__input">
 //                 <input type="text"
 //                 onChange={this.search}
 //                 placeholder={'Search'}
 //                 />
-//                 <i className="fas fa-search"></i>
+//                 <i class="fas fa-search"></i>
 //             </div>
 //               <ResultList />
 //           </div>
@@ -146,10 +146,10 @@ class Search extends Component {
       if (this.state.results.length > 0) {
         return this.state.results.map((page, i) => (
 
-          <div className="item-search" key={i}>
+          <div class="item-search" key={i}>
             <p>{page.tags}</p>
             <Link to={page.url}>
-              <h3 className='font-bold'>{page.title}</h3>
+              <h3 class='font-bold'>{page.title}</h3>
             </Link>
             <p>———</p>
             <p>{page.excerpt}</p>
@@ -171,14 +171,14 @@ class Search extends Component {
     }
 
     return (
-      <div className={this.props.classNames}>
+      <div class={this.props.classNames}>
         <input
-          className="search__input tracking-tight bg-transparent pr-2 text-black text-sm border-b border-gray-200 dark:border-gray-800 focus:outline-none dark:focus:border-yellow-500 focus:border-yellow-500 focus:border-transparent"
+          class="search__input tracking-tight bg-transparent pr-2 text-black text-sm border-b border-gray-200 dark:border-gray-800 focus:outline-none dark:focus:border-yellow-500 focus:border-yellow-500 focus:border-transparent"
           type="text"
           onChange={this.search}
           placeholder={' Search'}
         />
-        <div className="search__list text-sm max-w-md">
+        <div class="search__list text-sm max-w-md">
           <ResultList/>
         </div>
       </div>

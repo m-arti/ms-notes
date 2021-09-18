@@ -13,9 +13,9 @@ const HitCount = connectStateResults(({ searchResults }) => {
   const hitCount = searchResults && searchResults.nbHits
 
   return hitCount > 0 ? (
-    <div className="HitCount">
+    <div class="HitCount">
       <div>
-      <p className='px-3 py-1 m-0 rounded-md bg-beige bg-opacity-50 text-black dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``}</p>
+      <p class='px-3 py-1 m-0 rounded-md bg-beige bg-opacity-50 text-black dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``}</p>
       </div>
     </div>
   ) : null
@@ -23,31 +23,31 @@ const HitCount = connectStateResults(({ searchResults }) => {
 
 const PageHit = ({ hit }) => (
   <div>
-    <hr className='border-opacity-50'/>
-    <Link className='no-underline hover:underline' to={hit.slug}>
-      <h3 className='text-sm text-black no-underline hover:underline'>
+    <hr class='border-opacity-50'/>
+    <Link class='no-underline hover:underline' to={hit.slug}>
+      <h3 class='text-sm text-black no-underline hover:underline'>
         <Highlight attribute="title" hit={hit} tagName="mark"/>
       </h3>
     </Link>
-    <Snippet className='text-xs text-gray-500' attribute="excerpt" hit={hit} tagName="mark"/>
-    <span className='text-xs text-gray-500'>...</span>
+    <Snippet class='text-xs text-gray-500' attribute="excerpt" hit={hit} tagName="mark"/>
+    <span class='text-xs text-gray-500'>...</span>
   </div>
 )
 
 const HitsInIndex = ({ index }) => (
   <Index indexName={index.name}>
     <HitCount/>
-    <Hits className="Hits" hitComponent={PageHit}/>
+    <Hits class="Hits" hitComponent={PageHit}/>
   </Index>
 )
 
 const SearchResult = ({ indices, className }) => (
-  <div className= {className} >
+  <div class={className} >
     {indices.map(index => (
       <HitsInIndex index={index} key={index.name}/>
     ))}
-    <hr className='ml-6 border-opacity-50'/>
-    <PoweredBy className='text-xs text-gray-500 dark:text-gray-500'/>
+    <hr class='ml-6 border-opacity-50'/>
+    <PoweredBy class='text-xs text-gray-500 dark:text-gray-500'/>
   </div>
 )
 

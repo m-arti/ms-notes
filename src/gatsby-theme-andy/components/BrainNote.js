@@ -45,13 +45,13 @@ const BrainNote = ({ note }) => {
     const RefLink = width < NOTE_MAX_WIDTH ? Link : LinkToStacked;
     references = note.inboundReferenceNotes.map((reference) => (
       <RefLink
-        className="no-underline"
+        class="no-underline"
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
         key={reference.slug}
       >
-        <div className={`p-3 ml-2 mb-2 ${footerItemsStyles}`}>
-          <h4 className="text-sm font-medium"><span role="img" aria-label="note emoji">📄</span>&ensp; {reference.title}</h4>
-          <p className="m-0 mb-0 mt-1 text-sm dark:text-gray-500 text-justify">{reference.childMdx.excerpt.replace(' .', '.').replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}</p>
+        <div class={`p-3 ml-2 mb-2 ${footerItemsStyles}`}>
+          <h4 class="text-sm font-medium"><span role="img" aria-label="note emoji">📄</span>&ensp; {reference.title}</h4>
+          <p class="m-0 mb-0 mt-1 text-sm dark:text-gray-500 text-justify">{reference.childMdx.excerpt.replace(' .', '.').replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}</p>
         </div>
       </RefLink>
     ));
@@ -63,13 +63,13 @@ const BrainNote = ({ note }) => {
     if (references.length > 0) {
       referenceBlock = (
         <>
-        <div className='mb-4 text-center'>
-          <button className={`py-0 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
+        <div class='mb-4 text-center'>
+          <button class={`py-0 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
         </div>
 
-          <h3 className="mt-1 mb-4 font-normal text-sm text-gray-600 dark:text-gray-500">Referred in:</h3>
-          <div className={"mb-4 border-l-2 border-beige dark:border-gray-800 hover:border-beigeDarker dark:hover:border-gray-700"}>{references}</div>
-          <div className="mt-6 mb-6 border-b rounded border-beigeDarker border dark:border-gray-800"/>
+          <h3 class="mt-1 mb-4 font-normal text-sm text-gray-600 dark:text-gray-500">Referred in:</h3>
+          <div class={"mb-4 border-l-2 border-beige dark:border-gray-800 hover:border-beigeDarker dark:hover:border-gray-700"}>{references}</div>
+          <div class="mt-6 mb-6 border-b rounded border-beigeDarker border dark:border-gray-800"/>
         </>
       );
     }
@@ -77,8 +77,8 @@ const BrainNote = ({ note }) => {
     else {
       referenceBlock = (
         <>
-        <div className='mb-4 text-center'>
-          <button className={`-my-2 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
+        <div class='mb-4 text-center'>
+          <button class={`-my-2 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
         </div>
         </>
       )
@@ -93,13 +93,13 @@ const BrainNote = ({ note }) => {
         popups[ln.slug] = (
           <div
             id={ln.slug}
-            className={`${popupStyles} bg-opacity-50 bg-beige dark:bg-gray-900 dark:bg-opacity-50 text-black`}
+            class={`${popupStyles} bg-opacity-50 bg-beige dark:bg-gray-900 dark:bg-opacity-50 text-black`}
           >
-            <div className="flex flex-wrap gap-x-2 content-start">
-              <h3 className="mb-2">
+            <div class="flex flex-wrap gap-x-2 content-start">
+              <h3 class="mb-2">
               {ln.title}
               <LinkToStacked
-                className="no-underline text-2xl"
+                class="no-underline text-2xl"
                 to={ln.slug === 'about' ? `about` : `/${ln.slug}`}
                 title='Open note'
               >
@@ -107,7 +107,7 @@ const BrainNote = ({ note }) => {
               </LinkToStacked>
               </h3>
             </div>
-            <p className="mb-2 text-sm text-left">
+            <p class="mb-2 text-sm text-left">
               {ln.childMdx.excerpt.replace(' . ', '. ').replace(' , ', ', ').replace(' )', ')').replace(' (', '(')}
             </p>
           </div>
@@ -126,19 +126,19 @@ const BrainNote = ({ note }) => {
   return (
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
       <SEO title={note.title} description={note.excerpt} />
-      <div className="flex-1 mb-4">
-        <h1 className="mt-3 mb-4 max-w-sm">{note.title}</h1>
+      <div class="flex-1 mb-4">
+        <h1 class="mt-3 mb-4 max-w-sm">{note.title}</h1>
 
-        {note.slug !== 'about' && <span className="text-sm font-serif font-medium align-middle text-gray-500">{noteLastUpdated ? '✎' : ''}</span>}
+        {note.slug !== 'about' && <span class="text-sm font-serif font-medium align-middle text-gray-500">{noteLastUpdated ? '✎' : ''}</span>}
 
-        {(note.slug !== 'about' && noteLastUpdated !== undefined) && <span className="text-xs uppercase tracking-wide text-gray-700 dark:text-gray-300" title={`Last updated ${noteLastUpdated}`}>
+        {(note.slug !== 'about' && noteLastUpdated !== undefined) && <span class="text-xs uppercase tracking-wide text-gray-700 dark:text-gray-300" title={`Last updated ${noteLastUpdated}`}>
           &nbsp;{noteLastUpdated.replace('minute','min').replace('hour','hr').replace('week','wk').replace('month','mo').replace('year','yr')}&emsp;&nbsp;</span>}
 
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
-      <div className="refs-box p-6 pt-4 text-gray-600 rounded-lg bg-beige bg-opacity-30 dark:bg-gray-900 dark:bg-opacity-50">
+      <div class="refs-box p-6 pt-4 text-gray-600 rounded-lg bg-beige bg-opacity-30 dark:bg-gray-900 dark:bg-opacity-50">
         {referenceBlock}
-        <p className="m-0 text-sm text-gray-600 dark:text-gray-500">
+        <p class="m-0 text-sm text-gray-600 dark:text-gray-500">
           If you'd like to discuss or share an idea, do get in touch.<br/>
           Send me a {' '}
           <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a>{' '}

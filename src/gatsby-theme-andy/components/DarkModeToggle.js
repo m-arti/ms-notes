@@ -15,7 +15,7 @@ const DarkModeToggle = () => {
           nightwind.toggle();
           play();
         }}
-        className="h-8 w-8 overflow-hidden text-center text-xl transition duration-500 ease-in-out opacity-80 hover:opacity-100"
+        class="h-8 w-8 overflow-hidden text-center text-xl transition duration-500 ease-in-out opacity-80 hover:opacity-100"
         aria-label="Activate light/dark mode"
         title="Activate light/dark mode"
       >

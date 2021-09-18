@@ -132,6 +132,10 @@ blockquote {
   @apply antialiased py-0 px-4 mb-6 mt-6 border-l-2 border-beige;
 }
 
+.dark blockquote {
+  @apply border-gray-800;
+}
+
 blockquote p {
   @apply antialiased m-0 font-serif text-justify leading-relaxed align-middle;
 }
@@ -178,7 +182,7 @@ details>p {
 }
 
 details>summary {
-  @apply antialiased pt-2 pb-2 text-left font-normal;
+  @apply antialiased pt-2 pb-2 text-left font-normal cursor-pointer;
 }
 
 iframe {

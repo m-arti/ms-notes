@@ -15,7 +15,7 @@ const searchIndices = [{ name: `ms-notes`, title: `ms-notes` }];
 
 // To add Search
 // import Search from "./Search";
-// <div className="p-2 rounded">
+// <div class="p-2 rounded">
 //   <Search/>
 // </div>
 
@@ -38,7 +38,7 @@ const StackedPageWrapper = ({
 }) => (
   <PageIndexProvider value={i}>
     <div
-      className={
+      class={
         `note-container border-opacity-50 dark:border-opacity-50 dark:border-l dark:border-gray-800 md:max-w-2xl px-6 py-4 bg-opacity-100
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r dark:border-gray-800`}
         bg-white text-black dark:text-gray-200 md:sticky flex flex-col flex-shrink-0
@@ -53,21 +53,21 @@ const StackedPageWrapper = ({
       <div id = {`note-container-${slug.replace('/', '') }`}>
         <div
 
-          className={`md:block hidden transition-opacity duration-100 ${
+          class={`md:block hidden transition-opacity duration-100 ${
             obstructed ? `opacity-100` : `opacity-0`
           }`}
         >
-          <div className={`overflow-visible h-auto w-full transform rotate-90 origin-left absolute z-50 grid grid-cols-12 gap-12`}>
+          <div class={`overflow-visible h-auto w-full transform rotate-90 origin-left absolute z-50 grid grid-cols-12 gap-12`}>
 
-            <div className="col-span-7">
-              <LinkToStacked to={slug} className="no-underline text-gray-1000">
-                <p className="m-1 font-medium tracking-normal">{title || slug}</p>
+            <div class="col-span-7">
+              <LinkToStacked to={slug} class="no-underline text-gray-1000">
+                <p class="m-1 font-medium tracking-normal">{title || slug}</p>
               </LinkToStacked>
             </div>
 
-            <div className="w-full text-sm">
-              <LinkToStacked to={slug} className=" no-underline">
-              <p className={
+            <div class="w-full text-sm">
+              <LinkToStacked to={slug} class=" no-underline">
+              <p class={
                 `pt-1 my-0 pl-56 pr-24 tracking-normal text-gray-600
                 ${i===2 ? `font-normal text-lg` : `font-light`}`
               }>
@@ -83,7 +83,7 @@ const StackedPageWrapper = ({
         </div>
       </div>
       <div
-        className={`flex flex-col min-h-full transition-opacity duration-100 ${
+        class={`flex flex-col min-h-full transition-opacity duration-100 ${
           obstructed ? `opacity-0` : `opacity-100`
         }`}
       >
@@ -113,7 +113,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   NUMOFPAGES = stackedPages.length + 1;
 
   return (
-    <div className="nightwind text-black flex flex-col min-h-screen h-screen">
+    <div class="nightwind text-black flex flex-col min-h-screen h-screen">
       <Helmet>
 
         <script
@@ -159,14 +159,14 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         </title>
 
       </Helmet>
-      <header className="nightwind border-b border-white border-opacity-0 dark:border-gray-800 items-center content-center">
-        <div className="pb-4">
+      <header class="nightwind border-b border-white border-opacity-0 dark:border-gray-800 items-center content-center">
+        <div class="pb-4">
           <Link to="/" className="no-underline text-black text-xl">
-            <h3 style={{fontFamily:'Caveat', fontWeight: '500'}} className="h-8 max-h-8 tracking-normal">{siteMetadata.title}</h3>
+            <h3 style={{fontFamily:'Caveat', fontWeight: '500'}} class="h-8 max-h-8 tracking-normal">{siteMetadata.title}</h3>
           </Link>
         </div>
 
-        <div className="flex h-8 space-x-2">
+        <div class="flex h-8 space-x-2">
           <DarkModeToggle/>
           <GraphButton/>
           <Search indices={searchIndices}/>
@@ -175,10 +175,10 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
       </header>
 
       <div
-        className= "nightwind flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden" ref={scrollContainer}
+        class= "nightwind flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden" ref={scrollContainer}
       >
         <div
-          className="note-columns-container nightwind bg-white flex flex-grow transition-width duration-100"
+          class="note-columns-container nightwind bg-white flex flex-grow transition-width duration-100"
           style={{ width: NOTE_WIDTH * (stackedPages.length + 1) }}
         >
           <ContextProvider value={{ stackedPages, navigateToStackedPage }}>

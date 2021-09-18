@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Martins' Notes`,
     author: `Martins Samuel`,
-    description: `Hello! I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
+    description: `Hi, I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
     homepage: `https://notes.martinssamuel.com`,
     siteUrl: `https://notes.martinssamuel.com`,
   },
@@ -14,6 +14,7 @@ module.exports = {
   flags: {
     DEV_WEBPACK_CACHE: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PRESERVE_WEBPACK_CACHE: true,
     PARALLEL_SOURCING: true,
   },
 
@@ -128,6 +129,24 @@ module.exports = {
             }
           }
         `,
+        setup: ({
+          query: {
+            site: { siteMetadata },
+          },
+          ...rest
+        }) => {
+          siteMetadata.feed_url = siteMetadata.siteUrl + '/rss.xml';
+          siteMetadata.image_url =
+            siteMetadata.siteUrl + '/icons/icon-512x512.png';
+          const siteMetadataModified = siteMetadata;
+          siteMetadataModified.feed_url = `${siteMetadata.siteUrl}/rss.xml`;
+          siteMetadataModified.image_url = `${siteMetadata.siteUrl}/icons/icon-512x512.png`;
+
+          return {
+            ...siteMetadataModified,
+            ...rest,
+          };
+        },
         feeds: [
           {
             serialize: ({ query: { site, allSitePage, allMarkdownRemark } }) => {
@@ -136,9 +155,11 @@ module.exports = {
                   edge.node.frontmatter,
                   {
                     description: edge.node.excerpt,
+                    date: edge.node.date,
                     author: site.siteMetadata.author,
                     custom_elements: [{ "content:encoded": edge.node.html }],
                     url: site.siteMetadata.siteUrl + '/' + edge.node.parent.slug,
+                    guid: site.siteMetadata.siteUrl + '/' + edge.node.parent.slug,
                   })
               })
             },
@@ -164,7 +185,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Martins' Notes — RSS Feed",
+            title: "Martins Samuel — Notes RSS Feed",
           },
         ],
       },
@@ -206,7 +227,7 @@ module.exports = {
       options: {
         name: `Martins Samuel — Notes`,
         short_name: `Martins Samuel — Notes`,
-        description: `Hello! I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
+        description: `Hi, I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#000`,
@@ -222,7 +243,7 @@ module.exports = {
         hideDoubleBrackets: true,
         mdxOtherwiseConfigured: true,
         generateRSS: true,
-        rssTitle: `Martins Samuel — Notes`,
+        rssTitle: `Martins Samuel — Notes RSS Feed`,
       },
     },
 

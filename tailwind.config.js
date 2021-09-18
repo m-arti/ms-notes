@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         'link': '#dd5511',
         'link2': '#f28500',
+        'cream': '#fcfbf9',
         'beige': '#f4f0e8',
         'beigeDarker': '#ebe4d7',
       },

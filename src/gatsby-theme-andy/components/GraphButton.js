@@ -17,7 +17,7 @@ const GraphButton = () => {
         style={{ fontSize: '1.75rem', paddingBottom: '5px', textAlign: 'center', lineHeight: '20px' }}
         title="Show graph of notes"
         aria-label="Show graph of notes"
-        className="h-8 w-8 pb-1.5 overflow-hidden text-center transition duration-500 ease-in-out opacity-80 hover:opacity-100"
+        class="h-8 w-8 pb-1.5 overflow-hidden text-center transition duration-500 ease-in-out opacity-80 hover:opacity-100"
         onClick={() => {
           setGraphState("maximized");
           if (graphState !== "maximized") play();

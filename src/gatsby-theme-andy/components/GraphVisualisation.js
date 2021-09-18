@@ -264,7 +264,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
           backdropFilter: `blur(${overlaySpring.blur})`,
         }}
         aria-hidden
-        className="graph-overlay"
+        class="graph-overlay"
         onClick={(ev) => {
           if (!ev.isDefaultPrevented()) {
             setGraphState("hidden");
@@ -274,12 +274,12 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
 
       <animated.div
         style={modalSpring}
-        className={`graph-modal graph-modal-${graphState}`}
+        class={`graph-modal graph-modal-${graphState}`}
         onClick={(ev) => ev.preventDefault()}
       >
 
         <button
-          className="graph-modal-close mr-2 mt-2 px-3 py-2 rounded-md bg-beige bg-opacity-50 dark:bg-opacity-50 dark:bg-gray-800 transition duration-500 ease-in-out hover:bg-opacity-100 dark:hover:bg-opacity-100"
+          class="graph-modal-close mr-2 mt-2 px-3 py-2 rounded-md bg-beige bg-opacity-50 dark:bg-opacity-50 dark:bg-gray-800 transition duration-500 ease-in-out hover:bg-opacity-100 dark:hover:bg-opacity-100"
           type="button"
           onClick={() => {
             setGraphState("hidden");
@@ -287,23 +287,23 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
           title="Close graph"
           aria-label="Close graph"
         >
-          <div className="inline-block align-middle -mt-3 -mb-2 text-center text-lg text-black font-thin dark:text-white" style={{ textAlign: 'center'}}>
+          <div class="inline-block align-middle -mt-3 -mb-2 text-center text-lg text-black font-thin dark:text-white" style={{ textAlign: 'center'}}>
             ✕
           </div>
         </button>
 
         {graphState === "hidden" ? null : (
-          <svg className="graph-modal-body" ref={d3Container} id="d3-container">
+          <svg class="graph-modal-body" ref={d3Container} id="d3-container">
             <g>
-              <g className="links"></g>
-              <g className="nodes"></g>
-              <g className="text"></g>
+              <g class="links"></g>
+              <g class="nodes"></g>
+              <g class="text"></g>
             </g>
           </svg>
         )}
 
-        <div className="flex p-4" style={{ justifyContent: 'center'}}>
-          <div className="px-3 text-black text-center text-xs font-light tracking-wider">NOTES GRAPH</div>
+        <div class="flex p-4" style={{ justifyContent: 'center'}}>
+          <div class="px-3 text-black text-center text-xs font-light tracking-wider">NOTES GRAPH</div>
         </div>
 
       </animated.div>
@@ -320,7 +320,7 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
 
 // --->  graph scale (minimize - maximize) button
 // <button
-//   className="graph-modal-scale"
+//   class="graph-modal-scale"
 //   type="button"
 //   onClick={() => {
 //     setGraphState(

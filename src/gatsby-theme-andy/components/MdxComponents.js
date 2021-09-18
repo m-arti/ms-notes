@@ -19,11 +19,11 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   if (!href) href = restProps.to;
   if (!href.match(/^http/))
     return noPopups ? (
-      <Link {...restProps} to={href} className={`${linkStyles} transition duration-500 hover:bg-indigo-100`
+      <Link {...restProps} to={href} class={`${linkStyles} transition duration-500 hover:bg-indigo-100`
       }/>
     ) : (
       <Tippy content={popups[href.replace(/^\//, '')]} placement="right" animation="shift-away" duration="500" arrow={true} interactive={true} hideOnClick={true} inlinePositioning={true} interactiveDebounce="100" plugins={[inlinePositioning]}>
-        <LinkToStacked {...restProps} to={href} className={`${linkStyles} transition duration-500 hover:bg-indigo-100`} />
+        <LinkToStacked {...restProps} to={href} class={`${linkStyles} transition duration-500 hover:bg-indigo-100`} />
       </Tippy>
     );
   return noPopups || restProps.children === href ? (
@@ -42,17 +42,17 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
           py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-beige dark:bg-gray-900`}>{href}</div>
       }
     >
-      <a className="" {...restProps} href={href} />
+      <a class="" {...restProps} href={href} />
     </Tippy>
   );
 };
 
 const CollapsedText = ({ children, summary, text }) => (
-  <div className='pt-4 pb-4 pl-6 pr-6 rounded-lg text-blue-800 bg-blue-50 dark:bg-opacity-50'>
+  <div class='pt-4 pb-4 pl-6 pr-6 rounded-lg text-blue-800 bg-blue-50 dark:bg-opacity-50'>
     <details>
-      <summary className='pt-2 pb-2'><b>{summary}</b> (click to open)</summary>
-      <hr className='border-blue-200 dark:border-blue-900'/>
-      <p className='pt-2 pb-2 text-left'>
+      <summary class='pt-2 pb-2'><b>{summary}</b> (click to open)</summary>
+      <hr class='border-blue-200 dark:border-blue-900'/>
+      <p class='pt-2 pb-2 text-left'>
         {text}
       </p>
     </details>
@@ -61,7 +61,7 @@ const CollapsedText = ({ children, summary, text }) => (
 
 const Figcaption = ({ children }) => (
   <div
-    className= "mt-1 mb-4 text-sm font-light text-center text-gray-700 "
+    class= "mt-1 mb-4 text-sm font-light text-center text-gray-700 "
   >
     {children}
   </div>
@@ -69,7 +69,7 @@ const Figcaption = ({ children }) => (
 
 const NoteTag = ({ children, color }) => (
   <div
-    className=
+    class=
     {`notetag py-1 px-2 mb-10 mr-2 text-xs inline-block rounded-md ${color==='beige' ? 'text-gray-700': 'text-'+color+'-700'} bg-${color}${color==='beige' ? '': '-100'} dark:${color==='beige' ? 'text-gray-300': 'text-'+color+'-300'} dark:bg-opacity-75 ${color==='beige' ? 'bg-gray-100': ''}`}
   >
     {children}
@@ -101,8 +101,8 @@ class WolframNotebook extends React.Component {
 
   render() {
     return (
-      <div className={nbStyles} style={{width: '100%'}}>
-        <div className="WolframNotebook" id="WolframNotebook" ref={el => this.el = el} />
+      <div class={nbStyles} style={{width: '100%'}}>
+        <div class="WolframNotebook" id="WolframNotebook" ref={el => this.el = el} />
       </div>
     );
   }

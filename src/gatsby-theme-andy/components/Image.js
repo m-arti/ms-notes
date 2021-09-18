@@ -50,7 +50,7 @@ const Image = ({ src, ...rest }) => {
 
   return (
     <GatsbyImage
-      className="my-2 py-2 rounded-lg"
+      class="my-2 py-2 rounded-lg"
       image = {childImageSharp.gatsbyImageData} {...rest}
     />
  );
