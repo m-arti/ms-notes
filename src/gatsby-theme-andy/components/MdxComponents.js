@@ -39,7 +39,7 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
       // interactiveBorder="30"
       content={
         <div className={`${linkStyles}
-          py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-beige dark:bg-gray-900`}>{href}</div>
+          py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-beige dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-50`}>{href}</div>
       }
     >
       <a class="" {...restProps} href={href} />
