@@ -36,9 +36,9 @@ It's possible to create a notebook-centric version of this theme. Pages will ess
 - **Design/Style**:
   The original theme is [here](https://github.com/aravindballa/notes.aravindballa.com); [my version](https://github.com/m-arti/ms-notes) has some edits. Styling is done with [Tailwind CSS](https://tailwindcss.com)—speed and simplicity.
 
-  For *dark mode*, I use a Tailwind plugin called [Nightwind](https://nightwindcss.com). It simplifies the handling of colours that change when switching between light ⇄ dark modes. I give your device's dark mode setting precedence—changing it on your device will override that of this site. Click/tap this button to toggle: <span><button className="text-2xl align-middle" onClick={() => nightwind.toggle()}>●</button></span>.
+  For *dark mode*, I use a Tailwind plugin called [Nightwind](https://nightwindcss.com). It simplifies the handling of colours that change when switching between light ⇄ dark modes. I give your device's dark mode setting precedence—changing it on your device will override that of this site. Click/tap this button to toggle: <span><button class="text-2xl align-middle" onClick={() => nightwind.toggle()}>●</button></span>.
 
-  Also, <span className="text-3xl align-bottom">⊞</span> shows a graph of all notes; credit to [Mathieu Dutour](https://git.io/JGmY0) for creating this very useful component. I use [use-sound](https://github.com/joshwcomeau/use-sound), to play an audio clip when the buttons are clicked.
+  Also, <span class="text-3xl align-bottom">⊞</span> shows a graph of all notes; credit to [Mathieu Dutour](https://git.io/JGmY0) for creating this very useful component. I use [use-sound](https://github.com/joshwcomeau/use-sound), to play an audio clip when the buttons are clicked.
 
   To match the style of embedded Wolfram Notebooks to that of notes, I use a [stylesheet](https://github.com/m-arti/ms-notes/blob/master/src/style.wl). The matching isn't quite exact—e.g., this site uses the font 'SF Pro', while notebooks use 'Source Sans Pro'. To stylise a notebook, I run the following from within that notebook:
  ```
