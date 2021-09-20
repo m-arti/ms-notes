@@ -12,14 +12,12 @@ const Popover = css`
   z-index: 2;
   right: 0;
   top: 100%;
-
   background-color: rgb(252, 251, 249, .98);
   box-shadow: 0px -5px 35px #f5f2ec;
   padding: 1em;
   padding-left: 2rem;
   padding-right: 2rem;
   border-radius: 10px;
-  backdropFilter: blur(8px);
 
   .dark & {
     background-color: rgba(0, 0, 0, .95);

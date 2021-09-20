@@ -412,7 +412,6 @@ iframe {
   background-color: rgba(252, 211, 77, .25) !important;
 }
 
-
 .Popups {
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
@@ -422,6 +421,14 @@ iframe {
 }
 
 .Links {
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  -moz-backdrop-filter: blur(25px);
+  -o-filter: blur(25px);
+  -ms-filter: blur(25px);
+}
+
+.SearchResultPopover {
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   -moz-backdrop-filter: blur(25px);

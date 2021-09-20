@@ -15,7 +15,7 @@ const HitCount = connectStateResults(({ searchResults }) => {
   return hitCount > 0 ? (
     <div class="HitCount">
       <div>
-      <p class='px-3 py-1 m-0 rounded-md bg-beige bg-opacity-50 text-black dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``}</p>
+      <p class='px-3 py-1 m-0 rounded-md bg-beige bg-opacity-50 text-black dark:bg-gray-800 dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``}</p>
       </div>
     </div>
   ) : null
@@ -42,7 +42,7 @@ const HitsInIndex = ({ index }) => (
 )
 
 const SearchResult = ({ indices, className }) => (
-  <div class={className} >
+  <div class={`SearchResultPopover ${className}`}>
     {indices.map(index => (
       <HitsInIndex index={index} key={index.name}/>
     ))}
