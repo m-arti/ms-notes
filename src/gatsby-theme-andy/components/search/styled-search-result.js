@@ -68,7 +68,7 @@ export default styled(SearchResult)`
     justify-content: right;
 
     svg {
-      width: 65px;
+      width: 60px;
       padding-left: 5px;
     }
   }
