@@ -28,8 +28,8 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
   const [zoom, setZoom] = useState(1);
 
   const modalSize = {
-    width: Math.min(windowSize.width - 40, 900),
-    height: Math.min(windowSize.height - 40, 800),
+    width: Math.min(windowSize.width - 100, 800),
+    height: Math.min(windowSize.height - 200, 700),
   };
 
   const simulation = useRef(
