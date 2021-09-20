@@ -428,14 +428,6 @@ iframe {
   -ms-filter: blur(25px);
 }
 
-.SearchResultPopover {
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-  -moz-backdrop-filter: blur(25px);
-  -o-filter: blur(25px);
-  -ms-filter: blur(25px);
-}
-
 @tailwind components;
 
 /* copied from tippy.js/animations/shift-away.css */

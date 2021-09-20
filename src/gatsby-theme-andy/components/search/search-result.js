@@ -42,7 +42,7 @@ const HitsInIndex = ({ index }) => (
 )
 
 const SearchResult = ({ indices, className }) => (
-  <div class={`SearchResultPopover ${className}`}>
+  <div class={className}>
     {indices.map(index => (
       <HitsInIndex index={index} key={index.name}/>
     ))}

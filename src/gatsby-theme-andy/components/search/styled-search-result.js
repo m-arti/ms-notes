@@ -17,7 +17,13 @@ const Popover = css`
   padding: 1em;
   padding-left: 2rem;
   padding-right: 2rem;
-  border-radius: 10px;
+  border-radius: 0.75rem;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
 
   .dark & {
     background-color: rgba(0, 0, 0, .95);
