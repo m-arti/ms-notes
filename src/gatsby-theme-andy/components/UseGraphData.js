@@ -6,7 +6,7 @@ import { useStackedPages } from "react-stacked-pages-hook";
 import { generateGradientColors } from "./Gradient.js";
 
 export const useGraphData = () => {
-  const [stackedPages, navigate, highlight] = useStackedPages();
+  const [stackedPages, navigate, highlight] = useStackedPages(); // not working, so making node colouring to fail
   const data = useStaticQuery(graphql`
     {
       allBrainNote {
@@ -35,11 +35,11 @@ export const useGraphData = () => {
     const textColor =
       typeof document !== "undefined"
         ? 'black'
-        : 'black';
+        : 'orange';
     const linkColor =
       typeof document !== "undefined"
-        ? "orange"
-        : "orange";
+        ? 'black'
+        : 'orange';
 
     const colors = generateGradientColors(
       linkColor,

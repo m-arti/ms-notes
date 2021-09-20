@@ -28,8 +28,8 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
   const [zoom, setZoom] = useState(1);
 
   const modalSize = {
-    width: Math.min(windowSize.width - 100, 800),
-    height: Math.min(windowSize.height - 200, 700),
+    width: Math.min(windowSize.width - 40, 900),
+    height: Math.min(windowSize.height - 40, 800),
   };
 
   const simulation = useRef(
@@ -73,10 +73,16 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
   const hookNode = useCallback(
     (node) => {
       return node
-        .on("click", (d) => {
-          navigate(d.slug);
-          // setGraphState("minimized");
-        });
+        .on("mouseover", function (d, i) {
+            d3.select(this)
+              .on("click", function() { window.open(d.slug, "_self"); });
+        })
+
+        // .on("click", (d) => {
+        //   navigate(d.slug);
+        //   setGraphState("minimized");
+        // });
+
         // .on("mouseenter", (d) => {
         //   highlight(d.slug, true);
         // })
@@ -149,6 +155,10 @@ const GraphVisualisation = ({ setGraphState, graphState }) => {
         .attr("font-size", `${font}px`)
         .attr("text-anchor", "middle")
         .attr("alignment-baseline", "central")
+        .on("mouseover", function (d, i) {
+            d3.select(this)
+              .on("click", function() { window.open(d.slug, "_self"); });
+        })
     ).merge(text);
 
     simulation.current.nodes(nodesData);
