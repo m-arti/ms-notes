@@ -11,7 +11,7 @@ export default connectSearchBox(
 
   return (
     <form
-      class={`${className} h-8 text-black dark:text-white transition duration-500 ease-in-out opacity-80 hover:opacity-100 focus:opacity-100`}
+      class={`${className} h-8 text-black dark:text-white transition duration-500 ease-in-out opacity-50 hover:opacity-100 focus:opacity-100`}
     >
       <input
         class="SearchInput overflow-hidden h-8 cursor-pointer tracking-tight text-sm text-black dark:text-white bg-transparent border-b border-gray-200 dark:border-gray-800 focus:outline-none dark:focus:border-yellow-500 focus:border-yellow-500 focus:border-transparent"
@@ -26,7 +26,7 @@ export default connectSearchBox(
         }}
       />
       <div
-        class='w-8 min-w-12 pb-1 font-bold pointer-events-none text-center align-middle'
+        class='w-8 min-w-12 pb-1.5 font-thin pointer-events-none text-center align-middle'
         style={{ fontSize: '1.8rem', pointerEvents: 'none', lineHeight: '20px'}}
         aria-label="Search notes"
         title="Search notes"

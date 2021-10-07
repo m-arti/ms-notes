@@ -10,16 +10,16 @@ const DarkModeToggle = () => {
 
   return (
       <button
-        style={{ lineHeight: '20px' }}
+        style={{ lineHeight: '20px', scale: '1.05' }}
         onClick={() => {
           nightwind.toggle();
           play();
         }}
-        class="h-8 w-8 overflow-hidden text-center text-xl transition duration-500 ease-in-out opacity-80 hover:opacity-100"
+        class="h-8 w-8 overflow-hidden text-center text-xl font-thin transition duration-500 ease-in-out opacity-50 hover:opacity-100"
         aria-label="Activate light/dark mode"
         title="Activate light/dark mode"
       >
-        ●
+        ◑
       </button>
   );
 
