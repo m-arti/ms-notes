@@ -70,11 +70,26 @@ This map shows the elevation of the world, and it shows that earth is more or le
   alt= "Elevation of earth"
 />
 
-There are 20 contours on the map, so it can be more detailed. But you can clearly see Mount Everest. This map shows the salinty of some of the water bodies (some values are missing in the dataset):
-
+The map has a resolution of 20 contours, so it can be more detailed than it currently is. But you can clearly see Mount Everest. This map shows the salinty of some of the water bodies (some values are missing in the dataset):
 <img
   src = "historical-perspective/salinity.png"
   alt= "Salinity of water bodies around the world"
 />
 
-To be continued...
+For each ocean, we can get its bordering bodies of water and basins (bights, seas, straits, etc.). And for each sea or whatever, we can get its basins and major rivers. So we can create a graph of the connectivity/adjacency between water bodies:
+<img
+  src = "historical-perspective/all_graph.png"
+  alt= "Graph of interconnectivity between world oceans, seas, rivers, etc."
+/>
+
+We have precise centre geo-coordinates for the oceans and seas, but not for rivers. We can plot this graph on map to show the relative positions of the vertices:
+<img
+  src = "historical-perspective/part_geograph.png"
+  alt= "Graph of interconnectivity between world oceans, seas, rivers, etc. on a map"
+/>
+
+The the geograph above, an arrow points from A to B, if B is bodering waterbody, or a basin, of A. Remember that this does not include rivers, but I'll return to those later on.
+
+The motive for all this is to better understand how the water bodies on earth relate to one another. What flows into what; where and how quickly? Those kinds of questions. Luckily, we've got some data on rivers that's really helpful, e.g., information on discharge, drainage, source, outflow, etc. Again, there are some missing data points, but hopefully there's enough to learn something new and interesting from.
+
+TBC.
