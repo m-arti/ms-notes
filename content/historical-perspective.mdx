@@ -6,4 +6,75 @@ tags: ['exploration', 'history']
 <NoteTag color="beige">exploration</NoteTag>
 <NoteTag color="beige">history</NoteTag>
 
-...
+I recently read Arundhati Roy's [*The God of Small Things*](https://www.worldcat.org/oclc/1123081276) for the first time, which I really enjoyed and reckon I might reread in the future. It inspirited me to muse on the past — places, cultures, histories — and on the present, too. What's changed, and what hasn't, where and why.
+
+One of my favourite parts of the [book](books) is where Chacko narrates a brief history of planet Earth to the twins:
+
+<blockquote class='font-serif text-justify leading-relaxed align-middle'>
+  Then, to give Estha and Rahel a sense of Historical Perspective [...], he told them about the Earth Woman. He made them imagine that the earth—four thousand six hundred million years old—was a forty-six-year-old woman—as old, say, as Aleyamma Teacher, who gave them Malayalam lessons. It had taken the whole of the Earth Woman's life for the earth to become what it was. For the oceans to part. For the mountains to rise. The Earth Woman was 11 years old, Chacko said, when the first single-celled organisms appeared. The first animals, creatures like worms and jelly fish, appeared only when she was forty, She was over forty-five—just eight months ago—when dinosaurs roamed the earth.<br/><br/>
+  "The whole of human civilization as we know it [...] began only two hours ago in the Earth Woman's life. As long as it takes us to drive from Ayemenem to Cochin. [...] the whole of contemporary history, the World Wars, the War of Dreams, the Man on the Moon, science, literature, philosophy, the pursuit of knowledge—was no more than a blink of the Earth Woman's eye."
+</blockquote>
+<p class='font-serif text-right pr-4 -mt-4'>
+  — Arundhati Roy, <a href="https://www.worldcat.org/oclc/1123081276" target="_blank"><em>The God of Small Things</em> (pp. 52-53)</a>
+</p>
+
+This made me really curious: about the accuracy of Chacko's figures, and especially about oceans and mountains. So I decided to [explore](exploration).
+
+<h2>Age of the earth</h2>
+
+The earth, according to Chacko was four thousand six hundred million years old (which is 4.6 billion years, and [approximately correct](https://www.scientificamerican.com/article/how-science-figured-out-the-age-of-the-earth)).
+<img
+  src = "historical-perspective/wa.png"
+  alt= "Wolfram Alpha query: four thousand six hundred million years old"
+/>
+
+And Earth Woman's age is ten billionth of earth's age.
+<img
+  src = "historical-perspective/ratio.png"
+  alt= "Ratio between age of woman and earth and age according to Chacko (1e-8), and a more precise age of earth (4.54e9)"
+/>
+
+<h2>Oceans</h2>
+
+Definitions, first. Here are the (relevant) definitions of words related to oceans. I'm selecting only definitions which contain at least one of the other words in the word list.
+<img
+  src = "historical-perspective/definitions.png"
+  alt= "Relevant definitions of words related to 'ocean'"
+/>
+
+One can use [OceanData](http://reference.wolfram.com/language/ref/OceanData.html) to retrieve a dataset of world oceans and other water bodies that flow from them. Note that this isn't a complete list of all water bodies around the world, but it's an extensive one nonetheless.
+<img
+  src = "historical-perspective/oceans_dataset.png"
+  alt= "Dataset of world oceans"
+/>
+
+I now have a dataset of 247 water bodies and 16 properties for each one. Of course, there are some missing values, but there's still enough for an interesting exploration. Here are the top ten rankings by some of the columns.
+<img
+  src = "historical-perspective/ranking_1.png"
+  alt= "Rankings by Area and Coastline Length"
+/>
+<img
+  src = "historical-perspective/ranking_2.png"
+  alt= "Rankings by Percentage Area of Earth's Surface, and Maximum Depth"
+/>
+
+What do all these numbers mean? Let's turn them into figures — this may give us a better perspective. This map shows the coverage of the oceans and seas:
+<img
+  src = "historical-perspective/coverage.png"
+  alt= "Coverage of water bodies around the world"
+/>
+
+This map shows the elevation of the world, and it shows that earth is more or less as high as it is deep:
+<img
+  src = "historical-perspective/elevation.png"
+  alt= "Elevation of earth"
+/>
+
+There are 20 contours on the map, so it can be more detailed. But you can clearly see Mount Everest. This map shows the salinty of some of the water bodies (some values are missing in the dataset):
+
+<img
+  src = "historical-perspective/salinity.png"
+  alt= "Salinity of water bodies around the world"
+/>
+
+To be continued...

@@ -49,10 +49,12 @@ const Image = ({ src, ...rest }) => {
   };
 
   return (
+    <div class='my-2 py-2'>
     <GatsbyImage
-      class="my-2 py-2 rounded-lg"
+      class="rounded-lg"
       image = {childImageSharp.gatsbyImageData} {...rest}
     />
+    </div>
  );
 
 };
