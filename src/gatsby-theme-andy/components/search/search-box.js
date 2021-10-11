@@ -27,7 +27,7 @@ export default connectSearchBox(
       />
       <div
         class='w-8 min-w-12 pb-1.5 font-thin pointer-events-none text-center align-middle'
-        style={{ fontSize: '1.8rem', pointerEvents: 'none', lineHeight: '20px'}}
+        style={{ fontSize: '1.8rem', pointerEvents: 'none', lineHeight: '20px', paddingBottom: '5px'}}
         aria-label="Search notes"
         title="Search notes"
       >
