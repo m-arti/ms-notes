@@ -70,6 +70,7 @@
     "react": "next",
     "react-dom": "next",
     "react-helmet": "^6.1.0",
+    "react-inner-image-zoom": "^2.1.0",
     "react-instantsearch-dom": "^6.12.1",
     "react-live": "^2.2.3",
     "react-medium-image-zoom": "^3.1.3",

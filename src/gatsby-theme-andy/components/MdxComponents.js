@@ -8,6 +8,7 @@ import { Link } from 'gatsby';
 import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
 
 import Image from "./Image";
+import ZoomableImage from "./ZoomableImage";
 
 // Animation styles are imported in `src/styles.css`
 
@@ -113,6 +114,7 @@ export default {
   CollapsedText,
   figcaption: Figcaption,
   img: Image,
+  zimg: ZoomableImage,
   NoteTag,
   WolframNotebook,
 };

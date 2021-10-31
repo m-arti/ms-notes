@@ -23,13 +23,13 @@ This made me really curious: about the accuracy of Chacko's figures, and especia
 <h2>Age of the earth</h2>
 
 The earth, according to Chacko was four thousand six hundred million years old (which is 4.6 billion years, and [approximately correct](https://www.scientificamerican.com/article/how-science-figured-out-the-age-of-the-earth)).
-<img
+<zimg
   src = "historical-perspective/wa.png"
   alt= "Wolfram Alpha query: four thousand six hundred million years old"
 />
 
 And Earth Woman's age is ten billionth of earth's age.
-<img
+<zimg
   src = "historical-perspective/ratio.png"
   alt= "Ratio between age of woman and earth and age according to Chacko (1e-8), and a more precise age of earth (4.54e9)"
 />
@@ -37,47 +37,47 @@ And Earth Woman's age is ten billionth of earth's age.
 <h2>Oceans</h2>
 
 Definitions, first. Here are the (relevant) definitions of words related to oceans. I'm selecting only definitions which contain at least one of the other words in the word list.
-<img
+<zimg
   src = "historical-perspective/definitions.png"
   alt= "Relevant definitions of words related to 'ocean'"
 />
 
 One can use [OceanData](http://reference.wolfram.com/language/ref/OceanData.html) to retrieve a dataset of world oceans and other water bodies that flow from them. Note that this isn't a complete list of all water bodies around the world, but it's an extensive one nonetheless.
-<img
+<zimg
   src = "historical-perspective/oceans_dataset.png"
   alt= "Dataset of world oceans"
 />
 
 I now have a dataset of 247 water bodies and 16 properties for each one. Of course, there are some missing values, but there's still enough for an interesting exploration. Here are the top ten rankings by some of the columns.
-<img
+<zimg
   src = "historical-perspective/ranking_1.png"
   alt= "Rankings by Area and Coastline Length"
 />
-<img
+<zimg
   src = "historical-perspective/ranking_2.png"
   alt= "Rankings by Percentage Area of Earth's Surface, and Maximum Depth"
 />
 
 What do all these numbers mean? Let's turn them into figures — this may give us a better perspective. This map shows the coverage of the oceans and seas:
-<img
+<zimg
   src = "historical-perspective/coverage.png"
   alt= "Coverage of water bodies around the world"
 />
 
 This map shows the elevation of the world, and it shows that earth is more or less as high as it is deep:
-<img
+<zimg
   src = "historical-perspective/elevation.png"
   alt= "Elevation of earth"
 />
 
 The map has a resolution of 20 contours, so it can be more detailed than it currently is. But you can clearly see Mount Everest. This map shows the salinty of some of the water bodies (some values are missing in the dataset):
-<img
+<zimg
   src = "historical-perspective/salinity.png"
   alt= "Salinity of water bodies around the world"
 />
 
 For each ocean, we can get its bordering bodies of water and basins (bights, seas, straits, etc.). And for each sea or whatever, we can get its basins and major rivers. So we can create a graph of the connectivity/adjacency between water bodies:
-<img
+<zimg
   src = "historical-perspective/all_graph.png"
   alt= "Graph of interconnectivity between world oceans, seas, rivers, etc."
 />
@@ -85,7 +85,7 @@ For each ocean, we can get its bordering bodies of water and basins (bights, sea
 The orange edges show connections between oceans and seas. the purple ones connect oceans/seas to basins, while the blue edges link oceans to their major rivers.
 
 We have precise centre geo-coordinates for the oceans and seas, but not for rivers. We can plot this graph on map to show the relative positions of the vertices:
-<img
+<zimg
   src = "historical-perspective/part_geograph.png"
   alt= "Graph of interconnectivity between world oceans, seas, rivers, etc. on a map"
 />

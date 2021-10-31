@@ -76,7 +76,7 @@ header {
   box-shadow: none;
 }
 
-img {
+img, zimg {
   /* width: calc(100% - 50px); */
   outline: none;
   border: none;
