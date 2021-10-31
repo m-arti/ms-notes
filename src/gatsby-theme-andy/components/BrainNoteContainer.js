@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet';
 
 import BrainNote from './BrainNote';
 import '../../style.css';
-import '../../InnerImageZoom.css';
 
 // thanks to wolfr.am/UyuFSKsg for script for light/dark mode switching.
 import DarkModeToggle from "./DarkModeToggle";
