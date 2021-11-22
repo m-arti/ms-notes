@@ -2,26 +2,97 @@
 title: Hello!
 ---
 
-<h2>
-  I'm <a href="https://martinssamuel.com" target="_blank">Martins</a>. I'm a researcher and designer.<br/>
-  This is an atlas of my musings.
-</h2>
+import { LinkToStacked } from 'react-stacked-pages-hook';
+import { Link } from 'gatsby';
+
+<div class="mt-5 p-8 bg-gradient-to-r from-green-800 to-green-900 rounded-2xl">
+  <h1 class="text-green-200 dark:text-green-200">
+    Hi, I'm <Link class="hover:text-green-400" href="https://martinssamuel.com" target="_blank">Martins</Link>.<br/>I do AI research and design.
+  </h1>
+  <h3 class="pt-2 font-semibold text-yellow-400 dark:text-yellow-400">
+    This is an atlas of my musings.
+  </h3>
+  <h3 class="text-green-400 dark:text-green-400">
+    I use this medium for iterating through ideas on topics such as computation, art and literature, which presently are my most fond of interests. You may also find quotes, draft esssays and poems.
+  </h3>
+</div>
+
+<br/>
+
+<div class="p-8 rounded-3xl bg-beige bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50">
+
+  <h1 class="text-yellow-600 dark:text-yellow-500">
+    Recent notes
+  </h1>
+
+  <hr class='border-beigeDarker dark:border-gray-800'/>
+
+  <div class="-my-2 p-0 grid grid-cols-2 gap-0">
+
+  <div>
+  <LinkToStacked class="no-underline" to='historical-perspective' key='historical-perspective'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+      <h3 class="mt-0 pt-3 text-black">Historical Perpective</h3>
+      <p class="mt-1 mb-0 mb-0 text-sm text-black text-opacity-50 text-left">Learnings about seas and oceans inspired by <em>The God of Small Things</em></p>
+    </div>
+  </LinkToStacked>
+  </div>
+
+  <div>
+  <LinkToStacked class="no-underline" to='poems-by-adrienne-rich' key='poems-by-adrienne-rich'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+      <h3 class="mt-0 pt-3 text-black">Poems by Adrienne Rich</h3>
+      <p class="mt-1 mb-0 text-sm  text-black text-opacity-50 text-left">My favourite poems by Adrienne Rich</p>
+    </div>
+  </LinkToStacked>
+  </div>
+
+  <div>
+  <LinkToStacked class="no-underline" to='silence' key='silence'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+      <h3 class="mt-0 pt-3 text-black">Silence</h3>
+      <p class="mt-1 mb-0 text-sm  text-black text-opacity-50 text-left">Reflections on silence</p>
+    </div>
+  </LinkToStacked>
+  </div>
+
+  <div>
+  <LinkToStacked class="no-underline" to='dynamic' key='dynamic'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+      <h3 class="mt-0 pt-3 text-black">Dynamic</h3>
+      <p class="mt-1 mb-0 text-sm  text-black text-opacity-50 text-left">A collection of some types/sources of dynamic objects</p>
+    </div>
+  </LinkToStacked>
+  </div>
+
+  <div>
+  <LinkToStacked class="no-underline" to='explanations' key='explanations'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+      <h3 class="mt-0 pt-3 text-black">Explanations</h3>
+      <p class="mt-1 mb-0 text-sm  text-black text-opacity-50 text-left">What's an explanation? How can one be made (better)?</p>
+    </div>
+  </LinkToStacked>
+  </div>
+
+  <div>
+  <LinkToStacked class="no-underline" to='understanding-a-photograph' key='understanding-a-photograph'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+      <h3 class="mt-0 pt-3 text-black">Understanding a Photograph</h3>
+      <p class="mt-1 mb-0 text-sm  text-black text-opacity-50 text-left">Quotes from John Berger's <em>Understanding a Photograph</em></p>
+    </div>
+  </LinkToStacked>
+  </div>
+
+  </div>
+
+</div>
+
+<br/>
 
 ---
 
-I aim to use this medium for iterating through ideas on topics such as computation, art and literature, which presently are my most fond of interests. You may also find quotes, draft esssays and poems.
+<br/>
 
-The [[Meta]] note narrates how this idea came about, and in it you'll find an in-depth walk-through of this site.
+The [[meta]] note narrates how this idea came about, and in it you'll find an in-depth walk-through of this site. These notes are all WIP, always.
 
-## Recent notes
-
-- [[Historical Perspective]]
-- [[Poems by Adrienne Rich]]
-- [[Silence]]
-- [[Dynamic]]
-- [[Explanations]]
-- [[Understanding a Photograph]]
-- [[Poems by Rita Dove]]
-- [[Infodis]]
-- [[Scientists]]
-- [[Small is Beautiful]]
+<br/>

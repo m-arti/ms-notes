@@ -253,7 +253,7 @@ a {
 }
 
 a:hover {
-  @apply text-blue-600 no-underline transition duration-500;
+  @apply text-blue-500 no-underline transition duration-500;
 }
 
 p {

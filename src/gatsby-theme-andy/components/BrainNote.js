@@ -23,7 +23,7 @@ const footerItemsStyles = `text-gray-600 dark:text-gray-500 rounded-md hover:tex
 
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
-const popupStyles = `Popups w-150 px-4 pb-2 rounded-md shadow-xl`;
+const popupStyles = `Popups w-150 px-4 pb-2 rounded-lg shadow-xl`;
 
 const BrainNote = ({ note }) => {
 
@@ -122,12 +122,14 @@ const BrainNote = ({ note }) => {
   // note update time (Δ ⁘ ⊹ ✎)
   const noteLastUpdated = updateTimesDict.get(note.slug) ? ( DateTime.fromISO(updateTimesDict.get(note.slug)).toRelative() || '' ) : undefined;
 
+  // omit title ( <h1 class="mt-3 mb-4 max-w-sm">{note.title}</h1> ) on 'about' page
   // omit last updated time on 'about' page
   return (
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
       <SEO title={note.title} description={note.excerpt} />
       <div class="flex-1 mb-4">
-        <h1 class="mt-3 mb-4 max-w-sm">{note.title}</h1>
+
+        {note.slug !== 'about' ? <h1 class="mt-3 mb-4 max-w-sm">{note.title}</h1> : ''}
 
         {note.slug !== 'about' && <span class="text-sm font-serif font-medium align-middle text-gray-500">{noteLastUpdated ? '✎' : ''}</span>}
 

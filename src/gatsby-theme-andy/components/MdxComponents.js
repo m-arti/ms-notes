@@ -14,7 +14,7 @@ import ZoomableImage from "./ZoomableImage";
 
 // TODO cmd+click open page in new tab
 
-const linkStyles = `Links text-blue-600 dark:text-blue-300 px-1 -mx-1 rounded dark:hover:bg-blue-900 hover:bg-opacity-80 dark:hover:bg-opacity-80`;
+const linkStyles = `Links text-blue-500 dark:text-blue-300 px-1 -mx-1 rounded dark:hover:bg-blue-900 hover:bg-opacity-80 dark:hover:bg-opacity-80`;
 
 const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
   if (!href) href = restProps.to;
@@ -40,7 +40,7 @@ const AnchorTag = ({ href, popups = {}, noPopups = false, ...restProps }) => {
       // interactiveBorder="30"
       content={
         <div className={`${linkStyles}
-          py-1 px-2 rounded text-sm text-blue-600 shadow-md bg-beige dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-50`}>{href}</div>
+          py-1 px-2 rounded text-sm text-blue-500 shadow-md bg-cream dark:bg-gray-900 bg-opacity-80 dark:bg-opacity-50`}>{href}</div>
       }
     >
       <a class="" {...restProps} href={href} />
