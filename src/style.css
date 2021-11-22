@@ -346,7 +346,7 @@ iframe {
 } */
 
 .background-image {
-  @apply antialiased w-full max-w-2xl;
+  @apply antialiased w-full max-w-2xl -mt-8;
   position: relative;
   object-fit: cover;
   min-height: 200px;
