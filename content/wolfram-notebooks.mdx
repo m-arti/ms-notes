@@ -92,7 +92,7 @@ So what, if so many things can be computed (with)? Why should you care, and how 
 
 So, I think you should care, because here is a tool that can facilitate and enhance your modi operandi for exploring, ideating and imagining. You can see examples of exploratory data analyses I have used notebooks for [here](https://blog.martinssamuel.com/eda-i:-the-mcclay-library), [here](https://blog.martinssamuel.com/eda-ii:-belfast-trees) and [here](https://blog.martinssamuel.com/eda-iii:-dimensions-of-the-heart).
 
-While the [predictive interface](https://reference.wolfram.com/language/guide/WolframPredictiveInterface.html) as a whole allows you to write and iterate through code quicker, the [Suggestions Bar](https://reference.wolfram.com/language/howto/UseTheSuggestionsBar.html) encourages asking _"what if"_ questions—it invites you to see what more you can do with—or learn from—a result, be it a number, word, color, entity, date or a more complex object. Try evaluating each of these in the notebook below and see the suggestions that come up: `Pi`, `"Sunset"`, `ColorData["SunsetColors"]`, `Entity["Star", "Sun"]`, `Sunset[]`. Click on the ⊕ icon to see different for more input options.
+While the [predictive interface](https://reference.wolfram.com/language/guide/WolframPredictiveInterface.html) as a whole allows you to write and iterate through code quicker, the [Suggestions Bar](https://reference.wolfram.com/language/howto/UseTheSuggestionsBar.html) encourages asking _"what if"_ questions—it invites you to see what more you can do with—or learn from—a result, be it a number, word, color, entity, date or a more complex object. Try evaluating each of these in the notebook below and see the suggestions that come up: `Pi`, `"Sunset"`, `ColorData["SunsetColors"]`, `Entity["Star", "Sun"]`, `Sunset[]`. Click on the ⊕ icon to see additional input options.
 
 <iframe class='rounded-md bg-gray-50 border border-gray-200 hover:border-gray-200 dark:border-black dark:hover:border-black' src="https://sandbox.open.wolframcloud.com/app/view/newNotebook?_view=frameless" width="100%" height="400px"></iframe>
 
@@ -141,7 +141,23 @@ To further demonstrate the efficacy of Wolfram Notebooks for learning and teachi
 ## Shortcomings
 
 - __Accessibility__: the Wolfram Notebook is most accessible [online](https://www.open.wolframcloud.com/env/wpl/GetStarted.nb), though it is (understandably) limited in it's functionality compared to the desktop version. This means that some important capabilities such as canvas and geometric scene are either not ([yet](https://www.wolframcloud.com/obj/jpoeschko/Published/WolframLanguageCloudSupport.nb)) functional, while some others are limited. I hope that notebooks will continue to be accessible long-term, that is, without requiring signing up.
-- __Performance__: even on the desktop, the frontend often lags when handling more complex tasks. This occurs especially when dealing with graphics objects.
+
+  <span class="highlight">[Update: As of November 2021, an account is needed to use a notebook online.]</span>
+
+- __Performance__: even on the desktop, the frontend often lags when handling more complex tasks. This occurs especially when dealing with graphics objects. Sometimes, the only solution is to quit and relaunch the application.
+- __Correctness and validation__: besides bugs, which are inevitable in any worthwhile software product, there's a history of complaints regarding the incorrectness of some results of Wolfram code. Follow, for example, [Richard Fateman's talk](https://www.youtube.com/watch?v=vm9IxKsgpVM). Although I've seen some examples in plotting/graphics, it seems that most of the incorrectness complaints come from people who do numerical computations a lot.
+
+  Because the core of Wolfram Notebooks is proprietary technology, it isn't open to inspection by the public. This has frustrated many researchers (including Economics Nobel laureate, [Paul Romer](https://paulromer.net/jupyter-mathematica-and-the-future-of-the-research-paper)), though others continue to forbear deserting Wolfram Language for open-source alternatives.
+
+  Perhaps this issue particularly irks staunch (or those who once were) users of Wolfram notebooks, because they enjoy using the product and have formed and affinity with it. They want it to be better and being more *open* is one way of achieving that. Wolfram Research Inc. (WRI), on the other hand, has other ideas. Business ideas. WRI have taken great pains to explain—in [speech](https://soundcloud.com/wolframresearch/wolfram-on-open-source) and [writing](https://blog.wolfram.com/2019/04/02/why-wolfram-tech-isnt-open-source-a-dozen-reasons)—why Wolfram technology isn't open source.
+
+  They have some good reasons. I find a few flimsy though. Here's one:
+
+  1. [They claim](https://blog.wolfram.com/2019/04/02/why-wolfram-tech-isnt-open-source-a-dozen-reasons/#nine-open-source-doesnt-bring-major-tech-innovation-to-market) that *"open source doesn’t bring major tech innovation to market"*.
+  2. [But build](https://www.oreilly.com/content/apache-mxnet-in-the-wolfram-language) the machine learning backend of the Wolfram Language using the open source deep learning framework [Apache MXNet](https://mxnet.apache.org).
+  3. [Then they say](https://www.wolfram.com/featureset/machine-learning) that *"Wolfram has pioneered highly automated machine learning—and deeply integrated it into the Wolfram Language..."*.
+
+  This sounds to me like open source (MXNet) bringing major tech innovation (ML automation) to market. Open source software and tools power many of the amazing tech we enjoy today, but do so quietly. Wolfram has a [page](https://www.wolfram.com/open-materials) full of open materials. The Function Repository allows anyone to add the to the thousands of pre-existing functions in the Wolfram Language, or even provide alternatives to them. Maybe in the long-term, this will lead to not just an equilibrium between WRI and avid users of its software, but a sort of symbiosis.
 
 You can read the Cloud release notes [here](https://www.wolframcloud.com/obj/release-notes/), as well as additional implementation notes [here](https://www.wolframcloud.com/obj/jpoeschko/Published/CloudNotebooksImplementationNotes.nb). If you're looking to use the Wolfram Cloud long-term, you may find it useful to refer to these notes from time to time.
 
@@ -149,7 +165,7 @@ You can read the Cloud release notes [here](https://www.wolframcloud.com/obj/rel
 
 In addition to the resources I've mentioned above, the following are some other interesting uses and users of Wolfram notebooks:
 
-- [Emerald Cloud Labs](https://www.emeraldcloudlab.com/) allows you to create, run, explore and analyse experiments remotely using Wolfram Notebooks. The lab is mostly run by robots.
+- [Emerald Cloud Labs](https://www.emeraldcloudlab.com/) allows you to create, run, explore and analyse experiments remotely using Wolfram Notebooks. The lab is mostly run by robots. This is one of a large number of organizations—small and large (from universities to NASA and CERN)—that use it.
 
 - [Nassim Nicholas Taleb](https://en.wikipedia.org/wiki/Nassim_Nicholas_Taleb) uses Mathematica extensively. [Here's](https://www.youtube.com/watch?v=JTz4wkD-mxU) an example. He was awarded a Wolfram Innovator Award in [2018](https://www.wolfram.com/events/technology-conference/innovator-award/2018/nassim-nicholas-taleb/). (Needless to say, other receipients of the award have used Wolfram Notebooks in interesting ways.)
 
