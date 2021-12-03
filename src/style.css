@@ -341,9 +341,9 @@ iframe {
   @apply antialiased mt-4 mb-6 pb-6 align-middle; /* border-t-2 border-gray-300 */
 }
 
-/* iframe:hover {
+iframe:hover {
   @apply border-t-2 border-blue-400 transition ease-in-out duration-500;
-} */
+}
 
 .background-image {
   @apply antialiased w-full max-w-2xl -mt-8;
