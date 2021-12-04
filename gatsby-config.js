@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Martins' Notes`,
     author: `Martins Samuel`,
-    description: `Hi, I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
+    description: `Hi, I'm Martins. I'm do AI research and design. This is an atlas of my musings. I use this medium for iterating through ideas on topics such as computation, art and literature, which presently are my most fond of interests. You may also find quotes, draft essays and poems.`,
     homepage: `https://notes.martinssamuel.com`,
     siteUrl: `https://notes.martinssamuel.com`,
   },
@@ -28,6 +28,7 @@ module.exports = {
     `gatsby-plugin-remove-fingerprints`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-inline-svg`,
 
     // gatsby-plugin-algolia
     {
