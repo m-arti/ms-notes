@@ -10,6 +10,12 @@ import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
 import Image from "./Image";
 import ZoomableImage from "./ZoomableImage";
 
+import styled from 'styled-components';
+import {ExternalLinkOutline} from '@styled-icons/evaicons-outline/ExternalLinkOutline';
+const EnlargeNotebookIcon = styled(ExternalLinkOutline)`
+  width: 15px !important;
+`;
+
 // Animation styles are imported in `src/styles.css`
 
 // TODO cmd+click open page in new tab
@@ -62,7 +68,7 @@ const CollapsedText = ({ children, summary, text }) => (
 
 const Figcaption = ({ children }) => (
   <div
-    class= "mt-1 mb-4 text-sm font-light text-center text-gray-700 "
+    class= "mt-1 mb-4 text-sm font-light text-center text-gray-500 "
   >
     {children}
   </div>
@@ -77,37 +83,49 @@ const NoteTag = ({ children, color }) => (
   </div>
 );
 
+const WolframNotebook = ({ children, url }) => (
+  <div class='pt-6 mt-6 pb-2 mb-2'>
+    <iframe class='mb-2 pb-2' src={`https://www.wolframcloud.com/view?url=https%3A%2F%2Fraw.githubusercontent.com%2Fm-arti%2Fms-notes%2Fmain%2Fnotebooks%2F${url}`} width="600" height="600"></iframe>
+    <Figcaption>
+      <span class="wolframicon align-middle"></span>&emsp;
+      {children} (<AnchorTag href={`https://www.wolframcloud.com/view?url=https%3A%2F%2Fraw.githubusercontent.com%2Fm-arti%2Fms-notes%2Fmain%2Fnotebooks%2F${url}`} target='_blank'>
+        Expand Notebook <EnlargeNotebookIcon/>
+      </AnchorTag>)
+    </Figcaption>
+  </div>
+);
+
 // styles for embedded notebooks
-const nbStyles = `dark:bg-black w-full pb-6 align-middle border-t-2 border-gray-300 hover:border-t-2 hover:border-orange-400 transition ease-in-out duration-500`;
+// const nbStyles = `dark:bg-black w-full pb-6 align-middle border-t-2 border-gray-300 hover:border-t-2 hover:border-orange-400 transition ease-in-out duration-500`;
 
 // Embed Wolfram Notebooks in notes (code from: https://wolfr.am/SHFaaKUP)
-class WolframNotebook extends React.Component {
-
-  constructor () {
-    super()
-    this.state = {}
-  }
-
-  async componentDidMount() {
-    if (typeof window !== 'undefined') {
-      this.embedding = await WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
-    }
-  }
-
-  componentWillUnmount() {
-    if (typeof window !== 'undefined') {
-      this.embedding.then(nb => nb.detach());
-    }
-  }
-
-  render() {
-    return (
-      <div class={nbStyles} style={{width: '100%'}}>
-        <div class="WolframNotebook" id="WolframNotebook" ref={el => this.el = el} />
-      </div>
-    );
-  }
-}
+// class WolframNotebook extends React.Component {
+//
+//   constructor () {
+//     super()
+//     this.state = {}
+//   }
+//
+//   async componentDidMount() {
+//     if (typeof window !== 'undefined') {
+//       this.embedding = await WolframNotebookEmbedder.embed(this.props.url, this.el, this.props.attributes);
+//     }
+//   }
+//
+//   componentWillUnmount() {
+//     if (typeof window !== 'undefined') {
+//       this.embedding.then(nb => nb.detach());
+//     }
+//   }
+//
+//   render() {
+//     return (
+//       <div class={nbStyles} style={{width: '100%'}}>
+//         <div class="WolframNotebook" id="WolframNotebook" ref={el => this.el = el} />
+//       </div>
+//     );
+//   }
+// }
 
 export default {
   a: AnchorTag,

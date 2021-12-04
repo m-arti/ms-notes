@@ -28,7 +28,6 @@ module.exports = {
     `gatsby-plugin-remove-fingerprints`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-inline-svg`,
 
     // gatsby-plugin-algolia
     {
