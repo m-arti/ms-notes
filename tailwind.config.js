@@ -18,6 +18,9 @@ module.exports = {
         sans: ['SF Pro Display', ...defaultTheme.fontFamily.sans],
         serif: ["Georgia", ...defaultTheme.fontFamily.serif],
       },
+      gradientColorStops: theme => ({
+       ...theme('colors'),
+      })
     },
 
     nightwind: {
