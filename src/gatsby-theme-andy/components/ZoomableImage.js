@@ -45,14 +45,14 @@ const ZoomableImage = ({ src, zoomSrc, alt, ...rest }) => {
     node: { childImageSharp, publicURL, extension } = {}
   } = match;
 
-  if (extension === "svg" || !childImageSharp) {
-    return (
-      <InnerImageZoom
-        src={publicURL}
-        zoomSrc={publicURL} {...rest}
-      />
-    );
-  };
+  // if (extension === "svg" || !childImageSharp) {
+  //   return (
+  //     <InnerImageZoom
+  //       src={publicURL}
+  //       zoomSrc={publicURL} {...rest}
+  //     />
+  //   );
+  // };
 
   return (
     <div class='my-2 py-2'>
