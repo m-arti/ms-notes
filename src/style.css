@@ -350,7 +350,7 @@ details>summary {
 }
 
 iframe {
-  @apply antialiased align-middle rounded-lg; /* border-t-2 border-gray-300 */
+  @apply antialiased align-middle; /* border-t-2 border-gray-300 */
 }
 
 /* iframe:hover {
