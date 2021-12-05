@@ -1,4 +1,5 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   darkMode: "class",
@@ -8,6 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        orange: colors.orange,
+        coolGray: colors.coolGray,
         'link': '#dd5511',
         'link2': '#f28500',
         'cream': '#fcfbf9',
