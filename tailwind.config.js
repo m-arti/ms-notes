@@ -17,7 +17,6 @@ module.exports = {
         'cream': '#fcfbf9',
         'beige': '#f4f0e8',
         'beigeDarker': '#ebe4d7',
-        'trueBlack': '#000000',
       },
       fontFamily: {
         sans: ['SF Pro Display', ...defaultTheme.fontFamily.sans],
