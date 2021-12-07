@@ -73,10 +73,7 @@ module.exports = {
       options: {
         fonts: [
           `Inter`,
-          `Caveat\:400,500,600`,
-          `Herr Von Muellerhoff`,
-          `Mr De Haviland`,
-          `Mrs Saint Delafield`
+          `Caveat\:400,500,600`
         ],
         display: 'swap'
       }

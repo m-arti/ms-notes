@@ -32,7 +32,7 @@ module.exports = {
         white: "black",
         black: "white",
       },
-      transitionDuration: "500ms", // default '300ms'
+      transitionDuration: "300ms", // default '300ms'
       transitionClasses: "full", // default ['text, 'bg', 'border']
     },
   },
