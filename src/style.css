@@ -248,7 +248,7 @@ img {
 }
 
 h1 {
-  @apply antialiased text-3xl font-semibold text-left;
+  @apply antialiased text-3xl font-bold text-left;
 }
 
 h2 {
