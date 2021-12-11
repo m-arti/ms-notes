@@ -14,7 +14,7 @@ export default connectSearchBox(
       class={`${className} h-8 text-black dark:text-white transition duration-500 ease-in-out opacity-50 hover:opacity-100 focus:opacity-100`}
     >
       <input
-        class="SearchInput overflow-hidden h-8 cursor-pointer tracking-tight text-sm text-black dark:text-white bg-transparent border-b border-gray-200 dark:border-gray-800 focus:outline-none dark:focus:border-yellow-500 focus:border-yellow-500 focus:border-transparent"
+        class="SearchInput overflow-hidden h-8 cursor-pointer tracking-tight text-sm text-black rounded-none dark:text-white bg-transparent border-b border-gray-200 dark:border-gray-800 focus:outline-none dark:focus:border-yellow-500 focus:border-yellow-500 focus:border-transparent"
         type="text"
         placeholder="Search"
         aria-label="Search"
