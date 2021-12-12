@@ -55,7 +55,7 @@ const ZoomableImage = ({ src, zoomSrc, alt, ...rest }) => {
   // };
 
   return (
-    <div class='mt-4 pt-4'>
+    <div class='mt-4 pt-4 pb-2 mb-2'>
       <InnerImageZoom
         src={publicURL}
         zoomSrc={publicURL}

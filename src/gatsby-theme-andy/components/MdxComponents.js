@@ -68,7 +68,7 @@ const CollapsedText = ({ children, summary, text }) => (
 
 const Figcaption = ({ children }) => (
   <div
-    class= "mt-1 mb-6 text-sm font-light text-center text-gray-500 "
+    class= "pt-0 mt-0 mb-6 text-sm font-light text-center text-gray-500 "
   >
     {children}
   </div>
@@ -85,11 +85,11 @@ const NoteTag = ({ children, color }) => (
 
 const WolframNotebook = ({ children, url }) => (
   <div class='pt-4 mt-4'>
-    <iframe class='mb-2 pb-2' src={`https://www.wolframcloud.com/view?url=https%3A%2F%2Fraw.githubusercontent.com%2Fm-arti%2Fms-notes%2Fmain%2Fnotebooks%2F${url}`} width="100%" height="600"></iframe>
+    <iframe class='mb-2 pb-2' src={`https://www.wolframcloud.com/view?url=https://raw.githubusercontent.com/m-arti/ms-notes/main/notebooks/${url}`} width="100%" height="600"></iframe>
     <Figcaption>
       <span class="wolframicon align-middle"></span>
       <span class="text-xl font-thin align-middle">｜</span>
-      {children} (<AnchorTag href={`https://www.wolframcloud.com/view?url=https%3A%2F%2Fraw.githubusercontent.com%2Fm-arti%2Fms-notes%2Fmain%2Fnotebooks%2F${url}`} target='_blank'>
+      {children} (<AnchorTag href={`https://www.wolframcloud.com/view?url=https://raw.githubusercontent.com/m-arti/ms-notes/main/notebooks/${url}`} target='_blank'>
         Expand Notebook <EnlargeNotebookIcon/>
       </AnchorTag>)
     </Figcaption>
