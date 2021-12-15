@@ -51,7 +51,7 @@ body {
 } */
 
 header {
-  background-color: rgba(253, 251, 249, .8); /* ∵ a=.8, header is lighter, ∴ using r+1 */
+  background-color: rgba(254, 252, 250, .8); /* ∵ a=.8, header is lighter, ∴ using r+2 */
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   -moz-backdrop-filter: blur(20px);
@@ -72,7 +72,7 @@ header {
 }
 
 .dark header {
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(8, 8, 10, .8);
   box-shadow: none;
 }
 

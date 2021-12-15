@@ -41,7 +41,7 @@ const StackedPageWrapper = ({
       class={
         `note-container border-opacity-50 dark:border-opacity-50 dark:border-l dark:border-gray-800 md:max-w-2xl px-6 py-4 bg-opacity-100
         ${obstructed ? `overflow-y transition ease-in-out duration-500` : `overflow-y-auto border-r dark:border-gray-800`}
-        bg-white text-black dark:text-gray-200 md:sticky flex flex-col flex-shrink-0
+        dark:bg-night text-black dark:text-gray-300 md:sticky flex flex-col flex-shrink-0
         ${overlay ? 'note-container-shadow border-l border-beige dark:border-gray-800' : 'border-r border-beige dark:border-gray-800 px-6'}`
       }
       style={{
@@ -113,7 +113,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
   NUMOFPAGES = stackedPages.length + 1;
 
   return (
-    <div class="nightwind text-black flex flex-col min-h-screen h-screen">
+    <div class="nightwind text-black dark:text-gray-300 flex flex-col min-h-screen h-screen">
       <Helmet>
 
         <script
@@ -161,7 +161,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
       </Helmet>
       <header class="nightwind border-b border-white border-opacity-0 dark:border-gray-800 items-center content-center">
         <div class="pb-4">
-          <Link to="/" className="no-underline text-black text-xl">
+          <Link to="/" className="no-underline text-black dark:text-gray-300 text-xl">
             <h3 style={{fontFamily:'Caveat', fontWeight: '500'}} class="h-8 max-h-8 tracking-normal">{siteMetadata.title}</h3>
           </Link>
         </div>
@@ -178,7 +178,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         class= "nightwind flex flex-grow overflow-x-hidden md:overflow-x-auto overflow-y-hidden" ref={scrollContainer}
       >
         <div
-          class="note-columns-container nightwind bg-white flex flex-grow transition-width duration-100"
+          class="note-columns-container nightwind dark:bg-night flex flex-grow transition-width duration-100"
           style={{ width: NOTE_WIDTH * (stackedPages.length + 1) }}
         >
           <ContextProvider value={{ stackedPages, navigateToStackedPage }}>
