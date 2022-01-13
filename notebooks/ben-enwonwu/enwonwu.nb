@@ -10,142 +10,76 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    930518,      19671]
-NotebookOptionsPosition[    923477,      19534]
-NotebookOutlinePosition[    926068,      19596]
-CellTagsIndexPosition[    926025,      19593]
+NotebookDataLength[    926696,      19582]
+NotebookOptionsPosition[    919494,      19439]
+NotebookOutlinePosition[    922250,      19507]
+CellTagsIndexPosition[    922207,      19504]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell[BoxData[{
+Cell[BoxData[
  RowBox[{
   InterpretationBox[
    DynamicModuleBox[{Typeset`open = False}, 
     TemplateBox[{"Expression", 
-      RowBox[{"Set", "[", 
+      RowBox[{"Composition", "[", 
         DynamicBox[
          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
       GridBox[{{
          RowBox[{
            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-           TagBox["944", "IconizedItem"]}]}}, 
+           TagBox["1688", "IconizedItem"]}]}}, 
        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
        "Column", 
        GridBoxItemSize -> {
         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
       Dynamic[Typeset`open]},
      "IconizedObject"]],
-   $CellContext`textCell = Function[$CellContext`text, 
-     Panel[
-      TextCell[$CellContext`text, "Text", FontSize -> 15, TextJustification -> 
-       1, LineSpacing -> {1.3, 0}, Hyphenation -> False, ParagraphSpacing -> 
-       1], ImageSize -> 500, ImageMargins -> 0, FrameMargins -> 10]],
+   Composition[CellPrint[{
+       ExpressionCell[
+        Row[{
+          Style["Last updated:   ", "Text", Gray], Today}], "Output", 
+        CellMargins -> {{25, Automatic}, {20, 20}}, ShowCellBracket -> 
+        False]}]; 
+    With[{$CellContext`nbStyle = Import["https://wolfr.am/U7U6ZSd2"]}, 
+      SetOptions[
+       EvaluationNotebook[], StyleDefinitions -> $CellContext`nbStyle]]; 
+    If[$FrontEnd =!= $Failed, SelectionMove[
+        EvaluationNotebook[], All, GeneratedCell]; 
+      FrontEndTokenExecute["SelectionCloseUnselectedCells"]]; Null],
    SelectWithContents->True,
-   Selectable->False], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  StyleBox[
-   InterpretationBox[
-    DynamicModuleBox[{Typeset`open = False}, 
-     TemplateBox[{"Expression", 
-       RowBox[{"CellPrint", "[", 
-         DynamicBox[
-          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
-       
-       GridBox[{{
-          RowBox[{
-            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-            
-            TagBox["776", "IconizedItem"]}]}}, 
-        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-        "Column", 
-        GridBoxItemSize -> {
-         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-       Dynamic[Typeset`open]},
-      "IconizedObject"]],
-    CellPrint[{
-      ExpressionCell[
-       Row[{
-         Style["Last updated:   ", "Text", Gray], Today}], "Output", 
-       CellMargins -> {{25, Automatic}, {20, 20}}, ShowCellBracket -> False]}],
-    SelectWithContents->True,
-    Selectable->False],
-   FontWeight->"Plain"], ";", 
-  InterpretationBox[
-   DynamicModuleBox[{Typeset`open = False}, 
-    TemplateBox[{"Expression", 
-      RowBox[{"With", "[", 
-        DynamicBox[
-         FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
-      GridBox[{{
-         RowBox[{
-           TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-           TagBox["416", "IconizedItem"]}]}}, 
-       GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-       "Column", 
-       GridBoxItemSize -> {
-        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-      Dynamic[Typeset`open]},
-     "IconizedObject"]],
-   With[{$CellContext`nbStyle = Import["https://wolfr.am/U7U6ZSd2"]}, 
-    SetOptions[
-     EvaluationNotebook[], StyleDefinitions -> $CellContext`nbStyle]],
-   SelectWithContents->True,
-   Selectable->False], ";", 
-  InterpretationBox[
-   DynamicModuleBox[{Typeset`open = False}, 
-    TemplateBox[{"Expression", 
-      RowBox[{"If", "[", 
-        DynamicBox[
-         FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
-      GridBox[{{
-         RowBox[{
-           TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-           TagBox["376", "IconizedItem"]}]}}, 
-       GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-       "Column", 
-       GridBoxItemSize -> {
-        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-      Dynamic[Typeset`open]},
-     "IconizedObject"]],
-   If[$FrontEnd =!= $Failed, SelectionMove[
-      EvaluationNotebook[], All, GeneratedCell]; 
-    FrontEndTokenExecute["SelectionCloseUnselectedCells"]],
-   SelectWithContents->True,
-   Selectable->False], ";"}]}], "Input",
- ShowCellBracket->Automatic,
- CellChangeTimes->{{3.824311131114979*^9, 3.82431117040954*^9}, {
-  3.824415310590721*^9, 3.824415328203474*^9}, {3.824582022403295*^9, 
-  3.82458205305928*^9}, {3.82458208315667*^9, 3.824582098739388*^9}, {
-  3.824582174059885*^9, 3.8245821801231003`*^9}, {3.824582873865169*^9, 
-  3.824582900905471*^9}, {3.824582975635027*^9, 3.8245829852188683`*^9}, {
-  3.824752492935872*^9, 3.824752530555855*^9}, {3.8247562139998207`*^9, 
-  3.824756217165922*^9}, {3.8247613819925756`*^9, 3.82476138590853*^9}, {
-  3.825173360786499*^9, 3.82517336153526*^9}, {3.825173474785386*^9, 
-  3.825173488118904*^9}},
- FontWeight->"Plain",
- CellLabel->"In[84]:=",ExpressionUUID->"f413cb75-18c8-4861-b31f-8d483188254a"],
+   Selectable->False], ";"}]], "Input",
+ CellChangeTimes->{{3.825167907471014*^9, 3.825167907654261*^9}, {
+   3.825168799673821*^9, 3.8251688186996527`*^9}, 3.8251711635133467`*^9, {
+   3.825171360541849*^9, 3.8251714188047667`*^9}, {3.825171576889386*^9, 
+   3.825171577670672*^9}, {3.825171660513818*^9, 3.825171696545291*^9}, {
+   3.825171815086478*^9, 3.825171840497428*^9}, {3.825172027248857*^9, 
+   3.825172028004221*^9}, 3.8251721512859993`*^9, {3.8251723335597277`*^9, 
+   3.82517237109969*^9}, {3.8251724569579477`*^9, 3.8251724612211657`*^9}, {
+   3.851105392576057*^9, 3.85110540481229*^9}, 3.8511054576345167`*^9},
+ CellLabel->
+  "In[809]:=",ExpressionUUID->"eee81c61-a34f-4a55-9c65-03009b7c69b8"],
 
 Cell[BoxData[
  TemplateBox[{
    StyleBox["\"Last updated:   \"", "Text", 
     GrayLevel[0.5], StripOnInput -> False], 
    TemplateBox[{
-     RowBox[{"\"Fri 3 Dec 2021\""}], 
+     RowBox[{"\"Thu 13 Jan 2022\""}], 
      RowBox[{"DateObject", "[", 
        RowBox[{
          RowBox[{"{", 
-           RowBox[{"2021", ",", "12", ",", "3"}], "}"}], ",", "\"Day\"", ",", 
-         "\"Gregorian\"", ",", "0.`"}], "]"}]}, "DateObject", Editable -> 
-    False]},
+           RowBox[{"2022", ",", "1", ",", "13"}], "}"}], ",", "\"Day\""}], 
+       "]"}]}, "DateObject", Editable -> False]},
   "RowDefault"]], "Output",
  ShowCellBracket->False,
  CellMargins->{{25, Automatic}, {20, 20}},
  CellChangeTimes->{
-  3.847562370979733*^9},ExpressionUUID->"6b4a0c0f-ac66-422b-a3f5-\
-02113e2dd16a"]
+  3.8511067991592216`*^9},ExpressionUUID->"e16ba234-d138-4de9-a98d-\
+b325d0b8cb02"]
 }, {2}]],
 
 Cell[CellGroupData[{
@@ -2690,7 +2624,7 @@ Cell[BoxData[
      "IconizedObject"]],
    Dataset[
     DeleteMissing[
-     Map[Association[CanonicalName[#] -> $CellContext`BE[#]]& , 
+     Map[<|CanonicalName[#] -> $CellContext`BE[#]|>& , 
       EntityProperties["Person"]], 1, 2], ItemDisplayFunction -> None],
    SelectWithContents->True,
    Selectable->False]}]], "Input",
@@ -2704,23 +2638,18 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   TagBox[
-   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
-    Association["InitialData" -> {
-       Association["AlternateNames" -> {"Ben Enwonwu", "B. Enwonwu"}], 
-       Association["AstrologicalSign" -> "Cancer"], 
-       Association[
-       "BirthDate" -> DateObject[{1921, 7, 14}, "Day", "Gregorian", 0.]], 
-       Association[
-       "BirthPlace" -> Entity["City", {"Onitsha", "Anambra", "Nigeria"}]], 
-       Association["ChineseZodiacSign" -> "Rooster (Yin Metal)"], 
-       Association[
-       "DeathDate" -> DateObject[{1994, 2, 5}, "Day", "Gregorian", 0.]], 
-       Association["Gender" -> Entity["Gender", "Male"]], 
-       Association["Name" -> "Ben Enwonwu"], 
-       Association["NationalityCountries" -> {
-          Entity["Country", "Nigeria"]}], 
-       Association["Occupation" -> {"painter"}]}, "AllowEmbedding" -> True, 
-     "InitialShape" -> TypeSystem`PackageScope`Limited[
+   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
+    "InitialData" -> {<|"AlternateNames" -> {"Ben Enwonwu", "B. Enwonwu"}|>, <|
+       "AstrologicalSign" -> "Cancer"|>, <|
+       "BirthDate" -> DateObject[{1921, 7, 14}, "Day", "Gregorian", 0.]|>, <|
+       "BirthPlace" -> Entity["City", {"Onitsha", "Anambra", "Nigeria"}]|>, <|
+       "ChineseZodiacSign" -> "Rooster (Yin Metal)"|>, <|
+       "DeathDate" -> DateObject[{1994, 2, 5}, "Day", "Gregorian", 0.]|>, <|
+       "Gender" -> Entity["Gender", "Male"]|>, <|"Name" -> "Ben Enwonwu"|>, <|
+       "NationalityCountries" -> {
+          Entity["Country", "Nigeria"]}|>, <|"Occupation" -> {"painter"}|>}, 
+     "AllowEmbedding" -> True, "InitialShape" -> 
+     TypeSystem`PackageScope`Limited[
        TypeSystem`PackageScope`ColumnShape[
         TypeSystem`PackageScope`Limited[
          TypeSystem`PackageScope`ColumnShape[
@@ -2730,8 +2659,8 @@ Cell[BoxData[
          DirectedInfinity[1], {All}]], 10, 
        DirectedInfinity[1], {}], "InitialType" -> TypeSystem`Vector[
        TypeSystem`Assoc[
-        TypeSystem`Atom[String], TypeSystem`AnyType, 1], 10], "Meta" -> 
-     Association[ItemDisplayFunction -> None], "RowTarget" -> 20, 
+        TypeSystem`Atom[String], TypeSystem`AnyType, 1], 10], 
+     "Meta" -> <|ItemDisplayFunction -> None|>, "RowTarget" -> 20, 
      "ColumnTarget" -> 10, "Shape" -> TypeSystem`PackageScope`Limited[
        TypeSystem`PackageScope`ColumnShape[
         TypeSystem`PackageScope`Limited[
@@ -2745,7 +2674,7 @@ Cell[BoxData[
         TypeSystem`Atom[String], TypeSystem`AnyType, 1], 10], "Path" -> {}, 
      "DisplayedRowCount" -> 10, "DisplayedColumnCount" -> 1, "DataRowCount" -> 
      10, "DataColumnCount" -> 1, "SortPaths" -> {}, "SortDirections" -> {}, 
-     "HiddenItemsMap" -> Null, "UpdateType" -> 1], 
+     "HiddenItemsMap" -> Null, "UpdateType" -> 1|>, 
     TypeSystem`NestedGrid`PackagePrivate`$outputID$$, 
     TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 1, 
@@ -3199,14 +3128,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$], 
                     Nothing, 
                     MenuItem[
-                    StringJoin["Show ", 
-                    Which[
-                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Show " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "Item", "", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "RowHeader", "Row", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
-                    "ColumnHeader", "Column", True, ""]], 
+                    "ColumnHeader", "Column", True, ""], 
                     KernelExecute[
                     TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -3231,14 +3159,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     TypeSystem`NestedGrid`PackagePrivate`headerHidden$]], 
                     Nothing, 
                     MenuItem[
-                    StringJoin["Hide ", 
-                    Which[
-                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Hide " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "Item", "", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "RowHeader", "Row", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
-                    "ColumnHeader", "Column", True, ""]], 
+                    "ColumnHeader", "Column", True, ""], 
                     KernelExecute[
                     TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -3272,7 +3199,8 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
                     TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
                     "Ascending"]], MenuEvaluator -> Automatic], Nothing], 
-                    If[TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
                     "Descending", 
                     MenuItem["Reverse Sort", 
                     KernelExecute[
@@ -4679,8 +4607,8 @@ resources/KeywordsGraph"},
            "KeywordsGraph"},
           TagBoxNote->"FunctionResourceBox"],
          ResourceFunction[
-          ResourceObject[
-           Association[
+          
+          ResourceObject[<|
            "Name" -> "KeywordsGraph", "ShortName" -> "KeywordsGraph", "UUID" -> 
             "40370771-2a44-46eb-a904-7832270f3519", "ResourceType" -> 
             "Function", "Version" -> "1.0.0", "Description" -> 
@@ -4693,7 +4621,7 @@ ideas in the text", "RepositoryLocation" ->
 KeywordsGraph", "FunctionLocation" -> 
             CloudObject[
              "https://www.wolframcloud.com/obj/0b3c9073-f251-4dbe-b96f-\
-23b11c134c3c"]], ResourceSystemBase -> Automatic]],
+23b11c134c3c"]|>, ResourceSystemBase -> Automatic]],
          Selectable->False], "[", 
         InterpretationBox[
          DynamicModuleBox[{Typeset`open = False}, 
@@ -6469,9 +6397,8 @@ Cell[BoxData[
         3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
         CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
          SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
-         ImageSizeCache -> {{5.760693309010094, 
-         400.70666142770835`}, {-139.70666142770824`, 127.32064368315649`}}], 
-       
+         ImageSizeCache -> {{6.314169093315975, 
+         400.1531856434025}, {-139.15318564340237`, 126.76716789885063`}}], 
        MouseAppearanceTag["NetworkGraphics"]], AllowKernelInitialization -> 
       False, UnsavedVariables :> {$CellContext`flag}]], 
     DefaultBaseStyle -> {
@@ -16302,11 +16229,9 @@ Cell[BoxData[
      Dynamic[Typeset`open]},
     "IconizedObject"]],
   Dataset[
-   DeleteCases[
-    Association[Blank[] -> {}]][
-    ParallelTable[
-     Association[$CellContext`i["Label"] -> 
-      WikidataData[$CellContext`BE2, $CellContext`i]], {$CellContext`i, \
+   DeleteCases[<|Blank[] -> {}|>][
+    ParallelTable[<|$CellContext`i["Label"] -> 
+      WikidataData[$CellContext`BE2, $CellContext`i]|>, {$CellContext`i, \
 $CellContext`wikidataProperties}]], ItemDisplayFunction -> None][
    Span[1, All], 
    Span[1, All], If[Length[#] > 1, 
@@ -16325,237 +16250,226 @@ $CellContext`wikidataProperties}]], ItemDisplayFunction -> None][
 Cell[BoxData[
  TagBox[
   TagBox[
-   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
-    Association["InitialData" -> {
-       Association[
-       "place of death" -> ExternalIdentifier["WikidataID", "Q643124", 
-          Association[
+   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
+    "InitialData" -> {<|
+       "place of death" -> 
+        ExternalIdentifier[
+         "WikidataID", "Q643124", <|
           "Label" -> "Ikoyi", "Description" -> 
            "affluent neighborhood of Lagos, Nigeria, located in Eti-Osa Local \
-Government Area"]]], 
-       Association[
-       "place of birth" -> ExternalIdentifier["WikidataID", "Q852238", 
-          Association["Label" -> "Onitsha", "Description" -> "city"]]], 
-       Association[
-       "sex or gender" -> ExternalIdentifier["WikidataID", "Q6581097", 
-          Association[
+Government Area"|>]|>, <|
+       "place of birth" -> 
+        ExternalIdentifier[
+         "WikidataID", "Q852238", <|
+          "Label" -> "Onitsha", "Description" -> "city"|>]|>, <|
+       "sex or gender" -> 
+        ExternalIdentifier[
+         "WikidataID", "Q6581097", <|
           "Label" -> "male", "Description" -> 
            "to be used in \"sex or gender\" (P21) to indicate that the human \
-subject is a male"]]], 
-       Association[
-       "country of citizenship" -> ExternalIdentifier["WikidataID", "Q1033", 
-          Association[
+subject is a male"|>]|>, <|
+       "country of citizenship" -> 
+        ExternalIdentifier[
+         "WikidataID", "Q1033", <|
           "Label" -> "Nigeria", "Description" -> 
-           "sovereign state in West Africa"]]], 
-       Association["instance of" -> ExternalIdentifier["WikidataID", "Q5", 
-          Association[
+           "sovereign state in West Africa"|>]|>, <|
+       "instance of" -> 
+        ExternalIdentifier[
+         "WikidataID", "Q5", <|
           "Label" -> "human", "Description" -> 
            "common name of Homo sapiens, unique extant species of the genus \
-Homo"]]], 
-       Association["educated at" -> Alternatives[
-          ExternalIdentifier["WikidataID", "Q528231", 
-           Association[
+Homo"|>]|>, <|"educated at" -> Alternatives[
+          ExternalIdentifier[
+          "WikidataID", "Q528231", <|
            "Label" -> "Goldsmiths, University of London", "Description" -> 
-            "public research university in London, UK"]], 
-          ExternalIdentifier["WikidataID", "Q5588726", 
-           Association[
+            "public research university in London, UK"|>], 
+          ExternalIdentifier[
+          "WikidataID", "Q5588726", <|
            "Label" -> "Government College Umuahia", "Description" -> 
-            "secondary school in Umuahia, Abia State, Nigeria"]]]], 
-       Association[
-       "field of work" -> ExternalIdentifier["WikidataID", "Q11629", 
-          Association[
+            "secondary school in Umuahia, Abia State, Nigeria"|>]]|>, <|
+       "field of work" -> 
+        ExternalIdentifier[
+         "WikidataID", "Q11629", <|
           "Label" -> "art of painting", "Description" -> 
            "practice of applying paint, pigment, color or other medium to a \
-surface"]]], 
-       Association["occupation" -> Alternatives[
-          ExternalIdentifier["WikidataID", "Q1028181", 
-           Association[
+surface"|>]|>, <|"occupation" -> Alternatives[
+          ExternalIdentifier[
+          "WikidataID", "Q1028181", <|
            "Label" -> "painter", "Description" -> 
-            "artist who practices painting"]], 
-          ExternalIdentifier["WikidataID", "Q1281618", 
-           Association[
+            "artist who practices painting"|>], 
+          ExternalIdentifier[
+          "WikidataID", "Q1281618", <|
            "Label" -> "sculptor", "Description" -> 
-            "artist specializing in sculpture"]]]], 
-       Association[
-       "award received" -> ExternalIdentifier["WikidataID", "Q12201526", 
-          Association[
+            "artist specializing in sculpture"|>]]|>, <|
+       "award received" -> 
+        ExternalIdentifier[
+         "WikidataID", "Q12201526", <|
           "Label" -> "Member of the Order of the British Empire", 
            "Description" -> 
-           "award, rank of the Order of the British Empire"]]], 
-       Association["GND ID" -> ExternalIdentifier["GNDID", "130536865"]], 
-       Association[
+           "award, rank of the Order of the British Empire"|>]|>, <|
+       "GND ID" -> ExternalIdentifier["GNDID", "130536865"]|>, <|
        "Library of Congress authority ID" -> 
-        ExternalIdentifier["LibraryOfCongressAuthorityID", "no2001032923"]], 
-       Association[
-       "ISNI" -> ExternalIdentifier["ISNI", "0000 0001 0711 3081"]], 
-       Association["VIAF ID" -> ExternalIdentifier["VIAFID", "8496489"]], 
-       Association["Commons category" -> "Ben Enwonwu"], 
-       Association[
+        ExternalIdentifier[
+         "LibraryOfCongressAuthorityID", "no2001032923"]|>, <|
+       "ISNI" -> ExternalIdentifier["ISNI", "0000 0001 0711 3081"]|>, <|
+       "VIAF ID" -> ExternalIdentifier["VIAFID", "8496489"]|>, <|
+       "Commons category" -> "Ben Enwonwu"|>, <|
        "said to be the same as" -> 
-        ExternalIdentifier["WikidataID", "Q3740105", 
-          Association[
-          "Label" -> "Fathi Hassan", "Description" -> "Egyptian artist"]]], 
-       Association[
-       "date of birth" -> DateObject[{1921, 7, 14}, "Day", "Gregorian", 0.]], 
-       
-       Association[
+        ExternalIdentifier[
+         "WikidataID", "Q3740105", <|
+          "Label" -> "Fathi Hassan", "Description" -> 
+           "Egyptian artist"|>]|>, <|
+       "date of birth" -> 
+        DateObject[{1921, 7, 14}, "Day", "Gregorian", 0.]|>, <|
        "Biblioth\[EGrave]que nationale de France ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P268", 
-           Association[
+          ExternalIdentifier[
+          "WikidataID", "P268", <|
            "Label" -> "Biblioth\[EGrave]que nationale de France ID", 
             "Description" -> 
             "identifier for the subject issued by BNF (Biblioth\[EGrave]que \
 nationale de France). Format: 8 digits followed by a check-digit or letter, \
-do not include the initial 'cb'."]], "16598606c"]], 
-       Association["Union List of Artist Names ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P245", 
-           Association[
+do not include the initial 'cb'."|>], "16598606c"]|>, <|
+       "Union List of Artist Names ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P245", <|
            "Label" -> "Union List of Artist Names ID", "Description" -> 
-            "identifier from the Getty Union List of Artist Names"]], 
-          "500118570"]], 
-       Association[
-       "date of death" -> DateObject[{1994, 2, 5}, "Day", "Gregorian", 0.]], 
-       Association["given name" -> ExternalIdentifier["WikidataID", "Q816407", 
-          Association["Label" -> "Ben", "Description" -> "male given name"]]], 
-       Association[
-       "influenced by" -> ExternalIdentifier["WikidataID", "Q4697376", 
-          Association[
+            "identifier from the Getty Union List of Artist Names"|>], 
+          "500118570"]|>, <|
+       "date of death" -> 
+        DateObject[{1994, 2, 5}, "Day", "Gregorian", 0.]|>, <|
+       "given name" -> 
+        ExternalIdentifier[
+         "WikidataID", "Q816407", <|
+          "Label" -> "Ben", "Description" -> "male given name"|>]|>, <|
+       "influenced by" -> 
+        ExternalIdentifier[
+         "WikidataID", "Q4697376", <|
           "Label" -> "Aina Onabolu", "Description" -> 
-           "Nigerian artist (1882-1963)"]]], 
-       Association["Freebase ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P646", 
-           Association[
+           "Nigerian artist (1882-1963)"|>]|>, <|
+       "Freebase ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P646", <|
            "Label" -> "Freebase ID", "Description" -> 
             "identifier for a page in the Freebase database. Format: \"/m/0\" \
 followed by 2 to 7 characters. For those starting with \"/g/\", use Google \
-Knowledge Graph identifier (P2671)"]], "/m/0fsdhp"]], 
-       Association[
+Knowledge Graph identifier (P2671)"|>], "/m/0fsdhp"]|>, <|
        "described by source" -> 
-        ExternalIdentifier["WikidataID", "Q46002746", 
-          Association[
+        ExternalIdentifier[
+         "WikidataID", "Q46002746", <|
           "Label" -> "Dictionary of African Biography", "Description" -> 
-           "encyclopedia of African biographies"]]], 
-       Association["Art UK artist ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P1367", 
-           Association[
+           "encyclopedia of African biographies"|>]|>, <|
+       "Art UK artist ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P1367", <|
            "Label" -> "Art UK artist ID", "Description" -> 
             "authority control identifier for artists (creators of publicly \
-owned oil paintings in the UK)"]], 
-          "enwonwu-benedict-chukwukadibia-19171994"]], 
-       Association[
+owned oil paintings in the UK)"|>], 
+          "enwonwu-benedict-chukwukadibia-19171994"]|>, <|
        "Encyclop\[AE]dia Britannica Online ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P1417", 
-           Association[
+          ExternalIdentifier[
+          "WikidataID", "P1417", <|
            "Label" -> "Encyclop\[AE]dia Britannica Online ID", "Description" -> 
             "identifer for an article in the online version of \
-Encyclop\[AE]dia Britannica"]], "biography/Benedict-Chuka-Enwonwu"]], 
-       Association["Grove Art Online ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P8406", 
-           Association[
+Encyclop\[AE]dia Britannica"|>], "biography/Benedict-Chuka-Enwonwu"]|>, <|
+       "Grove Art Online ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P8406", <|
            "Label" -> "Grove Art Online ID", "Description" -> 
-            "identifier of a topic in Grove Art Online"]], "T096467"]], 
-       Association["abART person ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P6844", 
-           Association[
+            "identifier of a topic in Grove Art Online"|>], "T096467"]|>, <|
+       "abART person ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P6844", <|
            "Label" -> "abART person ID", "Description" -> 
-            "identifier of person in the Czech database abART"]], "137605"]], 
-       
-       Association["Europeana entity" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P7704", 
-           Association[
+            "identifier of person in the Czech database abART"|>], 
+          "137605"]|>, <|"Europeana entity" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P7704", <|
            "Label" -> "Europeana entity", "Description" -> 
-            "identifier for persons, places and topics at Europeana"]], 
-          "agent/base/87934"]], 
-       Association[
+            "identifier for persons, places and topics at Europeana"|>], 
+          "agent/base/87934"]|>, <|
        "copyright status as a creator" -> 
-        ExternalIdentifier["WikidataID", "Q73555012", 
-          Association[
+        ExternalIdentifier[
+         "WikidataID", "Q73555012", <|
           "Label" -> "works protected by copyrights", "Description" -> 
            "literary and artistic works by creator protected by copyrights \
-(author's rights)"]]], 
-       Association["NMVW ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P7831", 
-           Association[
+(author's rights)"|>]|>, <|"NMVW ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P7831", <|
            "Label" -> "NMVW ID", "Description" -> 
             "identifier for persons and organisations at the Dutch museum of \
-world cultures"]], "44647"]], 
-       Association["WorldCat Identities ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P7859", 
-           Association[
+world cultures"|>], "44647"]|>, <|
+       "WorldCat Identities ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P7859", <|
            "Label" -> "WorldCat Identities ID", "Description" -> 
-            "entity on WorldCat. Use P243 OCLC control number for books"]], 
-          "viaf-8496489"]], 
-       Association["Le Delarge ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P1988", 
-           Association[
+            "entity on WorldCat. Use P243 OCLC control number for books"|>], 
+          "viaf-8496489"]|>, <|"Le Delarge ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P1988", <|
            "Label" -> "Le Delarge ID", "Description" -> 
-            "identifier for an artist in the Delarge dictionary"]], 
-          "25203_artiste_ENWONWU_Ben"]], 
-       Association["Artsy artist ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P2042", 
-           Association[
+            "identifier for an artist in the Delarge dictionary"|>], 
+          "25203_artiste_ENWONWU_Ben"]|>, <|
+       "Artsy artist ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P2042", <|
            "Label" -> "Artsy artist ID", "Description" -> 
-            "identifier at the Artsy website"]], "ben-enwonwu-mbe"]], 
-       Association["FAST ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P2163", 
-           Association[
+            "identifier at the Artsy website"|>], "ben-enwonwu-mbe"]|>, <|
+       "FAST ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P2163", <|
            "Label" -> "FAST ID", "Description" -> 
             "authority control identifier in WorldCat's \
 \[OpenCurlyDoubleQuote]FAST Linked Data\[CloseCurlyDoubleQuote] authority \
-file"]], "1758386"]], 
-       Association["Museum of Modern Art artist ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P2174", 
-           Association[
+file"|>], "1758386"]|>, <|
+       "Museum of Modern Art artist ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P2174", <|
            "Label" -> "Museum of Modern Art artist ID", "Description" -> 
-            "identifier assigned to an artist by the Museum of Modern Art"]], 
-          "71041"]], 
-       Association["Artnet artist ID" -> Alternatives[
+            "identifier assigned to an artist by the Museum of Modern Art"|>],
+           "71041"]|>, <|"Artnet artist ID" -> Alternatives[
           ExternalIdentifier[
-           ExternalIdentifier["WikidataID", "P3782", 
-            Association[
+           ExternalIdentifier[
+           "WikidataID", "P3782", <|
             "Label" -> "Artnet artist ID", "Description" -> 
              "identifier of an artist in the Artnet database of auction \
-results"]], "benedict-chukwukadibia-enwonwu"], 
+results"|>], "benedict-chukwukadibia-enwonwu"], 
           ExternalIdentifier[
-           ExternalIdentifier["WikidataID", "P3782", 
-            Association[
+           ExternalIdentifier[
+           "WikidataID", "P3782", <|
             "Label" -> "Artnet artist ID", "Description" -> 
              "identifier of an artist in the Artnet database of auction \
-results"]], "ben-enwonwu"]]], 
-       Association["Bridgeman artist ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P3965", 
-           Association[
+results"|>], "ben-enwonwu"]]|>, <|
+       "Bridgeman artist ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P3965", <|
            "Label" -> "Bridgeman artist ID", "Description" -> 
-            "identifier for an artist in Bridgeman images"]], "22472"]], 
-       Association["Christie's creator ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P4200", 
-           Association[
+            "identifier for an artist in Bridgeman images"|>], "22472"]|>, <|
+       "Christie's creator ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P4200", <|
            "Label" -> "Christie's creator ID", "Description" -> 
-            "identifier for an artist in the Christie's online database"]], 
-          "21179"]], 
-       Association["Invaluable.com person ID" -> ExternalIdentifier[
-          ExternalIdentifier["WikidataID", "P4927", 
-           Association[
+            "identifier for an artist in the Christie's online database"|>], 
+          "21179"]|>, <|"Invaluable.com person ID" -> ExternalIdentifier[
+          ExternalIdentifier[
+          "WikidataID", "P4927", <|
            "Label" -> "Invaluable.com person ID", "Description" -> 
-            "identifier for an artist or other person at Invaluable.com"]], 
-          "2iwpq6xzok"]], 
-       Association[
+            "identifier for an artist or other person at Invaluable.com"|>], 
+          "2iwpq6xzok"]|>, <|
        "on focus list of Wikimedia project" -> 
-        ExternalIdentifier["WikidataID", "Q28781198", 
-          Association[
+        ExternalIdentifier[
+         "WikidataID", "Q28781198", <|
           "Label" -> "Black Lunch Table", "Description" -> 
            "archive and initiative of visual artists of the African \
-diaspora"]]], 
-       Association["has works in the collection" -> Alternatives[
-          ExternalIdentifier["WikidataID", "Q17153751", 
-           Association[
+diaspora"|>]|>, <|"has works in the collection" -> Alternatives[
+          ExternalIdentifier[
+          "WikidataID", "Q17153751", <|
            "Label" -> "National Museum of World Cultures", "Description" -> 
-            "ethnographic museum in the Netherlands"]], 
-          ExternalIdentifier["WikidataID", "Q62329279", 
-           Association[
+            "ethnographic museum in the Netherlands"|>], 
+          ExternalIdentifier[
+          "WikidataID", "Q62329279", <|
            "Label" -> "Harmon Foundation Collection at Fisk University", 
             "Description" -> 
-            "collection of African and African-American art"]]]]}, 
+            "collection of African and African-American art"|>]]|>}, 
      "AllowEmbedding" -> True, "InitialShape" -> 
      TypeSystem`PackageScope`Limited[
        TypeSystem`PackageScope`ColumnShape[
@@ -16567,8 +16481,8 @@ diaspora"]]],
          DirectedInfinity[1], {All}]], 20, 
        DirectedInfinity[1], {}], "InitialType" -> TypeSystem`Vector[
        TypeSystem`Assoc[
-        TypeSystem`Atom[String], TypeSystem`AnyType, 1], 41], "Meta" -> 
-     Association[], "RowTarget" -> 20, "ColumnTarget" -> 10, "Shape" -> 
+        TypeSystem`Atom[String], TypeSystem`AnyType, 1], 41], "Meta" -> <||>, 
+     "RowTarget" -> 20, "ColumnTarget" -> 10, "Shape" -> 
      TypeSystem`PackageScope`Limited[
        TypeSystem`PackageScope`ColumnShape[
         TypeSystem`PackageScope`Limited[
@@ -16582,7 +16496,7 @@ diaspora"]]],
         TypeSystem`Atom[String], TypeSystem`AnyType, 1], 41], "Path" -> {}, 
      "DisplayedRowCount" -> 20, "DisplayedColumnCount" -> 1, "DataRowCount" -> 
      41, "DataColumnCount" -> 1, "SortPaths" -> {}, "SortDirections" -> {}, 
-     "HiddenItemsMap" -> Null, "UpdateType" -> 1], 
+     "HiddenItemsMap" -> Null, "UpdateType" -> 1|>, 
     TypeSystem`NestedGrid`PackagePrivate`$outputID$$, 
     TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 1, 
@@ -16865,7 +16779,6 @@ that the human subject is a male\""}]}], "\[RightAssociation]"}]}], "]"}],
                     RowBox[{"\"Label\"", "\[Rule]", "\"human\""}], ",", 
                     
                     RowBox[{"\"Description\"", "\[Rule]", 
-                    
                     "\"common name of Homo sapiens, unique extant species of \
 the genus Homo\""}]}], "\[RightAssociation]"}]}], "]"}], "\"Wikidata\"", 
                    "\"human\"", "http://www.wikidata.org/entity/Q5"}, 
@@ -17544,6 +17457,7 @@ medium to a surface\""}]}], "\[RightAssociation]"}]}], "]"}], "\"Wikidata\"",
                     
                     
                     RowBox[{"\"Description\"", "\[Rule]", 
+                    
                     "\"identifier for the subject issued by BNF (Biblioth\
 \[EGrave]que nationale de France). Format: 8 digits followed by a check-digit \
 or letter, do not include the initial 'cb'.\""}]}], "\[RightAssociation]"}]}],
@@ -17719,6 +17633,7 @@ Names\""}]}], "\[RightAssociation]"}]}], "]"}], "\"Wikidata\"",
                     RowBox[{"\[LeftAssociation]", 
                     RowBox[{
                     RowBox[{"\"Label\"", "\[Rule]", "\"Ben\""}], ",", 
+                    
                     RowBox[{"\"Description\"", "\[Rule]", 
                     "\"male given name\""}]}], "\[RightAssociation]"}]}], 
                     "]"}], "\"Wikidata\"", "\"Ben\"", 
@@ -17767,7 +17682,8 @@ Names\""}]}], "\[RightAssociation]"}]}], "]"}], "\"Wikidata\"",
                     Rotate[
                     Translate[{
                     CapForm[Round], 
-                    RGBColor[0.27450980392156865`, 0.5411764705882353, 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
                     0.796078431372549], 
                     Line[{{0, 0}, {4, 5}, {8, 0}}], 
                     Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 0, {9, 9}]}, 
@@ -17777,7 +17693,7 @@ Names\""}]}], "\[RightAssociation]"}]}], "]"}], "\"Wikidata\"",
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[True, 41, 1], {1, 41 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -17826,7 +17742,7 @@ Names\""}]}], "\[RightAssociation]"}]}], "]"}], "\"Wikidata\"",
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[False, 41, 1], {1, 41 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -18080,14 +17996,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$], 
                     Nothing, 
                     MenuItem[
-                    StringJoin["Show ", 
-                    Which[
-                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Show " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "Item", "", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "RowHeader", "Row", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
-                    "ColumnHeader", "Column", True, ""]], 
+                    "ColumnHeader", "Column", True, ""], 
                     KernelExecute[
                     TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -18112,14 +18027,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     TypeSystem`NestedGrid`PackagePrivate`headerHidden$]], 
                     Nothing, 
                     MenuItem[
-                    StringJoin["Hide ", 
-                    Which[
-                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Hide " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "Item", "", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "RowHeader", "Row", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
-                    "ColumnHeader", "Column", True, ""]], 
+                    "ColumnHeader", "Column", True, ""], 
                     KernelExecute[
                     TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -18138,7 +18052,8 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     Alternatives["ColumnHeader", "KeyDummy"]], 
                     TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
                     Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]], {
-                    If[TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
                     "Ascending", 
                     MenuItem["Sort", 
                     KernelExecute[
@@ -18312,13 +18227,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
         Hold[
           TypeSystem`NestedGrid`PackagePrivate`localHold[
           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
-      ImageSizeCache->{731., {346.634033203125, 352.365966796875}},
+      ImageSizeCache->{610., {346.634033203125, 352.365966796875}},
       TrackedSymbols:>{
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
      MouseAnnotation[],
-     ImageSizeCache->{731., {346.634033203125, 352.365966796875}}],
+     ImageSizeCache->{610., {346.634033203125, 352.365966796875}}],
     BaseStyle->{LineBreakWithin -> False},
     DynamicModuleValues:>{},
     Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
@@ -18397,11 +18312,9 @@ Cell[BoxData[
       Dynamic[Typeset`open]},
      "IconizedObject"]],
    Dataset[
-    DeleteCases[
-     Association[Blank[] -> {}]][
-     ParallelTable[
-      Association[$CellContext`i["Label"] -> 
-       WikidataData[$CellContext`BE3, $CellContext`i]], {$CellContext`i, 
+    DeleteCases[<|Blank[] -> {}|>][
+     ParallelTable[<|$CellContext`i["Label"] -> 
+       WikidataData[$CellContext`BE3, $CellContext`i]|>, {$CellContext`i, 
        WikidataData[$CellContext`BE3, "Properties"]}]], ItemDisplayFunction -> 
     None],
    SelectWithContents->True,
@@ -18423,55 +18336,48 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   TagBox[
-   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
-    Association["InitialData" -> {
-       Association["Commons category" -> {"Enwonwu (crater)"}], 
-       Association["coordinate location" -> {
+   DynamicModuleBox[{TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
+    "InitialData" -> {<|"Commons category" -> {"Enwonwu (crater)"}|>, <|
+       "coordinate location" -> {
           GeoPosition[{-9.9030555555556, -238.39638888889}, 
-           Entity["Planet", "Mercury"]]}], 
-       Association["diameter" -> {
-          Quantity[38., "Kilometers"]}], 
-       Association["Freebase ID" -> {
+           Entity["Planet", "Mercury"]]}|>, <|"diameter" -> {
+          Quantity[38., "Kilometers"]}|>, <|"Freebase ID" -> {
           ExternalIdentifier[
-           ExternalIdentifier["WikidataID", "P646", 
-            Association[
+           ExternalIdentifier[
+           "WikidataID", "P646", <|
             "Label" -> "Freebase ID", "Description" -> 
              "identifier for a page in the Freebase database. Format: \
 \"/m/0\" followed by 2 to 7 characters. For those starting with \"/g/\", use \
-Google Knowledge Graph identifier (P2671)"]], "/m/066033q"]}], 
-       Association["Gazetteer of Planetary Nomenclature ID" -> {
+Google Knowledge Graph identifier (P2671)"|>], "/m/066033q"]}|>, <|
+       "Gazetteer of Planetary Nomenclature ID" -> {
           ExternalIdentifier[
-           ExternalIdentifier["WikidataID", "P2824", 
-            Association[
+           ExternalIdentifier[
+           "WikidataID", "P2824", <|
             "Label" -> "Gazetteer of Planetary Nomenclature ID", 
              "Description" -> 
              "identifier of a feature on an astronomical body in the \
-Gazetteer of Planetary Nomenclature"]], "14508"]}], 
-       Association["image" -> {
+Gazetteer of Planetary Nomenclature"|>], "14508"]}|>, <|"image" -> {
           URL[
           "http://commons.wikimedia.org/wiki/Special:FilePath/Enwonwu%\
-20crater.png"]}], 
-       Association["instance of" -> {
-          ExternalIdentifier["WikidataID", "Q55818", 
-           Association[
+20crater.png"]}|>, <|"instance of" -> {
+          ExternalIdentifier[
+          "WikidataID", "Q55818", <|
            "Label" -> "impact crater", "Description" -> 
             "circular depression on a celestial object formed by a \
-hypervelocity impact of a smaller body"]]}], 
-       Association["located on astronomical body" -> {
-          ExternalIdentifier["WikidataID", "Q308", 
-           Association[
+hypervelocity impact of a smaller body"|>]}|>, <|
+       "located on astronomical body" -> {
+          ExternalIdentifier[
+          "WikidataID", "Q308", <|
            "Label" -> "Mercury", "Description" -> 
-            "smallest and closest planet to the sun"]]}], 
-       Association["location" -> {
-          ExternalIdentifier["WikidataID", "Q940057", 
-           Association[
+            "smallest and closest planet to the sun"|>]}|>, <|"location" -> {
+          ExternalIdentifier[
+          "WikidataID", "Q940057", <|
            "Label" -> "Eminescu quadrangle", "Description" -> 
-            "quadrangle on Mercury"]]}], 
-       Association["named after" -> {
-          ExternalIdentifier["WikidataID", "Q4885605", 
-           Association[
+            "quadrangle on Mercury"|>]}|>, <|"named after" -> {
+          ExternalIdentifier[
+          "WikidataID", "Q4885605", <|
            "Label" -> "Ben Enwonwu", "Description" -> 
-            "Nigerian Artist (1921-1994)"]]}]}, "AllowEmbedding" -> True, 
+            "Nigerian Artist (1921-1994)"|>]}|>}, "AllowEmbedding" -> True, 
      "InitialShape" -> TypeSystem`PackageScope`Limited[
        TypeSystem`PackageScope`ColumnShape[
         TypeSystem`PackageScope`Limited[
@@ -18483,8 +18389,8 @@ hypervelocity impact of a smaller body"]]}],
        DirectedInfinity[1], {}], "InitialType" -> TypeSystem`Vector[
        TypeSystem`Assoc[
         TypeSystem`Atom[String], 
-        TypeSystem`Vector[TypeSystem`AnyType, 1], 1], 10], "Meta" -> 
-     Association[], "RowTarget" -> 20, "ColumnTarget" -> 10, "Shape" -> 
+        TypeSystem`Vector[TypeSystem`AnyType, 1], 1], 10], "Meta" -> <||>, 
+     "RowTarget" -> 20, "ColumnTarget" -> 10, "Shape" -> 
      TypeSystem`PackageScope`Limited[
        TypeSystem`PackageScope`ColumnShape[
         TypeSystem`PackageScope`Limited[
@@ -18499,7 +18405,7 @@ hypervelocity impact of a smaller body"]]}],
         TypeSystem`Vector[TypeSystem`AnyType, 1], 1], 10], "Path" -> {}, 
      "DisplayedRowCount" -> 10, "DisplayedColumnCount" -> 1, "DataRowCount" -> 
      10, "DataColumnCount" -> 1, "SortPaths" -> {}, "SortDirections" -> {}, 
-     "HiddenItemsMap" -> Null, "UpdateType" -> 1], 
+     "HiddenItemsMap" -> Null, "UpdateType" -> 1|>, 
     TypeSystem`NestedGrid`PackagePrivate`$outputID$$, 
     TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 1, 
@@ -18743,22 +18649,22 @@ hypervelocity impact of a smaller body"]]}],
                  Mouseover[
                   Style[{
                     ExternalIdentifier[
-                    ExternalIdentifier["WikidataID", "P646", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "P646", <|
                     "Label" -> "Freebase ID", "Description" -> 
                     "identifier for a page in the Freebase database. Format: \
 \"/m/0\" followed by 2 to 7 characters. For those starting with \"/g/\", use \
-Google Knowledge Graph identifier (P2671)"]], "/m/066033q"]}, 
+Google Knowledge Graph identifier (P2671)"|>], "/m/066033q"]}, 
                    ShowStringCharacters -> False], 
                   Style[
                    Style[{
                     ExternalIdentifier[
-                    ExternalIdentifier["WikidataID", "P646", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "P646", <|
                     "Label" -> "Freebase ID", "Description" -> 
                     "identifier for a page in the Freebase database. Format: \
 \"/m/0\" followed by 2 to 7 characters. For those starting with \"/g/\", use \
-Google Knowledge Graph identifier (P2671)"]], "/m/066033q"]}, 
+Google Knowledge Graph identifier (P2671)"|>], "/m/066033q"]}, 
                     ShowStringCharacters -> False], FontColor -> 
                    RGBColor[
                     0.27450980392156865`, 0.5372549019607843, 
@@ -18820,22 +18726,22 @@ Google Knowledge Graph identifier (P2671)"]], "/m/066033q"]},
                  Mouseover[
                   Style[{
                     ExternalIdentifier[
-                    ExternalIdentifier["WikidataID", "P2824", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "P2824", <|
                     "Label" -> "Gazetteer of Planetary Nomenclature ID", 
                     "Description" -> 
                     "identifier of a feature on an astronomical body in the \
-Gazetteer of Planetary Nomenclature"]], "14508"]}, ShowStringCharacters -> 
+Gazetteer of Planetary Nomenclature"|>], "14508"]}, ShowStringCharacters -> 
                    False], 
                   Style[
                    Style[{
                     ExternalIdentifier[
-                    ExternalIdentifier["WikidataID", "P2824", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "P2824", <|
                     "Label" -> "Gazetteer of Planetary Nomenclature ID", 
                     "Description" -> 
                     "identifier of a feature on an astronomical body in the \
-Gazetteer of Planetary Nomenclature"]], "14508"]}, ShowStringCharacters -> 
+Gazetteer of Planetary Nomenclature"|>], "14508"]}, ShowStringCharacters -> 
                     False], FontColor -> 
                    RGBColor[
                     0.27450980392156865`, 0.5372549019607843, 
@@ -18963,18 +18869,18 @@ Enwonwu%20crater.png"]}, ShowStringCharacters -> False], FontColor ->
                 MouseAppearance[
                  Mouseover[
                   Style[{
-                    ExternalIdentifier["WikidataID", "Q55818", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "Q55818", <|
                     "Label" -> "impact crater", "Description" -> 
                     "circular depression on a celestial object formed by a \
-hypervelocity impact of a smaller body"]]}, ShowStringCharacters -> False], 
+hypervelocity impact of a smaller body"|>]}, ShowStringCharacters -> False], 
                   Style[
                    Style[{
-                    ExternalIdentifier["WikidataID", "Q55818", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "Q55818", <|
                     "Label" -> "impact crater", "Description" -> 
                     "circular depression on a celestial object formed by a \
-hypervelocity impact of a smaller body"]]}, ShowStringCharacters -> False], 
+hypervelocity impact of a smaller body"|>]}, ShowStringCharacters -> False], 
                    FontColor -> 
                    RGBColor[
                     0.27450980392156865`, 0.5372549019607843, 
@@ -19035,17 +18941,17 @@ hypervelocity impact of a smaller body"]]}, ShowStringCharacters -> False],
                 MouseAppearance[
                  Mouseover[
                   Style[{
-                    ExternalIdentifier["WikidataID", "Q308", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "Q308", <|
                     "Label" -> "Mercury", "Description" -> 
-                    "smallest and closest planet to the sun"]]}, 
+                    "smallest and closest planet to the sun"|>]}, 
                    ShowStringCharacters -> False], 
                   Style[
                    Style[{
-                    ExternalIdentifier["WikidataID", "Q308", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "Q308", <|
                     "Label" -> "Mercury", "Description" -> 
-                    "smallest and closest planet to the sun"]]}, 
+                    "smallest and closest planet to the sun"|>]}, 
                     ShowStringCharacters -> False], FontColor -> 
                    RGBColor[
                     0.27450980392156865`, 0.5372549019607843, 
@@ -19106,17 +19012,17 @@ hypervelocity impact of a smaller body"]]}, ShowStringCharacters -> False],
                 MouseAppearance[
                  Mouseover[
                   Style[{
-                    ExternalIdentifier["WikidataID", "Q940057", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "Q940057", <|
                     "Label" -> "Eminescu quadrangle", "Description" -> 
-                    "quadrangle on Mercury"]]}, ShowStringCharacters -> 
+                    "quadrangle on Mercury"|>]}, ShowStringCharacters -> 
                    False], 
                   Style[
                    Style[{
-                    ExternalIdentifier["WikidataID", "Q940057", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "Q940057", <|
                     "Label" -> "Eminescu quadrangle", "Description" -> 
-                    "quadrangle on Mercury"]]}, ShowStringCharacters -> 
+                    "quadrangle on Mercury"|>]}, ShowStringCharacters -> 
                     False], FontColor -> 
                    RGBColor[
                     0.27450980392156865`, 0.5372549019607843, 
@@ -19177,17 +19083,17 @@ hypervelocity impact of a smaller body"]]}, ShowStringCharacters -> False],
                 MouseAppearance[
                  Mouseover[
                   Style[{
-                    ExternalIdentifier["WikidataID", "Q4885605", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "Q4885605", <|
                     "Label" -> "Ben Enwonwu", "Description" -> 
-                    "Nigerian Artist (1921-1994)"]]}, ShowStringCharacters -> 
+                    "Nigerian Artist (1921-1994)"|>]}, ShowStringCharacters -> 
                    False], 
                   Style[
                    Style[{
-                    ExternalIdentifier["WikidataID", "Q4885605", 
-                    Association[
+                    ExternalIdentifier[
+                    "WikidataID", "Q4885605", <|
                     "Label" -> "Ben Enwonwu", "Description" -> 
-                    "Nigerian Artist (1921-1994)"]]}, ShowStringCharacters -> 
+                    "Nigerian Artist (1921-1994)"|>]}, ShowStringCharacters -> 
                     False], FontColor -> 
                    RGBColor[
                     0.27450980392156865`, 0.5372549019607843, 
@@ -19231,6 +19137,7 @@ hypervelocity impact of a smaller body"]]}, ShowStringCharacters -> False],
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ = 
                     TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
                     TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$ = 
+                    
                     TypeSystem`NestedGrid`PackagePrivate`$\
 lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     MatchQ[TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
@@ -19268,14 +19175,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$], 
                     Nothing, 
                     MenuItem[
-                    StringJoin["Show ", 
-                    Which[
-                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Show " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "Item", "", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "RowHeader", "Row", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
-                    "ColumnHeader", "Column", True, ""]], 
+                    "ColumnHeader", "Column", True, ""], 
                     KernelExecute[
                     TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -19300,14 +19206,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
                     TypeSystem`NestedGrid`PackagePrivate`headerHidden$]], 
                     Nothing, 
                     MenuItem[
-                    StringJoin["Hide ", 
-                    Which[
-                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Hide " <> 
+                    Which[TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "Item", "", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
                     "RowHeader", "Row", 
                     TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
-                    "ColumnHeader", "Column", True, ""]], 
+                    "ColumnHeader", "Column", True, ""], 
                     KernelExecute[
                     TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -19501,13 +19406,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
         Hold[
           TypeSystem`NestedGrid`PackagePrivate`localHold[
           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
-      ImageSizeCache->{848., {167.634033203125, 173.365966796875}},
+      ImageSizeCache->{903., {167.634033203125, 173.365966796875}},
       TrackedSymbols:>{
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
      MouseAnnotation[],
-     ImageSizeCache->{848., {167.634033203125, 173.365966796875}}],
+     ImageSizeCache->{903., {167.634033203125, 173.365966796875}}],
     BaseStyle->{LineBreakWithin -> False},
     DynamicModuleValues:>{},
     Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
@@ -19536,12 +19441,17 @@ WindowSize->{720, 847},
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 PrivateNotebookOptions->{"CloudPublishPath"->"/Published/ben-enwonwu.nb"},
 Background->Automatic,
-FrontEndVersion->"12.3 for Mac OS X x86 (64-bit) (May 11, 2021)",
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (December 2, 2021)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[StyleDefinitions -> "Default.nb"]], 
    Cell[
     StyleData[All], ShowCellBracket -> Automatic], 
+   Cell[
+    StyleData["Notebook"], Background -> RGBColor[
+      Rational[84, 85], 
+      Rational[251, 255], 
+      Rational[83, 85]]], 
    Cell[
     StyleData["Title"], FontFamily -> "Source Sans Pro", FontSize -> 45, 
     FontWeight -> "SemiBold", FontSlant -> "Plain", 
@@ -19558,7 +19468,7 @@ StyleDefinitions->Notebook[{
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, FontColor -> 
     RGBColor[0., 0., 0.]], 
    Cell[
-    StyleData["Subsection"], ShowGroupOpener -> "Inline", 
+    StyleData["Subsection"], ShowGroupOpener -> "Inline", FontSize -> 18, 
     FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
     FontColor -> 
     RGBColor[0.3495994506752117, 0.349584191653315, 0.349584191653315]], 
@@ -19572,16 +19482,17 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["Text"], TextJustification -> 1., FontFamily -> 
     "Source Sans Pro", FontSize -> 15, FontWeight -> "Regular", FontSlant -> 
-    "Plain", FontVariations -> {
-     "StrikeThrough" -> False, "Underline" -> False}, 
+    "Plain", 
+    FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, Background -> 
     None], 
    Cell[
     StyleData["Input"], FontFamily -> "Source Code Pro", FontSize -> 13, 
     FontWeight -> "Regular", FontSlant -> "Plain", 
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}]}, Visible -> 
-  False, FrontEndVersion -> "12.3 for Mac OS X x86 (64-bit) (May 11, 2021)", 
-  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+  False, FrontEndVersion -> 
+  "13.0 for Mac OS X x86 (64-bit) (December 2, 2021)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"],
 ExpressionUUID->"dce83156-6dd3-4c02-8995-0256160d5140"
 ]
 (* End of Notebook Content *)
@@ -19596,81 +19507,81 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 4407, 106, 63, "Input",ExpressionUUID->"f413cb75-18c8-4861-b31f-8d483188254a"],
-Cell[4990, 130, 610, 17, 65, "Output",ExpressionUUID->"6b4a0c0f-ac66-422b-a3f5-02113e2dd16a"]
+Cell[580, 22, 1949, 41, 36, "Input",ExpressionUUID->"eee81c61-a34f-4a55-9c65-03009b7c69b8"],
+Cell[2532, 65, 572, 16, 65, "Output",ExpressionUUID->"e16ba234-d138-4de9-a98d-b325d0b8cb02"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[5634, 152, 598, 10, 62, "Section",ExpressionUUID->"11d9de0e-e2c9-4703-9e4e-0733cd879fb5"],
+Cell[3138, 86, 598, 10, 62, "Section",ExpressionUUID->"11d9de0e-e2c9-4703-9e4e-0733cd879fb5"],
 Cell[CellGroupData[{
-Cell[6257, 166, 532, 12, 52, "Input",ExpressionUUID->"21c378d4-ffef-475c-bef3-87c772066c35"],
-Cell[6792, 180, 127756, 2336, 654, "Output",ExpressionUUID->"9a2e3971-bd9f-488e-9065-9778491170b4"]
+Cell[3761, 100, 532, 12, 52, "Input",ExpressionUUID->"21c378d4-ffef-475c-bef3-87c772066c35"],
+Cell[4296, 114, 127756, 2336, 654, "Output",ExpressionUUID->"9a2e3971-bd9f-488e-9065-9778491170b4"]
 }, Open  ]],
-Cell[134563, 2519, 1961, 49, 80, "Input",ExpressionUUID->"1fb91f9c-5255-4899-93f2-8b275278d0ac"],
+Cell[132067, 2453, 1961, 49, 80, "Input",ExpressionUUID->"1fb91f9c-5255-4899-93f2-8b275278d0ac"],
 Cell[CellGroupData[{
-Cell[136549, 2572, 1086, 27, 36, "Input",ExpressionUUID->"75a84a15-f246-429e-a4f4-681d63e33cab"],
-Cell[137638, 2601, 1891, 45, 159, "Output",ExpressionUUID->"cd6e907b-aadd-438c-8f1e-803e0116b6a4"]
+Cell[134053, 2506, 1086, 27, 36, "Input",ExpressionUUID->"75a84a15-f246-429e-a4f4-681d63e33cab"],
+Cell[135142, 2535, 1891, 45, 159, "Output",ExpressionUUID->"cd6e907b-aadd-438c-8f1e-803e0116b6a4"]
 }, Open  ]],
-Cell[139544, 2649, 628, 15, 61, "Input",ExpressionUUID->"c28b3d95-e5a5-4572-8765-75ad270b06c9"],
+Cell[137048, 2583, 628, 15, 61, "Input",ExpressionUUID->"c28b3d95-e5a5-4572-8765-75ad270b06c9"],
 Cell[CellGroupData[{
-Cell[140197, 2668, 1380, 33, 58, "Input",ExpressionUUID->"7a2761c3-9043-4cf3-bae7-b1e8be685c89"],
-Cell[141580, 2703, 41968, 754, 333, "Output",ExpressionUUID->"5dc20282-2b41-4440-ad95-bd5cf2972689"]
+Cell[137701, 2602, 1371, 33, 58, "Input",ExpressionUUID->"7a2761c3-9043-4cf3-bae7-b1e8be685c89"],
+Cell[139075, 2637, 41777, 748, 333, "Output",ExpressionUUID->"5dc20282-2b41-4440-ad95-bd5cf2972689"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[183597, 3463, 569, 10, 48, "Section",ExpressionUUID->"e4a8a705-d4ad-42a7-8320-3462ed0fbe1b"],
+Cell[180901, 3391, 569, 10, 48, "Section",ExpressionUUID->"e4a8a705-d4ad-42a7-8320-3462ed0fbe1b"],
 Cell[CellGroupData[{
-Cell[184191, 3477, 631, 14, 52, "Input",ExpressionUUID->"de099933-8cb5-45fc-b5ac-59806575212b"],
-Cell[184825, 3493, 2521, 44, 321, "Output",ExpressionUUID->"00446bcc-91ec-4777-b8ac-cd3bcce1070f"]
+Cell[181495, 3405, 631, 14, 52, "Input",ExpressionUUID->"de099933-8cb5-45fc-b5ac-59806575212b"],
+Cell[182129, 3421, 2521, 44, 321, "Output",ExpressionUUID->"00446bcc-91ec-4777-b8ac-cd3bcce1070f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[187383, 3542, 1586, 41, 79, "Input",ExpressionUUID->"b5a55d77-90a6-41ed-84c7-0eec8f19e0a2"],
-Cell[188972, 3585, 4521, 78, 1040, "Output",ExpressionUUID->"11c41520-e17c-4200-8010-f695b96e7618"]
+Cell[184687, 3470, 1586, 41, 79, "Input",ExpressionUUID->"b5a55d77-90a6-41ed-84c7-0eec8f19e0a2"],
+Cell[186276, 3513, 4521, 78, 1040, "Output",ExpressionUUID->"11c41520-e17c-4200-8010-f695b96e7618"]
 }, Open  ]],
-Cell[193508, 3666, 5535, 131, 57, "Input",ExpressionUUID->"38556699-93d2-4c29-bc91-c54c98716eb6"],
-Cell[199046, 3799, 1605, 39, 57, "Input",ExpressionUUID->"72edb115-1de8-44d5-b81e-6f99d44cf55b"],
+Cell[190812, 3594, 5535, 131, 57, "Input",ExpressionUUID->"38556699-93d2-4c29-bc91-c54c98716eb6"],
+Cell[196350, 3727, 1605, 39, 57, "Input",ExpressionUUID->"72edb115-1de8-44d5-b81e-6f99d44cf55b"],
 Cell[CellGroupData[{
-Cell[200676, 3842, 1695, 37, 57, "Input",ExpressionUUID->"76528494-c6ce-4ca0-af8a-683b66502753"],
-Cell[202374, 3881, 25621, 595, 70, "Output",ExpressionUUID->"ba77bf68-93e6-46d1-8f89-2171961a3855"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[228032, 4481, 12478, 284, 58, "Input",ExpressionUUID->"70f565cf-7abb-4002-ae14-7be7c24784e5"],
-Cell[240513, 4767, 154487, 3405, 70, "Output",ExpressionUUID->"34cc5d40-a5de-4549-8be6-dbd862004ba3"]
+Cell[197980, 3770, 1695, 37, 57, "Input",ExpressionUUID->"76528494-c6ce-4ca0-af8a-683b66502753"],
+Cell[199678, 3809, 25621, 595, 70, "Output",ExpressionUUID->"ba77bf68-93e6-46d1-8f89-2171961a3855"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[395037, 8177, 1578, 34, 57, "Input",ExpressionUUID->"4e774121-8140-498e-9975-194fc2c359bd"],
-Cell[396618, 8213, 76927, 1642, 70, "Output",ExpressionUUID->"a837397d-51aa-4b58-bd3f-f3f258b6f15e"]
-}, Open  ]],
-Cell[473560, 9858, 3196, 83, 83, "Input",ExpressionUUID->"e4ef088f-46d9-458d-a955-98be29e36303"],
-Cell[CellGroupData[{
-Cell[476781, 9945, 2931, 67, 60, "Input",ExpressionUUID->"31d25465-3dbd-4c8f-87cd-9956006807ed"],
-Cell[479715, 10014, 240828, 5615, 70, "Output",ExpressionUUID->"ff9747d4-81bb-4ba7-9989-9e2862ede9bd"]
+Cell[225336, 4409, 12468, 284, 58, "Input",ExpressionUUID->"70f565cf-7abb-4002-ae14-7be7c24784e5"],
+Cell[237807, 4695, 154477, 3404, 70, "Output",ExpressionUUID->"34cc5d40-a5de-4549-8be6-dbd862004ba3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[720580, 15634, 1235, 29, 36, "Input",ExpressionUUID->"aa819dc9-788a-415f-b503-1890dc7726cf"],
-Cell[721818, 15665, 25780, 527, 153, "Output",ExpressionUUID->"7a6f44ff-5e2d-414f-a8c6-281762fcc5e5"]
+Cell[392321, 8104, 1578, 34, 57, "Input",ExpressionUUID->"4e774121-8140-498e-9975-194fc2c359bd"],
+Cell[393902, 8140, 76927, 1642, 70, "Output",ExpressionUUID->"a837397d-51aa-4b58-bd3f-f3f258b6f15e"]
+}, Open  ]],
+Cell[470844, 9785, 3196, 83, 83, "Input",ExpressionUUID->"e4ef088f-46d9-458d-a955-98be29e36303"],
+Cell[CellGroupData[{
+Cell[474065, 9872, 2931, 67, 60, "Input",ExpressionUUID->"31d25465-3dbd-4c8f-87cd-9956006807ed"],
+Cell[476999, 9941, 240828, 5615, 70, "Output",ExpressionUUID->"ff9747d4-81bb-4ba7-9989-9e2862ede9bd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[717864, 15561, 1235, 29, 36, "Input",ExpressionUUID->"aa819dc9-788a-415f-b503-1890dc7726cf"],
+Cell[719102, 15592, 25780, 527, 153, "Output",ExpressionUUID->"7a6f44ff-5e2d-414f-a8c6-281762fcc5e5"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[747647, 16198, 566, 10, 48, "Section",ExpressionUUID->"de6a5ae5-e181-4f01-ad6c-31be16971a18"],
+Cell[744931, 16125, 566, 10, 48, "Section",ExpressionUUID->"de6a5ae5-e181-4f01-ad6c-31be16971a18"],
 Cell[CellGroupData[{
-Cell[748238, 16212, 653, 15, 52, "Input",ExpressionUUID->"667dead2-22dc-4045-89b7-833f178b2f03"],
-Cell[748894, 16229, 803, 18, 43, "Output",ExpressionUUID->"c0940497-02dc-41c0-b4db-aed5152839ea"]
+Cell[745522, 16139, 653, 15, 52, "Input",ExpressionUUID->"667dead2-22dc-4045-89b7-833f178b2f03"],
+Cell[746178, 16156, 803, 18, 43, "Output",ExpressionUUID->"c0940497-02dc-41c0-b4db-aed5152839ea"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[749734, 16252, 486, 13, 52, "Input",ExpressionUUID->"f77b9e07-1309-4894-990e-259a1d0a5bda"],
-Cell[750223, 16267, 462, 10, 45, "Output",ExpressionUUID->"2609f486-c253-4183-b218-a4faedaef5d0"]
+Cell[747018, 16179, 486, 13, 52, "Input",ExpressionUUID->"f77b9e07-1309-4894-990e-259a1d0a5bda"],
+Cell[747507, 16194, 462, 10, 45, "Output",ExpressionUUID->"2609f486-c253-4183-b218-a4faedaef5d0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[750722, 16282, 1524, 40, 36, "Input",ExpressionUUID->"df7138bc-dd6f-4b4f-8332-7743edd63d0f"],
-Cell[752249, 16324, 107637, 2015, 719, "Output",ExpressionUUID->"dbbb5277-4eeb-4e96-9adb-f291f3765751"]
+Cell[748006, 16209, 1495, 38, 36, "Input",ExpressionUUID->"df7138bc-dd6f-4b4f-8332-7743edd63d0f"],
+Cell[749504, 16249, 106803, 2005, 719, "Output",ExpressionUUID->"dbbb5277-4eeb-4e96-9adb-f291f3765751"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[859923, 18344, 522, 13, 52, "Input",ExpressionUUID->"2ccdaff3-4eb8-4ef9-975f-c4bfbb8778d9"],
-Cell[860448, 18359, 811, 16, 43, "Output",ExpressionUUID->"8a8a136f-af94-420a-aa50-712a184c99f4"]
+Cell[856344, 18259, 522, 13, 52, "Input",ExpressionUUID->"2ccdaff3-4eb8-4ef9-975f-c4bfbb8778d9"],
+Cell[856869, 18274, 811, 16, 43, "Output",ExpressionUUID->"8a8a136f-af94-420a-aa50-712a184c99f4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[861296, 18380, 1548, 40, 36, "Input",ExpressionUUID->"13f8b3b3-54a5-49f8-a156-fe46770de8c1"],
-Cell[862847, 18422, 60602, 1108, 361, "Output",ExpressionUUID->"7ec8385e-8639-4e6d-9616-93c212f46279"]
+Cell[857717, 18295, 1517, 38, 36, "Input",ExpressionUUID->"13f8b3b3-54a5-49f8-a156-fe46770de8c1"],
+Cell[859237, 18335, 60229, 1100, 361, "Output",ExpressionUUID->"7ec8385e-8639-4e6d-9616-93c212f46279"]
 }, Open  ]]
 }, Closed]]
 }
