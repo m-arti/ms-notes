@@ -35,13 +35,14 @@ Cell[StyleData["Section"],
  FontSlant->"Plain",
  FontVariations->{"StrikeThrough"->False, "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[0., 0., 0.]],
+ FontColor->Black],
 
 (* SUBSECTION *)
 Cell[StyleData["Subsection"],
  ShowGroupOpener->"Inline",
  FontVariations->{"StrikeThrough"->False, "Underline"->False},
- FontColor->RGBColor[0.3495994506752117, 0.349584191653315, 0.349584191653315]],
+ FontSize->18,
+ FontColor->Gray],
 
 (* SUBSUBSECTION *)
 Cell[StyleData["Subsubsection"],
@@ -72,11 +73,9 @@ Cell[StyleData["Input"],
  FontWeight->"Regular",
  FontSlant->"Plain",
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"}]
-
 },
+
 WindowSize->Automatic,
-WindowMargins->{{Automatic, 281}, {22, Automatic}},
-FrontEndVersion->"12.2 for Mac OS X x86 (64-bit) (December 12, 2020)",
 StyleDefinitions->"PrivateStylesheetFormatting.nb"
 ]
 (* End of Content *)
