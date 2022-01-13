@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    598925,      12894]
+NotebookDataLength[    598986,      12897]
 NotebookOptionsPosition[    595198,      12810]
-NotebookOutlinePosition[    597894,      12875]
-CellTagsIndexPosition[    597851,      12872]
+NotebookOutlinePosition[    597955,      12878]
+CellTagsIndexPosition[    597912,      12875]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -61,7 +61,7 @@ Cell[BoxData[
    3.82517237109969*^9}, {3.8251724569579477`*^9, 3.8251724612211657`*^9}, {
    3.851105447210253*^9, 3.85110546298081*^9}},
  CellLabel->
-  "In[758]:=",ExpressionUUID->"4baaa273-9998-48a0-a5b9-9955beb8bbd3"],
+  "In[791]:=",ExpressionUUID->"4baaa273-9998-48a0-a5b9-9955beb8bbd3"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -78,8 +78,8 @@ Cell[BoxData[
  ShowCellBracket->False,
  CellMargins->{{25, Automatic}, {20, 20}},
  CellChangeTimes->{
-  3.851105464784519*^9},ExpressionUUID->"e40de494-b422-4c69-80a3-\
-149dad48d6b6"]
+  3.851106347974915*^9},ExpressionUUID->"c5841674-7a0f-4430-9858-\
+a0cceac430fa"]
 }, {2}]],
 
 Cell[CellGroupData[{
@@ -3748,7 +3748,7 @@ findDynamicRulesFromOptimizer,
      PlotRange -> {{-2.0234646392116864`, 
        3.2138869077765855`}, {-3.486991677908961, 1.7503598690793107`}}, 
       ImageSize -> {{380, 380}, {380, 380}}}], 
-    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[1802545]}, 
+    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[1967233]}, 
     StyleBox[
      FrameBox[
       PaneBox[
@@ -12260,7 +12260,7 @@ findDynamicRulesFromOptimizer,
      PlotRange -> {{-2.0234646392116864`, 
        3.2138869077765855`}, {-3.486991677908961, 1.7503598690793107`}}, 
       ImageSize -> {{380, 380}, {380, 380}}}], 
-    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[1802673]}, 
+    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[1967361]}, 
     StyleBox[
      FrameBox[
       PaneBox[
@@ -12819,7 +12819,10 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData[All], ShowCellBracket -> Automatic], 
    Cell[
-    StyleData["Notebook"], Background -> RGBColor[252, 251, 249]], 
+    StyleData["Notebook"], Background -> RGBColor[
+      Rational[84, 85], 
+      Rational[251, 255], 
+      Rational[83, 85]]], 
    Cell[
     StyleData["Title"], FontFamily -> "Source Sans Pro", FontSize -> 45, 
     FontWeight -> "SemiBold", FontSlant -> "Plain", 
@@ -12850,8 +12853,8 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["Text"], TextJustification -> 1., FontFamily -> 
     "Source Sans Pro", FontSize -> 15, FontWeight -> "Regular", FontSlant -> 
-    "Plain", FontVariations -> {
-     "StrikeThrough" -> False, "Underline" -> False}, 
+    "Plain", 
+    FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, Background -> 
     None], 
    Cell[
@@ -12876,7 +12879,7 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 1925, 41, 36, "Input",ExpressionUUID->"4baaa273-9998-48a0-a5b9-9955beb8bbd3"],
-Cell[2508, 65, 570, 16, 65, "Output",ExpressionUUID->"e40de494-b422-4c69-80a3-149dad48d6b6"]
+Cell[2508, 65, 570, 16, 65, "Output",ExpressionUUID->"c5841674-7a0f-4430-9858-a0cceac430fa"]
 }, {2}]],
 Cell[CellGroupData[{
 Cell[3112, 86, 171, 3, 62, "Section",ExpressionUUID->"8e07a1d0-4fcc-42b0-bf51-bc258b0a2ba6"],

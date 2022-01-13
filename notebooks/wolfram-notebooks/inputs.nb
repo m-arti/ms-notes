@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     37885,        862]
+NotebookDataLength[     37946,        865]
 NotebookOptionsPosition[     33854,        778]
-NotebookOutlinePosition[     36541,        843]
-CellTagsIndexPosition[     36498,        840]
+NotebookOutlinePosition[     36602,        846]
+CellTagsIndexPosition[     36559,        843]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -787,7 +787,10 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData[All], ShowCellBracket -> Automatic], 
    Cell[
-    StyleData["Notebook"], Background -> RGBColor[252, 251, 249]], 
+    StyleData["Notebook"], Background -> RGBColor[
+      Rational[84, 85], 
+      Rational[251, 255], 
+      Rational[83, 85]]], 
    Cell[
     StyleData["Title"], FontFamily -> "Source Sans Pro", FontSize -> 45, 
     FontWeight -> "SemiBold", FontSlant -> "Plain", 
@@ -818,8 +821,8 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["Text"], TextJustification -> 1., FontFamily -> 
     "Source Sans Pro", FontSize -> 15, FontWeight -> "Regular", FontSlant -> 
-    "Plain", FontVariations -> {
-     "StrikeThrough" -> False, "Underline" -> False}, 
+    "Plain", 
+    FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, Background -> 
     None], 
    Cell[

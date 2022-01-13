@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    289385,       5426]
+NotebookDataLength[    289446,       5429]
 NotebookOptionsPosition[    286152,       5352]
-NotebookOutlinePosition[    288849,       5417]
-CellTagsIndexPosition[    288806,       5414]
+NotebookOutlinePosition[    288910,       5420]
+CellTagsIndexPosition[    288867,       5417]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3590,7 +3590,7 @@ findDynamicRulesFromOptimizer,
      PlotRange -> {{-10.062382619734493`, 
        6.969251403971731}, {-7.317392109189841, 9.714241914516384}}, 
       ImageSize -> {{380, 380}, {380, 380}}}], 
-    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[1818609]}, 
+    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[1980033]}, 
     StyleBox[
      FrameBox[
       PaneBox[
@@ -5361,7 +5361,10 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData[All], ShowCellBracket -> Automatic], 
    Cell[
-    StyleData["Notebook"], Background -> RGBColor[252, 251, 249]], 
+    StyleData["Notebook"], Background -> RGBColor[
+      Rational[84, 85], 
+      Rational[251, 255], 
+      Rational[83, 85]]], 
    Cell[
     StyleData["Title"], FontFamily -> "Source Sans Pro", FontSize -> 45, 
     FontWeight -> "SemiBold", FontSlant -> "Plain", 
@@ -5392,8 +5395,8 @@ StyleDefinitions->Notebook[{
    Cell[
     StyleData["Text"], TextJustification -> 1., FontFamily -> 
     "Source Sans Pro", FontSize -> 15, FontWeight -> "Regular", FontSlant -> 
-    "Plain", FontVariations -> {
-     "StrikeThrough" -> False, "Underline" -> False}, 
+    "Plain", 
+    FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, Background -> 
     None], 
    Cell[
