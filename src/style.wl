@@ -11,7 +11,7 @@ Cell[StyleData[StyleDefinitions -> "Default.nb"]],
 
 (* ALL *)
 Cell[StyleData[All], ShowCellBracket->Automatic],
-Cell[StyleData["Notebook"],Background->RGBColor[252, 251, 249]],
+Cell[StyleData["Notebook"],Background->RGBColor[252/255, 251/255, 249/255]],
 
 (* TITLE *)
 Cell[StyleData["Title"],
