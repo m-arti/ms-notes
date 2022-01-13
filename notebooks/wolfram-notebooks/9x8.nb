@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     46411,       1157]
+NotebookDataLength[     46514,       1160]
 NotebookOptionsPosition[     42897,       1080]
-NotebookOutlinePosition[     45391,       1140]
-CellTagsIndexPosition[     45348,       1137]
+NotebookOutlinePosition[     45494,       1143]
+CellTagsIndexPosition[     45451,       1140]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1078,14 +1078,16 @@ Cell[BoxData["72"], "Output",
  CellLabel->"Out[6]=",ExpressionUUID->"875c650c-3faa-4f3b-883f-5e9315bf3b58"]
 }, Open  ]]
 },
-WindowSize->{855, 823},
-WindowMargins->{{12, Automatic}, {0, Automatic}},
-FrontEndVersion->"12.3 for Mac OS X x86 (64-bit) (May 11, 2021)",
+WindowSize->{720, 847},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (December 2, 2021)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[StyleDefinitions -> "Default.nb"]], 
    Cell[
     StyleData[All], ShowCellBracket -> Automatic], 
+   Cell[
+    StyleData["Notebook"], Background -> RGBColor[252, 251, 249]], 
    Cell[
     StyleData["Title"], FontFamily -> "Source Sans Pro", FontSize -> 45, 
     FontWeight -> "SemiBold", FontSlant -> "Plain", 
@@ -1102,7 +1104,7 @@ StyleDefinitions->Notebook[{
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, FontColor -> 
     RGBColor[0., 0., 0.]], 
    Cell[
-    StyleData["Subsection"], ShowGroupOpener -> "Inline", 
+    StyleData["Subsection"], ShowGroupOpener -> "Inline", FontSize -> 18, 
     FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
     FontColor -> 
     RGBColor[0.3495994506752117, 0.349584191653315, 0.349584191653315]], 
@@ -1124,8 +1126,9 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], FontFamily -> "Source Code Pro", FontSize -> 13, 
     FontWeight -> "Regular", FontSlant -> "Plain", 
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}]}, Visible -> 
-  False, FrontEndVersion -> "12.3 for Mac OS X x86 (64-bit) (May 11, 2021)", 
-  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+  False, FrontEndVersion -> 
+  "13.0 for Mac OS X x86 (64-bit) (December 2, 2021)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"],
 ExpressionUUID->"595ad97a-9aef-403a-9f2a-7a41149fb89f"
 ]
 (* End of Notebook Content *)

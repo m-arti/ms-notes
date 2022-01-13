@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    289341,       5427]
-NotebookOptionsPosition[    286212,       5356]
-NotebookOutlinePosition[    288805,       5418]
-CellTagsIndexPosition[    288762,       5415]
+NotebookDataLength[    289385,       5426]
+NotebookOptionsPosition[    286152,       5352]
+NotebookOutlinePosition[    288849,       5417]
+CellTagsIndexPosition[    288806,       5414]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1394,8 +1394,7 @@ C[\"GeometricPoint\"][\[FormalCapitalB]], C[\"GeometricPoint\"][\
       PlaneGeometry`GeometrySceneDrawer`Dump`var8031, 
       PlaneGeometry`GeometrySceneDrawer`Dump`var8032, 
       PlaneGeometry`GeometrySceneDrawer`Dump`var8033}}, 
-    PlaneGeometry`GeometrySceneDrawerDump`pointStepAssoc$$ = 
-    Association[{
+    PlaneGeometry`GeometrySceneDrawerDump`pointStepAssoc$$ = <|{
       PlaneGeometry`GeometrySceneDrawer`Dump`var8016, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var8017} -> 
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var8018, 
@@ -1409,9 +1408,8 @@ C[\"GeometricPoint\"][\[FormalCapitalB]], C[\"GeometricPoint\"][\
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var8026, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var8027} -> 
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var8028, 
-       PlaneGeometry`GeometrySceneDrawer`Dump`var8029} -> 1], 
-    PlaneGeometry`GeometrySceneDrawerDump`pointPosAssoc$$ = 
-    Association[{
+       PlaneGeometry`GeometrySceneDrawer`Dump`var8029} -> 1|>, 
+    PlaneGeometry`GeometrySceneDrawerDump`pointPosAssoc$$ = <|{
       PlaneGeometry`GeometrySceneDrawer`Dump`var8016, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var8017} -> 
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var8018, 
@@ -1425,12 +1423,12 @@ C[\"GeometricPoint\"][\[FormalCapitalB]], C[\"GeometricPoint\"][\
      5, {PlaneGeometry`GeometrySceneDrawer`Dump`var8026, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var8027} -> 
      6, {PlaneGeometry`GeometrySceneDrawer`Dump`var8028, 
-       PlaneGeometry`GeometrySceneDrawer`Dump`var8029} -> 7], 
-    PlaneGeometry`GeometrySceneDrawerDump`quantPosAssoc$$ = Association[
+       PlaneGeometry`GeometrySceneDrawer`Dump`var8029} -> 7|>, 
+    PlaneGeometry`GeometrySceneDrawerDump`quantPosAssoc$$ = <|
     PlaneGeometry`GeometrySceneDrawer`Dump`var8030 -> 1, 
      PlaneGeometry`GeometrySceneDrawer`Dump`var8031 -> 2, 
      PlaneGeometry`GeometrySceneDrawer`Dump`var8032 -> 3, 
-     PlaneGeometry`GeometrySceneDrawer`Dump`var8033 -> 4], 
+     PlaneGeometry`GeometrySceneDrawer`Dump`var8033 -> 4|>, 
     PlaneGeometry`GeometrySceneDrawerDump`rules$$ = {{{
       C["GeometricPoint"][\[FormalA]] -> {-4.678338728829804, \
 -0.7469135576674143}, 
@@ -1452,8 +1450,7 @@ C[\"GeometricPoint\"][\[FormalCapitalB]], C[\"GeometricPoint\"][\
 \[FormalCapitalC]], C[\"GeometricPoint\"][\[FormalCapitalO]]}}"]] -> 
        3.714741055595835, C["GeometricQuantity"][
          C["Unspecified"][
-         "ref", 
-          "{\"circumcenter radius\", C[\"GeometricPoint\"][\[FormalB]], \
+         "ref", "{\"circumcenter radius\", C[\"GeometricPoint\"][\[FormalB]], \
 {C[\"GeometricPoint\"][\[FormalCapitalC]], C[\"GeometricPoint\"][\
 \[FormalCapitalA]], C[\"GeometricPoint\"][\[FormalCapitalO]]}}"]] -> 
        4.229164967872186, C["GeometricQuantity"][
@@ -1658,7 +1655,6 @@ C[\"GeometricPoint\"][\[FormalCapitalB]], C[\"GeometricPoint\"][\
 \[FormalCapitalO]}, "Circumcenter"], \[FormalB] == 
             TriangleCenter[{\[FormalCapitalC], \[FormalCapitalA], \
 \[FormalCapitalO]}, "Circumcenter"], \[FormalC] == 
-            
             TriangleCenter[{\[FormalCapitalA], \[FormalCapitalB], \
 \[FormalCapitalO]}, "Circumcenter"], 
             Style[{
@@ -3594,7 +3590,7 @@ findDynamicRulesFromOptimizer,
      PlotRange -> {{-10.062382619734493`, 
        6.969251403971731}, {-7.317392109189841, 9.714241914516384}}, 
       ImageSize -> {{380, 380}, {380, 380}}}], 
-    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[137073]}, 
+    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[1818609]}, 
     StyleBox[
      FrameBox[
       PaneBox[
@@ -5358,12 +5354,14 @@ WindowSize->{720, 847},
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 PrivateNotebookOptions->{"CloudPublishPath"->"/Published/wolfram-notebooks-\
 kosnitas-theorem.nb"},
-FrontEndVersion->"12.3 for Mac OS X x86 (64-bit) (May 11, 2021)",
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (December 2, 2021)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[StyleDefinitions -> "Default.nb"]], 
    Cell[
     StyleData[All], ShowCellBracket -> Automatic], 
+   Cell[
+    StyleData["Notebook"], Background -> RGBColor[252, 251, 249]], 
    Cell[
     StyleData["Title"], FontFamily -> "Source Sans Pro", FontSize -> 45, 
     FontWeight -> "SemiBold", FontSlant -> "Plain", 
@@ -5380,7 +5378,7 @@ StyleDefinitions->Notebook[{
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, FontColor -> 
     RGBColor[0., 0., 0.]], 
    Cell[
-    StyleData["Subsection"], ShowGroupOpener -> "Inline", 
+    StyleData["Subsection"], ShowGroupOpener -> "Inline", FontSize -> 18, 
     FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
     FontColor -> 
     RGBColor[0.3495994506752117, 0.349584191653315, 0.349584191653315]], 
@@ -5402,8 +5400,9 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], FontFamily -> "Source Code Pro", FontSize -> 13, 
     FontWeight -> "Regular", FontSlant -> "Plain", 
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}]}, Visible -> 
-  False, FrontEndVersion -> "12.3 for Mac OS X x86 (64-bit) (May 11, 2021)", 
-  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+  False, FrontEndVersion -> 
+  "13.0 for Mac OS X x86 (64-bit) (December 2, 2021)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"],
 ExpressionUUID->"e5d33a92-bfab-4126-9c50-f3e9cffc5038"
 ]
 (* End of Notebook Content *)
@@ -5423,11 +5422,11 @@ Cell[1292, 39, 510, 9, 44, "Output",ExpressionUUID->"f2ff604f-c6b9-432d-a156-fd5
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[1839, 53, 880, 19, 39, "Input",ExpressionUUID->"6369dd99-c852-418b-bf65-ba76750f2fd8"],
-Cell[2722, 74, 188500, 3709, 524, "Output",ExpressionUUID->"51fae211-df86-430d-9d78-4b738172f424"]
+Cell[2722, 74, 188440, 3705, 524, "Output",ExpressionUUID->"51fae211-df86-430d-9d78-4b738172f424"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[191259, 3788, 486, 12, 52, "Input",ExpressionUUID->"ea799ef3-67e3-4c90-9305-7352e8d32bb1"],
-Cell[191748, 3802, 94448, 1551, 372, "Output",ExpressionUUID->"01d4280e-4243-4170-bb8b-6baaefa1cf03"]
+Cell[191199, 3784, 486, 12, 52, "Input",ExpressionUUID->"ea799ef3-67e3-4c90-9305-7352e8d32bb1"],
+Cell[191688, 3798, 94448, 1551, 372, "Output",ExpressionUUID->"01d4280e-4243-4170-bb8b-6baaefa1cf03"]
 }, Open  ]]
 }
 ]

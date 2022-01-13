@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    599959,      12943]
-NotebookOptionsPosition[    596333,      12862]
-NotebookOutlinePosition[    598925,      12924]
-CellTagsIndexPosition[    598882,      12921]
+NotebookDataLength[    598925,      12894]
+NotebookOptionsPosition[    595198,      12810]
+NotebookOutlinePosition[    597894,      12875]
+CellTagsIndexPosition[    597851,      12872]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,73 +22,34 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
-  StyleBox[
-   InterpretationBox[
-    DynamicModuleBox[{Typeset`open = False}, 
-     TemplateBox[{"Expression", 
-       RowBox[{"CellPrint", "[", 
-         DynamicBox[
-          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
-       
-       GridBox[{{
-          RowBox[{
-            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-            
-            TagBox["776", "IconizedItem"]}]}}, 
-        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-        "Column", 
-        GridBoxItemSize -> {
-         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-       Dynamic[Typeset`open]},
-      "IconizedObject"]],
-    CellPrint[{
-      ExpressionCell[
-       Row[{
-         Style["Last updated:   ", "Text", Gray], Today}], "Output", 
-       CellMargins -> {{25, Automatic}, {20, 20}}, ShowCellBracket -> False]}],
-    SelectWithContents->True,
-    Selectable->False],
-   FontWeight->"Plain"], ";", 
   InterpretationBox[
    DynamicModuleBox[{Typeset`open = False}, 
     TemplateBox[{"Expression", 
-      RowBox[{"With", "[", 
+      RowBox[{"Composition", "[", 
         DynamicBox[
          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
       GridBox[{{
          RowBox[{
            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-           TagBox["416", "IconizedItem"]}]}}, 
+           TagBox["1688", "IconizedItem"]}]}}, 
        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
        "Column", 
        GridBoxItemSize -> {
         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
       Dynamic[Typeset`open]},
      "IconizedObject"]],
-   With[{$CellContext`nbStyle = Import["https://wolfr.am/U7U6ZSd2"]}, 
-    SetOptions[
-     EvaluationNotebook[], StyleDefinitions -> $CellContext`nbStyle]],
-   SelectWithContents->True,
-   Selectable->False], ";", 
-  InterpretationBox[
-   DynamicModuleBox[{Typeset`open = False}, 
-    TemplateBox[{"Expression", 
-      RowBox[{"If", "[", 
-        DynamicBox[
-         FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
-      GridBox[{{
-         RowBox[{
-           TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-           TagBox["376", "IconizedItem"]}]}}, 
-       GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-       "Column", 
-       GridBoxItemSize -> {
-        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-      Dynamic[Typeset`open]},
-     "IconizedObject"]],
-   If[$FrontEnd =!= $Failed, SelectionMove[
-      EvaluationNotebook[], All, GeneratedCell]; 
-    FrontEndTokenExecute["SelectionCloseUnselectedCells"]],
+   Composition[CellPrint[{
+       ExpressionCell[
+        Row[{
+          Style["Last updated:   ", "Text", Gray], Today}], "Output", 
+        CellMargins -> {{25, Automatic}, {20, 20}}, ShowCellBracket -> 
+        False]}]; 
+    With[{$CellContext`nbStyle = Import["https://wolfr.am/U7U6ZSd2"]}, 
+      SetOptions[
+       EvaluationNotebook[], StyleDefinitions -> $CellContext`nbStyle]]; 
+    If[$FrontEnd =!= $Failed, SelectionMove[
+        EvaluationNotebook[], All, GeneratedCell]; 
+      FrontEndTokenExecute["SelectionCloseUnselectedCells"]]; Null],
    SelectWithContents->True,
    Selectable->False], ";"}]], "Input",
  CellChangeTimes->{{3.825167907471014*^9, 3.825167907654261*^9}, {
@@ -97,27 +58,28 @@ Cell[BoxData[
    3.825171577670672*^9}, {3.825171660513818*^9, 3.825171696545291*^9}, {
    3.825171815086478*^9, 3.825171840497428*^9}, {3.825172027248857*^9, 
    3.825172028004221*^9}, 3.8251721512859993`*^9, {3.8251723335597277`*^9, 
-   3.82517237109969*^9}, {3.8251724569579477`*^9, 3.8251724612211657`*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"4baaa273-9998-48a0-a5b9-9955beb8bbd3"],
+   3.82517237109969*^9}, {3.8251724569579477`*^9, 3.8251724612211657`*^9}, {
+   3.851105447210253*^9, 3.85110546298081*^9}},
+ CellLabel->
+  "In[758]:=",ExpressionUUID->"4baaa273-9998-48a0-a5b9-9955beb8bbd3"],
 
 Cell[BoxData[
  TemplateBox[{
    StyleBox["\"Last updated:   \"", "Text", 
     GrayLevel[0.5], StripOnInput -> False], 
    TemplateBox[{
-     RowBox[{"\"Sun 12 Dec 2021\""}], 
+     RowBox[{"\"Thu 13 Jan 2022\""}], 
      RowBox[{"DateObject", "[", 
        RowBox[{
          RowBox[{"{", 
-           RowBox[{"2021", ",", "12", ",", "12"}], "}"}], ",", "\"Day\"", ",",
-          "\"Gregorian\"", ",", "0.`"}], "]"}]}, "DateObject", Editable -> 
-    False]},
+           RowBox[{"2022", ",", "1", ",", "13"}], "}"}], ",", "\"Day\""}], 
+       "]"}]}, "DateObject", Editable -> False]},
   "RowDefault"]], "Output",
  ShowCellBracket->False,
  CellMargins->{{25, Automatic}, {20, 20}},
  CellChangeTimes->{
-  3.8482610161684933`*^9},ExpressionUUID->"13cd9381-c331-4b82-b4e7-\
-153ec922f333"]
+  3.851105464784519*^9},ExpressionUUID->"e40de494-b422-4c69-80a3-\
+149dad48d6b6"]
 }, {2}]],
 
 Cell[CellGroupData[{
@@ -293,72 +255,70 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
            PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2305) (-
            PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
-          PlaneGeometry`GeometrySceneDrawer`Dump`var2307))^2 + (((
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2304 - 
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2305 - 
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
-          Rational[
-           1, 2] ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2302 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2304) (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2302 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2306) + (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2305) (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2307)) ((
+          PlaneGeometry`GeometrySceneDrawer`Dump`var2307))^2 + ((((
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2304 - 
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2305 - 
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
+           Rational[
+            1, 2] ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2302 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2304) (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2302 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2306) + (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2305) (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2307))) ((
              PlaneGeometry`GeometrySceneDrawer`Dump`var2304 - 
              PlaneGeometry`GeometrySceneDrawer`Dump`var2308)^2 + (
              PlaneGeometry`GeometrySceneDrawer`Dump`var2305 - 
              PlaneGeometry`GeometrySceneDrawer`Dump`var2309)^2)^
           Rational[
-           1, 2] - ((PlaneGeometry`GeometrySceneDrawer`Dump`var2302 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2304)^2 + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2303 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2305)^2)^
-         Rational[
-          1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2302 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2303 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
-         Rational[
-          1, 2] ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
+           1, 2] - (((PlaneGeometry`GeometrySceneDrawer`Dump`var2302 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2304)^2 + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2303 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2305)^2)^
+          Rational[
+           1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2302 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2303 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
+          Rational[1, 2]) ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2306) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2308) + (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2307) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2309)))^2 + (((
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2302 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2304) (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2306) + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2303 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2305) (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2307)) ((-
+           PlaneGeometry`GeometrySceneDrawer`Dump`var2309)))^2 + ((((
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2302 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2304) (-
               PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (-
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2306) + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2303 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2305) (-
               PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
-          Rational[
-           1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2306 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2307)) ((-
+               PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (-
+               PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
+           Rational[
+            1, 2]) ((PlaneGeometry`GeometrySceneDrawer`Dump`var2306 - 
              PlaneGeometry`GeometrySceneDrawer`Dump`var2308)^2 + (
              PlaneGeometry`GeometrySceneDrawer`Dump`var2307 - 
              PlaneGeometry`GeometrySceneDrawer`Dump`var2309)^2)^
           Rational[
-           1, 2] - ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2302 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2304)^2 + (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2305)^2)^
-         Rational[
-          1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2304 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2305 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
-         Rational[
-          1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2304 - 
+           1, 2] - (((-PlaneGeometry`GeometrySceneDrawer`Dump`var2302 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2304)^2 + (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2305)^2)^
+          Rational[
+           1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2304 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2305 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
+          Rational[1, 2]) ((PlaneGeometry`GeometrySceneDrawer`Dump`var2304 - 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2306) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2306 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2308) + (
@@ -491,8 +451,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
          1 - (PlaneGeometry`GeometrySceneDrawer`Dump`var2307 - 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2309) 
          PlaneGeometry`GeometrySceneDrawer`Dump`var2338)^2 + (
-        1 - (-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2305) (-
+        1 - ((-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
+            PlaneGeometry`GeometrySceneDrawer`Dump`var2305)) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2306) + (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2302 + 
@@ -500,8 +460,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
             PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2307)) 
         PlaneGeometry`GeometrySceneDrawer`Dump`var2339)^2 + (
-        1 - (-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2307) (-
+        1 - ((-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
+            PlaneGeometry`GeometrySceneDrawer`Dump`var2307)) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2306 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2308) + (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
@@ -510,8 +470,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
            PlaneGeometry`GeometrySceneDrawer`Dump`var2309)) 
         PlaneGeometry`GeometrySceneDrawer`Dump`var2340)^2, {
       Rational[1, 
-          2] (-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2305) 
+          2] ((-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2303 + 
+            PlaneGeometry`GeometrySceneDrawer`Dump`var2305)) 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2306 - 
          PlaneGeometry`GeometrySceneDrawer`Dump`var2304 (
           PlaneGeometry`GeometrySceneDrawer`Dump`var2303 - 
@@ -519,25 +479,25 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
          PlaneGeometry`GeometrySceneDrawer`Dump`var2302 (-
            PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2307)) >= 
-       0, ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
-         Rational[-1, 
-           2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2306 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2308)^2 + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2307 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2309)^2)^
-         Rational[-1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2304 - 
+       0, (((-PlaneGeometry`GeometrySceneDrawer`Dump`var2304 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2306)^2 + (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2305 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2307)^2)^
+          Rational[-1, 
+            2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2306 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2308)^2 + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2307 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2309)^2)^
+          Rational[-1, 2]) ((PlaneGeometry`GeometrySceneDrawer`Dump`var2304 - 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2306) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2306 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2308) + (
            PlaneGeometry`GeometrySceneDrawer`Dump`var2305 - 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2307) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2307 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2309)) >= 0, 
-       Rational[-1, 2] 
-        2^Rational[-1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2305 - 
+           PlaneGeometry`GeometrySceneDrawer`Dump`var2309)) >= 
+       0, (Rational[-1, 2] 
+         2^Rational[-1, 2]) ((PlaneGeometry`GeometrySceneDrawer`Dump`var2305 - 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2307) 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2308 + 
          PlaneGeometry`GeometrySceneDrawer`Dump`var2304 (
@@ -714,9 +674,9 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
           C["GeometricPoint"][$CellContext`a][2] + 
          C["GeometricPoint"][$CellContext`c][2]))^2 + (1 - 
        "notVar"[
-        PlaneGeometry`GeometrySceneDrawer`Dump`var2300] (-(-
-           C["GeometricPoint"][$CellContext`a][2] + 
-          C["GeometricPoint"][$CellContext`b][2]) (-
+        PlaneGeometry`GeometrySceneDrawer`Dump`var2300] ((-(-
+            C["GeometricPoint"][$CellContext`a][2] + 
+           C["GeometricPoint"][$CellContext`b][2])) (-
            C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`c][1]) + (-
            C["GeometricPoint"][$CellContext`a][1] + 
@@ -747,35 +707,34 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
         "notVar"[PlaneGeometry`GeometrySceneDrawer`Dump`var2299] (
          C["GeometricPoint"][$CellContext`c][2] - C[
          "GeometricPoint"][$CellContext`d][
-         2]))^2 + (((C["GeometricPoint"][$CellContext`b][1] - C[
-            "GeometricPoint"][$CellContext`c][1])^2 + (
-            C["GeometricPoint"][$CellContext`b][2] - C[
-            "GeometricPoint"][$CellContext`c][2])^2)^
-         Rational[
-          1, 2] ((-C["GeometricPoint"][$CellContext`a][1] + 
-           C["GeometricPoint"][$CellContext`b][1]) (-
-            C["GeometricPoint"][$CellContext`a][1] + 
-           C["GeometricPoint"][$CellContext`c][1]) + (-
-            C["GeometricPoint"][$CellContext`a][2] + 
-           C["GeometricPoint"][$CellContext`b][2]) (-
-            C["GeometricPoint"][$CellContext`a][2] + 
-           C["GeometricPoint"][$CellContext`c][2])) ((
+         2]))^2 + ((((C["GeometricPoint"][$CellContext`b][1] - C[
+             "GeometricPoint"][$CellContext`c][1])^2 + (
+             C["GeometricPoint"][$CellContext`b][2] - C[
+             "GeometricPoint"][$CellContext`c][2])^2)^
+          Rational[
+           1, 2] ((-C["GeometricPoint"][$CellContext`a][1] + 
+            C["GeometricPoint"][$CellContext`b][1]) (-
+             C["GeometricPoint"][$CellContext`a][1] + 
+            C["GeometricPoint"][$CellContext`c][1]) + (-
+             C["GeometricPoint"][$CellContext`a][2] + 
+            C["GeometricPoint"][$CellContext`b][2]) (-
+             C["GeometricPoint"][$CellContext`a][2] + 
+            C["GeometricPoint"][$CellContext`c][2]))) ((
             C["GeometricPoint"][$CellContext`b][1] - C[
             "GeometricPoint"][$CellContext`d][1])^2 + (
             C["GeometricPoint"][$CellContext`b][2] - C[
             "GeometricPoint"][$CellContext`d][2])^2)^
          Rational[
-          1, 2] - ((C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`b][1])^2 + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`b][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((-C["GeometricPoint"][$CellContext`b][1] + 
+          1, 2] - (((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`b][1])^2 + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`b][2])^2)^
+         Rational[
+          1, 2] ((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[1, 2]) ((-C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`c][1]) (-
            C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (-
@@ -784,44 +743,43 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
            C["GeometricPoint"][$CellContext`b][2] + 
           C["GeometricPoint"][$CellContext`d][2])))^2 + (1 - 
        "notVar"[
-        PlaneGeometry`GeometrySceneDrawer`Dump`var2301] (-(-
-           C["GeometricPoint"][$CellContext`b][2] + 
-          C["GeometricPoint"][$CellContext`c][2]) (-
+        PlaneGeometry`GeometrySceneDrawer`Dump`var2301] ((-(-
+            C["GeometricPoint"][$CellContext`b][2] + 
+           C["GeometricPoint"][$CellContext`c][2])) (-
            C["GeometricPoint"][$CellContext`c][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (-
            C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`c][1]) (-
            C["GeometricPoint"][$CellContext`c][2] + 
-          C["GeometricPoint"][$CellContext`d][2])))^2 + (((
-           C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`b][
-           1]) (-C["GeometricPoint"][$CellContext`b][1] + 
-           C["GeometricPoint"][$CellContext`c][1]) + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`b][
-           2]) (-C["GeometricPoint"][$CellContext`b][2] + 
-           C["GeometricPoint"][$CellContext`c][
-            2])) ((-C["GeometricPoint"][$CellContext`b][1] + 
-            C["GeometricPoint"][$CellContext`c][1])^2 + (-
-             C["GeometricPoint"][$CellContext`b][2] + 
-            C["GeometricPoint"][$CellContext`c][2])^2)^
-         Rational[
-          1, 2] ((C["GeometricPoint"][$CellContext`c][1] - C[
+          C["GeometricPoint"][$CellContext`d][
+           2])))^2 + ((((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`b][
+            1]) (-C["GeometricPoint"][$CellContext`b][1] + 
+            C["GeometricPoint"][$CellContext`c][1]) + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`b][
+            2]) (-C["GeometricPoint"][$CellContext`b][2] + 
+            C["GeometricPoint"][$CellContext`c][
+             2])) ((-C["GeometricPoint"][$CellContext`b][1] + 
+             C["GeometricPoint"][$CellContext`c][1])^2 + (-
+              C["GeometricPoint"][$CellContext`b][2] + 
+             C["GeometricPoint"][$CellContext`c][2])^2)^
+          Rational[
+           1, 2]) ((C["GeometricPoint"][$CellContext`c][1] - C[
             "GeometricPoint"][$CellContext`d][1])^2 + (
             C["GeometricPoint"][$CellContext`c][2] - C[
             "GeometricPoint"][$CellContext`d][2])^2)^
          Rational[
-          1, 2] - ((-C["GeometricPoint"][$CellContext`a][1] + 
-           C["GeometricPoint"][$CellContext`b][1])^2 + (-
-            C["GeometricPoint"][$CellContext`a][2] + 
-           C["GeometricPoint"][$CellContext`b][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`b][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+          1, 2] - (((-C["GeometricPoint"][$CellContext`a][1] + 
+            C["GeometricPoint"][$CellContext`b][1])^2 + (-
+             C["GeometricPoint"][$CellContext`a][2] + 
+            C["GeometricPoint"][$CellContext`b][2])^2)^
+         Rational[
+          1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`b][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[1, 2]) ((C["GeometricPoint"][$CellContext`b][1] - C[
           "GeometricPoint"][$CellContext`c][
           1]) (-C["GeometricPoint"][$CellContext`c][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (
@@ -910,8 +868,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]^2 + (-
           C["Unspecified"]["ref", "{1, 5, 1, 0}"]][2])^2)^2}, 
     PlaneGeometry`GeometrySceneDrawerDump`constraintsList$$ = {{
      Rational[1, 
-         2] (-(-C["GeometricPoint"][$CellContext`a][2] + 
-          C["GeometricPoint"][$CellContext`b][2]) 
+         2] ((-(-C["GeometricPoint"][$CellContext`a][2] + 
+           C["GeometricPoint"][$CellContext`b][2])) 
          C["GeometricPoint"][$CellContext`c][1] - 
         C["GeometricPoint"][$CellContext`b][1] (
          C["GeometricPoint"][$CellContext`a][2] - C[
@@ -919,25 +877,25 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]^2 + (-
         C["GeometricPoint"][$CellContext`a][
          1] (-C["GeometricPoint"][$CellContext`b][2] + 
          C["GeometricPoint"][$CellContext`c][2])) >= 
-      0, ((-C["GeometricPoint"][$CellContext`b][1] + 
-           C["GeometricPoint"][$CellContext`c][1])^2 + (-
-            C["GeometricPoint"][$CellContext`b][2] + 
-           C["GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[-1, 
-          2] ((C["GeometricPoint"][$CellContext`c][1] - C[
-           "GeometricPoint"][$CellContext`d][1])^2 + (
-           C["GeometricPoint"][$CellContext`c][2] - C[
-           "GeometricPoint"][$CellContext`d][2])^2)^
-        Rational[-1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+      0, (((-C["GeometricPoint"][$CellContext`b][1] + 
+            C["GeometricPoint"][$CellContext`c][1])^2 + (-
+             C["GeometricPoint"][$CellContext`b][2] + 
+            C["GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[-1, 
+           2] ((C["GeometricPoint"][$CellContext`c][1] - C[
+            "GeometricPoint"][$CellContext`d][1])^2 + (
+            C["GeometricPoint"][$CellContext`c][2] - C[
+            "GeometricPoint"][$CellContext`d][2])^2)^
+         Rational[-1, 2]) ((C["GeometricPoint"][$CellContext`b][1] - C[
           "GeometricPoint"][$CellContext`c][
           1]) (-C["GeometricPoint"][$CellContext`c][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (
           C["GeometricPoint"][$CellContext`b][2] - C[
           "GeometricPoint"][$CellContext`c][
           2]) (-C["GeometricPoint"][$CellContext`c][2] + 
-          C["GeometricPoint"][$CellContext`d][2])) >= 0, 
-      Rational[-1, 2] 
-       2^Rational[-1, 2] ((C["GeometricPoint"][$CellContext`b][2] - C[
+          C["GeometricPoint"][$CellContext`d][2])) >= 
+      0, (Rational[-1, 2] 
+        2^Rational[-1, 2]) ((C["GeometricPoint"][$CellContext`b][2] - C[
           "GeometricPoint"][$CellContext`c][2]) 
          C["GeometricPoint"][$CellContext`d][1] + 
         C["GeometricPoint"][$CellContext`b][1] (
@@ -956,8 +914,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]^2 + (-
          C["GeometricPoint"][$CellContext`b][
            1] (-C["GeometricPoint"][$CellContext`a][2] + 
            C["GeometricPoint"][$CellContext`c][2]))^2 >= 0.1, 
-      Rational[1, 
-         4] ((C["GeometricPoint"][$CellContext`a][2] - C[
+      Rational[
+        1, 4] ((C["GeometricPoint"][$CellContext`a][2] - C[
            "GeometricPoint"][$CellContext`b][2]) 
           C["GeometricPoint"][$CellContext`c][1] + 
          C["GeometricPoint"][$CellContext`a][1] (
@@ -1122,72 +1080,70 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]}, {
            C["GeometricPoint"][$CellContext`b][2] - C[
            "GeometricPoint"][$CellContext`c][
            2]) (-C["GeometricPoint"][$CellContext`c][2] + 
-           C["GeometricPoint"][$CellContext`d][2]))^2, ((
-           C["GeometricPoint"][$CellContext`b][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`b][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((-C["GeometricPoint"][$CellContext`a][1] + 
-          C["GeometricPoint"][$CellContext`b][1]) (-
-           C["GeometricPoint"][$CellContext`a][1] + 
-          C["GeometricPoint"][$CellContext`c][1]) + (-
-           C["GeometricPoint"][$CellContext`a][2] + 
-          C["GeometricPoint"][$CellContext`b][2]) (-
-           C["GeometricPoint"][$CellContext`a][2] + 
-          C["GeometricPoint"][$CellContext`c][2])) ((
+           C["GeometricPoint"][$CellContext`d][2]))^2, (((
+            C["GeometricPoint"][$CellContext`b][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`b][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[
+          1, 2] ((-C["GeometricPoint"][$CellContext`a][1] + 
+           C["GeometricPoint"][$CellContext`b][1]) (-
+            C["GeometricPoint"][$CellContext`a][1] + 
+           C["GeometricPoint"][$CellContext`c][1]) + (-
+            C["GeometricPoint"][$CellContext`a][2] + 
+           C["GeometricPoint"][$CellContext`b][2]) (-
+            C["GeometricPoint"][$CellContext`a][2] + 
+           C["GeometricPoint"][$CellContext`c][2]))) ((
            C["GeometricPoint"][$CellContext`b][1] - C[
            "GeometricPoint"][$CellContext`d][1])^2 + (
            C["GeometricPoint"][$CellContext`b][2] - C[
            "GeometricPoint"][$CellContext`d][2])^2)^
         Rational[
-         1, 2] == ((C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`b][1])^2 + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`b][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((-C["GeometricPoint"][$CellContext`b][1] + 
+         1, 2] == (((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`b][1])^2 + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`b][2])^2)^
+         Rational[
+          1, 2] ((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[1, 2]) ((-C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`c][1]) (-
            C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (-
            C["GeometricPoint"][$CellContext`b][2] + 
           C["GeometricPoint"][$CellContext`c][2]) (-
            C["GeometricPoint"][$CellContext`b][2] + 
-          C["GeometricPoint"][$CellContext`d][2])), ((
-          C["GeometricPoint"][$CellContext`a][1] - C[
-          "GeometricPoint"][$CellContext`b][
-          1]) (-C["GeometricPoint"][$CellContext`b][1] + 
-          C["GeometricPoint"][$CellContext`c][1]) + (
-          C["GeometricPoint"][$CellContext`a][2] - C[
-          "GeometricPoint"][$CellContext`b][
-          2]) (-C["GeometricPoint"][$CellContext`b][2] + 
-          C["GeometricPoint"][$CellContext`c][
-           2])) ((-C["GeometricPoint"][$CellContext`b][1] + 
-           C["GeometricPoint"][$CellContext`c][1])^2 + (-
-            C["GeometricPoint"][$CellContext`b][2] + 
-           C["GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`c][1] - C[
+          C["GeometricPoint"][$CellContext`d][2])), (((
+           C["GeometricPoint"][$CellContext`a][1] - C[
+           "GeometricPoint"][$CellContext`b][
+           1]) (-C["GeometricPoint"][$CellContext`b][1] + 
+           C["GeometricPoint"][$CellContext`c][1]) + (
+           C["GeometricPoint"][$CellContext`a][2] - C[
+           "GeometricPoint"][$CellContext`b][
+           2]) (-C["GeometricPoint"][$CellContext`b][2] + 
+           C["GeometricPoint"][$CellContext`c][
+            2])) ((-C["GeometricPoint"][$CellContext`b][1] + 
+            C["GeometricPoint"][$CellContext`c][1])^2 + (-
+             C["GeometricPoint"][$CellContext`b][2] + 
+            C["GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[
+          1, 2]) ((C["GeometricPoint"][$CellContext`c][1] - C[
            "GeometricPoint"][$CellContext`d][1])^2 + (
            C["GeometricPoint"][$CellContext`c][2] - C[
            "GeometricPoint"][$CellContext`d][2])^2)^
         Rational[
-         1, 2] == ((-C["GeometricPoint"][$CellContext`a][1] + 
-           C["GeometricPoint"][$CellContext`b][1])^2 + (-
-            C["GeometricPoint"][$CellContext`a][2] + 
-           C["GeometricPoint"][$CellContext`b][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`b][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+         1, 2] == (((-C["GeometricPoint"][$CellContext`a][1] + 
+            C["GeometricPoint"][$CellContext`b][1])^2 + (-
+             C["GeometricPoint"][$CellContext`a][2] + 
+            C["GeometricPoint"][$CellContext`b][2])^2)^
+         Rational[
+          1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`b][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[1, 2]) ((C["GeometricPoint"][$CellContext`b][1] - C[
           "GeometricPoint"][$CellContext`c][
           1]) (-C["GeometricPoint"][$CellContext`c][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (
@@ -1678,8 +1634,7 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]],
        PlaneGeometry`GeometrySceneDrawer`Dump`var2313}}}, 
     PlaneGeometry`GeometrySceneDrawerDump`quantLists$$ = {{
      PlaneGeometry`GeometrySceneDrawer`Dump`var2314}}, 
-    PlaneGeometry`GeometrySceneDrawerDump`pointStepAssoc$$ = 
-    Association[{
+    PlaneGeometry`GeometrySceneDrawerDump`pointStepAssoc$$ = <|{
       PlaneGeometry`GeometrySceneDrawer`Dump`var2302, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var2303} -> 
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var2304, 
@@ -1689,9 +1644,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]],
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var2308, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var2309} -> 
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var2310, 
-       PlaneGeometry`GeometrySceneDrawer`Dump`var2311} -> 1], 
-    PlaneGeometry`GeometrySceneDrawerDump`pointPosAssoc$$ = 
-    Association[{
+       PlaneGeometry`GeometrySceneDrawer`Dump`var2311} -> 1|>, 
+    PlaneGeometry`GeometrySceneDrawerDump`pointPosAssoc$$ = <|{
       PlaneGeometry`GeometrySceneDrawer`Dump`var2302, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var2303} -> 
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var2304, 
@@ -1703,9 +1657,9 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]],
      4, {PlaneGeometry`GeometrySceneDrawer`Dump`var2310, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var2311} -> 
      5, {PlaneGeometry`GeometrySceneDrawer`Dump`var2312, 
-       PlaneGeometry`GeometrySceneDrawer`Dump`var2313} -> 6], 
-    PlaneGeometry`GeometrySceneDrawerDump`quantPosAssoc$$ = Association[
-    PlaneGeometry`GeometrySceneDrawer`Dump`var2314 -> 1], 
+       PlaneGeometry`GeometrySceneDrawer`Dump`var2313} -> 6|>, 
+    PlaneGeometry`GeometrySceneDrawerDump`quantPosAssoc$$ = <|
+    PlaneGeometry`GeometrySceneDrawer`Dump`var2314 -> 1|>, 
     PlaneGeometry`GeometrySceneDrawerDump`rules$$ = {{{
       C["GeometricPoint"][$CellContext`a] -> {-1.3225160404019438`, \
 -0.6320233291507121}, 
@@ -2799,7 +2753,8 @@ $CellContext`d, $CellContext`e}],
                     PlaneGeometry`GeometrySceneDrawerDump`step$$]], 
                     PlaneGeometry`GeometrySceneDrawerDump`current$$]; 
                     PlaneGeometry`GeometrySceneDrawerDump`picPart$$ = If[
-                    And[False, PlaneGeometry`GeometrySceneDrawerDump`step$$ == 
+                    And[
+                    False, PlaneGeometry`GeometrySceneDrawerDump`step$$ == 
                     PlaneGeometry`GeometrySceneDrawerDump`stepCount$$], {
                     PlaneGeometry`GeometrySceneDrawerDump`step$$, 
                     PlaneGeometry`GeometrySceneDrawerDump`conclusion$$, -1}, {
@@ -2927,8 +2882,7 @@ findDynamicRulesFromOptimizer,
                     ReplaceAll[{
                     PlaneGeometry`GeometrySceneDrawerDump`pointAliases$$, 
                     PlaneGeometry`GeometrySceneDrawerDump`quantAliases$$}, 
-                    Part[
-                    PlaneGeometry`GeometrySceneDrawerDump`rules$$, 
+                    Part[PlaneGeometry`GeometrySceneDrawerDump`rules$$, 
                     PlaneGeometry`GeometrySceneDrawerDump`instance$$]]; 
                     Part[PlaneGeometry`GeometrySceneDrawerDump`rules$$, 
                     PlaneGeometry`GeometrySceneDrawerDump`instance$$] = 
@@ -3142,7 +3096,8 @@ declaredPointNames$$, PlaneGeometry`GeometrySceneDrawerDump`currentPos$$] ->
                False; NotebookDelete[
                PlaneGeometry`GeometrySceneDrawerDump`attachedCell$$], 
               PlaneGeometry`GeometrySceneDrawerDump`attachedControlsQ$$ = 
-               True; PlaneGeometry`GeometrySceneDrawerDump`attachedCell$$ = 
+               True; 
+              PlaneGeometry`GeometrySceneDrawerDump`attachedCell$$ = 
                AttachCell[PlaneGeometry`GeometrySceneDrawerDump`boxObj$$, 
                  
                  DynamicModule[{}, 
@@ -3793,7 +3748,7 @@ findDynamicRulesFromOptimizer,
      PlotRange -> {{-2.0234646392116864`, 
        3.2138869077765855`}, {-3.486991677908961, 1.7503598690793107`}}, 
       ImageSize -> {{380, 380}, {380, 380}}}], 
-    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[94289]}, 
+    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[1802545]}, 
     StyleBox[
      FrameBox[
       PaneBox[
@@ -4094,72 +4049,70 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
            PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2370) (-
            PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
-          PlaneGeometry`GeometrySceneDrawer`Dump`var2372))^2 + (((
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2369 - 
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2370 - 
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
-          Rational[
-           1, 2] ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2367 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2369) (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2367 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2371) + (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2370) (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2372)) ((
+          PlaneGeometry`GeometrySceneDrawer`Dump`var2372))^2 + ((((
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2369 - 
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2370 - 
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
+           Rational[
+            1, 2] ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2367 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2369) (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2367 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2371) + (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2370) (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2372))) ((
              PlaneGeometry`GeometrySceneDrawer`Dump`var2369 - 
              PlaneGeometry`GeometrySceneDrawer`Dump`var2373)^2 + (
              PlaneGeometry`GeometrySceneDrawer`Dump`var2370 - 
              PlaneGeometry`GeometrySceneDrawer`Dump`var2374)^2)^
           Rational[
-           1, 2] - ((PlaneGeometry`GeometrySceneDrawer`Dump`var2367 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2369)^2 + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2368 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2370)^2)^
-         Rational[
-          1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2367 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2368 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
-         Rational[
-          1, 2] ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
+           1, 2] - (((PlaneGeometry`GeometrySceneDrawer`Dump`var2367 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2369)^2 + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2368 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2370)^2)^
+          Rational[
+           1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2367 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2368 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
+          Rational[1, 2]) ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2371) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2373) + (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2372) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2374)))^2 + (((
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2367 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2369) (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2371) + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2368 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2370) (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2372)) ((-
+           PlaneGeometry`GeometrySceneDrawer`Dump`var2374)))^2 + ((((
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2367 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2369) (-
               PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (-
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2371) + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2368 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2370) (-
               PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
-          Rational[
-           1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2371 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2372)) ((-
+               PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (-
+               PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
+           Rational[
+            1, 2]) ((PlaneGeometry`GeometrySceneDrawer`Dump`var2371 - 
              PlaneGeometry`GeometrySceneDrawer`Dump`var2373)^2 + (
              PlaneGeometry`GeometrySceneDrawer`Dump`var2372 - 
              PlaneGeometry`GeometrySceneDrawer`Dump`var2374)^2)^
           Rational[
-           1, 2] - ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2367 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2369)^2 + (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2370)^2)^
-         Rational[
-          1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2369 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2370 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
-         Rational[
-          1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2369 - 
+           1, 2] - (((-PlaneGeometry`GeometrySceneDrawer`Dump`var2367 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2369)^2 + (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2370)^2)^
+          Rational[
+           1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2369 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2370 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
+          Rational[1, 2]) ((PlaneGeometry`GeometrySceneDrawer`Dump`var2369 - 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2371) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2371 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2373) + (
@@ -4292,8 +4245,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
          1 - (PlaneGeometry`GeometrySceneDrawer`Dump`var2372 - 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2374) 
          PlaneGeometry`GeometrySceneDrawer`Dump`var2403)^2 + (
-        1 - (-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2370) (-
+        1 - ((-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
+            PlaneGeometry`GeometrySceneDrawer`Dump`var2370)) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2371) + (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2367 + 
@@ -4301,8 +4254,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
             PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2372)) 
         PlaneGeometry`GeometrySceneDrawer`Dump`var2404)^2 + (
-        1 - (-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2372) (-
+        1 - ((-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
+            PlaneGeometry`GeometrySceneDrawer`Dump`var2372)) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2371 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2373) + (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
@@ -4311,8 +4264,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
            PlaneGeometry`GeometrySceneDrawer`Dump`var2374)) 
         PlaneGeometry`GeometrySceneDrawer`Dump`var2405)^2, {
       Rational[1, 
-          2] (-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2370) 
+          2] ((-(-PlaneGeometry`GeometrySceneDrawer`Dump`var2368 + 
+            PlaneGeometry`GeometrySceneDrawer`Dump`var2370)) 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2371 - 
          PlaneGeometry`GeometrySceneDrawer`Dump`var2369 (
           PlaneGeometry`GeometrySceneDrawer`Dump`var2368 - 
@@ -4320,25 +4273,25 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
          PlaneGeometry`GeometrySceneDrawer`Dump`var2367 (-
            PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2372)) >= 
-       0, ((-PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (-
-             PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
-         Rational[-1, 
-           2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2371 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2373)^2 + (
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2372 - 
-            PlaneGeometry`GeometrySceneDrawer`Dump`var2374)^2)^
-         Rational[-1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2369 - 
+       0, (((-PlaneGeometry`GeometrySceneDrawer`Dump`var2369 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2371)^2 + (-
+              PlaneGeometry`GeometrySceneDrawer`Dump`var2370 + 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2372)^2)^
+          Rational[-1, 
+            2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2371 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2373)^2 + (
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2372 - 
+             PlaneGeometry`GeometrySceneDrawer`Dump`var2374)^2)^
+          Rational[-1, 2]) ((PlaneGeometry`GeometrySceneDrawer`Dump`var2369 - 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2371) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2371 + 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2373) + (
            PlaneGeometry`GeometrySceneDrawer`Dump`var2370 - 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2372) (-
             PlaneGeometry`GeometrySceneDrawer`Dump`var2372 + 
-           PlaneGeometry`GeometrySceneDrawer`Dump`var2374)) >= 0, 
-       Rational[-1, 2] 
-        2^Rational[-1, 2] ((PlaneGeometry`GeometrySceneDrawer`Dump`var2370 - 
+           PlaneGeometry`GeometrySceneDrawer`Dump`var2374)) >= 
+       0, (Rational[-1, 2] 
+         2^Rational[-1, 2]) ((PlaneGeometry`GeometrySceneDrawer`Dump`var2370 - 
            PlaneGeometry`GeometrySceneDrawer`Dump`var2372) 
           PlaneGeometry`GeometrySceneDrawer`Dump`var2373 + 
          PlaneGeometry`GeometrySceneDrawer`Dump`var2369 (
@@ -4515,9 +4468,9 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
           C["GeometricPoint"][$CellContext`a][2] + 
          C["GeometricPoint"][$CellContext`c][2]))^2 + (1 - 
        "notVar"[
-        PlaneGeometry`GeometrySceneDrawer`Dump`var2365] (-(-
-           C["GeometricPoint"][$CellContext`a][2] + 
-          C["GeometricPoint"][$CellContext`b][2]) (-
+        PlaneGeometry`GeometrySceneDrawer`Dump`var2365] ((-(-
+            C["GeometricPoint"][$CellContext`a][2] + 
+           C["GeometricPoint"][$CellContext`b][2])) (-
            C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`c][1]) + (-
            C["GeometricPoint"][$CellContext`a][1] + 
@@ -4548,35 +4501,34 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
         "notVar"[PlaneGeometry`GeometrySceneDrawer`Dump`var2364] (
          C["GeometricPoint"][$CellContext`c][2] - C[
          "GeometricPoint"][$CellContext`d][
-         2]))^2 + (((C["GeometricPoint"][$CellContext`b][1] - C[
-            "GeometricPoint"][$CellContext`c][1])^2 + (
-            C["GeometricPoint"][$CellContext`b][2] - C[
-            "GeometricPoint"][$CellContext`c][2])^2)^
-         Rational[
-          1, 2] ((-C["GeometricPoint"][$CellContext`a][1] + 
-           C["GeometricPoint"][$CellContext`b][1]) (-
-            C["GeometricPoint"][$CellContext`a][1] + 
-           C["GeometricPoint"][$CellContext`c][1]) + (-
-            C["GeometricPoint"][$CellContext`a][2] + 
-           C["GeometricPoint"][$CellContext`b][2]) (-
-            C["GeometricPoint"][$CellContext`a][2] + 
-           C["GeometricPoint"][$CellContext`c][2])) ((
+         2]))^2 + ((((C["GeometricPoint"][$CellContext`b][1] - C[
+             "GeometricPoint"][$CellContext`c][1])^2 + (
+             C["GeometricPoint"][$CellContext`b][2] - C[
+             "GeometricPoint"][$CellContext`c][2])^2)^
+          Rational[
+           1, 2] ((-C["GeometricPoint"][$CellContext`a][1] + 
+            C["GeometricPoint"][$CellContext`b][1]) (-
+             C["GeometricPoint"][$CellContext`a][1] + 
+            C["GeometricPoint"][$CellContext`c][1]) + (-
+             C["GeometricPoint"][$CellContext`a][2] + 
+            C["GeometricPoint"][$CellContext`b][2]) (-
+             C["GeometricPoint"][$CellContext`a][2] + 
+            C["GeometricPoint"][$CellContext`c][2]))) ((
             C["GeometricPoint"][$CellContext`b][1] - C[
             "GeometricPoint"][$CellContext`d][1])^2 + (
             C["GeometricPoint"][$CellContext`b][2] - C[
             "GeometricPoint"][$CellContext`d][2])^2)^
          Rational[
-          1, 2] - ((C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`b][1])^2 + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`b][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((-C["GeometricPoint"][$CellContext`b][1] + 
+          1, 2] - (((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`b][1])^2 + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`b][2])^2)^
+         Rational[
+          1, 2] ((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[1, 2]) ((-C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`c][1]) (-
            C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (-
@@ -4585,44 +4537,43 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]},
            C["GeometricPoint"][$CellContext`b][2] + 
           C["GeometricPoint"][$CellContext`d][2])))^2 + (1 - 
        "notVar"[
-        PlaneGeometry`GeometrySceneDrawer`Dump`var2366] (-(-
-           C["GeometricPoint"][$CellContext`b][2] + 
-          C["GeometricPoint"][$CellContext`c][2]) (-
+        PlaneGeometry`GeometrySceneDrawer`Dump`var2366] ((-(-
+            C["GeometricPoint"][$CellContext`b][2] + 
+           C["GeometricPoint"][$CellContext`c][2])) (-
            C["GeometricPoint"][$CellContext`c][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (-
            C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`c][1]) (-
            C["GeometricPoint"][$CellContext`c][2] + 
-          C["GeometricPoint"][$CellContext`d][2])))^2 + (((
-           C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`b][
-           1]) (-C["GeometricPoint"][$CellContext`b][1] + 
-           C["GeometricPoint"][$CellContext`c][1]) + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`b][
-           2]) (-C["GeometricPoint"][$CellContext`b][2] + 
-           C["GeometricPoint"][$CellContext`c][
-            2])) ((-C["GeometricPoint"][$CellContext`b][1] + 
-            C["GeometricPoint"][$CellContext`c][1])^2 + (-
-             C["GeometricPoint"][$CellContext`b][2] + 
-            C["GeometricPoint"][$CellContext`c][2])^2)^
-         Rational[
-          1, 2] ((C["GeometricPoint"][$CellContext`c][1] - C[
+          C["GeometricPoint"][$CellContext`d][
+           2])))^2 + ((((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`b][
+            1]) (-C["GeometricPoint"][$CellContext`b][1] + 
+            C["GeometricPoint"][$CellContext`c][1]) + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`b][
+            2]) (-C["GeometricPoint"][$CellContext`b][2] + 
+            C["GeometricPoint"][$CellContext`c][
+             2])) ((-C["GeometricPoint"][$CellContext`b][1] + 
+             C["GeometricPoint"][$CellContext`c][1])^2 + (-
+              C["GeometricPoint"][$CellContext`b][2] + 
+             C["GeometricPoint"][$CellContext`c][2])^2)^
+          Rational[
+           1, 2]) ((C["GeometricPoint"][$CellContext`c][1] - C[
             "GeometricPoint"][$CellContext`d][1])^2 + (
             C["GeometricPoint"][$CellContext`c][2] - C[
             "GeometricPoint"][$CellContext`d][2])^2)^
          Rational[
-          1, 2] - ((-C["GeometricPoint"][$CellContext`a][1] + 
-           C["GeometricPoint"][$CellContext`b][1])^2 + (-
-            C["GeometricPoint"][$CellContext`a][2] + 
-           C["GeometricPoint"][$CellContext`b][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`b][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+          1, 2] - (((-C["GeometricPoint"][$CellContext`a][1] + 
+            C["GeometricPoint"][$CellContext`b][1])^2 + (-
+             C["GeometricPoint"][$CellContext`a][2] + 
+            C["GeometricPoint"][$CellContext`b][2])^2)^
+         Rational[
+          1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`b][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[1, 2]) ((C["GeometricPoint"][$CellContext`b][1] - C[
           "GeometricPoint"][$CellContext`c][
           1]) (-C["GeometricPoint"][$CellContext`c][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (
@@ -4711,8 +4662,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]^2 + (-
           C["Unspecified"]["ref", "{1, 5, 1, 0}"]][2])^2)^2}, 
     PlaneGeometry`GeometrySceneDrawerDump`constraintsList$$ = {{
      Rational[1, 
-         2] (-(-C["GeometricPoint"][$CellContext`a][2] + 
-          C["GeometricPoint"][$CellContext`b][2]) 
+         2] ((-(-C["GeometricPoint"][$CellContext`a][2] + 
+           C["GeometricPoint"][$CellContext`b][2])) 
          C["GeometricPoint"][$CellContext`c][1] - 
         C["GeometricPoint"][$CellContext`b][1] (
          C["GeometricPoint"][$CellContext`a][2] - C[
@@ -4720,25 +4671,25 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]^2 + (-
         C["GeometricPoint"][$CellContext`a][
          1] (-C["GeometricPoint"][$CellContext`b][2] + 
          C["GeometricPoint"][$CellContext`c][2])) >= 
-      0, ((-C["GeometricPoint"][$CellContext`b][1] + 
-           C["GeometricPoint"][$CellContext`c][1])^2 + (-
-            C["GeometricPoint"][$CellContext`b][2] + 
-           C["GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[-1, 
-          2] ((C["GeometricPoint"][$CellContext`c][1] - C[
-           "GeometricPoint"][$CellContext`d][1])^2 + (
-           C["GeometricPoint"][$CellContext`c][2] - C[
-           "GeometricPoint"][$CellContext`d][2])^2)^
-        Rational[-1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+      0, (((-C["GeometricPoint"][$CellContext`b][1] + 
+            C["GeometricPoint"][$CellContext`c][1])^2 + (-
+             C["GeometricPoint"][$CellContext`b][2] + 
+            C["GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[-1, 
+           2] ((C["GeometricPoint"][$CellContext`c][1] - C[
+            "GeometricPoint"][$CellContext`d][1])^2 + (
+            C["GeometricPoint"][$CellContext`c][2] - C[
+            "GeometricPoint"][$CellContext`d][2])^2)^
+         Rational[-1, 2]) ((C["GeometricPoint"][$CellContext`b][1] - C[
           "GeometricPoint"][$CellContext`c][
           1]) (-C["GeometricPoint"][$CellContext`c][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (
           C["GeometricPoint"][$CellContext`b][2] - C[
           "GeometricPoint"][$CellContext`c][
           2]) (-C["GeometricPoint"][$CellContext`c][2] + 
-          C["GeometricPoint"][$CellContext`d][2])) >= 0, 
-      Rational[-1, 2] 
-       2^Rational[-1, 2] ((C["GeometricPoint"][$CellContext`b][2] - C[
+          C["GeometricPoint"][$CellContext`d][2])) >= 
+      0, (Rational[-1, 2] 
+        2^Rational[-1, 2]) ((C["GeometricPoint"][$CellContext`b][2] - C[
           "GeometricPoint"][$CellContext`c][2]) 
          C["GeometricPoint"][$CellContext`d][1] + 
         C["GeometricPoint"][$CellContext`b][1] (
@@ -4757,8 +4708,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]^2 + (-
          C["GeometricPoint"][$CellContext`b][
            1] (-C["GeometricPoint"][$CellContext`a][2] + 
            C["GeometricPoint"][$CellContext`c][2]))^2 >= 0.1, 
-      Rational[1, 
-         4] ((C["GeometricPoint"][$CellContext`a][2] - C[
+      Rational[
+        1, 4] ((C["GeometricPoint"][$CellContext`a][2] - C[
            "GeometricPoint"][$CellContext`b][2]) 
           C["GeometricPoint"][$CellContext`c][1] + 
          C["GeometricPoint"][$CellContext`a][1] (
@@ -4923,72 +4874,70 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]}, {
            C["GeometricPoint"][$CellContext`b][2] - C[
            "GeometricPoint"][$CellContext`c][
            2]) (-C["GeometricPoint"][$CellContext`c][2] + 
-           C["GeometricPoint"][$CellContext`d][2]))^2, ((
-           C["GeometricPoint"][$CellContext`b][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`b][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((-C["GeometricPoint"][$CellContext`a][1] + 
-          C["GeometricPoint"][$CellContext`b][1]) (-
-           C["GeometricPoint"][$CellContext`a][1] + 
-          C["GeometricPoint"][$CellContext`c][1]) + (-
-           C["GeometricPoint"][$CellContext`a][2] + 
-          C["GeometricPoint"][$CellContext`b][2]) (-
-           C["GeometricPoint"][$CellContext`a][2] + 
-          C["GeometricPoint"][$CellContext`c][2])) ((
+           C["GeometricPoint"][$CellContext`d][2]))^2, (((
+            C["GeometricPoint"][$CellContext`b][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`b][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[
+          1, 2] ((-C["GeometricPoint"][$CellContext`a][1] + 
+           C["GeometricPoint"][$CellContext`b][1]) (-
+            C["GeometricPoint"][$CellContext`a][1] + 
+           C["GeometricPoint"][$CellContext`c][1]) + (-
+            C["GeometricPoint"][$CellContext`a][2] + 
+           C["GeometricPoint"][$CellContext`b][2]) (-
+            C["GeometricPoint"][$CellContext`a][2] + 
+           C["GeometricPoint"][$CellContext`c][2]))) ((
            C["GeometricPoint"][$CellContext`b][1] - C[
            "GeometricPoint"][$CellContext`d][1])^2 + (
            C["GeometricPoint"][$CellContext`b][2] - C[
            "GeometricPoint"][$CellContext`d][2])^2)^
         Rational[
-         1, 2] == ((C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`b][1])^2 + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`b][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`a][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`a][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((-C["GeometricPoint"][$CellContext`b][1] + 
+         1, 2] == (((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`b][1])^2 + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`b][2])^2)^
+         Rational[
+          1, 2] ((C["GeometricPoint"][$CellContext`a][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`a][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[1, 2]) ((-C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`c][1]) (-
            C["GeometricPoint"][$CellContext`b][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (-
            C["GeometricPoint"][$CellContext`b][2] + 
           C["GeometricPoint"][$CellContext`c][2]) (-
            C["GeometricPoint"][$CellContext`b][2] + 
-          C["GeometricPoint"][$CellContext`d][2])), ((
-          C["GeometricPoint"][$CellContext`a][1] - C[
-          "GeometricPoint"][$CellContext`b][
-          1]) (-C["GeometricPoint"][$CellContext`b][1] + 
-          C["GeometricPoint"][$CellContext`c][1]) + (
-          C["GeometricPoint"][$CellContext`a][2] - C[
-          "GeometricPoint"][$CellContext`b][
-          2]) (-C["GeometricPoint"][$CellContext`b][2] + 
-          C["GeometricPoint"][$CellContext`c][
-           2])) ((-C["GeometricPoint"][$CellContext`b][1] + 
-           C["GeometricPoint"][$CellContext`c][1])^2 + (-
-            C["GeometricPoint"][$CellContext`b][2] + 
-           C["GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`c][1] - C[
+          C["GeometricPoint"][$CellContext`d][2])), (((
+           C["GeometricPoint"][$CellContext`a][1] - C[
+           "GeometricPoint"][$CellContext`b][
+           1]) (-C["GeometricPoint"][$CellContext`b][1] + 
+           C["GeometricPoint"][$CellContext`c][1]) + (
+           C["GeometricPoint"][$CellContext`a][2] - C[
+           "GeometricPoint"][$CellContext`b][
+           2]) (-C["GeometricPoint"][$CellContext`b][2] + 
+           C["GeometricPoint"][$CellContext`c][
+            2])) ((-C["GeometricPoint"][$CellContext`b][1] + 
+            C["GeometricPoint"][$CellContext`c][1])^2 + (-
+             C["GeometricPoint"][$CellContext`b][2] + 
+            C["GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[
+          1, 2]) ((C["GeometricPoint"][$CellContext`c][1] - C[
            "GeometricPoint"][$CellContext`d][1])^2 + (
            C["GeometricPoint"][$CellContext`c][2] - C[
            "GeometricPoint"][$CellContext`d][2])^2)^
         Rational[
-         1, 2] == ((-C["GeometricPoint"][$CellContext`a][1] + 
-           C["GeometricPoint"][$CellContext`b][1])^2 + (-
-            C["GeometricPoint"][$CellContext`a][2] + 
-           C["GeometricPoint"][$CellContext`b][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
-           "GeometricPoint"][$CellContext`c][1])^2 + (
-           C["GeometricPoint"][$CellContext`b][2] - C[
-           "GeometricPoint"][$CellContext`c][2])^2)^
-        Rational[
-         1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+         1, 2] == (((-C["GeometricPoint"][$CellContext`a][1] + 
+            C["GeometricPoint"][$CellContext`b][1])^2 + (-
+             C["GeometricPoint"][$CellContext`a][2] + 
+            C["GeometricPoint"][$CellContext`b][2])^2)^
+         Rational[
+          1, 2] ((C["GeometricPoint"][$CellContext`b][1] - C[
+            "GeometricPoint"][$CellContext`c][1])^2 + (
+            C["GeometricPoint"][$CellContext`b][2] - C[
+            "GeometricPoint"][$CellContext`c][2])^2)^
+         Rational[1, 2]) ((C["GeometricPoint"][$CellContext`b][1] - C[
           "GeometricPoint"][$CellContext`c][
           1]) (-C["GeometricPoint"][$CellContext`c][1] + 
           C["GeometricPoint"][$CellContext`d][1]) + (
@@ -5418,6 +5367,7 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]]}, {
            C["GeometricQuantity"][
             C["Unspecified"][
             "radius", 
+             
              "{{C[\"GeometricPoint\"][a], C[\"GeometricPoint\"][b], \
 C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]]]}, {
           RGBColor[
@@ -9715,8 +9665,7 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]],
        PlaneGeometry`GeometrySceneDrawer`Dump`var2378}}}, 
     PlaneGeometry`GeometrySceneDrawerDump`quantLists$$ = {{
      PlaneGeometry`GeometrySceneDrawer`Dump`var2379}}, 
-    PlaneGeometry`GeometrySceneDrawerDump`pointStepAssoc$$ = 
-    Association[{
+    PlaneGeometry`GeometrySceneDrawerDump`pointStepAssoc$$ = <|{
       PlaneGeometry`GeometrySceneDrawer`Dump`var2367, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var2368} -> 
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var2369, 
@@ -9726,9 +9675,8 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]],
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var2373, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var2374} -> 
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var2375, 
-       PlaneGeometry`GeometrySceneDrawer`Dump`var2376} -> 1], 
-    PlaneGeometry`GeometrySceneDrawerDump`pointPosAssoc$$ = 
-    Association[{
+       PlaneGeometry`GeometrySceneDrawer`Dump`var2376} -> 1|>, 
+    PlaneGeometry`GeometrySceneDrawerDump`pointPosAssoc$$ = <|{
       PlaneGeometry`GeometrySceneDrawer`Dump`var2367, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var2368} -> 
      1, {PlaneGeometry`GeometrySceneDrawer`Dump`var2369, 
@@ -9740,9 +9688,9 @@ C[\"GeometricPoint\"][d], C[\"GeometricPoint\"][e]}, {1, 5, 1, 0}}"]],
      4, {PlaneGeometry`GeometrySceneDrawer`Dump`var2375, 
        PlaneGeometry`GeometrySceneDrawer`Dump`var2376} -> 
      5, {PlaneGeometry`GeometrySceneDrawer`Dump`var2377, 
-       PlaneGeometry`GeometrySceneDrawer`Dump`var2378} -> 6], 
-    PlaneGeometry`GeometrySceneDrawerDump`quantPosAssoc$$ = Association[
-    PlaneGeometry`GeometrySceneDrawer`Dump`var2379 -> 1], 
+       PlaneGeometry`GeometrySceneDrawer`Dump`var2378} -> 6|>, 
+    PlaneGeometry`GeometrySceneDrawerDump`quantPosAssoc$$ = <|
+    PlaneGeometry`GeometrySceneDrawer`Dump`var2379 -> 1|>, 
     PlaneGeometry`GeometrySceneDrawerDump`rules$$ = {{{
       C["GeometricPoint"][$CellContext`a] -> {-1.3225160404019438`, \
 -0.6320233291507121}, 
@@ -12312,7 +12260,7 @@ findDynamicRulesFromOptimizer,
      PlotRange -> {{-2.0234646392116864`, 
        3.2138869077765855`}, {-3.486991677908961, 1.7503598690793107`}}, 
       ImageSize -> {{380, 380}, {380, 380}}}], 
-    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[95009]}, 
+    PlaneGeometry`GeometrySceneDrawerDump`boxObj$$ = BoxObject[1802673]}, 
     StyleBox[
      FrameBox[
       PaneBox[
@@ -12864,12 +12812,14 @@ WindowSize->{720, 847},
 WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 PrivateNotebookOptions->{"CloudPublishPath"->"/Published/wolfram-notebooks-\
 geometric-scene.nb"},
-FrontEndVersion->"12.3 for Mac OS X x86 (64-bit) (May 11, 2021)",
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (December 2, 2021)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[StyleDefinitions -> "Default.nb"]], 
    Cell[
     StyleData[All], ShowCellBracket -> Automatic], 
+   Cell[
+    StyleData["Notebook"], Background -> RGBColor[252, 251, 249]], 
    Cell[
     StyleData["Title"], FontFamily -> "Source Sans Pro", FontSize -> 45, 
     FontWeight -> "SemiBold", FontSlant -> "Plain", 
@@ -12886,7 +12836,7 @@ StyleDefinitions->Notebook[{
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}, FontColor -> 
     RGBColor[0., 0., 0.]], 
    Cell[
-    StyleData["Subsection"], ShowGroupOpener -> "Inline", 
+    StyleData["Subsection"], ShowGroupOpener -> "Inline", FontSize -> 18, 
     FontVariations -> {"StrikeThrough" -> False, "Underline" -> False}, 
     FontColor -> 
     RGBColor[0.3495994506752117, 0.349584191653315, 0.349584191653315]], 
@@ -12908,8 +12858,9 @@ StyleDefinitions->Notebook[{
     StyleData["Input"], FontFamily -> "Source Code Pro", FontSize -> 13, 
     FontWeight -> "Regular", FontSlant -> "Plain", 
     PrivateFontOptions -> {"FontPostScriptName" -> "Automatic"}]}, Visible -> 
-  False, FrontEndVersion -> "12.3 for Mac OS X x86 (64-bit) (May 11, 2021)", 
-  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+  False, FrontEndVersion -> 
+  "13.0 for Mac OS X x86 (64-bit) (December 2, 2021)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"],
 ExpressionUUID->"2b3a01d3-3a88-4741-aac1-9b41b5f66094"
 ]
 (* End of Notebook Content *)
@@ -12924,25 +12875,25 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 3259, 78, 36, "Input",ExpressionUUID->"4baaa273-9998-48a0-a5b9-9955beb8bbd3"],
-Cell[3842, 102, 614, 17, 65, "Output",ExpressionUUID->"13cd9381-c331-4b82-b4e7-153ec922f333"]
+Cell[580, 22, 1925, 41, 36, "Input",ExpressionUUID->"4baaa273-9998-48a0-a5b9-9955beb8bbd3"],
+Cell[2508, 65, 570, 16, 65, "Output",ExpressionUUID->"e40de494-b422-4c69-80a3-149dad48d6b6"]
 }, {2}]],
 Cell[CellGroupData[{
-Cell[4490, 124, 171, 3, 62, "Section",ExpressionUUID->"8e07a1d0-4fcc-42b0-bf51-bc258b0a2ba6"],
+Cell[3112, 86, 171, 3, 62, "Section",ExpressionUUID->"8e07a1d0-4fcc-42b0-bf51-bc258b0a2ba6"],
 Cell[CellGroupData[{
-Cell[4686, 131, 4235, 80, 123, "Input",ExpressionUUID->"a87847e3-d2e3-4c86-9e6d-091aa60bc89b"],
-Cell[8924, 213, 190903, 3779, 474, "Output",ExpressionUUID->"10b250b9-d630-4680-a634-244a4eeacf65"]
+Cell[3308, 93, 4235, 80, 123, "Input",ExpressionUUID->"a87847e3-d2e3-4c86-9e6d-091aa60bc89b"],
+Cell[7546, 175, 191025, 3772, 474, "Output",ExpressionUUID->"10b250b9-d630-4680-a634-244a4eeacf65"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[199876, 3998, 268, 4, 62, "Section",ExpressionUUID->"bc4230ee-aa5b-405a-a15b-3ce3158f8675"],
+Cell[198620, 3953, 268, 4, 62, "Section",ExpressionUUID->"bc4230ee-aa5b-405a-a15b-3ce3158f8675"],
 Cell[CellGroupData[{
-Cell[200169, 4006, 390, 6, 30, "Input",ExpressionUUID->"8a4b0b3e-8094-493b-8839-79e8d559a145"],
-Cell[200562, 4014, 381974, 8521, 524, "Output",ExpressionUUID->"a5c7f51e-fa5f-42fc-8083-544444aeb657"]
+Cell[198913, 3961, 390, 6, 30, "Input",ExpressionUUID->"8a4b0b3e-8094-493b-8839-79e8d559a145"],
+Cell[199306, 3969, 382095, 8514, 524, "Output",ExpressionUUID->"a5c7f51e-fa5f-42fc-8083-544444aeb657"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[582573, 12540, 2609, 63, 36, "Input",ExpressionUUID->"1864539b-f181-435c-9bc2-4f7f0482ce6e"],
-Cell[585185, 12605, 11120, 253, 497, "Output",ExpressionUUID->"35141a0f-95b2-4774-81fb-f300ca5ea790"]
+Cell[581438, 12488, 2609, 63, 36, "Input",ExpressionUUID->"1864539b-f181-435c-9bc2-4f7f0482ce6e"],
+Cell[584050, 12553, 11120, 253, 497, "Output",ExpressionUUID->"35141a0f-95b2-4774-81fb-f300ca5ea790"]
 }, Open  ]]
 }, Open  ]]
 }
