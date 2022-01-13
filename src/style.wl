@@ -10,8 +10,8 @@ Notebook[{
 Cell[StyleData[StyleDefinitions -> "Default.nb"]],
 
 (* ALL *)
-Cell[StyleData[All],
- ShowCellBracket->Automatic],
+Cell[StyleData[All], ShowCellBracket->Automatic],
+Cell[StyleData["Notebook"],Background->RGBColor[252, 251, 249]],
 
 (* TITLE *)
 Cell[StyleData["Title"],
@@ -41,6 +41,7 @@ Cell[StyleData["Section"],
 Cell[StyleData["Subsection"],
  ShowGroupOpener->"Inline",
  FontVariations->{"StrikeThrough"->False, "Underline"->False},
+ FontSize->18,
  FontColor->RGBColor[0.3495994506752117, 0.349584191653315, 0.349584191653315]],
 
 (* SUBSUBSECTION *)
