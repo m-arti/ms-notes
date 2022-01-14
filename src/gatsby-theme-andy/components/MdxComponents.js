@@ -85,7 +85,7 @@ const NoteTag = ({ children, color }) => (
 
 const WolframNotebook = ({ children, url }) => (
   <div class='pt-4 mt-4'>
-    <iframe class='mb-2 pb-2' src={`https://www.wolframcloud.com/view?url=https://raw.githubusercontent.com/m-arti/ms-notes/main/notebooks/${url}`} width="100%" height="600"></iframe>
+    <iframe class='mb-2 pb-0 border rounded-lg border-beige dark:border-gray-800' src={`https://www.wolframcloud.com/view?url=https://raw.githubusercontent.com/m-arti/ms-notes/main/notebooks/${url}`} width="100%" height="600"></iframe>
     <Figcaption>
       <span class="wolframicon align-middle"></span>
       <span class="text-xl font-thin align-middle">｜</span>

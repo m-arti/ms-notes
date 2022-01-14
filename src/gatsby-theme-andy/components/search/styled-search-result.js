@@ -26,7 +26,7 @@ const Popover = css`
   -ms-filter: blur(10px);
 
   .dark & {
-    background-color: rgba(0, 0, 0, .95);
+    background-color: rgba(2, 3, 6, .95);
     box-shadow: none;
     border: 1px solid rgba(31, 41, 55, 1);
   }

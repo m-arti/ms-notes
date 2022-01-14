@@ -353,10 +353,6 @@ iframe {
   @apply antialiased align-middle; /* border-t-2 border-gray-300 */
 }
 
-/* iframe:hover {
-  @apply border-t-4 border-blue-400 transition ease-in-out duration-500;
-} */
-
 .background-image {
   @apply antialiased w-full max-w-2xl -mt-8;
   position: relative;
@@ -481,7 +477,7 @@ iframe {
 }
 
 .dark .graph-overlay {
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(2,3,6, 0.8);
 }
 
 .graph-modal-close,
