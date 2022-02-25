@@ -62,15 +62,13 @@ const BrainNote = ({ note }) => {
     // put scroll button before refs / contact text
     if (references.length > 0) {
       referenceBlock = (
-        <>
-        <div class='mb-4 text-center'>
-          <button class={`py-0 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
+        <div>
+          <div class='mb-4 text-center'>
+            <button class={`py-0 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
+          </div>
+          <h3 class="mt-1 mb-4 font-bold text-sm text-gray-600 dark:text-gray-500">Referred in:</h3>
+          <div class={"mb-8 border-l border-beige dark:border-gray-800 hover:border-beigeDarker dark:hover:border-gray-700"}>{references}</div>
         </div>
-
-          <h3 class="mt-1 mb-4 font-normal text-sm text-gray-600 dark:text-gray-500">Referred in:</h3>
-          <div class={"mb-4 border-l-2 border-beige dark:border-gray-800 hover:border-beigeDarker dark:hover:border-gray-700"}>{references}</div>
-          <div class="mt-6 mb-6 border-b rounded border-beigeDarker border dark:border-gray-800"/>
-        </>
       );
     }
 
@@ -138,14 +136,20 @@ const BrainNote = ({ note }) => {
 
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
-      <div class="refs-box p-6 pt-4 text-gray-600 rounded-lg bg-beige bg-opacity-30 dark:bg-gray-900 dark:bg-opacity-50">
-        {referenceBlock}
-        <p class="m-0 text-sm text-gray-600 dark:text-gray-500">
-          If you'd like to discuss or share an idea, do get in touch.<br/>
-          Send me a {' '}
-          <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a>{' '}
-          on Twitter or an <a href="mailto:marti.samuel1@gmail.com">email</a>.
-        </p>
+      <div>
+        <div class="refs-box p-6 pt-4 pb-4 mb-4 text-gray-600 rounded-lg bg-beige bg-opacity-30 dark:bg-gray-900 dark:bg-opacity-50">
+          {referenceBlock}
+          {
+            note.slug === 'about' ?
+            <p class="m-0 pb-4 text-sm text-gray-600 dark:text-gray-500">
+              If you'd like to discuss or share an idea, do get in touch.<br/>
+              Send me a {' '}
+              <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a>{' '}
+              on Twitter or an <a href="mailto:marti.samuel1@gmail.com">email</a>.
+            </p> :
+            <p class="-mb-4"></p>
+          }
+        </div>
       </div>
     </MDXProvider>
   );
