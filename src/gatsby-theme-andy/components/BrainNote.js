@@ -66,7 +66,7 @@ const BrainNote = ({ note }) => {
           <div class='mb-4 text-center'>
             <button class={`py-0 px-4 ${footerItemsStyles}`} onClick={() => scrollTo(scrollToTarget)} title='Scroll to top'><ScrollToTopIcon/></button>
           </div>
-          <h3 class="mt-1 mb-4 font-bold text-sm text-gray-600 dark:text-gray-500">Referred in:</h3>
+          <h3 class="mt-1 mb-4 font-normal text-sm text-gray-600 dark:text-gray-500">Referred in:</h3>
           <div class={"mb-8 border-l border-beige dark:border-gray-800 hover:border-beigeDarker dark:hover:border-gray-700"}>{references}</div>
         </div>
       );
