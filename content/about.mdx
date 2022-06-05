@@ -5,7 +5,7 @@ title: Hello!
 import { LinkToStacked } from 'react-stacked-pages-hook';
 import { Link } from 'gatsby';
 
-<div class="mt-5 p-8 bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl">
+<div class="mt-5 p-8 bg-gradient-to-t from-night to-gray-900 rounded-2xl">
   <h1 class="text-white dark:text-white">
     Hi, I'm <Link class="hover:text-gray-400" href="https://martinssamuel.com" target="_blank">Martins</Link>.<br/>I do AI research and design.
   </h1>
@@ -19,7 +19,7 @@ import { Link } from 'gatsby';
 
 <br/>
 
-<div class="p-8 rounded-3xl bg-beige bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50">
+<div class="p-8 rounded-3xl bg-beige bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-30">
 
   <h1 class="text-yellow-600 dark:text-yellow-500">
     Recent notes
@@ -31,7 +31,7 @@ import { Link } from 'gatsby';
 
   <div>
   <LinkToStacked class="no-underline" to='wolfram-notebooks' key='wolfram-notebooks'>
-    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-30'>
       <h3 class="mt-0 pt-3 text-black">Wolfram Notebooks</h3>
       <p class="mt-1 mb-0 mb-0 text-sm text-black text-opacity-50 text-left">Notes on programming/thinking in/with Wolfram Notebooks</p>
     </div>
@@ -40,7 +40,7 @@ import { Link } from 'gatsby';
 
   <div>
   <LinkToStacked class="no-underline" to='historical-perspective' key='historical-perspective'>
-    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-30'>
       <h3 class="mt-0 pt-3 text-black">Historical Perpective</h3>
       <p class="mt-1 mb-0 mb-0 text-sm text-black text-opacity-50 text-left">Learnings about seas and oceans inspired by <em>The God of Small Things</em></p>
     </div>
@@ -49,7 +49,7 @@ import { Link } from 'gatsby';
 
   <div>
   <LinkToStacked class="no-underline" to='poems-by-adrienne-rich' key='poems-by-adrienne-rich'>
-    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-30'>
       <h3 class="mt-0 pt-3 text-black">Poems by Adrienne Rich</h3>
       <p class="mt-1 mb-0 text-sm  text-black text-opacity-50 text-left">My favourite poems by Adrienne Rich</p>
     </div>
@@ -58,7 +58,7 @@ import { Link } from 'gatsby';
 
   <div>
   <LinkToStacked class="no-underline" to='silence' key='silence'>
-    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-30'>
       <h3 class="mt-0 pt-3 text-black">Silence</h3>
       <p class="mt-1 mb-0 text-sm  text-black text-opacity-50 text-left">Reflections on silence</p>
     </div>
@@ -67,7 +67,7 @@ import { Link } from 'gatsby';
 
   <div>
   <LinkToStacked class="no-underline" to='dynamic' key='dynamic'>
-    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-30'>
       <h3 class="mt-0 pt-3 text-black">Dynamic</h3>
       <p class="mt-1 mb-0 text-sm  text-black text-opacity-50 text-left">A collection of some types/sources of dynamic objects</p>
     </div>
@@ -76,7 +76,7 @@ import { Link } from 'gatsby';
 
   <div>
   <LinkToStacked class="no-underline" to='explanations' key='explanations'>
-    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50'>
+    <div class='p-4 pt-0 rounded-lg hover:bg-beigeDarker hover:bg-opacity-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-30'>
       <h3 class="mt-0 pt-3 text-black">Explanations</h3>
       <p class="mt-1 mb-0 text-sm  text-black text-opacity-50 text-left">What's an explanation? How can one be made (better)?</p>
     </div>
@@ -89,10 +89,6 @@ import { Link } from 'gatsby';
 
 <br/>
 
----
-
-<br/>
-
-The [[meta]] note narrates how this idea came about, and in it, you'll find an in-depth walk-through of this site. These notes are all WIP, always.
-
-<br/>
+<div class='py-4 px-8'>
+The <a href="/meta">meta</a> note narrates how this idea came about, and in it, you'll find an in-depth walk-through of this site. These notes are all WIP, always.
+</div>

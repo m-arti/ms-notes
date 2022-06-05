@@ -19,7 +19,7 @@ const ScrollToTopIcon = styled(ArrowIosUpwardOutline)`
   width: 25px !important;
 `;
 
-const footerItemsStyles = `text-gray-600 dark:text-gray-500 rounded-md hover:text-gray-800 hover:bg-beige dark:hover:bg-gray-800 dark:hover:bg-opacity-50 transform transition duration-500`;
+const footerItemsStyles = `text-gray-600 dark:text-gray-500 rounded-md hover:text-gray-800 hover:bg-beige dark:hover:bg-gray-800 dark:hover:bg-opacity-30 transform transition duration-500`;
 
 // const NOTE_WIDTH = 650; // 576;
 const NOTE_MAX_WIDTH = 800; // 768;
@@ -137,15 +137,13 @@ const BrainNote = ({ note }) => {
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
       <div>
-        <div class="refs-box p-6 pt-4 pb-4 mb-4 text-gray-600 rounded-lg bg-beige bg-opacity-30 dark:bg-gray-900 dark:bg-opacity-50">
+        <div class="refs-box p-6 pt-4 pb-4 mb-4 text-gray-600 rounded-lg bg-beige bg-opacity-30 dark:bg-gray-900 dark:bg-opacity-30">
           {referenceBlock}
           {
             note.slug === 'about' ?
-            <p class="m-0 pb-4 text-sm text-gray-600 dark:text-gray-500">
-              If you'd like to discuss or share an idea, do get in touch.<br/>
-              Send me a {' '}
-              <a href="https://twitter.com/messages/compose?recipient_id=622349802">direct message</a>{' '}
-              on Twitter or an <a href="mailto:marti.samuel1@gmail.com">email</a>.
+            <p class="m-0 pb-4 text-sm text-center text-gray-600 dark:text-gray-500">
+            “The impossible is the least that one can demand.”<br/>
+            ― James Baldwin, <em>The Fire Next Time</em>
             </p> :
             <p class="-mb-4"></p>
           }
