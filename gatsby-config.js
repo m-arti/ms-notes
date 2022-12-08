@@ -7,8 +7,8 @@ module.exports = {
     title: `Martins' Notes`,
     author: `Martins Samuel`,
     description: `Hi, I'm Martins. I'm do AI research and design. This is an atlas of my musings. I use this medium for iterating through ideas on topics such as computation, art and literature, which presently are my most fond of interests.`,
-    homepage: `https://notes.martinssamuel.com`,
-    siteUrl: `https://notes.martinssamuel.com`,
+    homepage: `https://notes.msdogo.com`,
+    siteUrl: `https://notes.msdogo.com`,
   },
 
   flags: {

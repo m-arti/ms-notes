@@ -1,1 +1,1 @@
-Notes on explorations — [notes.martinssamuel.com](https://notes.martinssamuel.com).
+Notes on explorations — [notes.msdogo.com](https://notes.msdogo.com).
