@@ -9,7 +9,7 @@
     "clean": "gatsby clean"
   },
   "keywords": [],
-  "author": "Martins Samuel (https://martinssamuel.com)",
+  "author": "Martins Samuel (https://msdogo.com)",
   "license": "MIT",
   "dependencies": {
     "@loadable/component": "^5.14.1",
