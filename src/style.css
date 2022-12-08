@@ -51,7 +51,7 @@ body {
 } */
 
 header {
-  background-color: rgba(254, 252, 250, .8); /* ∵ a=.8, header is lighter, ∴ using r+2 */
+  background-color: rgba(252, 251, 249, .8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   -moz-backdrop-filter: blur(20px);
