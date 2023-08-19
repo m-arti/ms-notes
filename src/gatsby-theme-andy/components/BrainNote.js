@@ -30,6 +30,9 @@ const BrainNote = ({ note }) => {
   // graphql query
   const data = useStaticQuery(query)
 
+  // get Jupyter notebook contents
+  const jupyterNote = data.jupyterNotebook;
+
   // get git update times from graphql query
   let updateTimes = [];
   updateTimes = data.allFile.nodes.map(node => (
@@ -39,6 +42,8 @@ const BrainNote = ({ note }) => {
   const updateTimesDict = new Map(updateTimes.map(([k, v]) => [k, v]));
 
   const [width] = useWindowWidth();
+
+  // sort out references
   let references = [];
   let referenceBlock;
   if (note.inboundReferenceNotes != null) {
@@ -122,6 +127,8 @@ const BrainNote = ({ note }) => {
 
   // omit title ( <h1 class="mt-3 mb-4 max-w-sm">{note.title}</h1> ) on 'about' page
   // omit last updated time on 'about' page
+
+  // final note rendering
   return (
     <MDXProvider components={{ ...components, a: AnchorTagWithPopups }}>
       <SEO title={note.title} description={note.excerpt} />
@@ -135,6 +142,22 @@ const BrainNote = ({ note }) => {
           &nbsp;{noteLastUpdated.replace('minute','min').replace('hour','hr').replace('week','wk').replace('month','mo').replace('year','yr')}&emsp;&nbsp;</span>}
 
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
+
+        {
+        note.slug === jupyterNote.metadata.title ? 
+        <div>
+          <div class="px-4 mb-2 pb-0 border rounded-lg border-beige dark:border-gray-800">
+            <div dangerouslySetInnerHTML={{ __html: jupyterNote.html }} />
+          </div>
+            <div class= "pt-0 mt-0 mb-6 text-sm font-light text-center text-gray-500">
+            <span class="jupytericon align-middle"></span>
+            <span class="text-xl font-thin align-middle">｜</span> {jupyterNote.metadata.title}
+          </div>
+        </div>
+         : 
+        ''
+        }
+
       </div>
       <div>
         <div class="refs-box p-6 pt-4 pb-4 mb-4 text-gray-600 rounded-lg bg-beige bg-opacity-30 dark:bg-gray-900 dark:bg-opacity-30">
@@ -151,6 +174,7 @@ const BrainNote = ({ note }) => {
       </div>
     </MDXProvider>
   );
+
 };
 
 // Site last updated: {data.site.buildTime}
@@ -166,11 +190,39 @@ export const query = graphql`
         siteUrl
       }
     }
+
     allFile (filter: { extension: { eq: "mdx" } }) {
       nodes {
         name
         fields {
           gitLogLatestDate(formatString: "YYYY-MM-DD")
+        }
+      }
+    }
+
+    jupyterNotebook {
+      metadata {
+        author
+        title
+      }
+      html
+      json {
+        nbformat
+        nbformat_minor
+        cells {
+          cell_type
+          execution_count
+        }
+      }
+      internal {
+        content
+      }
+    }
+
+    allJupyterNotebook {
+      nodes {
+        fields {
+          slug
         }
       }
     }

@@ -57,6 +57,25 @@ module.exports = {
         path: path.join(__dirname, `content`),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `notebooks`,
+        path: `${__dirname}/notebooks`,
+        ignore: [`**/.ipynb_checkpoints`],
+      },
+    },
+
+    // gatsby-transformer-ipynb
+    {
+      resolve: `@rafaelquintanilha/gatsby-transformer-ipynb`,
+      options: {
+        notebookProps: {
+          displayOrder: ["image/png", "text/html", "text/plain"],
+          showPrompt: true,
+        },
+      },
+    },
 
     // gatsby-transformer-gitinfo
     {
