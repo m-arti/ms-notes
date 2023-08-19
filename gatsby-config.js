@@ -5,7 +5,7 @@ module.exports = {
 
   siteMetadata: {
     title: `Martins' Notes`,
-    author: `Martins Samuel`,
+    author: `Martins Dogo`,
     description: `Hi, I'm Martins. I'm do AI research and design. This is an atlas of my musings. I use this medium for iterating through ideas on topics such as computation, art and literature, which presently are my most fond of interests.`,
     homepage: `https://notes.msdogo.com`,
     siteUrl: `https://notes.msdogo.com`,
@@ -184,7 +184,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Martins Samuel — Notes RSS Feed",
+            title: "Martins Dogo — Notes RSS Feed",
           },
         ],
       },
@@ -224,8 +224,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Martins Samuel — Notes`,
-        short_name: `Martins Samuel — Notes`,
+        name: `Martins Dogo — Notes`,
+        short_name: `Martins Dogo — Notes`,
         description: `Hi, I'm Martins. I'm a researcher and designer. This is an atlas of my musings.`,
         start_url: `/`,
         background_color: `#fff`,
@@ -242,7 +242,7 @@ module.exports = {
         hideDoubleBrackets: true,
         mdxOtherwiseConfigured: true,
         generateRSS: true,
-        rssTitle: `Martins Samuel — Notes RSS Feed`,
+        rssTitle: `Martins Dogo — Notes RSS Feed`,
       },
     },
 

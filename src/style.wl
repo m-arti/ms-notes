@@ -1,9 +1,9 @@
 (* ::Package:: *)
 
 (* MetaInformation *)
-(* Author: Martins Samuel *)
+(* Author: Martins Dogo *)
 (* Description: Wolfram Notebook stylesheet for notes \[LongDash] https://notes.martinssamuel.com *)
-(* Homepage: https://notes.martinssamuel.com *)
+(* Homepage: https://notes.msdogo.com *)
 
 (* Beginning of Content *)
 Notebook[{
