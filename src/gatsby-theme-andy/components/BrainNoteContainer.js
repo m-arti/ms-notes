@@ -166,7 +166,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
           </Link>
         </div>
 
-        <div class="flex h-8 space-x-2">
+        <div class="flex h-8 space-x-1">
           <DarkModeToggle/>
           <GraphButton/>
           <Search indices={searchIndices}/>

@@ -10,7 +10,7 @@ import { usePrefersReducedMotion } from "./UsePrefersReducedMotion";
 
 const RADIUS = 2;
 const STROKE = 0.8;
-const FONT_SIZE = 13;
+const FONT_SIZE = 15;
 const TICKS = 5000;
 const FONT_BASELINE = 10;
 const MINIMIZED_GRAPH = {
