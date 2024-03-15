@@ -147,7 +147,7 @@ const BrainNotesContainer = ({ slug, note, location, siteMetadata }) => {
         `}
         </script>
 
-        <script crossorigin src="https://unpkg.com/wolfram-notebook-embedder@0.1/dist/wolfram-notebook-embedder.min.js">
+        <script crossorigin src="https://unpkg.com/wolfram-notebook-embedder@0.3/dist/wolfram-notebook-embedder.min.js">
         </script>
 
         <script type="module" src="https://unpkg.com/@navsnpm/katex-expression/dist/katex-expression/katex-expression.esm.js"></script>

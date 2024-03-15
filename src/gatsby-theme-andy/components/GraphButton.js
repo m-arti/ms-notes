@@ -15,8 +15,8 @@ const GraphButton = () => {
     <React.Fragment>
       <button
         style={{textAlign: 'center', lineHeight: '20px', scale: '1.3'}}
-        title="Show graph of notes ⁘"
-        aria-label="Show graph of notes"
+        title="Show notes graph"
+        aria-label="Show notes graph"
         class="h-8 w-8 overflow-hidden text-center font-thin transition duration-500 ease-in-out opacity-50 hover:opacity-100"
         onClick={() => {
           setGraphState("maximized");
