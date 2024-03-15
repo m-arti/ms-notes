@@ -15,10 +15,15 @@ const HitCount = connectStateResults(({ searchResults }) => {
   return hitCount > 0 ? (
     <div className="HitCount">
       <div>
-      <p className='px-3 py-1 m-0 rounded-md bg-beige bg-opacity-50 text-black dark:bg-gray-800 dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``}</p>
+      <p className='px-3 py-1 m-0 rounded-md bg-beige bg-opacity-50 text-black dark:bg-gray-800 dark:text-gray-500 text-sm'>{hitCount} note{hitCount !== 1 ? `s` : ``} found</p>
       </div>
     </div>
-  ) : null
+  ) : 
+  <div className="HitCount">
+      <div>
+      <p className='px-3 py-1 m-0 rounded-md bg-beige bg-opacity-50 text-black dark:bg-gray-800 dark:text-gray-500 text-sm'>No notes found</p>
+      </div>
+    </div>
 })
 
 const PageHit = ({ hit }) => (
