@@ -13,23 +13,23 @@ const Popover = css`
   right: 0;
   top: 100%;
   background-color: rgb(252, 251, 249, .98);
-  box-shadow: 0px -5px 35px #f5f2ec;
+  box-shadow: 0px -5px 35px #eee;
   padding: 1em;
   padding-left: 2rem;
   padding-right: 2rem;
   border-radius: 0.75rem;
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  -moz-backdrop-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-
   .dark & {
-    background-color: rgba(2, 3, 6, .95);
+    background-color: rgba(8, 8, 10, .95);
     box-shadow: none;
     border: 1px solid rgba(31, 41, 55, 1);
   }
+
+   backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  -moz-backdrop-filter: blur(25px);
+  -o-filter: blur(25px);
+  -ms-filter: blur(25px);
 `
 
 export default styled(SearchResult)`
