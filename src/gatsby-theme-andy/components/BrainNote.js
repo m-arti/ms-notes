@@ -165,8 +165,8 @@ const BrainNote = ({ note }) => {
           {
             note.slug === 'about' ?
             <p class="m-0 pb-4 text-sm text-center text-gray-600 dark:text-gray-500">
-            “The impossible is the least that one can demand.”<br/>
-            ― James Baldwin, <em>The Fire Next Time</em>
+            “When the sun rises, they gather together and lie down in their dens.”<br/>
+            ― Psalm 104:22
             </p> :
             <p class="-mb-4"></p>
           }
