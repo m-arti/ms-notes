@@ -41,7 +41,7 @@
     "gatsby-plugin-sitemap": "^3.3.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-styled-components": "^4.13.0",
-    "gatsby-react-router-scroll": "3.0.3",
+    "gatsby-react-router-scroll": "^6.13.1",
     "gatsby-remark-autolink-headers": "^4.1.0",
     "gatsby-remark-copy-linked-files": "^2.9.0",
     "gatsby-remark-embedder": "^2.1.1",

@@ -210,6 +210,15 @@ module.exports = {
       },
     },
 
+    // gatsby-plugin-canonical-urls
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://msdogo.com`,
+        stripQueryString: false, // this allows for stacked pages to be indexed separately
+      },
+    },
+
     // gatsby-plugin-sitemap
     {
       resolve: `gatsby-plugin-sitemap`,
