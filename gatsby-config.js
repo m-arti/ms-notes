@@ -34,7 +34,8 @@ module.exports = {
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        queries: require("./src/utils/algolia-queries")
+        queries: require("./src/utils/algolia-queries"),
+        continueOnFailure: true
       },
     },
 
@@ -206,6 +207,15 @@ module.exports = {
             title: "Martins Dogo — Notes RSS Feed",
           },
         ],
+      },
+    },
+
+    // gatsby-plugin-canonical-urls
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://msdogo.com`,
+        stripQueryString: false, // this allows for stacked pages to be indexed separately
       },
     },
 
